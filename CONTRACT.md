@@ -83,3 +83,22 @@ when this repo's turn in the line's build order arrives.
   first rule. A promote whose rule already sits in the
   first section is no proposal at all. Test,
   tests/test_proposals.py.
+
+## Round 1 repair amendments (recorded after the three
+reviews, before the repair code)
+
+- BP-5b. A bullet or numbered marker with no text after
+  it is a named refusal, an empty rule at its line: it is
+  neither inventoried nor silently dropped.
+- BP-5c. Lines inside an HTML comment block are context,
+  never rules, headings, or fences. A setext heading (a
+  prose line underlined with equals signs or dashes)
+  opens a section like an ATX heading does. A fence
+  closes only on its own character at at least its own
+  length. A task list checkbox is syntax, stripped from
+  a rule's text. If the file ends inside a fence, the
+  parse completes and the proposal file carries a
+  warning naming the fence's line.
+- BP-8a. The proposal validator also refuses a proposal
+  whose kind is outside the stub's three, and evidence
+  that carries no quote.
