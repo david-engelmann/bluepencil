@@ -8,4 +8,4 @@ on it lands.
 - BP-1. Inputs are rules files such as CLAUDE.md and AGENTS.md, plus session transcripts. Nothing else is judged.
 - BP-2. Output includes per rule exercise and obedience counts, with the counting method stated.
 - BP-3. Proposals come in three kinds only, delete, rewrite with the misreading quoted, or promote. No other kind ships.
-- BP-4. Output is a diff for a human, never auto applied. Bluepencil judges the instructions, corked judges the code.
+- BP-4. Output is a diff for a human, never auto applied. Bluepencil judges the instructions, stickler judges the code.
