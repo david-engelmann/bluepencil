@@ -155,3 +155,47 @@ and BP-12 stand unchanged.
   target SHA-256 in full and the proposal counts by
   kind, in the order delete, rewrite, promote. Test,
   tests/test_diff.py.
+
+## Round 2 post-review amendments, recorded before the repairs
+
+- BP-13a. The malformed arm of BP-13 reaches every
+  field BP-8's document definition names. Each proposal
+  is an object carrying a rule id with no line break,
+  the rule's text, a kind of the three, an evidence
+  list whose items are objects with a kind of the three
+  observation kinds and a string quote, and a hunk
+  object of its kind's shape; a rewrite also carries a
+  string replacement. Each inventory entry is an object
+  carrying an id, the rule's text, its section, and its
+  line span. The target is a string of 64 hex
+  characters. Anything less is a named refusal, never
+  a traceback. The first implementation shape-checked
+  only the top level and the renderer indexed the rest;
+  the reviews drove fifteen traceback shapes through
+  it. Test, tests/test_diff.py.
+- BP-14a. The cross-check extends to the hunk. A
+  delete's hunk names the rule's section and text. A
+  rewrite's hunk names the section, the rule's text as
+  its old, and the replacement as its new. A promote's
+  hunk names the rule's section as its source, the
+  first section as its destination, and the rule's
+  text. A hunk that disagrees is a named refusal
+  naming the proposal; the first implementation
+  rendered a promote's destination on trust.
+  Test, tests/test_diff.py.
+- BP-15a. Nothing a proposal file carries can mint a
+  new line in the diff. Every interpolated value is
+  validated against a closed set (the kinds), cross
+  checked against the parsed file (sections, texts),
+  flattened (quotes), or refused (a rule id holding a
+  line break, caught by BP-13a). An unvalidated
+  evidence kind carrying a newline fabricated a whole
+  block in the red team's hands. The replacement's
+  lines are split on any line boundary, so no carriage
+  return rides a rendered line. Test,
+  tests/test_diff.py.
+- BP-16a. The output refusal of BP-16 and of propose
+  alike also fires when the output path names an input
+  by file identity, a hardlink, not only by resolved
+  path. Test, tests/test_diff.py and
+  tests/test_proposals.py.
