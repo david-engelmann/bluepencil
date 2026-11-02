@@ -34,7 +34,8 @@ def load_observations(path: Path) -> tuple[list[dict], list[dict]]:
     """
     try:
         document = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+    except (OSError, UnicodeDecodeError, ValueError,
+            RecursionError) as exc:
         raise ObservationError(
             f"cannot read observations {path}: {exc}") from exc
     if not isinstance(document, dict) or not isinstance(

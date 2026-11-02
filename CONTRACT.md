@@ -102,3 +102,100 @@ reviews, before the repair code)
 - BP-8a. The proposal validator also refuses a proposal
   whose kind is outside the stub's three, and evidence
   that carries no quote.
+
+## Round 2. The diff for a human (BP-13 to BP-17)
+
+Round 1 shipped the JSON proposal file; the stub's
+BP-4 also promises a diff for a human, and Round 1 did
+not build one. Round 2 builds it. The diff renders
+proposals for review; it applies nothing, and BP-4
+and BP-12 stand unchanged.
+
+- BP-13. The diff command takes a rules file and a
+  proposal file. The proposal file must name the rules
+  file by the SHA-256 of its bytes, as BP-8 requires,
+  and must pass the proposal validator; a mismatch, a
+  malformed proposal file, or an invalid one is a
+  named refusal with exit 1 and nothing rendered. The
+  rules file is parsed fresh, and a parse refusal is
+  the inventory's own. Test, tests/test_diff.py.
+- BP-14. Every proposal is cross-checked before
+  anything renders: its rule id exists in the proposal
+  file's inventory carrying the same text the proposal
+  carries, and the freshly parsed rules file holds a
+  rule at the same id with the same text and the same
+  section. Any mismatch is a named refusal naming the
+  proposal. The diff renders only what it can stand
+  over. Test, tests/test_diff.py.
+- BP-15. Rendering is per proposal, in proposal-file
+  order. A block names the rule id, the kind, and the
+  section path. A delete shows the rule's own file
+  lines, its line span, each prefixed with "- ". A
+  rewrite shows those lines and then the replacement
+  prefixed with "+ ", the original line's marker
+  carried onto the replacement's first line (a task
+  list checkbox is syntax, BP-5c, and is not carried).
+  A promote shows the rule's lines as a removal and
+  its header names the destination section. Each block
+  lists the proposal's evidence as context lines, kind
+  and quote, with newlines in a quote flattened to
+  spaces. The diff contains no rule and no file line
+  the proposals do not name. Test, tests/test_diff.py.
+- BP-16. The diff is text for a human, never an
+  applier: the command writes only the diff, to stdout
+  or to the path named by -o, never onto the rules
+  file or the proposal file, refused by name; the
+  write is atomic in the family's discipline and a
+  write failure is a named error with exit 1. Exit 0
+  when the diff renders, including an empty proposal
+  list, whose diff is its header and no blocks. Test,
+  tests/test_diff.py.
+- BP-17. The same rules file and proposal file
+  produce a byte-identical diff. The header states the
+  target SHA-256 in full and the proposal counts by
+  kind, in the order delete, rewrite, promote. Test,
+  tests/test_diff.py.
+
+## Round 2 post-review amendments, recorded before the repairs
+
+- BP-13a. The malformed arm of BP-13 reaches every
+  field BP-8's document definition names. Each proposal
+  is an object carrying a rule id with no line break,
+  the rule's text, a kind of the three, an evidence
+  list whose items are objects with a kind of the three
+  observation kinds and a string quote, and a hunk
+  object of its kind's shape; a rewrite also carries a
+  string replacement. Each inventory entry is an object
+  carrying an id, the rule's text, its section, and its
+  line span. The target is a string of 64 hex
+  characters. Anything less is a named refusal, never
+  a traceback. The first implementation shape-checked
+  only the top level and the renderer indexed the rest;
+  the reviews drove fifteen traceback shapes through
+  it. Test, tests/test_diff.py.
+- BP-14a. The cross-check extends to the hunk. A
+  delete's hunk names the rule's section and text. A
+  rewrite's hunk names the section, the rule's text as
+  its old, and the replacement as its new. A promote's
+  hunk names the rule's section as its source, the
+  first section as its destination, and the rule's
+  text. A hunk that disagrees is a named refusal
+  naming the proposal; the first implementation
+  rendered a promote's destination on trust.
+  Test, tests/test_diff.py.
+- BP-15a. Nothing a proposal file carries can mint a
+  new line in the diff. Every interpolated value is
+  validated against a closed set (the kinds), cross
+  checked against the parsed file (sections, texts),
+  flattened (quotes), or refused (a rule id holding a
+  line break, caught by BP-13a). An unvalidated
+  evidence kind carrying a newline fabricated a whole
+  block in the red team's hands. The replacement's
+  lines are split on any line boundary, so no carriage
+  return rides a rendered line. Test,
+  tests/test_diff.py.
+- BP-16a. The output refusal of BP-16 and of propose
+  alike also fires when the output path names an input
+  by file identity, a hardlink, not only by resolved
+  path. Test, tests/test_diff.py and
+  tests/test_proposals.py.

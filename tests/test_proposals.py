@@ -218,3 +218,17 @@ def test_an_unencodable_quote_is_a_named_write_error(capsys, tmp_path):
                  str(obs), "-o", str(tmp_path / "out.json")])
     assert code == 1
     assert "cannot write the proposal file" in capsys.readouterr().err
+
+
+def test_propose_refuses_a_hardlink_output(tmp_path, capsys):
+    import os
+    rules = tmp_path / "rules.md"
+    rules.write_bytes(RULES)
+    alias = tmp_path / "alias.md"
+    os.link(rules, alias)
+    assert main(["propose", str(rules),
+                 str(FIX / "observations_synthetic.json"),
+                 "-o", str(alias)]) == 1
+    assert "never writes to its inputs" in \
+        capsys.readouterr().err
+    assert rules.read_bytes() == RULES

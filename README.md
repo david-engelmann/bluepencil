@@ -10,18 +10,26 @@ The rules file is the most edited artifact in any agent setup, a fossil record o
 
 Round 1 is closed. The propose command parses a rules
 file into an inventory, joins the observations to it by
-exact rule text, and writes the proposal file. Later
-rounds work from the remaining contract backlog and the
-sibling formats as they pin.
+exact rule text, and writes the proposal file.
+
+Round 2 is closed. The diff command renders a proposal
+file against its rules file as a diff for a human, each
+proposal with the rule's own lines and its cited
+evidence, cross-checked against the inventory and the
+parsed file before anything renders, and applies
+nothing. Later rounds work from the remaining contract
+backlog and the sibling formats as they pin.
 
 ## Programme status
 
-- Closed perfection rounds, 1 of 100. A round counts only when a
+- Closed perfection rounds, 2 of 100. A round counts only when a
   full cycle of work, audit, review, red team, and approval has
   closed.
 - Contract, BP-1 to BP-12 with amendments BP-5a, BP-5b,
   BP-5c, BP-8a, and BP-10a, written ahead of the code and
-  met in Round 1.
+  met in Round 1. BP-13 to BP-17 with amendments
+  BP-13a, BP-14a, BP-15a, and BP-16a, written ahead of
+  the code and met in Round 2.
 - Local gate, python3 scripts/codepoint_scan.py and
   python3 -m pytest tests -q. CI runs the same commands.
 
