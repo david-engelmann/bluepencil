@@ -1,0 +1,23 @@
+{
+  "observations": [
+    {"rule": "Never force push to main", "kind": "ignored",
+     "quote": "session 12 force pushed after a rebase tangle"},
+    {"rule": "Never force push to main", "kind": "ignored",
+     "quote": "session 19 force pushed over a stale branch"},
+    {"rule": "Always run the local gate before pushing", "kind": "misreading",
+     "quote": "agent ran the gate after pushing, reading before as eventually"},
+    {"rule": "Always run the local gate before pushing", "kind": "followed",
+     "quote": "session 21 gate ran green before the push"},
+    {"rule": "Keep functions short", "kind": "followed",
+     "quote": "session 22 split the parser before review"},
+    {"rule": "Keep functions short", "kind": "followed",
+     "quote": "session 23 kept the new module under review size"},
+    {"rule": "A rule that was edited away last week", "kind": "ignored",
+     "quote": "session 9 did the old thing"}
+  ],
+  "rewrites": [
+    {"rule": "Always run the local gate before pushing",
+     "misreading_quote": "agent ran the gate after pushing, reading before as eventually",
+     "replacement": "Run the local gate and see it pass before any push happens"}
+  ]
+}
