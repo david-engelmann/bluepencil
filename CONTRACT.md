@@ -9,3 +9,60 @@ on it lands.
 - BP-2. Output includes per rule exercise and obedience counts, with the counting method stated.
 - BP-3. Proposals come in three kinds only, delete, rewrite with the misreading quoted, or promote. No other kind ships.
 - BP-4. Output is a diff for a human, never auto applied. Bluepencil judges the instructions, stickler judges the code.
+
+## Round 1. Rules inventory and evidence joined proposals (BP-5 to BP-12)
+
+Contract preparation only in this pass. The build opens
+when this repo's turn in the line's build order arrives.
+
+- BP-5. A rules file parses into an inventory: every
+  bullet or numbered line under a heading is a rule,
+  carrying an id by position, its section path, its exact
+  text, and its line span. Prose paragraphs are context,
+  never rules. The inventory covers the whole file or the
+  parse refuses by name; a rule is never silently dropped.
+  Test, tests/test_inventory.py.
+- BP-6. Evidence enters as an observations file, a JSON
+  document of observations, each naming a rule by its
+  exact text, a kind (misreading, ignored, or followed),
+  and a quote. An observation that matches no rule is
+  reported as unmatched, never silently attached to a
+  near miss. Matching is by exact text, so a rule edited
+  since the observation was taken is a new rule.
+  Test, tests/test_inventory.py.
+- BP-7. The inventory joined with the observations
+  carries, per rule, its exercise and obedience counts by
+  kind, with the counting method stated in the output, as
+  the stub's BP-2 requires. Test, tests/test_inventory.py.
+- BP-8. A proposal file is a JSON document naming the
+  rules file it targets by the SHA-256 of its bytes, and
+  a list of proposals. Each proposal names one rule, one
+  kind from the stub's three (delete, rewrite, promote),
+  the rule's text as it stands, and the observations it
+  rests on, quoted. A proposal resting on no observation
+  is invalid, and the validator names it.
+  Test, tests/test_proposals.py.
+- BP-9. A rewrite proposal additionally quotes the
+  misreading it answers, and its replacement text comes
+  from the observation set the operator supplies, never
+  invented by the tool. Round 1 generates no rewrite on
+  its own; it validates and carries the ones supplied.
+  Test, tests/test_proposals.py.
+- BP-10. Delete generation is mechanical: a rule with at
+  least two ignored observations and no followed
+  observation earns a delete proposal citing them.
+  Promote generation is mechanical: a rule in the second
+  half of the file by rule order, with at least two
+  followed observations, earns a promote proposal whose
+  hunk moves it to the first section. Below either
+  threshold, no proposal. Test, tests/test_proposals.py.
+- BP-11. The proposal file is deterministic: the same
+  rules file and observations produce byte-identical
+  output, rules and proposals in file order.
+  Test, tests/test_proposals.py.
+- BP-12. Bluepencil never writes to the rules file it
+  judges. Its only output is the proposal file, to the
+  path named on the command line or to stdout, and a
+  write failure is a named error with exit 1, in the
+  family's discipline. An apply mode does not exist in
+  Round 1. Test, tests/test_proposals.py.
