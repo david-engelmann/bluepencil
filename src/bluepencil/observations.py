@@ -7,8 +7,22 @@ from pathlib import Path
 KINDS = ("misreading", "ignored", "followed")
 
 
-class ObservationError(Exception):
+class ObservationError(ValueError):
     """A named refusal."""
+
+
+def _entries(document: dict, key: str) -> list:
+    entries = document.get(key, [])
+    if not isinstance(entries, list):
+        raise ObservationError(f"{key} must be a list")
+    return entries
+
+
+def _text_field(entry: dict, field: str, label: str) -> str:
+    value = entry.get(field)
+    if not isinstance(value, str) or not value:
+        raise ObservationError(f"{label} has no {field}")
+    return value
 
 
 def load_observations(path: Path) -> tuple[list[dict], list[dict]]:
@@ -29,40 +43,27 @@ def load_observations(path: Path) -> tuple[list[dict], list[dict]]:
             "observations file must be a JSON object with an "
             "observations list")
     observations = []
-    for i, entry in enumerate(document["observations"]):
+    for i, entry in enumerate(_entries(document, "observations")):
         if not isinstance(entry, dict):
             raise ObservationError(f"observation {i} is not an object")
-        rule, kind, quote = (entry.get("rule"), entry.get("kind"),
-                             entry.get("quote"))
-        if not isinstance(rule, str) or not rule:
-            raise ObservationError(
-                f"observation {i} names no rule text")
+        label = f"observation {i}"
+        kind = entry.get("kind")
         if kind not in KINDS:
             raise ObservationError(
-                f"observation {i} has unknown kind {kind!r}")
-        if not isinstance(quote, str) or not quote:
-            raise ObservationError(f"observation {i} has no quote")
-        observations.append({"rule": rule, "kind": kind,
-                             "quote": quote})
+                f"{label} has unknown kind {kind!r}")
+        observations.append({
+            "rule": _text_field(entry, "rule", label),
+            "kind": kind,
+            "quote": _text_field(entry, "quote", label)})
     rewrites = []
-    raw_rewrites = document.get("rewrites", [])
-    if not isinstance(raw_rewrites, list):
-        raise ObservationError("rewrites must be a list")
-    for i, entry in enumerate(raw_rewrites):
+    for i, entry in enumerate(_entries(document, "rewrites")):
         if not isinstance(entry, dict):
             raise ObservationError(f"rewrite {i} is not an object")
-        rule = entry.get("rule")
-        misreading = entry.get("misreading_quote")
-        replacement = entry.get("replacement")
-        if not isinstance(rule, str) or not rule:
-            raise ObservationError(f"rewrite {i} names no rule text")
-        if not isinstance(misreading, str) or not misreading:
-            raise ObservationError(
-                f"rewrite {i} quotes no misreading")
-        if not isinstance(replacement, str) or not replacement:
-            raise ObservationError(
-                f"rewrite {i} supplies no replacement text")
-        rewrites.append({"rule": rule,
-                         "misreading_quote": misreading,
-                         "replacement": replacement})
+        label = f"rewrite {i}"
+        rewrites.append({
+            "rule": _text_field(entry, "rule", label),
+            "misreading_quote": _text_field(
+                entry, "misreading_quote", label),
+            "replacement": _text_field(
+                entry, "replacement", label)})
     return observations, rewrites

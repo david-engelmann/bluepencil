@@ -13,7 +13,7 @@ COUNTING_METHOD = (
     "is flagged a duplicate")
 
 
-class ProposalError(Exception):
+class ProposalError(ValueError):
     """A named refusal."""
 
 
@@ -22,9 +22,9 @@ def join(rules: list[dict], observations: list[dict]):
 
     Returns (joined rules with counts, unmatched list).
     """
-    by_text: dict[str, list[dict]] = {}
-    for rule in rules:
-        by_text.setdefault(rule["text"], []).append(rule)
+    first_position: dict[str, int] = {}
+    for position, rule in enumerate(rules):
+        first_position.setdefault(rule["text"], position)
     joined = []
     seen_texts: dict[str, str] = {}
     for rule in rules:
@@ -37,14 +37,13 @@ def join(rules: list[dict], observations: list[dict]):
         else:
             seen_texts[rule["text"]] = rule["id"]
         joined.append(entry)
-    index = {id(rule): entry for rule, entry in zip(rules, joined)}
     unmatched = []
     for obs in observations:
-        targets = by_text.get(obs["rule"])
-        if not targets:
+        position = first_position.get(obs["rule"])
+        if position is None:
             unmatched.append(obs)
             continue
-        entry = index[id(targets[0])]
+        entry = joined[position]
         entry["observations"].append(obs)
         entry["counts"][obs["kind"]] += 1
         entry["counts"]["exercised"] += 1
@@ -125,15 +124,26 @@ def validate_proposals(document: dict) -> None:
     if len(target) != 64:
         raise ProposalError("proposal file names no target sha256")
     for proposal in document["proposals"]:
+        if proposal.get("kind") not in ("delete", "rewrite",
+                                        "promote"):
+            raise ProposalError(
+                f"proposal for {proposal.get('rule_id')} has "
+                f"unknown kind {proposal.get('kind')!r}")
         if not proposal.get("evidence"):
             raise ProposalError(
                 f"proposal for {proposal.get('rule_id')} rests "
                 "on no observation")
+        for item in proposal["evidence"]:
+            if not item.get("quote"):
+                raise ProposalError(
+                    f"proposal for {proposal.get('rule_id')} "
+                    "cites evidence with no quote")
 
 
 def build_document(rules_bytes: bytes, rules: list[dict],
                    observations: list[dict],
-                   rewrites: list[dict]) -> dict:
+                   rewrites: list[dict],
+                   warnings: list[str] | None = None) -> dict:
     joined, unmatched = join(rules, observations)
     proposals = generate(joined, rewrites)
     document = {
@@ -147,6 +157,7 @@ def build_document(rules_bytes: bytes, rules: list[dict],
             for entry in joined
         ],
         "unmatched_observations": unmatched,
+        "warnings": list(warnings or []),
         "proposals": proposals,
     }
     validate_proposals(document)
