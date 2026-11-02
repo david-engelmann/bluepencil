@@ -66,3 +66,20 @@ when this repo's turn in the line's build order arrives.
   write failure is a named error with exit 1, in the
   family's discipline. An apply mode does not exist in
   Round 1. Test, tests/test_proposals.py.
+
+## Round 1 amendment, parse clarifications (recorded before code)
+
+- BP-5a. A rule line appearing before the first heading
+  is a named refusal: it has no section path, and the
+  inventory will not invent one. Lines inside fenced
+  code blocks are never rules. An indented bullet or
+  numbered line is a rule in its own right, in document
+  order. A rule's text is its marker line plus any
+  indented continuation lines, and its span covers them.
+  Test, tests/test_inventory.py.
+- BP-10a. Second half by rule order means the rule at
+  zero-based index i of n rules qualifies when 2i is at
+  least n. The first section is the section holding the
+  first rule. A promote whose rule already sits in the
+  first section is no proposal at all. Test,
+  tests/test_proposals.py.
