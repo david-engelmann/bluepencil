@@ -1,5 +1,6 @@
-"""BP-12. The propose command. Bluepencil never writes
-to the rules file it judges."""
+"""BP-12, BP-13 to BP-17. The propose and diff commands.
+Bluepencil never writes to the files it judges or reads
+its evidence from."""
 from __future__ import annotations
 
 import argparse
@@ -31,12 +32,59 @@ def _write_atomically(path: Path, text: str) -> None:
         raise
 
 
+def _writes_to_input(out: Path, inputs) -> bool:
+    """True when the output names an input, by resolved
+    path or by file identity (BP-16a). A path that cannot
+    be resolved is treated as naming one."""
+    try:
+        resolved = out.resolve()
+        if any(resolved == path.resolve() for path in inputs):
+            return True
+        if out.exists():
+            return any(path.exists()
+                       and os.path.samefile(out, path)
+                       for path in inputs)
+    except (OSError, RuntimeError):
+        return True
+    return False
+
+
+def _emit(text: str, out, noun: str) -> int:
+    """Write text to stdout or atomically to out, in the
+    family's discipline. noun names the document in the
+    error text (a proposal, a diff)."""
+    try:
+        if out is None:
+            sys.stdout.write(text)
+            sys.stdout.flush()
+        else:
+            _write_atomically(out, text)
+    except (OSError, UnicodeEncodeError):
+        if out is not None:
+            print(f"error, cannot write the {noun} file, {out}",
+                  file=sys.stderr)
+        else:
+            print(f"error, cannot write the {noun} to stdout",
+                  file=sys.stderr)
+            # The broken stream would fail again at interpreter
+            # shutdown and mask this refusal with exit 120 and
+            # an ignored-exception dump, so it is replaced
+            # with a sink before returning.
+            try:
+                sys.stdout.close()
+            except OSError:
+                pass
+            sys.stdout = open(os.devnull, "w", encoding="utf-8")
+        return 1
+    return 0
+
+
 def _propose(args: argparse.Namespace) -> int:
     rules_path = Path(args.rules)
     observations_path = Path(args.observations)
     out = Path(args.output) if args.output else None
-    if out is not None and out.resolve() in (
-            rules_path.resolve(), observations_path.resolve()):
+    if out is not None and _writes_to_input(
+            out, (rules_path, observations_path)):
         print("error, bluepencil never writes to its inputs",
               file=sys.stderr)
         return 1
@@ -70,38 +118,15 @@ def _propose(args: argparse.Namespace) -> int:
         print(f"error, {exc}", file=sys.stderr)
         return 1
     text = json.dumps(document, indent=2, ensure_ascii=False) + "\n"
-    try:
-        if out is None:
-            sys.stdout.write(text)
-            sys.stdout.flush()
-        else:
-            _write_atomically(out, text)
-    except (OSError, UnicodeEncodeError):
-        if out is not None:
-            print(f"error, cannot write the proposal file, {out}",
-                  file=sys.stderr)
-        else:
-            print("error, cannot write the proposal to stdout",
-                  file=sys.stderr)
-            # The broken stream would fail again at interpreter
-            # shutdown and mask this refusal with exit 120 and
-            # an ignored-exception dump, so it is replaced
-            # with a sink before returning.
-            try:
-                sys.stdout.close()
-            except OSError:
-                pass
-            sys.stdout = open(os.devnull, "w", encoding="utf-8")
-        return 1
-    return 0
+    return _emit(text, out, "proposal")
 
 
 def _diff(args: argparse.Namespace) -> int:
     rules_path = Path(args.rules)
     proposals_path = Path(args.proposals)
     out = Path(args.output) if args.output else None
-    if out is not None and out.resolve() in (
-            rules_path.resolve(), proposals_path.resolve()):
+    if out is not None and _writes_to_input(
+            out, (rules_path, proposals_path)):
         print("error, bluepencil never writes to its inputs",
               file=sys.stderr)
         return 1
@@ -141,30 +166,7 @@ def _diff(args: argparse.Namespace) -> int:
             ProposalError) as exc:
         print(f"error, {exc}", file=sys.stderr)
         return 1
-    try:
-        if out is None:
-            sys.stdout.write(text)
-            sys.stdout.flush()
-        else:
-            _write_atomically(out, text)
-    except (OSError, UnicodeEncodeError):
-        if out is not None:
-            print(f"error, cannot write the diff file, {out}",
-                  file=sys.stderr)
-        else:
-            print("error, cannot write the diff to stdout",
-                  file=sys.stderr)
-            # The broken stream would fail again at interpreter
-            # shutdown and mask this refusal with exit 120 and
-            # an ignored-exception dump, so it is replaced
-            # with a sink before returning.
-            try:
-                sys.stdout.close()
-            except OSError:
-                pass
-            sys.stdout = open(os.devnull, "w", encoding="utf-8")
-        return 1
-    return 0
+    return _emit(text, out, "diff")
 
 
 def main(argv: list[str] | None = None) -> int:

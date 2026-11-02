@@ -144,3 +144,166 @@ def test_a_write_failure_is_a_named_error(tmp_path, capsys):
                  "-o", str(missing)]) == 1
     assert "cannot write the diff file" in \
         capsys.readouterr().err
+
+
+def test_malformed_documents_refuse_by_name():
+    import copy
+
+    from bluepencil.diff import load_proposals
+
+    def forged(mutate):
+        document = copy.deepcopy(build())
+        mutate(document)
+        return json.dumps(document).encode()
+
+    cases = [
+        lambda d: d["proposals"][0].pop("hunk"),
+        lambda d: d["proposals"][0].pop("replacement"),
+        lambda d: d["proposals"].__setitem__(0, "not an object"),
+        lambda d: d["proposals"][1]["evidence"][0].update(
+            kind="hallucinated"),
+        lambda d: d["proposals"][1]["evidence"][0].update(
+            kind="ignored\n## delete rule-9"),
+        lambda d: d["inventory"][0].pop("id"),
+        lambda d: d.update(target={"sha256": 42}),
+        lambda d: d["proposals"][0].update(
+            rule_id="rule-1\n## delete rule-9"),
+    ]
+    for mutate in cases:
+        with pytest.raises(DiffError):
+            load_proposals(forged(mutate))
+
+
+def test_a_forged_hunk_refuses_by_name():
+    import copy
+    document = copy.deepcopy(build())
+    document["proposals"][2]["hunk"]["to_section"] = ["Nowhere"]
+    with pytest.raises(DiffError, match="rule-7"):
+        render(document)
+    document = copy.deepcopy(build())
+    document["proposals"][1]["hunk"]["text"] = "Forged text"
+    with pytest.raises(DiffError, match="rule-2"):
+        render(document)
+    document = copy.deepcopy(build())
+    document["proposals"][0]["hunk"]["new"] = "Forged rewrite"
+    with pytest.raises(DiffError, match="rule-1"):
+        render(document)
+
+
+def test_the_inventory_check_stands_alone():
+    import copy
+    document = copy.deepcopy(build())
+    document["inventory"][1]["text"] = "Only the inventory moved"
+    with pytest.raises(DiffError, match="rule-2"):
+        render(document)
+
+
+def test_the_section_check_stands_alone():
+    import copy
+    rules = copy.deepcopy(parse_rules(RULES.decode())[0])
+    rules[1]["section"] = ["Elsewhere"]
+    with pytest.raises(DiffError, match="rule-2"):
+        render(build(), rules=rules)
+
+
+def test_the_cli_refusal_arms(tmp_path, capsys):
+    rules = tmp_path / "rules.md"
+    rules.write_bytes(RULES)
+    proposals = tmp_path / "proposals.json"
+
+    proposals.write_bytes(b"this is not json")
+    assert main(["diff", str(rules), str(proposals)]) == 1
+    assert "not JSON" in capsys.readouterr().err
+
+    import copy
+    document = copy.deepcopy(build())
+    document["proposals"][0]["evidence"] = []
+    proposals.write_text(json.dumps(document), encoding="utf-8")
+    assert main(["diff", str(rules), str(proposals)]) == 1
+    assert "rests on no observation" in \
+        capsys.readouterr().err
+
+    proposals.write_text(json.dumps(build()), encoding="utf-8")
+    rules.write_bytes(RULES + b"\n")
+    assert main(["diff", str(rules), str(proposals)]) == 1
+    assert "different rules file" in capsys.readouterr().err
+
+    bad_rules = tmp_path / "bad.md"
+    bad_rules.write_text("- Rule before any heading\n",
+                         encoding="utf-8")
+    bad_document = copy.deepcopy(build())
+    bad_document["target"]["sha256"] = hashlib.sha256(
+        bad_rules.read_bytes()).hexdigest()
+    proposals.write_text(json.dumps(bad_document),
+                         encoding="utf-8")
+    assert main(["diff", str(bad_rules),
+                 str(proposals)]) == 1
+    assert "outside any section" in capsys.readouterr().err
+
+
+CRAFTED = """# S
+
+1. First numbered rule
+   with a second line
+- [ ] Boxed rule to drop
+- [x] Boxed rule to rewrite
+"""
+
+
+def test_spans_markers_and_checkboxes_render():
+    rules_bytes = CRAFTED.encode()
+    rules = parse_rules(CRAFTED)[0]
+    observations = [
+        {"rule": "First numbered rule\nwith a second line",
+         "kind": "ignored", "quote": "q1"},
+        {"rule": "First numbered rule\nwith a second line",
+         "kind": "ignored", "quote": "q2"},
+        {"rule": "Boxed rule to drop", "kind": "ignored",
+         "quote": "q3"},
+        {"rule": "Boxed rule to drop", "kind": "ignored",
+         "quote": "q4"},
+        {"rule": "Boxed rule to rewrite", "kind": "misreading",
+         "quote": "read it as already done"},
+    ]
+    rewrites = [{"rule": "Boxed rule to rewrite",
+                 "misreading_quote": "read it as already done",
+                 "replacement": "Boxed rule, rewritten"}]
+    document = build_document(rules_bytes, rules,
+                              observations, rewrites)
+    sha = hashlib.sha256(rules_bytes).hexdigest()
+    expected = f"""bluepencil diff, 3 proposals (delete 2, rewrite 1, promote 0)
+target sha256 {sha}
+
+## delete rule-1 (S)
+- 1. First numbered rule
+-    with a second line
+  evidence, ignored, "q1"
+  evidence, ignored, "q2"
+
+## delete rule-2 (S)
+- - [ ] Boxed rule to drop
+  evidence, ignored, "q3"
+  evidence, ignored, "q4"
+
+## rewrite rule-3 (S)
+- - [x] Boxed rule to rewrite
++ - Boxed rule, rewritten
+  evidence, misreading, "read it as already done"
+"""
+    assert render_diff(CRAFTED.splitlines(), rules,
+                       document) == expected
+
+
+def test_a_hardlink_output_is_refused(tmp_path, capsys):
+    import os
+    rules = tmp_path / "rules.md"
+    rules.write_bytes(RULES)
+    proposals = tmp_path / "proposals.json"
+    proposals.write_text(json.dumps(build()), encoding="utf-8")
+    alias = tmp_path / "alias.md"
+    os.link(rules, alias)
+    assert main(["diff", str(rules), str(proposals),
+                 "-o", str(alias)]) == 1
+    assert "never writes to its inputs" in \
+        capsys.readouterr().err
+    assert rules.read_bytes() == RULES
