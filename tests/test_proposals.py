@@ -193,3 +193,28 @@ def test_a_first_half_rule_in_a_later_section_does_not_promote():
     # r2 is at index 1 of 6, first half, though outside the
     # first section: position alone must block the promote.
     assert build_document(b"-", rules, obs, [])["proposals"] == []
+
+
+def test_a_rules_file_with_a_bom_still_parses(tmp_path):
+    rules = tmp_path / "rules.md"
+    rules.write_bytes(b"\xef\xbb\xbf# S\n\n- A rule\n")
+    out = tmp_path / "out.json"
+    empty = tmp_path / "empty.json"
+    empty.write_text(json.dumps({"observations": []}))
+    assert main(["propose", str(rules), str(empty),
+                 "-o", str(out)]) == 0
+    document = json.loads(out.read_text())
+    assert document["inventory"][0]["text"] == "A rule"
+
+
+def test_an_unencodable_quote_is_a_named_write_error(capsys, tmp_path):
+    obs = tmp_path / "obs.json"
+    obs.write_text(json.dumps({"observations": [
+        {"rule": "Never force push to main", "kind": "ignored",
+         "quote": "bad \ud800 quote"},
+        {"rule": "Never force push to main", "kind": "ignored",
+         "quote": "fine quote"}]}))
+    code = main(["propose", str(FIX / "rules_synthetic.md"),
+                 str(obs), "-o", str(tmp_path / "out.json")])
+    assert code == 1
+    assert "cannot write the proposal file" in capsys.readouterr().err

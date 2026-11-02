@@ -53,7 +53,7 @@ def _propose(args: argparse.Namespace) -> int:
               file=sys.stderr)
         return 1
     try:
-        rules_text = rules_bytes.decode("utf-8")
+        rules_text = rules_bytes.decode("utf-8-sig")
     except UnicodeDecodeError:
         print(f"error, the rules file is not utf-8, {rules_path}",
               file=sys.stderr)
@@ -74,7 +74,7 @@ def _propose(args: argparse.Namespace) -> int:
             sys.stdout.flush()
         else:
             _write_atomically(out, text)
-    except OSError:
+    except (OSError, UnicodeEncodeError):
         if out is not None:
             print(f"error, cannot write the proposal file, {out}",
                   file=sys.stderr)
