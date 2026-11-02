@@ -112,7 +112,12 @@ def load_proposals(data: bytes) -> dict:
             from None
     try:
         document = json.loads(text)
-    except json.JSONDecodeError:
+    except (ValueError, RecursionError):
+        # JSONDecodeError is the common ValueError. A plain
+        # ValueError escapes for an integer literal past the
+        # interpreter's digit limit, and RecursionError for
+        # nesting past its stack. Both are the same refusal
+        # under BP-13a, never a traceback.
         raise DiffError("the proposal file is not JSON") \
             from None
     if not isinstance(document, dict) \

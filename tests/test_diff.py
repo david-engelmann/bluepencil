@@ -307,3 +307,20 @@ def test_a_hardlink_output_is_refused(tmp_path, capsys):
     assert "never writes to its inputs" in \
         capsys.readouterr().err
     assert rules.read_bytes() == RULES
+
+
+def test_the_json_loaders_refuse_every_decode_failure():
+    from bluepencil.diff import load_proposals
+    for payload in (b"1" * 5000,
+                    b"[" * 20000 + b"]" * 20000):
+        with pytest.raises(DiffError, match="not JSON"):
+            load_proposals(payload)
+
+
+def test_the_observations_loader_refuses_them_too(tmp_path):
+    from bluepencil.observations import (ObservationError,
+                                         load_observations)
+    path = tmp_path / "observations.json"
+    path.write_bytes(b"1" * 5000)
+    with pytest.raises(ObservationError):
+        load_observations(path)
