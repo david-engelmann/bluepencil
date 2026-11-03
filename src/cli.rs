@@ -176,7 +176,7 @@ fn parse_error(usage: &str, prog: &str, message: &str) -> ParseOutcome {
         // usage line migrates to stdout and its
         // error line is lost in the fallback stream;
         // the exit stays 2.
-        let _ = write_stdout(usage.as_bytes());
+        let _ = write_stdout(format!("{usage}\n").as_bytes());
         return ParseOutcome::Exit(2);
     }
     match write_stderr(text.as_bytes()) {
@@ -394,8 +394,15 @@ fn short_cluster(
             }
             None => {
                 // A letter the command does not know,
-                // after known letters: argparse reads
-                // the whole token as unrecognized.
+                // after known letters: where a help
+                // letter already stands in the cluster
+                // the help fires (argparse takes the
+                // help action as the cluster is read);
+                // otherwise argparse reads the whole
+                // token as unrecognized.
+                if help_pending {
+                    return ClusterFlow::Exit(print_help(spec.help));
+                }
                 return ClusterFlow::Extra;
             }
         }
@@ -439,10 +446,10 @@ fn parse_sub(command: &'static str, tokens: &[Token], top_extras: &[Text]) -> Pa
             continue;
         }
         if token.scalars == scalars_of("--") {
+            // The separator is consumed wherever it
+            // stands; what follows it is positional,
+            // and overflows to the extras on its own.
             separated = true;
-            if positionals.len() == spec.positionals.len() {
-                extras.push(token.text.clone());
-            }
             index += 1;
             continue;
         }
@@ -611,6 +618,17 @@ fn parse_top(tokens: &[Token]) -> ParseOutcome {
             );
         }
         if token.scalars[1] == 'h' as u32 {
+            if token.scalars.get(2) == Some(&('=' as u32)) {
+                let value = text_from_scalar(token, 3);
+                return parse_error(
+                    TOP_USAGE,
+                    "bluepencil",
+                    &format!(
+                        "argument -h/--help: ignored explicit argument {}",
+                        repr_text(&value)
+                    ),
+                );
+            }
             return print_help(TOP_HELP);
         }
         extras.push(token.text.clone());

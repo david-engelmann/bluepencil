@@ -116,11 +116,12 @@ fn decode_utf8(bytes: &[u8]) -> Result<String, DecodeFailure> {
                 byte: first,
             });
         }
-        let mut scalar = match len {
-            2 => (first as u32 & 0x1F) << 6 | (second as u32 & 0x3F),
-            3 => (first as u32 & 0x0F) << 12 | (second as u32 & 0x3F) << 6,
-            _ => (first as u32 & 0x07) << 18 | (second as u32 & 0x3F) << 12,
-        };
+        let mut scalar = (match len {
+            2 => first & 0x1F,
+            3 => first & 0x0F,
+            _ => first & 0x07,
+        }) as u32;
+        scalar = (scalar << 6) | (second as u32 & 0x3F);
         for offset in 2..len {
             if at + offset >= bytes.len() {
                 return Err(DecodeFailure {

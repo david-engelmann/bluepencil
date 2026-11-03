@@ -372,6 +372,14 @@ fn close_frame(frame: Frame) -> Value {
 /// decoded text's code points, the units the
 /// interpreter's positions count in.
 pub fn parse(source: &[u32]) -> Result<Value, JsonError> {
+    // A leading byte order mark is its own refusal
+    // in the interpreter, before any scanning.
+    if source.first() == Some(&0xFEFF) {
+        return Err(JsonError::Syntax {
+            msg: "Unexpected UTF-8 BOM (decode using utf-8-sig)",
+            pos: 0,
+        });
+    }
     let mut scanner = Scanner {
         chars: source,
         at: 0,
