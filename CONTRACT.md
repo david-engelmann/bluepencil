@@ -199,3 +199,100 @@ and BP-12 stand unchanged.
   by file identity, a hardlink, not only by resolved
   path. Test, tests/test_diff.py and
   tests/test_proposals.py.
+
+## Round 3. The Rust port (BP-18 to BP-26)
+
+Round 3 ports the tool to Rust. The Python on main at
+255d973 is the behavioral specification. The port is a
+reproduction, not a redesign, and every place where
+exact reproduction is impossible is a named deviation
+in the round dossier, never a silent approximation.
+
+- BP-18. The Rust crate reproduces the propose and
+  diff commands byte for byte across stdout, stderr,
+  exit codes, and written files, including refusal
+  order, argparse behavior, error text, and the crash
+  class where the Python dies without a named refusal.
+  Test, the three ported test files and the round's
+  differential harness.
+- BP-19. The crate is a library with a thin binary.
+  Its only external dependency is sha2, for the target
+  digest BP-8 names. No sibling crate is consumed,
+  because bluepencil reads no tape, record, or other
+  sibling format; the JSON readers stand in this crate.
+  No Python bindings ship, because the surface is a
+  process boundary CLI and its consumers use files and
+  stdout. Cargo tests are the primary suite.
+- BP-20. The rules parser follows CPython text
+  semantics exactly: the wide splitlines boundary set,
+  the marker shapes with CPython whitespace and decimal
+  digit sets, counts and spans in code points, and the
+  parser's decision order across fences, HTML comments,
+  setext headings, ATX headings, empty markers, rules,
+  continuations, and prose. The unclosed fence warning
+  is behavior. Test, tests/test_inventory.rs.
+- BP-21. Both JSON input surfaces use one strict
+  iterative reader over decoded text. Decisions happen
+  in text order. At the shipped CLI a container that
+  would open past 9994 nested containers refuses in
+  the surface's own way. Duplicate keys follow Python
+  dictionary assignment, the last value wins and the
+  first key position is retained. Integer literals
+  keep their exact digits, an integer literal past
+  4300 digits refuses in the surface's own way, and
+  NaN and the infinities read as floats.
+  Test, tests/test_proposals.rs and
+  tests/test_diff.rs.
+- BP-22. The observations loader reads its file as
+  UTF-8, with no BOM stripping at that surface. A
+  failure to read, decode, or parse is reported with
+  the CPython exception text the Python embeds,
+  including JSON syntax positions in line, column, and
+  character terms, the integer digit limit text, and
+  the recursion wording for the container kind that
+  crosses the reader limit. Validation then proceeds
+  in document order, with unknown kinds named by
+  CPython repr. Test, tests/test_inventory.rs and
+  tests/test_proposals.rs.
+- BP-23. Proposal generation keeps the Python's join
+  and generation order exactly: per rule, its delete,
+  then its supplied rewrites in document order, then
+  its promote; a rule text already served by a rewrite
+  is not served again; a rewrite naming no rule in the
+  file is refused with the name truncated to sixty
+  code points and rendered by CPython repr. The
+  proposal document keeps its field order exactly, and
+  its target is the SHA-256 of the rules file's raw
+  bytes. Test, tests/test_proposals.rs.
+- BP-24. The diff loader decodes the proposal file as
+  utf-8-sig and refuses every decode failure by name.
+  Shape checks run before the target check, the target
+  check before the fresh rules parse, and the renderer's
+  cross-checks before anything renders, in the Python's
+  order. Rendering keeps BP-15 exactly, including the
+  line boundary discipline of BP-15a.
+  Test, tests/test_diff.rs.
+- BP-25. The command line surface is argparse at
+  eighty columns, with help and usage pinned byte for
+  byte. An empty output value means stdout, as the
+  Python's own test of the value does. The output
+  guard compares resolved paths and file identity, and
+  a path that cannot be resolved counts as naming an
+  input. Writes are atomic in the mkstemp shape, a
+  sibling temporary with the output name and a dot as
+  its prefix, no suffix, and mode 0600, replaced on
+  success and unlinked on failure. The document text
+  is rendered before any temporary exists.
+  Test, tests/test_proposals.rs and
+  tests/test_diff.rs.
+- BP-26. All fifty-nine Python tests are ported file
+  for file to tests/test_inventory.rs,
+  tests/test_proposals.rs, and tests/test_diff.rs. A
+  differential harness runs the whole command surface
+  against the Python oracle, comparing exit codes,
+  streams, and files after every step. The round
+  dossier carries the port report: port or rewrite
+  with reasons, the Rust and Python line share on the
+  landing tree, the bindings determination, and a
+  complete non-Rust remainder register with a written
+  justification per item.
