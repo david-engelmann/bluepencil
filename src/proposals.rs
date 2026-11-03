@@ -15,15 +15,8 @@ exact rule text; a rule edited since an observation was taken is a new rule and 
 observation is unmatched; an observation naming a text carried by two rules attaches \
 to the first, and the later rule is flagged a duplicate";
 
-const KIND_INDEX: [(&str, usize); 3] = [("misreading", 0), ("ignored", 1), ("followed", 2)];
-
 fn kind_index(kind: &Text) -> usize {
-    for (name, index) in KIND_INDEX {
-        if kind == &Text::from_str(name) {
-            return index;
-        }
-    }
-    unreachable!("an observation kind is one of the three")
+    crate::observations::kind_index(kind).expect("an observation kind is one of the three")
 }
 
 fn section_value(section: &[Text]) -> Value {

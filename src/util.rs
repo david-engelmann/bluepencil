@@ -182,10 +182,12 @@ pub fn stderr_render(units: &[u16]) -> String {
 }
 
 /// A message under construction, held as text units
-/// so a name the Python inserts raw (a repository
-/// path, a rates key) keeps its exact units until the
-/// message is rendered for its destination: stderr
-/// renders backslashreplace, stdout surrogateescape.
+/// so a name the Python inserts raw (a rules,
+/// observations, or proposals path, a rule id, a
+/// supplied rewrite's rule name) keeps its exact
+/// units until the message is rendered for its
+/// destination: stderr renders backslashreplace,
+/// stdout surrogateescape.
 #[derive(Clone, Debug, PartialEq)]
 pub struct Msg(pub Vec<u16>);
 
@@ -288,12 +290,6 @@ pub(crate) fn py_is_space(scalar: u32) -> bool {
         | 0x202F
         | 0x205F
         | 0x3000)
-}
-
-/// The same set tested on a Rust char (the git read
-/// works on decoded strings).
-pub fn py_is_space_char(ch: char) -> bool {
-    py_is_space(ch as u32)
 }
 
 /// The strerror text for an OS error, from the
@@ -404,47 +400,6 @@ pub fn py_splitlines(units: &[u16]) -> Vec<Text> {
         lines.push(Text::from_units(units[start..].to_vec()));
     }
     lines
-}
-
-/// The unit range of a text with CPython's
-/// whitespace stripped from both ends, str.strip
-/// with no arguments: the range the stripped text
-/// occupies.
-pub fn strip_range(units: &[u16]) -> (usize, usize) {
-    let mut start = 0;
-    let mut end = units.len();
-    while start < end {
-        let (span, step) = step_at(units, start);
-        let scalar = match step {
-            Step::Scalar(scalar) => scalar,
-            Step::Lone(unit) => unit as u32,
-        };
-        if !py_is_space(scalar) {
-            break;
-        }
-        start += span;
-    }
-    while end > start {
-        // The step that ends at `end`: walk from the
-        // start to find it, as pairs read forward.
-        let mut index = start;
-        let mut last = start;
-        while index < end {
-            last = index;
-            let (span, _) = step_at(units, index);
-            index += span;
-        }
-        let (_, step) = step_at(units, last);
-        let scalar = match step {
-            Step::Scalar(scalar) => scalar,
-            Step::Lone(unit) => unit as u32,
-        };
-        if !py_is_space(scalar) {
-            break;
-        }
-        end = last;
-    }
-    (start, end)
 }
 
 /// The unit index at which a scalar index falls.

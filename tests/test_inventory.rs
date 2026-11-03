@@ -194,7 +194,11 @@ fn a_duplicate_text_is_flagged_and_counts_attach_to_the_first() {
 
 #[test]
 fn malformed_observations_refuse_by_name() {
-    let dir = std::env::temp_dir().join(format!("bp-inv-{}", std::process::id()));
+    let nanos = std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| d.as_nanos())
+        .unwrap_or(0);
+    let dir = std::env::temp_dir().join(format!("bp-inv-{}-{}", std::process::id(), nanos));
     std::fs::create_dir_all(&dir).expect("a temp dir");
     let bad = dir.join("bad.json");
     std::fs::write(

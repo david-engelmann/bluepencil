@@ -11,6 +11,17 @@ use crate::value::{Text, Value};
 
 pub const KINDS: [&str; 3] = ["misreading", "ignored", "followed"];
 
+/// A kind's position in the canonical KINDS order,
+/// the order the proposal counts array reads in.
+/// This is the one definition of the kind set's
+/// order; validation and counting both read it, so
+/// the two cannot drift apart.
+pub fn kind_index(kind: &Text) -> Option<usize> {
+    KINDS
+        .iter()
+        .position(|known| kind == &Text::from_str(known))
+}
+
 /// One observation, in the BP-6 shape: the rule's
 /// exact text, a kind, and a quote. Unheard consumes
 /// this shape, so its fields do not drift.
@@ -161,6 +172,25 @@ pub fn decode_utf8_sig(bytes: &[u8]) -> Option<String> {
     String::from_utf8(body.to_vec()).ok()
 }
 
+/// Universal-newline translation over the decoded
+/// text, matching the interpreter's text reading.
+fn translate_newlines(scalars: &[u32]) -> Vec<u32> {
+    let mut out = Vec::with_capacity(scalars.len());
+    let mut index = 0;
+    while index < scalars.len() {
+        if scalars[index] == 0x0D {
+            out.push(0x0A);
+            if scalars.get(index + 1) == Some(&0x0A) {
+                index += 1;
+            }
+        } else {
+            out.push(scalars[index]);
+        }
+        index += 1;
+    }
+    out
+}
+
 fn cannot_read(path: &std::path::Path, detail: &str) -> Failure {
     let display = crate::util::fsdecode_units(&crate::util::os_bytes(path.as_os_str()));
     let mut message = Msg::str("cannot read observations ");
@@ -214,6 +244,13 @@ pub fn load_observations(
         Err(failure) => return Err(cannot_read(path, &failure.describe())),
     };
     let scalars: Vec<u32> = text.chars().map(|ch| ch as u32).collect();
+    // read_text applies universal-newline
+    // translation before json.loads runs: a CR LF
+    // pair and a lone CR both become LF, and the
+    // positions the interpreter reports, in its
+    // syntax errors above all, are the translated
+    // text's positions.
+    let scalars = translate_newlines(&scalars);
     let document = match crate::json::parse(&scalars) {
         Ok(document) => document,
         Err(error) => return Err(cannot_read(path, &error.describe(&scalars))),

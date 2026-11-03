@@ -75,7 +75,7 @@ fn is_negative_number(rest: &[u32]) -> bool {
     }
 }
 
-fn scalars_of(text: &str) -> Vec<u32> {
+fn scalars_of_str(text: &str) -> Vec<u32> {
     text.chars().map(|ch| ch as u32).collect()
 }
 
@@ -117,7 +117,7 @@ enum LongMatch {
 fn match_long(name: &[u32], options: &[&'static str]) -> LongMatch {
     let mut candidates: Vec<&'static str> = Vec::new();
     for option in options {
-        let full = scalars_of(option);
+        let full = scalars_of_str(option);
         if full == name {
             return LongMatch::Exact(option);
         }
@@ -445,7 +445,7 @@ fn parse_sub(command: &'static str, tokens: &[Token], top_extras: &[Text]) -> Pa
             index += 1;
             continue;
         }
-        if token.scalars == scalars_of("--") {
+        if token.scalars == scalars_of_str("--") {
             // The separator is consumed wherever it
             // stands; what follows it is positional,
             // and overflows to the extras on its own.
@@ -574,7 +574,7 @@ fn parse_top(tokens: &[Token]) -> ParseOutcome {
         if token.scalars.len() >= 2
             && token.scalars[0] == '-' as u32
             && token.scalars[1] == '-' as u32
-            && token.scalars != scalars_of("--")
+            && token.scalars != scalars_of_str("--")
         {
             let (name, glued) = split_long(token);
             match match_long(name, &["--help"]) {
@@ -598,8 +598,8 @@ fn parse_top(tokens: &[Token]) -> ParseOutcome {
                 }
             }
         }
-        if token.scalars == scalars_of("--") || !option_shaped(token) {
-            if token.scalars == scalars_of("--") && index == tokens.len() - 1 {
+        if token.scalars == scalars_of_str("--") || !option_shaped(token) {
+            if token.scalars == scalars_of_str("--") && index == tokens.len() - 1 {
                 break;
             }
             for command in COMMANDS {
@@ -681,8 +681,16 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
 /// canonicalized, the rest is appended and then
 /// normalized lexically, a dot component dropping
 /// and a dot-dot popping the component before it,
-/// whatever kind of component that is.
-fn resolve_units(units: &[u16]) -> Vec<u16> {
+/// whatever kind of component that is. Resolution
+/// fails outright (None) where the interpreter's
+/// resolve raises: a symlink loop in any component,
+/// the ELOOP the kernel reports, which the output
+/// guard counts as naming an input (BP-16a).
+/// The kernel's symlink-loop errno on this
+/// platform family.
+const ELOOP: i32 = 40;
+
+fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
     let raw = crate::util::os_path_from_units(units);
     let absolute = if raw.is_absolute() {
         raw
@@ -700,6 +708,9 @@ fn resolve_units(units: &[u16]) -> Vec<u16> {
                     resolved.push(part);
                 }
                 break resolved;
+            }
+            Err(error) if error.raw_os_error() == Some(ELOOP) => {
+                return None;
             }
             Err(_) => {
                 let last = prefix.components().next_back();
@@ -736,17 +747,25 @@ fn resolve_units(units: &[u16]) -> Vec<u16> {
         }
         out.extend_from_slice(part);
     }
-    crate::util::text_from_scalars(&out).units().to_vec()
+    Some(crate::util::text_from_scalars(&out).units().to_vec())
 }
 
 /// BP-16a: true when the output names an input, by
 /// resolved path or by file identity. A path that
 /// cannot be resolved is treated as naming one.
 fn writes_to_input(out: &[u16], inputs: &[Vec<u16>]) -> bool {
-    let resolved_out = resolve_units(out);
+    let resolved_out = match resolve_units(out) {
+        Some(resolved) => resolved,
+        None => return true,
+    };
     for input in inputs {
-        if resolve_units(input) == resolved_out {
-            return true;
+        match resolve_units(input) {
+            Some(resolved) => {
+                if resolved == resolved_out {
+                    return true;
+                }
+            }
+            None => return true,
         }
     }
     let out_path = crate::util::os_path_from_units(out);
@@ -868,9 +887,13 @@ fn emit(
 
 fn cannot_write(out: Option<&Text>, noun: &str) -> i32 {
     match out {
+        // The interpreter formats the output as a
+        // Path, so the name in this message is the
+        // pathlib-normalized form, not the raw
+        // argument.
         Some(text) => report_error(&format!(
             "error, cannot write the {noun} file, {}",
-            stderr_render(text.units())
+            stderr_render(&normalize_path(text.units()))
         )),
         None => report_error(&format!("error, cannot write the {noun} to stdout")),
     }
@@ -900,34 +923,64 @@ fn path_error(prefix: &str, units: &[u16]) -> i32 {
     1
 }
 
-fn propose(parsed: &SubParsed) -> i32 {
+/// The preamble both commands share: the output
+/// value extracted, the output guard run over both
+/// inputs, the existence checks in order, and the
+/// rules file read and decoded. The commands
+/// differ only in the second input's noun and in
+/// what they load from it afterwards.
+struct Preamble {
+    output: Option<Text>,
+    second_arg: Vec<u16>,
+    rules_bytes: Vec<u8>,
+    rules_text: Text,
+}
+
+fn preamble(parsed: &SubParsed, second_noun: &str) -> Result<Preamble, i32> {
     let rules_arg = normalize_path(parsed.positionals[0].units());
-    let observations_arg = normalize_path(parsed.positionals[1].units());
+    let second_arg = normalize_path(parsed.positionals[1].units());
     let output = parsed
         .get_text("--output")
         .filter(|text| !text.units().is_empty());
     if let Some(out) = &output {
-        if writes_to_input(out.units(), &[rules_arg.clone(), observations_arg.clone()]) {
-            return named_error("bluepencil never writes to its inputs");
+        if writes_to_input(out.units(), &[rules_arg.clone(), second_arg.clone()]) {
+            return Err(named_error("bluepencil never writes to its inputs"));
         }
     }
     let rules_path = crate::util::os_path_from_units(&rules_arg);
-    let observations_path = crate::util::os_path_from_units(&observations_arg);
+    let second_path = crate::util::os_path_from_units(&second_arg);
     if !rules_path.is_file() {
-        return path_error("no such rules file", &rules_arg);
+        return Err(path_error("no such rules file", &rules_arg));
     }
-    if !observations_path.is_file() {
-        return path_error("no such observations file", &observations_arg);
+    if !second_path.is_file() {
+        return Err(path_error(
+            &format!("no such {second_noun} file"),
+            &second_arg,
+        ));
     }
     let rules_bytes = match std::fs::read(&rules_path) {
         Ok(bytes) => bytes,
-        Err(_) => return path_error("cannot read the rules file", &rules_arg),
+        Err(_) => return Err(path_error("cannot read the rules file", &rules_arg)),
     };
     let rules_text = match decode_utf8_sig(&rules_bytes) {
         Some(text) => Text::from_str(&text),
-        None => return path_error("the rules file is not utf-8", &rules_arg),
+        None => return Err(path_error("the rules file is not utf-8", &rules_arg)),
     };
-    let (rules, warnings) = match parse_rules(&rules_text) {
+    Ok(Preamble {
+        output,
+        second_arg,
+        rules_bytes,
+        rules_text,
+    })
+}
+
+fn propose(parsed: &SubParsed) -> i32 {
+    let pre = match preamble(parsed, "observations") {
+        Ok(pre) => pre,
+        Err(code) => return code,
+    };
+    let observations_path = crate::util::os_path_from_units(&pre.second_arg);
+    let (rules, warnings) = match parse_rules(&pre.rules_text) {
         Ok(pair) => pair,
         Err(failure) => return report_failure(failure),
     };
@@ -936,7 +989,7 @@ fn propose(parsed: &SubParsed) -> i32 {
         Err(failure) => return report_failure(failure),
     };
     let document = match crate::proposals::build_document(
-        &rules_bytes,
+        &pre.rules_bytes,
         &rules,
         &observations,
         &rewrites,
@@ -945,53 +998,38 @@ fn propose(parsed: &SubParsed) -> i32 {
         Ok(document) => document,
         Err(failure) => return report_failure(failure),
     };
-    let mode = if output.is_some() {
+    let mode = if pre.output.is_some() {
         Mode::Strict
     } else {
         Mode::Stdout
     };
-    emit(dumps_document(&document, mode), output.as_ref(), "proposal")
+    emit(
+        dumps_document(&document, mode),
+        pre.output.as_ref(),
+        "proposal",
+    )
 }
 
 fn diff(parsed: &SubParsed) -> i32 {
-    let rules_arg = normalize_path(parsed.positionals[0].units());
-    let proposals_arg = normalize_path(parsed.positionals[1].units());
-    let output = parsed
-        .get_text("--output")
-        .filter(|text| !text.units().is_empty());
-    if let Some(out) = &output {
-        if writes_to_input(out.units(), &[rules_arg.clone(), proposals_arg.clone()]) {
-            return named_error("bluepencil never writes to its inputs");
-        }
-    }
-    let rules_path = crate::util::os_path_from_units(&rules_arg);
-    let proposals_path = crate::util::os_path_from_units(&proposals_arg);
-    if !rules_path.is_file() {
-        return path_error("no such rules file", &rules_arg);
-    }
-    if !proposals_path.is_file() {
-        return path_error("no such proposals file", &proposals_arg);
-    }
-    let rules_bytes = match std::fs::read(&rules_path) {
-        Ok(bytes) => bytes,
-        Err(_) => return path_error("cannot read the rules file", &rules_arg),
+    let pre = match preamble(parsed, "proposals") {
+        Ok(pre) => pre,
+        Err(code) => return code,
     };
-    let rules_text = match decode_utf8_sig(&rules_bytes) {
-        Some(text) => Text::from_str(&text),
-        None => return path_error("the rules file is not utf-8", &rules_arg),
-    };
+    let rules_bytes = &pre.rules_bytes;
+    let rules_text = &pre.rules_text;
+    let proposals_path = crate::util::os_path_from_units(&pre.second_arg);
     let proposals_bytes = match std::fs::read(&proposals_path) {
         Ok(bytes) => bytes,
-        Err(_) => return path_error("cannot read the proposals file", &proposals_arg),
+        Err(_) => return path_error("cannot read the proposals file", &pre.second_arg),
     };
     let document = match crate::diff::load_proposals(&proposals_bytes) {
         Ok(document) => document,
         Err(failure) => return report_failure(failure),
     };
-    if let Err(failure) = crate::diff::check_target(&rules_bytes, &document) {
+    if let Err(failure) = crate::diff::check_target(rules_bytes, &document) {
         return report_failure(failure);
     }
-    let (rules, _warnings) = match parse_rules(&rules_text) {
+    let (rules, _warnings) = match parse_rules(rules_text) {
         Ok(pair) => pair,
         Err(failure) => return report_failure(failure),
     };
@@ -1000,12 +1038,12 @@ fn diff(parsed: &SubParsed) -> i32 {
         Ok(text) => text,
         Err(failure) => return report_failure(failure),
     };
-    let mode = if output.is_some() {
+    let mode = if pre.output.is_some() {
         Mode::Strict
     } else {
         Mode::Stdout
     };
-    emit(encode_text(&text, mode), output.as_ref(), "diff")
+    emit(encode_text(&text, mode), pre.output.as_ref(), "diff")
 }
 
 fn os_error_text(err: &std::io::Error) -> String {

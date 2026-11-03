@@ -14,7 +14,6 @@ use crate::util::Msg;
 use crate::value::{Text, Value};
 
 const KINDS: [&str; 3] = ["delete", "rewrite", "promote"];
-const EVIDENCE_KINDS: [&str; 3] = ["misreading", "ignored", "followed"];
 
 fn get_str<'a>(value: &'a Value, key: &str) -> Option<&'a Text> {
     match value.get(key) {
@@ -99,7 +98,7 @@ fn check_proposal(proposal: &Value) -> Result<(), Failure> {
     for item in evidence {
         let shaped = matches!(item, Value::Object(_))
             && matches!(get_str(item, "kind"), Some(kind)
-                if EVIDENCE_KINDS.iter().any(|known| kind == &Text::from_str(known)))
+                if crate::observations::kind_index(kind).is_some())
             && get_str(item, "quote").is_some();
         if !shaped {
             return Err(named_with_id(

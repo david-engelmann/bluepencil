@@ -63,13 +63,6 @@ impl Value {
         }
     }
 
-    pub fn as_object(&self) -> Option<&Vec<(Text, Value)>> {
-        match self {
-            Value::Object(entries) => Some(entries),
-            _ => None,
-        }
-    }
-
     pub fn as_array(&self) -> Option<&Vec<Value>> {
         match self {
             Value::Array(items) => Some(items),
