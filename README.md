@@ -22,16 +22,19 @@ backlog and the sibling formats as they pin.
 
 ## Programme status
 
-- Closed perfection rounds, 2 of 100. A round counts only when a
+- Closed perfection rounds, 3 of 100. A round counts only when a
   full cycle of work, audit, review, red team, and approval has
   closed.
 - Contract, BP-1 to BP-12 with amendments BP-5a, BP-5b,
   BP-5c, BP-8a, and BP-10a, written ahead of the code and
   met in Round 1. BP-13 to BP-17 with amendments
   BP-13a, BP-14a, BP-15a, and BP-16a, written ahead of
-  the code and met in Round 2.
+  the code and met in Round 2. BP-18 to BP-26, the Rust
+  port obligations, written ahead of the port and met in
+  Round 3.
 - Local gate, python3 scripts/codepoint_scan.py and
-  python3 -m pytest tests -q. CI runs the same commands.
+  cargo test. CI runs the same commands, with fmt and
+  clippy ahead of the tests.
 
 ## Licence
 
