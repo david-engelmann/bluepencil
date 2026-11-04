@@ -691,12 +691,24 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
 /// component a following dot-dot cancels never
 /// survives into the finished path, and the
 /// interpreter resolves those spellings cleanly
-/// (BP-27). A dangling final link is read for its
+/// (BP-27). A dangling final link hands over its
 /// target spelling before any of this (see
-/// dangling_target).
+/// dangling_target), and a chain still dangling
+/// at the kernel's link bound fails outright,
+/// like a loop (BP-27a).
 /// The kernel's symlink-loop errno on this
 /// platform family.
 const ELOOP: i32 = 40;
+
+/// The rest of pathlib's exists() ignore set
+/// (BP-27a): the errnos a stat may fail with that
+/// the interpreter reads as absence. A stat
+/// failing any other way is raised by exists(),
+/// and the output guard counts the raise as
+/// naming an input.
+const ENOENT: i32 = 2;
+const ENOTDIR: i32 = 20;
+const EBADF: i32 = 9;
 
 fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
     let raw = crate::util::os_path_from_units(units);
@@ -707,7 +719,11 @@ fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
             .unwrap_or_else(|_| std::path::PathBuf::from("/"))
             .join(raw)
     };
-    let absolute = dangling_target(&spelled).unwrap_or(spelled);
+    let absolute = match dangling_target(&spelled) {
+        Dangling::Spelled => spelled,
+        Dangling::Subject(subject) => subject,
+        Dangling::Unresolvable => return None,
+    };
     let mut prefix = absolute.clone();
     let mut tail: Vec<std::ffi::OsString> = Vec::new();
     let resolved = loop {
@@ -760,30 +776,75 @@ fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
     Some(finished)
 }
 
+/// How a spelled path's dangling final link hands
+/// the resolution its subject (BP-27, BP-27a).
+enum Dangling {
+    /// No dangling final link: the resolution
+    /// proceeds on the spelled path itself.
+    Spelled,
+    /// The resolution proceeds on this spelling:
+    /// the target spelling of the dangling link,
+    /// or of the last link of a dangling chain.
+    Subject(std::path::PathBuf),
+    /// The chain is still dangling at the kernel's
+    /// link bound: the path counts as unresolvable.
+    Unresolvable,
+}
+
+/// The kernel's bound on the symlink traversals
+/// one resolution performs: a dangling chain
+/// still unresolvable at the bound counts as
+/// naming an input (BP-27a), as the interpreter's
+/// resolve raises on the chain.
+const MAX_SPLICES: u32 = 40;
+
 /// The subject a dangling final link hands the
 /// resolution (BP-27): where the spelled path's
 /// final component is a symlink whose target
-/// cannot be canonicalized (the target does not
-/// exist as spelled), realpath reads the target
-/// spelling and proceeds on it resolved against
-/// the link's parent, popping a missing component
-/// in the spelling lexically, so the spelling can
-/// land on an input the spelled path never names.
-/// The peel alone would peel the link's own name
-/// and lose the target entirely. Anything else
-/// (no final link, or a target that resolves)
-/// leaves the resolution on the spelled path.
-fn dangling_target(spelled: &std::path::Path) -> Option<std::path::PathBuf> {
-    let meta = std::fs::symlink_metadata(spelled).ok()?;
-    if !meta.file_type().is_symlink() {
-        return None;
+/// cannot be canonicalized (the target may not
+/// exist as spelled, may pass through a missing
+/// component, may sit behind an unsearchable
+/// prefix, or may itself loop), realpath reads
+/// the target spelling and proceeds on it
+/// resolved against the link's parent, popping a
+/// missing component in the spelling lexically,
+/// so the spelling can land on an input the
+/// spelled path never names. The peel alone would
+/// peel the link's own name and lose the target
+/// entirely. The splice iterates (BP-27a): where
+/// the substituted spelling itself ends in a
+/// dangling link, that link's target spelling is
+/// spliced in turn, up to the kernel's link
+/// bound. Anything else (no final link, or a
+/// target that canonicalizes) leaves the
+/// resolution on the spelled path, whose own
+/// canonicalize follows the whole chain.
+fn dangling_target(spelled: &std::path::Path) -> Dangling {
+    let mut subject = spelled.to_path_buf();
+    let mut splices = 0;
+    while let Ok(meta) = std::fs::symlink_metadata(&subject) {
+        if !meta.file_type().is_symlink() || std::fs::canonicalize(&subject).is_ok() {
+            break;
+        }
+        if splices == MAX_SPLICES {
+            return Dangling::Unresolvable;
+        }
+        let target = match std::fs::read_link(&subject) {
+            Ok(target) => target,
+            Err(_) => break,
+        };
+        let parent = match subject.parent() {
+            Some(parent) => parent.to_path_buf(),
+            None => break,
+        };
+        subject = parent.join(&target);
+        splices += 1;
     }
-    let target = std::fs::read_link(spelled).ok()?;
-    let subject = spelled.parent()?.join(&target);
-    if std::fs::canonicalize(&subject).is_ok() {
-        return None;
+    if subject.as_path() == spelled {
+        Dangling::Spelled
+    } else {
+        Dangling::Subject(subject)
     }
-    Some(subject)
 }
 
 /// True where the finished path passes through a
@@ -810,9 +871,37 @@ fn path_loops(units: &[u16]) -> bool {
     false
 }
 
+/// How a spelled path stands to a stat, in the
+/// terms the oracle's guard asks the question
+/// (BP-27a): pathlib's exists() reports a standing
+/// path, reads a failure in its ignore set as
+/// absence, and raises any other failure, an
+/// unsearchable directory on the path (EACCES)
+/// being the probed instance.
+enum GuardStat {
+    Exists,
+    Absent,
+    Failed,
+}
+
+fn guard_stat(path: &std::path::Path) -> GuardStat {
+    match std::fs::metadata(path) {
+        Ok(_) => GuardStat::Exists,
+        Err(error) => match error.raw_os_error() {
+            Some(ENOENT) | Some(ENOTDIR) | Some(EBADF) | Some(ELOOP) => GuardStat::Absent,
+            _ => GuardStat::Failed,
+        },
+    }
+}
+
 /// BP-16a: true when the output names an input, by
 /// resolved path or by file identity. A path that
 /// cannot be resolved is treated as naming one.
+/// The guard mirrors the oracle's call structure:
+/// one guard covers resolve() and exists()
+/// together, so a stat the interpreter raises on,
+/// the output's or an input's, counts as naming
+/// an input (BP-27a).
 fn writes_to_input(out: &[u16], inputs: &[Vec<u16>]) -> bool {
     let resolved_out = match resolve_units(out) {
         Some(resolved) => resolved,
@@ -829,21 +918,31 @@ fn writes_to_input(out: &[u16], inputs: &[Vec<u16>]) -> bool {
         }
     }
     let out_path = crate::util::os_path_from_units(out);
-    if out_path.exists() {
-        for input in inputs {
-            let input_path = crate::util::os_path_from_units(input);
-            if input_path.exists() {
-                #[cfg(unix)]
-                {
-                    use std::os::unix::fs::MetadataExt;
-                    let left = std::fs::metadata(&out_path);
-                    let right = std::fs::metadata(&input_path);
-                    if let (Ok(left), Ok(right)) = (left, right) {
-                        if left.dev() == right.dev() && left.ino() == right.ino() {
-                            return true;
-                        }
+    match guard_stat(&out_path) {
+        GuardStat::Failed => return true,
+        GuardStat::Absent => return false,
+        GuardStat::Exists => {}
+    }
+    for input in inputs {
+        let input_path = crate::util::os_path_from_units(input);
+        match guard_stat(&input_path) {
+            GuardStat::Failed => return true,
+            GuardStat::Absent => continue,
+            GuardStat::Exists => {}
+        }
+        #[cfg(unix)]
+        {
+            use std::os::unix::fs::MetadataExt;
+            // os.path.samefile stats both paths and
+            // raises on a failure, which the guard
+            // counts as naming an input.
+            match (std::fs::metadata(&out_path), std::fs::metadata(&input_path)) {
+                (Ok(left), Ok(right)) => {
+                    if left.dev() == right.dev() && left.ino() == right.ino() {
+                        return true;
                     }
                 }
+                _ => return true,
             }
         }
     }
