@@ -683,22 +683,31 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
 /// and a dot-dot popping the component before it,
 /// whatever kind of component that is. Resolution
 /// fails outright (None) where the interpreter's
-/// resolve raises: a symlink loop in any component,
-/// the ELOOP the kernel reports, which the output
-/// guard counts as naming an input (BP-16a).
+/// resolve raises: where the finished path passes
+/// through a symlink loop, which the output guard
+/// counts as naming an input (BP-16a). The loop is
+/// judged on the finished path, not on the
+/// spellings the peel tries along the way: a loop
+/// component a following dot-dot cancels never
+/// survives into the finished path, and the
+/// interpreter resolves those spellings cleanly
+/// (BP-27). A dangling final link is read for its
+/// target spelling before any of this (see
+/// dangling_target).
 /// The kernel's symlink-loop errno on this
 /// platform family.
 const ELOOP: i32 = 40;
 
 fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
     let raw = crate::util::os_path_from_units(units);
-    let absolute = if raw.is_absolute() {
+    let spelled = if raw.is_absolute() {
         raw
     } else {
         std::env::current_dir()
             .unwrap_or_else(|_| std::path::PathBuf::from("/"))
             .join(raw)
     };
+    let absolute = dangling_target(&spelled).unwrap_or(spelled);
     let mut prefix = absolute.clone();
     let mut tail: Vec<std::ffi::OsString> = Vec::new();
     let resolved = loop {
@@ -708,9 +717,6 @@ fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
                     resolved.push(part);
                 }
                 break resolved;
-            }
-            Err(error) if error.raw_os_error() == Some(ELOOP) => {
-                return None;
             }
             Err(_) => {
                 let last = prefix.components().next_back();
@@ -747,7 +753,61 @@ fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
         }
         out.extend_from_slice(part);
     }
-    Some(crate::util::text_from_scalars(&out).units().to_vec())
+    let finished = crate::util::text_from_scalars(&out).units().to_vec();
+    if path_loops(&finished) {
+        return None;
+    }
+    Some(finished)
+}
+
+/// The subject a dangling final link hands the
+/// resolution (BP-27): where the spelled path's
+/// final component is a symlink whose target
+/// cannot be canonicalized (the target does not
+/// exist as spelled), realpath reads the target
+/// spelling and proceeds on it resolved against
+/// the link's parent, popping a missing component
+/// in the spelling lexically, so the spelling can
+/// land on an input the spelled path never names.
+/// The peel alone would peel the link's own name
+/// and lose the target entirely. Anything else
+/// (no final link, or a target that resolves)
+/// leaves the resolution on the spelled path.
+fn dangling_target(spelled: &std::path::Path) -> Option<std::path::PathBuf> {
+    let meta = std::fs::symlink_metadata(spelled).ok()?;
+    if !meta.file_type().is_symlink() {
+        return None;
+    }
+    let target = std::fs::read_link(spelled).ok()?;
+    let subject = spelled.parent()?.join(&target);
+    if std::fs::canonicalize(&subject).is_ok() {
+        return None;
+    }
+    Some(subject)
+}
+
+/// True where the finished path passes through a
+/// symlink loop: canonicalizing its own prefixes
+/// one component at a time meets ELOOP. A prefix
+/// that does not exist ends the walk, as the rest
+/// of the path is a lexical tail no loop can hide
+/// in; a prefix failing any other way (an
+/// unsearchable directory, say) ends it too, the
+/// peel above having treated it the same way.
+fn path_loops(units: &[u16]) -> bool {
+    let path = crate::util::os_path_from_units(units);
+    let mut prefix = std::path::PathBuf::from("/");
+    for component in path.components() {
+        if let std::path::Component::Normal(name) = component {
+            prefix.push(name);
+            match std::fs::canonicalize(&prefix) {
+                Ok(_) => {}
+                Err(error) if error.raw_os_error() == Some(ELOOP) => return true,
+                Err(_) => break,
+            }
+        }
+    }
+    false
 }
 
 /// BP-16a: true when the output names an input, by
