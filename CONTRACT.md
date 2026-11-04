@@ -296,3 +296,46 @@ in the round dossier, never a silent approximation.
   landing tree, the bindings determination, and a
   complete non-Rust remainder register with a written
   justification per item.
+- BP-27. Round 4 brings this resolver to the
+  finished-path standard its siblings reached.
+  Two shapes are probed at the oracle first, and
+  the port takes the outcome the oracle dictates
+  on each: (a) the cancelled loop, an output
+  spelling whose loop component is cancelled by
+  a following ".." (pathlib resolves it cleanly;
+  a resolver that judges the loop during its
+  walk refuses it falsely); (b) the dangling
+  final component, an output symlink whose
+  target does not exist, where realpath resolves
+  the target spelling against the link's parent
+  (retroforge's RF-25a shape). Where the port
+  diverges, it is repaired in wallofwrong's
+  WW-25a detection shape (the loop judged on the
+  finished path's prefixes) or retroforge's
+  dangling shape, with harness cells on both the
+  refusing and agreeing sides and a control run
+  proving each new cell discriminates.
+- BP-28. The round's verification is the full
+  local gate plus the differential harness at
+  zero failures, BP-27 cells included.
+  CodeRabbit's advisory pass on Round 3's PR 5
+  posted no findings (zero entries on the review
+  endpoints), so no disposition is owed from it.
+- BP-27a. Amendment, from the Round 4 red team.
+  The dangling splice iterates: where the
+  substituted target spelling itself ends in a
+  dangling link, splice again, up to the
+  kernel's 40 link bound; a chain still
+  unresolvable at the bound counts as naming an
+  input under BP-25. And the guard gains the
+  oracle's exists arm: _writes_to_input wraps
+  the output's exists() in the same try as its
+  resolve(), and pathlib exists() propagates
+  errnos outside {ENOENT, ENOTDIR, EBADF,
+  ELOOP}, so an output whose stat fails that
+  way (an unsearchable directory on its path is
+  the probed instance) counts as naming an
+  input. Mirror the oracle function's call
+  structure from its source, and pin both arms
+  with harness cells whose control evidence
+  discriminates.
