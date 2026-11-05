@@ -449,3 +449,51 @@ in the round dossier, never a silent approximation.
   diff alike; the control run against the
   pre-repair binary fails exactly the convicted
   cells and passes the agreeing ones.
+- BP-37. Round 6 probes the temp placement law
+  at this crate's write seam, the family
+  measured in secondbill's Round 5,
+  retroforge's Round 6, and wallofwrong's
+  Round 6, and which this crate's seam
+  predates. The oracle's write creates its
+  temp through tempfile.mkstemp on the one
+  constructed Path the preamble hands to both
+  guard and write (BP-34), and mkstemp
+  absolutizes the parent lexically (cwd join,
+  then normpath, no link resolution); this
+  crate's write creates its temp under the
+  constructed parent as spelled. The probe
+  set is the popped-link family at both
+  commands that write (propose and diff): an
+  output whose parent contains a symlink
+  component that a following dotdot pops,
+  across the existence boundary (the lexical
+  parent exists as a directory, neither
+  parent exists, the popped component is a
+  real directory), in plain, tailed,
+  absolute, deep, and escape-link spellings,
+  each measured against the oracle before any
+  repair is written. This crate's guard
+  counts an unresolvable output as naming an
+  input (BP-25), so the probes also record
+  whether the guard fires before the write
+  seam is reached on each shape, and a shape
+  the guard refuses on both sides is an
+  agreement, not a write-seam cell. Repairs
+  follow the measurements under new clauses;
+  the harness gains the proven cells with
+  controls against the pre-repair binary
+  failing exactly the convicted cells,
+  boundary pins ordered before convicted
+  cells where a one-sided write could echo
+  through later snapshots.
+- BP-38. The CodeRabbit disposition owed from
+  Round 5 discharges here on evidence: the
+  Round 5 pull request carries zero inline
+  findings on read-back (checked 2026-11-04 in
+  the rotation-wide late sweep), so there is
+  nothing to fix and the absence is the
+  disposition.
+- BP-39. README records 6 of 100 only in the
+  closure commit written after this round's
+  three reviews, fixes, and owner
+  verification.
