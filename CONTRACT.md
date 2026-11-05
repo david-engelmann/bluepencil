@@ -449,3 +449,152 @@ in the round dossier, never a silent approximation.
   diff alike; the control run against the
   pre-repair binary fails exactly the convicted
   cells and passes the agreeing ones.
+- BP-37. Round 6 probes the temp placement law
+  at this crate's write seam, the family
+  measured in secondbill's Round 5,
+  retroforge's Round 6, and wallofwrong's
+  Round 6, and which this crate's seam
+  predates. The oracle's write creates its
+  temp through tempfile.mkstemp on the one
+  constructed Path the preamble hands to both
+  guard and write (BP-34), and mkstemp
+  absolutizes the parent lexically (cwd join,
+  then normpath, no link resolution); this
+  crate's write creates its temp under the
+  constructed parent as spelled. The probe
+  set is the popped-link family at both
+  commands that write (propose and diff): an
+  output whose parent contains a symlink
+  component that a following dotdot pops,
+  across the existence boundary (the lexical
+  parent exists as a directory, neither
+  parent exists, the popped component is a
+  real directory), in plain, tailed,
+  absolute, deep, and escape-link spellings,
+  each measured against the oracle before any
+  repair is written. This crate's guard
+  counts an unresolvable output as naming an
+  input (BP-25), so the probes also record
+  whether the guard fires before the write
+  seam is reached on each shape, and a shape
+  the guard refuses on both sides is an
+  agreement, not a write-seam cell. Repairs
+  follow the measurements under new clauses;
+  the harness gains the proven cells with
+  controls against the pre-repair binary
+  failing exactly the convicted cells,
+  boundary pins ordered before convicted
+  cells where a one-sided write could echo
+  through later snapshots.
+- BP-38. The CodeRabbit disposition owed from
+  Round 5 discharges here on evidence: the
+  Round 5 pull request carries zero inline
+  findings on read-back (checked 2026-11-04 in
+  the rotation-wide late sweep), so there is
+  nothing to fix and the absence is the
+  disposition.
+- BP-39. README records 6 of 100 only in the
+  closure commit written after this round's
+  three reviews, fixes, and owner
+  verification.
+- BP-40. Amendment, from the Round 6 probes
+  (BP-37). The temp placement law, measured at
+  this crate's seam. The oracle's mkstemp
+  absolutizes the constructed parent lexically
+  (its _mkstemp_inner opens with dir =
+  os.path.abspath(dir): a cwd join, then
+  normpath, no link resolution anywhere in
+  that step), while the port creates its temp
+  under the constructed parent as spelled, so
+  the kernel resolves a symlink component
+  physically before a following dotdot pops
+  it. Where the lexical parent and the
+  physical parent differ in existence, the
+  split runs one way only: the lexical parent
+  missing, or standing as a file, while the
+  physical parent exists, the oracle refuses
+  cannot-write and writes nothing, and the
+  port writes the document at the physical
+  target at exit 0. Twelve shapes stand
+  convicted on propose and diff alike: the
+  plain pop, the lexical parent standing as a
+  file, an overwrite of a file standing at
+  the physical target (the oracle leaves it
+  standing, the port replaces it), the tailed
+  slash and dot forms, the dotted parent, the
+  absolute and pair-anchored absolute forms,
+  the deep pop, the escape-link pop (the port
+  writes outside the tree the spelling
+  suggests), two links popped in sequence,
+  and a link whose target itself carries a
+  dotdot, in the geometry where its resolved
+  self sits under a further directory. The
+  guard eats none of the family: a popped
+  spelling resolves cleanly for the guard's
+  comparison, against resolved inputs that
+  live elsewhere, so every convicted shape
+  passes the guard on both sides and splits
+  only at the temp.
+- BP-41. The boundary agreements, also
+  measured: where only the lexical parent
+  exists, both sides refuse (the oracle at
+  its replace, the port at its temp
+  creation); where both parents exist, both
+  write at the physical target, and a file
+  standing at the lexical target stands
+  untouched; where neither exists, both
+  refuse. A pop of a real directory never
+  splits the parents, and both sides write
+  or refuse together. A lexical parent that
+  is itself a symlink to a directory splits
+  nothing (the temp is created through it on
+  both sides). A dotdot-carrying target in
+  the geometry where its resolved self sits
+  at the root makes the parents coincide, and
+  both sides write at the lexical target. A
+  cancelled loop in the parent (BP-27) passes
+  the guard on both sides and refuses
+  cannot-write on both at the write; a
+  standing loop in the output, and a pop
+  landing on an input, refuse at the guard
+  on both sides, as before this round.
+  Repair, following BP-40: the write creates
+  its temp under the lexically absolutized
+  parent of the constructed path, by the
+  normpath law over the parent's components
+  (empty and dot components drop, a dotdot
+  pops the spelled component before it, a
+  pop at the root drops, a leading separator
+  pair stands as the anchor), the parent
+  first joined to the working directory when
+  it is relative and never consulted when it
+  is absolute; a failed cwd read on a
+  relative parent fails the write, an arm
+  the guard's own BP-33 refusal makes
+  unreachable for a named output and which
+  stands as the mirror of the interpreter's
+  raise inside mkstemp. The rename target
+  remains the constructed path itself, the
+  cannot-write message keeps the constructed
+  spelling, and the guard is unchanged.
+- BP-42. The round's verification is BP-28's
+  discipline over the new cells: the harness
+  gains a popped-link case on propose and
+  diff alike, the sandbox wiped and reseeded
+  before every step, carrying BP-41's
+  boundary pins ordered before BP-40's
+  convicted cells, an added abs step form
+  (argument substitution of the side's own
+  sandbox path, with that path normalized
+  out of the compared streams, in plain and
+  deleted-cwd launches alike) carrying the
+  absolute cells, an in-tree escape form
+  whose landing stays inside the snapshot
+  (the true escape, landing outside the
+  side's root, stands probe-pinned in the
+  lane record, as a snapshot cannot carry a
+  write outside its tree), and two
+  deleted-cwd steps on absolute spellings.
+  The control run against the pre-repair
+  binary fails exactly the convicted steps
+  and passes the pins.
