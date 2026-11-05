@@ -377,3 +377,75 @@ in the round dossier, never a silent approximation.
 - BP-32. README records 5 of 100 only in the
   closure commit written after this round's
   three reviews, fixes, and owner verification.
+- BP-33. Amendment, from the Round 5 probes
+  (BP-29). From a deleted working directory the
+  interpreter's resolve raises FileNotFoundError
+  from getcwd for any relative spelling, the
+  output's or an input's, and this oracle's
+  guard catch counts the raise as naming an
+  input: every cell with a named output and any
+  relative spelling refuses at the guard, exit
+  1, nothing written, while all-absolute cells
+  behave as in a live directory and cells with
+  no output named never reach the guard and
+  stand as they are (dot-dot spellings still
+  read through the deleted directory's parent
+  on both sides). The port's resolver today
+  substitutes the root for a failed cwd read
+  and manufactures resolutions the guard
+  accepts, up to writing the document at exit
+  0 where the oracle refuses. Repair: a
+  relative spelling whose cwd read fails fails
+  the resolution outright, which the guard
+  already counts as naming an input; an
+  absolute spelling never consults the cwd.
+  The iterated-splice resolver is otherwise
+  untouched; the probes do not convict it.
+- BP-34. Amendment, from the Round 5 probes
+  (BP-30). The oracle builds one Path from the
+  output argument, and that constructed object
+  flows through the guard and the write alike.
+  Construction drops every empty component and
+  every dot component wherever it stands;
+  dot-dot and all other components stand whole;
+  a leading separator pair stands as the
+  anchor, a longer leading run collapses to
+  one; a spelling with no component left stands
+  as the dot or as its anchor. The port today
+  hands the raw spelling to the guard and the
+  write, so a tailed spelling over a link
+  escapes the guard's splice and identity arms
+  and a tailed spelling anywhere refuses at
+  the rename where the interpreter writes.
+  Repair: the output spelling is constructed
+  once, by the same normalization the port
+  already renders path names with, and the
+  constructed spelling is what the guard
+  resolves and stats and what the write
+  replaces; the cannot-write message already
+  names the constructed form.
+- BP-35. The anchor of a componentless
+  spelling: the normalization keeps a leading
+  separator pair as the anchor when components
+  follow but collapses it when none do, so a
+  spelling of separators and dots alone whose
+  leading run is exactly two is rendered as
+  one separator where the interpreter renders
+  the pair (the out "//" cell: both sides
+  refuse the write, and the refusal names "/"
+  on the port against "//" on the oracle).
+  The componentless branch of the construction
+  keeps the pair, as the anchored branch
+  already does.
+- BP-36. The round's verification is BP-28's
+  discipline over the new cells: the
+  differential harness gains a deleted-cwd
+  launch (the command started in a subdirectory
+  deleted before it runs, the sandbox reseeded
+  before every such step) carrying the BP-33
+  convicted and agreeing cells, and tailed
+  output cells carrying the BP-34 convictions
+  and the agreeing boundaries, on propose and
+  diff alike; the control run against the
+  pre-repair binary fails exactly the convicted
+  cells and passes the agreeing ones.
