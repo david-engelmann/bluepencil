@@ -339,3 +339,41 @@ in the round dossier, never a silent approximation.
   structure from its source, and pin both arms
   with harness cells whose control evidence
   discriminates.
+- BP-29. Round 5 discharges the probe filed in
+  this line's Round 5 owed file, and adds the
+  write-seam family the sibling line proved
+  live. The deleted working directory: from a
+  deleted cwd, a relative output spelling makes
+  pathlib's resolve raise FileNotFoundError from
+  getcwd; whether this crate's oracle counts it
+  as naming an input depends on its guard's
+  catch structure (BP-25's try wraps resolve and
+  exists together), and the port's cwd fallback
+  decides the rest. Relative and absolute
+  outputs onto and away, rules and observations
+  spellings relative and absolute, on propose
+  and diff alike, measured cell by cell against
+  the oracle before any repair is written.
+- BP-30. The tailed output spelling: retroforge's
+  Round 5 red team proved a write-seam class in
+  that crate (spellings ending in a separator or
+  dot component write on the oracle and refuse
+  on the port, because the port hands the raw
+  spelling to rename while pathlib's construction
+  drops the tail), and wallofwrong's Round 5
+  convicted the same class on three commands.
+  This crate's write seam is probed for the class
+  in the same pass, on propose and diff alike,
+  and the class boundary is measured before any
+  repair is written.
+- BP-31. Repairs follow the measurements under
+  new clauses if a probe set expands; the
+  differential harness gains the proven cells
+  with per-step reseeding where a write-through
+  could contaminate later steps, control runs
+  against the pre-repair binary fail exactly the
+  new cells, and the standing harness stays
+  clean.
+- BP-32. README records 5 of 100 only in the
+  closure commit written after this round's
+  three reviews, fixes, and owner verification.
