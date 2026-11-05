@@ -969,14 +969,91 @@ fn writes_to_input(out: &[u16], inputs: &[Vec<u16>]) -> bool {
 
 static TEMP_COUNTER: std::sync::atomic::AtomicU32 = std::sync::atomic::AtomicU32::new(0);
 
+/// posixpath.normpath over an absolute spelling:
+/// empty and dot components drop, a dotdot pops
+/// the spelled component before it and a pop at
+/// the root drops, and a leading separator pair
+/// stands as the anchor where one or three or
+/// more collapse to one.
+fn normpath_units(units: &[u16]) -> Vec<u16> {
+    let scalars = crate::util::scalars_of(units);
+    let leading = scalars.iter().take_while(|scalar| **scalar == 0x2F).count();
+    let mut parts: Vec<&[u32]> = Vec::new();
+    for part in scalars.split(|scalar| *scalar == 0x2F) {
+        if part.is_empty() || part == [0x2E] {
+            continue;
+        }
+        if part == [0x2E, 0x2E] {
+            parts.pop();
+            continue;
+        }
+        parts.push(part);
+    }
+    let mut out: Vec<u32> = Vec::new();
+    if leading == 2 {
+        out.extend_from_slice(&[0x2F, 0x2F]);
+    } else {
+        out.push(0x2F);
+    }
+    for (index, part) in parts.iter().enumerate() {
+        if index > 0 {
+            out.push(0x2F);
+        }
+        out.extend_from_slice(part);
+    }
+    crate::util::text_from_scalars(&out).units().to_vec()
+}
+
+/// The parent a temp is created under, absolutized
+/// the way mkstemp absolutizes it (BP-41): the
+/// interpreter's _mkstemp_inner opens with dir =
+/// os.path.abspath(dir), a cwd join when the
+/// parent is relative and then the normpath law,
+/// with no link resolution anywhere in that step.
+/// An absolute parent never consults the cwd. A
+/// failed cwd read on a relative parent fails the
+/// step, as the interpreter's abspath raises
+/// there; the guard's own BP-33 refusal makes
+/// that arm unreachable for a named output, and
+/// it stands as the raise's mirror.
+fn lexical_abspath(parent: &[u16]) -> Option<Vec<u16>> {
+    let absolute = if parent.first() == Some(&0x2F) {
+        parent.to_vec()
+    } else {
+        let cwd = match std::env::current_dir() {
+            Ok(cwd) => cwd,
+            Err(_) => return None,
+        };
+        let mut joined = fsdecode_units(&crate::util::os_bytes(cwd.as_os_str()));
+        if joined.last() != Some(&0x2F) {
+            joined.push(0x2F);
+        }
+        joined.extend_from_slice(parent);
+        joined
+    };
+    Some(normpath_units(&absolute))
+}
+
 /// The mkstemp-shaped write: a sibling temp with
 /// the target's name and a dot for a prefix, no
 /// suffix, mode 0600, replaced onto the target,
-/// and unlinked on any failure.
+/// and unlinked on any failure. The temp is
+/// created under the parent's lexically
+/// absolutized form (BP-41), not under the
+/// parent as spelled: a symlink component the
+/// spelling pops with a following dotdot is
+/// never traversed for the temp, exactly as
+/// mkstemp's abspath never traverses it. The
+/// rename still targets the path itself.
 fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
     let dir = match path.parent() {
         Some(parent) if !parent.as_os_str().is_empty() => parent.to_path_buf(),
         _ => std::path::PathBuf::from("."),
+    };
+    let parent_units = fsdecode_units(&crate::util::os_bytes(dir.as_os_str()));
+    let dir = match lexical_abspath(&parent_units) {
+        Some(units) => crate::util::os_path_from_units(&units),
+        None => return Err(()),
     };
     let name = path
         .file_name()
