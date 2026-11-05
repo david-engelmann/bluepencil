@@ -22,7 +22,7 @@ backlog and the sibling formats as they pin.
 
 ## Programme status
 
-- Closed perfection rounds, 4 of 100. A round counts only when a
+- Closed perfection rounds, 5 of 100. A round counts only when a
   full cycle of work, audit, review, red team, and approval has
   closed.
 - Contract, BP-1 to BP-12 with amendments BP-5a, BP-5b,
