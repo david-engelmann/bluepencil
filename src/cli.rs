@@ -656,10 +656,18 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
         parts.push(part);
     }
     if parts.is_empty() {
-        return if leading > 0 { vec![0x2F] } else { vec![0x2E] }
-            .into_iter()
-            .map(|unit| unit as u16)
-            .collect();
+        // BP-35: a componentless spelling keeps its
+        // anchor: a leading pair stands as the
+        // anchor, a longer run collapses to one, and
+        // no separator at all reads as the dot.
+        let anchor: &[u32] = if leading == 2 {
+            &[0x2F, 0x2F]
+        } else if leading > 0 {
+            &[0x2F]
+        } else {
+            &[0x2E]
+        };
+        return anchor.iter().map(|unit| *unit as u16).collect();
     }
     let mut out: Vec<u32> = Vec::new();
     if leading == 2 {
@@ -683,7 +691,9 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
 /// and a dot-dot popping the component before it,
 /// whatever kind of component that is. Resolution
 /// fails outright (None) where the interpreter's
-/// resolve raises: where the finished path passes
+/// resolve raises: for a relative spelling whose
+/// cwd cannot be read (BP-33), and where the
+/// finished path passes
 /// through a symlink loop, which the output guard
 /// counts as naming an input (BP-16a). The loop is
 /// judged on the finished path, not on the
@@ -715,9 +725,17 @@ fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
     let spelled = if raw.is_absolute() {
         raw
     } else {
-        std::env::current_dir()
-            .unwrap_or_else(|_| std::path::PathBuf::from("/"))
-            .join(raw)
+        // BP-33: from a deleted working directory
+        // the interpreter's resolve raises from
+        // getcwd for a relative spelling, so a
+        // failed cwd read fails the resolution
+        // outright, and the guard counts the
+        // failure as naming an input. An absolute
+        // spelling never consults the cwd.
+        match std::env::current_dir() {
+            Ok(cwd) => cwd.join(raw),
+            Err(_) => return None,
+        }
     };
     let absolute = match dangling_target(&spelled) {
         Dangling::Spelled => spelled,
@@ -1098,9 +1116,15 @@ struct Preamble {
 fn preamble(parsed: &SubParsed, second_noun: &str) -> Result<Preamble, i32> {
     let rules_arg = normalize_path(parsed.positionals[0].units());
     let second_arg = normalize_path(parsed.positionals[1].units());
+    // BP-34: the output spelling is constructed
+    // once, as the interpreter builds one Path
+    // from the argument, and the constructed
+    // spelling is what the guard resolves and
+    // stats and what the write replaces.
     let output = parsed
         .get_text("--output")
-        .filter(|text| !text.units().is_empty());
+        .filter(|text| !text.units().is_empty())
+        .map(|text| Text::from_units(normalize_path(text.units())));
     if let Some(out) = &output {
         if writes_to_input(out.units(), &[rules_arg.clone(), second_arg.clone()]) {
             return Err(named_error("bluepencil never writes to its inputs"));
