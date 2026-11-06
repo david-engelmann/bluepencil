@@ -309,7 +309,7 @@ in the round dossier, never a silent approximation.
   target does not exist, where realpath resolves
   the target spelling against the link's parent
   (retroforge's RF-25a shape). Where the port
-  diverges, it is repaired in wallofwrong's
+  diverges, it is repaired in tetlock's
   WW-25a detection shape (the loop judged on the
   finished path's prefixes) or retroforge's
   dangling shape, with harness cells on both the
@@ -360,7 +360,7 @@ in the round dossier, never a silent approximation.
   dot component write on the oracle and refuse
   on the port, because the port hands the raw
   spelling to rename while pathlib's construction
-  drops the tail), and wallofwrong's Round 5
+  drops the tail), and tetlock's Round 5
   convicted the same class on three commands.
   This crate's write seam is probed for the class
   in the same pass, on propose and diff alike,
@@ -452,7 +452,7 @@ in the round dossier, never a silent approximation.
 - BP-37. Round 6 probes the temp placement law
   at this crate's write seam, the family
   measured in secondbill's Round 5,
-  retroforge's Round 6, and wallofwrong's
+  retroforge's Round 6, and tetlock's
   Round 6, and which this crate's seam
   predates. The oracle's write creates its
   temp through tempfile.mkstemp on the one
