@@ -1044,7 +1044,13 @@ fn lexical_abspath(parent: &[u16]) -> Option<Vec<u16>> {
 /// spelling pops with a following dotdot is
 /// never traversed for the temp, exactly as
 /// mkstemp's abspath never traverses it. The
-/// rename still targets the path itself.
+/// rename still targets the path itself. The
+/// candidate is the name's own bytes, a dot,
+/// and exactly eight drawn characters (BP-47):
+/// the lossy name and the decimal pid, counter,
+/// and attempt suffix it replaces stood
+/// convicted on all three arms in Round 7
+/// (BP-44, BP-45, BP-46).
 fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
     let dir = match path.parent() {
         Some(parent) if !parent.as_os_str().is_empty() => parent.to_path_buf(),
@@ -1055,19 +1061,47 @@ fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
         Some(units) => crate::util::os_path_from_units(&units),
         None => return Err(()),
     };
-    let name = path
+    let name_bytes = path
         .file_name()
-        .map(|name| name.to_string_lossy().into_owned())
+        .map(crate::util::os_bytes)
         .unwrap_or_default();
+    let dir_bytes = crate::util::os_bytes(dir.as_os_str());
     let mut attempt = 0u32;
     let tmp = loop {
-        let candidate = dir.join(format!(
-            "{}.{}{}{}",
-            name,
-            std::process::id(),
-            TEMP_COUNTER.fetch_add(1, std::sync::atomic::Ordering::SeqCst),
-            attempt
-        ));
+        // BP-47: the draw is the first four bytes
+        // of a SHA-256 digest rendered as eight
+        // lowercase hex characters, taken over the
+        // process id, the wall-clock time in
+        // nanoseconds, the write counter, the
+        // attempt, the temp directory's bytes, and
+        // the name's bytes. A clock that cannot be
+        // read refuses the write rather than
+        // drawing on a term an observer could
+        // supply (BP-47a).
+        use sha2::Digest;
+        let counter = TEMP_COUNTER.fetch_add(1, std::sync::atomic::Ordering::SeqCst);
+        let nanos = match std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH) {
+            Ok(duration) => duration.as_nanos(),
+            Err(_) => return Err(()),
+        };
+        let mut hasher = sha2::Sha256::new();
+        hasher.update(std::process::id().to_le_bytes());
+        hasher.update(nanos.to_le_bytes());
+        hasher.update(counter.to_le_bytes());
+        hasher.update(attempt.to_le_bytes());
+        hasher.update(&dir_bytes);
+        hasher.update(&name_bytes);
+        let digest = hasher.finalize();
+        const HEX: &[u8; 16] = b"0123456789abcdef";
+        let mut candidate_bytes = name_bytes.clone();
+        candidate_bytes.push(b'.');
+        for byte in &digest[..4] {
+            candidate_bytes.push(HEX[usize::from(byte >> 4)]);
+            candidate_bytes.push(HEX[usize::from(byte & 0xF)]);
+        }
+        let candidate = dir.join(crate::util::os_path_from_units(&fsdecode_units(
+            &candidate_bytes,
+        )));
         #[cfg(unix)]
         let opener = {
             use std::os::unix::fs::OpenOptionsExt;

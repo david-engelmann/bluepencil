@@ -782,3 +782,15 @@ in the round dossier, never a silent approximation.
   rounds line to 7 of 100 and is the
   only later change to that line this
   round makes.
+
+- BP-47a. One posture inside BP-47's repair
+  is named with it: where the wall clock
+  cannot be read, or reads before the
+  epoch, the write refuses rather than
+  drawing on a term an observer could
+  supply. A fixed fallback would hand the
+  enumeration of BP-46 back to any pid
+  that could arrange the clock's failure,
+  so the refusal is the repair's shape,
+  at the price of refusing in a posture
+  the oracle's library draw survives.
