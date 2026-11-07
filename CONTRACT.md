@@ -866,3 +866,59 @@ in the round dossier, never a silent approximation.
   reading at that extreme, and no cell
   lands a degraded draw, which is what
   the clause exists to prevent.
+
+- BP-52. CodeRabbit's step 0 pass on the
+  Round 7 pull request (pull request 11)
+  posted three review comments carrying
+  four findings, all against the README
+  the round had just written, and all
+  four stand repaired in this clause's
+  commit. Two findings complete the
+  Usage account. The thresholds BP-10
+  contracts are now stated where a
+  reader meets the proposals, a delete
+  proposal needing at least two ignored
+  observations and no followed one, and
+  a promote proposal needing at least
+  two followed observations, the rule
+  in the second half of the file by rule
+  order, and a section different from
+  the first rule's section, each
+  condition read off the generation code
+  before the sentence was written. The
+  rewrite input BP-9 contracts is stated
+  with them, a misreading observation
+  alone producing no rewrite, a rewrite
+  coming only from a supplied rewrites
+  entry naming the rule by exact text,
+  quoting a misreading observation
+  recorded against that rule, and giving
+  the replacement, with an entry whose
+  quote matches nothing on its rule
+  refusing the run by name. The third
+  finding is the captured documents.
+  Both JSON blocks in the new README
+  were prefixes cut mid-object, neither
+  valid JSON and neither showing a
+  proposal. The first screen now prints
+  a complete proposal document, the
+  Quickstart run's own output at 1,702
+  bytes, proposal and evidence whole,
+  captured from the installed binary
+  over the Quickstart inputs as written
+  on the page. The Usage section drops
+  its excerpt of the synthetic document,
+  which stands at 4,991 bytes, and
+  describes the document's contents in
+  prose instead, so no excerpt stands
+  anywhere as a capture. The fourth
+  finding is the Install block, which
+  opened at the install command with no
+  way to reach the crate. It now opens
+  with the clone and the change of
+  directory, and the Install and
+  Quickstart blocks re-ran verbatim from
+  clean staging into a scratch cargo
+  home, the install landing the binary
+  and the Quickstart outputs
+  byte-identical to the page.
