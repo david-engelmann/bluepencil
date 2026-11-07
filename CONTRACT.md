@@ -794,3 +794,75 @@ in the round dossier, never a silent approximation.
   so the refusal is the repair's shape,
   at the price of refusing in a posture
   the oracle's library draw survives.
+
+- BP-51. Two review dispositions and one
+  mechanism distinction are recorded at
+  closure. The first disposition is the
+  standards lane's copy-bar Minor: the
+  README's Status prose carried the
+  clause range "(BP-1 through BP-50)",
+  and decision codes are barred from
+  README prose, so the range is dropped
+  in this closure and the sentence keeps
+  the CONTRACT.md reference in plain
+  words. The second is BP-49's evidence
+  state. The lane's own mutant logs were
+  truncated to zero bytes by the box
+  write fault before they could be read,
+  so the half-repair convictions BP-49
+  states rest on the red team's
+  rebuilds: both mutants rebuilt from
+  fresh archives of the tip, each in an
+  isolated target dir, the md5
+  divergence check passing over the
+  pre-round binary, the repaired binary,
+  and both mutants, the runs banked in
+  the lane's scratch as
+  harness-redteam-mutant-w.txt,
+  harness-redteam-mutant-l.txt, and
+  harness-redteam-repaired.txt. The
+  mutant keeping the lossy name over the
+  repaired draw fails exactly 4 steps,
+  every one a raw-byte cell at the
+  counting arm's own flip length; the
+  mutant keeping the shipped decimal
+  generator over the repaired raw-byte
+  name fails exactly 14 steps, the
+  plant-all cell at pid 1 and the width
+  cells at their own flip points; the
+  repaired build reads 15 cases, 574
+  steps, 0 failures over the full
+  extended harness. BP-49's claims
+  therefore stand on banked runs, cited
+  by log name here. The mechanism
+  distinction, from the red team's clock
+  battery, concerns BP-47a. The refusal
+  boundary sits exactly at the epoch,
+  neither wider nor narrower than the
+  clause states: at tv_sec -1 the
+  repaired binary refuses at both
+  commands through the crate's own Err
+  arm on duration_since, exit 1, no
+  output file and no temp residue, and
+  at tv_sec 0 and tv_sec 1 the write
+  lands. Under the harder failure,
+  clock_gettime returning EINVAL, the
+  write still refuses, exit 1, nothing
+  written, but the refusing agent is the
+  standard library, not the crate's Err
+  arm: SystemTime::now unwraps the
+  failed call inside std and panics in
+  the stack thread, whose join failure
+  surfaces as the ordinary exit 1 with
+  the panic line on stderr. The clause's
+  observable contract, refuse rather
+  than draw on a term an observer could
+  supply, holds on both halves of
+  "cannot be read, or reads before the
+  epoch"; the graceful path covers the
+  epoch half and std covers the
+  unreadable half. Only the mechanism
+  differs from the clause's plain
+  reading at that extreme, and no cell
+  lands a degraded draw, which is what
+  the clause exists to prevent.

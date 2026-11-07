@@ -126,7 +126,7 @@ error, bluepencil never writes to its inputs
 
 ## Status
 
-The tool is at its first working state. Both commands run, the input guard holds in every spelling the contract pins, and output writes land atomically beside their target under a drawn temp name. The behavior contract lives in CONTRACT.md (BP-1 through BP-50) and is pinned against the Python reference implementation by a differential harness.
+The tool is at its first working state. Both commands run, the input guard holds in every spelling the contract pins, and output writes land atomically beside their target under a drawn temp name. The behavior contract lives in CONTRACT.md and is pinned against the Python reference implementation by a differential harness.
 
 Closed perfection rounds, 6 of 100.
 
