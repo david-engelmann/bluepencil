@@ -598,3 +598,187 @@ in the round dossier, never a silent approximation.
   The control run against the pre-repair
   binary fails exactly the convicted steps
   and passes the pins.
+
+## Round 7
+
+- BP-43. Round 6's CodeRabbit disposition
+  stands discharged on read-back, as BP-38
+  held for Round 5: the review's record on
+  pull request 8, read through the API list
+  endpoints on 2026-11-07, carries zero
+  review comments and zero reviews; its
+  issue-comment thread holds the trigger,
+  the summary shell, the landing comment,
+  and the review bot's auto-reply. The
+  shell's final form is "Review failed"
+  over "The pull request is closed", the
+  failed-because-closed shape above a
+  findings-free walkthrough, and the
+  auto-reply reports the action not
+  completed because the pull request is
+  closed. No late findings exist to
+  discharge; the absence is the
+  disposition, and no code in this round
+  answers to it.
+- BP-44. The width arm is convicted at
+  both commands. The oracle draws its
+  temp suffix from the library default,
+  exactly eight characters at every pid
+  (a strace cell draws out.json.kae21ppi,
+  O_CREAT and O_EXCL, mode 0600), so its
+  name-length boundary is fixed: a plain
+  output name of 246 bytes writes and 247
+  refuses, at the ambient pid, at pid 1,
+  and at a three-digit pid alike. The
+  port builds its candidate as the name,
+  a dot, the decimal pid, a decimal
+  counter starting at zero in every
+  process, and a decimal attempt, so its
+  suffix is the pid's digit count plus
+  two at the first draw (a strace cell at
+  pid 14488 draws out.json.1448800, seven
+  characters, O_CREAT and O_EXCL, mode
+  0600). Twin probes measure the flips
+  per posture, propose and diff alike:
+  at the ambient five-digit pid of the
+  probe environment the port writes 247
+  and refuses 248; at pid 1 it writes
+  251 and refuses 252; at a three-digit
+  pid it writes 249 and refuses 250. The
+  oracle's flip is 246 and 247 in every
+  posture. The shipped suffix matches
+  the law only where the pid's digits
+  happen to total six; everywhere else
+  the port lands writes the oracle
+  refuses.
+- BP-45. The byte-counting arm is
+  convicted at both commands. The port
+  builds the candidate's name through a
+  lossy conversion, so a name carrying
+  one raw byte outside UTF-8 is measured
+  as the three-byte replacement
+  character, two bytes longer than the
+  name on disk. Twin probes with
+  one-raw-byte names (a run of a bytes
+  closed by byte 0xFF), propose and diff
+  alike: at pid 1 the port's flip moves
+  from 251 and 252 plain to 249 and 250
+  raw; at the ambient pid from 247 and
+  248 plain to 245 and 246 raw. The
+  oracle counts raw bytes and its raw
+  flip stands at 246 and 247, the plain
+  flip. The port therefore refuses raw
+  names the oracle writes, by exactly
+  the lossy expansion, at every pid.
+- BP-46. The determinism arm is convicted
+  at both commands. The port's draw is a
+  public function of the pid, the
+  counter, and the attempt, with no
+  other input, so the whole drawable set
+  at a fixed pid can be enumerated in
+  advance: at pid 1 a single write draws
+  among exactly 65 candidates, the name
+  and dot followed by "1" and the
+  counter and attempt digits running
+  together (100, 111, 122, and so on to
+  16464). Twin probes plant those
+  candidates as files, propose and diff
+  alike: planting one candidate is
+  absorbed by the redraw on both sides,
+  and planting all 65 makes the port
+  refuse a write the oracle lands,
+  printing its cannot write the proposal
+  file (diff, the diff file) refusal for
+  a name that carries no other obstacle.
+  A planted directory at a known pid can
+  therefore deny the port its output
+  outright, where the oracle's draw
+  cannot be enumerated at all.
+- BP-47. The repair rebuilds the
+  candidate from raw bytes end to end
+  and draws exactly eight characters:
+  the output name's own bytes, a dot,
+  and the first four bytes of a SHA-256
+  digest rendered as eight lowercase hex
+  characters, the digest taken over the
+  process id, the wall-clock time in
+  nanoseconds, the write counter, the
+  attempt, the temp directory's bytes,
+  and the name's bytes (the FT-74 mix
+  shape). This crate reads no wall clock
+  anywhere before this repair; the read
+  is new here and is owed to BP-46's
+  conviction, a clock-free draw having
+  stood convicted rather than merely
+  filed. The retry cap, the 0600 mode,
+  the placement under BP-41's lexical
+  absolute parent, the rename target,
+  and the cannot-write text stand
+  unchanged, and no manifest change is
+  needed, the digest crate already being
+  a dependency.
+- BP-48. The README is brought to the
+  fleet standard in this round: title,
+  a lede identical to the repository
+  description, one short paragraph, the
+  ci workflow's badge, one block of real
+  captured output, then Install,
+  Quickstart, Usage, Status, and License
+  sections, the Install and Quickstart
+  blocks run verbatim before landing and
+  every output block captured from a run
+  of the repaired binary. The badge is
+  verified against the workflow's live
+  state on main, the ci workflow active
+  and its latest run at the round's base
+  completed in success; the badge's own
+  image fetch was not observed in this
+  lane and the clause claims the
+  workflow-state form of the
+  verification, not a render. The
+  standard's identity rule carries one
+  recorded exception: the description,
+  and so the lede, holds a single colon,
+  which the line keeps verbatim because
+  the identity rule is the stronger rule
+  (the OR-39 precedent); no other colon
+  or semicolon stands in the README's
+  prose. Item 3 of the standard's
+  checklist is recorded open: the crate
+  manifest carries no description field
+  at all, so the metadata side of the
+  identity is absent rather than a
+  differing text; it is named here and
+  not repaired in this round. The change
+  is the README only, and the Status
+  line keeps the closed-rounds count.
+- BP-49. The round's verification is
+  BP-28's discipline over the new cells:
+  the harness gains two pid-posture step
+  forms (a pid-namespace launch, and the
+  same launch behind a launcher that
+  burns 150 pids first so the tool runs
+  at a three-digit pid) and a temp suffix
+  boundary case on propose and diff
+  alike, the sandbox wiped and reseeded
+  before every step, carrying the plain
+  boundary at the ambient pid, at pid 1,
+  and at a three-digit pid, the
+  one-raw-byte boundary at pid 1 and at
+  the ambient pid, and the plant cells
+  at pid 1, each convicted arm pinned at
+  its own flip point rather than at the
+  shipped combination's alone (the WW-56
+  battery-design rule). The control run
+  against the pre-round binary fails
+  exactly the convicted cells, and two
+  half-repair mutants, one keeping the
+  lossy name over a repaired draw and
+  one keeping the shipped generator over
+  a repaired name, are each convicted at
+  their own arm's cells and pass the
+  other's.
+- BP-50. The closure moves the README
+  rounds line to 7 of 100 and is the
+  only later change to that line this
+  round makes.
