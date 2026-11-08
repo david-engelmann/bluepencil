@@ -1159,3 +1159,9 @@ in the round dossier, never a silent approximation.
   and the loader's two, with clippy
   under -D warnings and fmt both
   clean on the final tree.
+
+- BP-58. The closure moves the README
+  rounds line to 8 of 100 and is the
+  only change to that line this round
+  makes, the README's three repaired
+  sentences having landed with BP-53.
