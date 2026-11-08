@@ -1200,3 +1200,25 @@ in the round dossier, never a silent approximation.
   rather than drawing a computable
   name, and that stdout, which needs
   no draw, works on every build.
+
+- BP-60. The same pass's summary
+  shell carries one further item,
+  recorded here so the record stands
+  whole: its Docstring Coverage
+  check reports 44.44 percent
+  against a threshold of 80.00
+  percent, over nine functions
+  analyzed across three files, and
+  the shell is the rate-limit banner
+  over a complete walkthrough of the
+  head it reviewed. The item is
+  dismissed. It names no function,
+  this repository carries no
+  docstring configuration or
+  threshold of its own for the check
+  to enforce, and the check applies
+  the review tool's default profile.
+  The basis is the one secondtake's
+  ST-61 and unheard's UH-57 state
+  for the same item on their own
+  pull requests.
