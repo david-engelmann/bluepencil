@@ -1165,3 +1165,38 @@ in the round dossier, never a silent approximation.
   only change to that line this round
   makes, the README's three repaired
   sentences having landed with BP-53.
+
+- BP-59. CodeRabbit's step 0 pass on
+  the Round 8 pull request (pull
+  request 12) posted one review
+  comment and one finding in its
+  review body, both Minor, both
+  against the README, and both stand
+  repaired in this item's commit. The
+  comment holds that BP-53's repaired
+  threshold sentence still overclaims
+  in its tail: a rule with a single
+  ignored observation is not left
+  alone, since two followed
+  observations with the position and
+  section conditions earn it a
+  promote proposal and a supplied
+  rewrites entry earns it a rewrite.
+  The tail now claims only that a
+  single ignored observation by
+  itself earns a rule no delete
+  proposal, which is the threshold
+  the sentence illustrates. The body
+  finding holds that the non-unix
+  refusal of BP-55 is nowhere stated
+  where a user meets it: the
+  Quickstart now states, after its
+  run, that writing to a file draws
+  its temporary name with sixteen
+  bytes from the operating system's
+  randomness device at /dev/urandom,
+  that a build on a platform without
+  that device refuses the write
+  rather than drawing a computable
+  name, and that stdout, which needs
+  no draw, works on every build.
