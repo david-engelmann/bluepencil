@@ -1,6 +1,8 @@
 //! BP-8 to BP-12. Proposals, generation, and the
 //! output, ported from the Python suite file for
 //! file. The CLI cases drive the compiled binary.
+//! BP-56 adds the observations version key's
+//! loader pins at the end of this file.
 
 use std::path::PathBuf;
 
@@ -528,4 +530,68 @@ fn propose_refuses_a_hardlink_output() {
     assert_eq!(run.code, 1);
     assert!(stderr_text(&run).contains("never writes to its inputs"));
     assert_eq!(std::fs::read(&rules).expect("the file"), rules_bytes());
+}
+
+fn load_doc(tag: &str, bytes: &[u8]) -> Result<(Vec<Observation>, Vec<Rewrite>), Failure> {
+    let dir = tmpdir(tag);
+    let path = dir.join("observations.json");
+    std::fs::write(&path, bytes).expect("the document writes");
+    load_observations(&path)
+}
+
+fn named_text(failure: &Failure) -> String {
+    match failure {
+        Failure::Named(message) => message.render_stderr(),
+        Failure::Crash => panic!("a crash, not a named refusal"),
+    }
+}
+
+#[test]
+fn a_versioned_document_loads_as_its_unversioned_twin() {
+    // BP-56: the version key checked and the
+    // document read through it: a document
+    // carrying observations_version "1.0" loads
+    // to exactly what the same document without
+    // the key loads to.
+    let body = br#"{"observations": [{"rule": "R", "kind": "ignored", "quote": "q"}], "rewrites": [{"rule": "R", "misreading_quote": "m", "replacement": "N"}]}"#;
+    let versioned = br#"{"observations_version": "1.0", "observations": [{"rule": "R", "kind": "ignored", "quote": "q"}], "rewrites": [{"rule": "R", "misreading_quote": "m", "replacement": "N"}]}"#;
+    let plain = load_doc("version-plain", body).expect("the unversioned document loads");
+    let checked = load_doc("version-checked", versioned).expect("the 1.0 document loads");
+    assert_eq!(plain, checked);
+    assert_eq!(checked.0.len(), 1);
+    assert_eq!(checked.1.len(), 1);
+}
+
+#[test]
+fn an_unknown_version_refuses_by_name() {
+    // BP-56: any version value but the string
+    // "1.0" refuses with the value named, of
+    // whatever type it arrives in, because its
+    // shape may have changed in ways this
+    // reader cannot absorb.
+    for (tag, doc, expected) in [
+        (
+            "version-two",
+            br#"{"observations_version": "2.0", "observations": []}"#.as_slice(),
+            "unsupported observations_version '2.0'",
+        ),
+        (
+            "version-number",
+            br#"{"observations_version": 2, "observations": []}"#.as_slice(),
+            "unsupported observations_version 2",
+        ),
+        (
+            "version-empty",
+            br#"{"observations_version": "", "observations": []}"#.as_slice(),
+            "unsupported observations_version ''",
+        ),
+        (
+            "version-list",
+            br#"{"observations_version": ["1.0"], "observations": []}"#.as_slice(),
+            "unsupported observations_version ['1.0']",
+        ),
+    ] {
+        let failure = load_doc(tag, doc).expect_err("the version refuses");
+        assert_eq!(named_text(&failure), expected);
+    }
 }

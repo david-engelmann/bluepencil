@@ -1034,6 +1034,90 @@ fn lexical_abspath(parent: &[u16]) -> Option<Vec<u16>> {
     Some(normpath_units(&absolute))
 }
 
+/// Sixteen bytes of operating system
+/// randomness (BP-55), drawn from
+/// /dev/urandom, the kernel's randomness
+/// interface, through the standard library's
+/// file read. Any failure, the open or a
+/// short or failed read, yields None. The
+/// crate's non-unix arm has no operating
+/// system randomness source to read and
+/// yields None on every call, so a build
+/// there refuses the write rather than
+/// drawing computably.
+#[cfg(unix)]
+fn os_entropy() -> Option<[u8; 16]> {
+    use std::io::Read;
+    let mut bytes = [0u8; 16];
+    let mut file = std::fs::File::open("/dev/urandom").ok()?;
+    file.read_exact(&mut bytes).ok()?;
+    Some(bytes)
+}
+
+#[cfg(not(unix))]
+fn os_entropy() -> Option<[u8; 16]> {
+    None
+}
+
+/// One candidate's eight drawn characters
+/// (BP-47, BP-55): the first four bytes of a
+/// SHA-256 digest rendered as eight lowercase
+/// hex characters. A clock that cannot be
+/// read, or reads before the epoch, yields
+/// None (BP-47a), and an entropy source that
+/// cannot be read yields None (BP-55); the
+/// caller refuses the write on None, and the
+/// draw never falls back to a computable mix.
+fn draw_suffix(counter: u32, attempt: u32, dir_bytes: &[u8], name_bytes: &[u8]) -> Option<Vec<u8>> {
+    let nanos = match std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH) {
+        Ok(duration) => duration.as_nanos(),
+        Err(_) => return None,
+    };
+    let entropy = os_entropy()?;
+    Some(suffix_from_terms(
+        nanos, counter, attempt, dir_bytes, name_bytes, &entropy,
+    ))
+}
+
+/// The suffix the terms decide, factored out
+/// of draw_suffix so the tests can pin the
+/// mix term by term: the hash input is the
+/// process id, the nanoseconds, the counter,
+/// the attempt, the directory's bytes, the
+/// name's bytes, and the entropy, in that
+/// order, each integer little-endian. The
+/// entropy term is what keeps the candidate
+/// set from being a public function of inputs
+/// an observer can know or fix (BP-55): the
+/// earlier terms alone stand still under a
+/// frozen and known clock.
+fn suffix_from_terms(
+    nanos: u128,
+    counter: u32,
+    attempt: u32,
+    dir_bytes: &[u8],
+    name_bytes: &[u8],
+    entropy: &[u8; 16],
+) -> Vec<u8> {
+    use sha2::Digest;
+    let mut hasher = sha2::Sha256::new();
+    hasher.update(std::process::id().to_le_bytes());
+    hasher.update(nanos.to_le_bytes());
+    hasher.update(counter.to_le_bytes());
+    hasher.update(attempt.to_le_bytes());
+    hasher.update(dir_bytes);
+    hasher.update(name_bytes);
+    hasher.update(entropy);
+    let digest = hasher.finalize();
+    const HEX: &[u8; 16] = b"0123456789abcdef";
+    let mut suffix = Vec::with_capacity(8);
+    for byte in &digest[..4] {
+        suffix.push(HEX[usize::from(byte >> 4)]);
+        suffix.push(HEX[usize::from(byte & 0xF)]);
+    }
+    suffix
+}
+
 /// The mkstemp-shaped write: a sibling temp with
 /// the target's name and a dot for a prefix, no
 /// suffix, mode 0600, replaced onto the target,
@@ -1050,7 +1134,10 @@ fn lexical_abspath(parent: &[u16]) -> Option<Vec<u16>> {
 /// the lossy name and the decimal pid, counter,
 /// and attempt suffix it replaces stood
 /// convicted on all three arms in Round 7
-/// (BP-44, BP-45, BP-46).
+/// (BP-44, BP-45, BP-46). The draw's terms
+/// stand in draw_suffix; Round 8 adds the
+/// entropy term the frozen-clock conviction
+/// is owed to (BP-54, BP-55).
 fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
     let dir = match path.parent() {
         Some(parent) if !parent.as_os_str().is_empty() => parent.to_path_buf(),
@@ -1068,37 +1155,22 @@ fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
     let dir_bytes = crate::util::os_bytes(dir.as_os_str());
     let mut attempt = 0u32;
     let tmp = loop {
-        // BP-47: the draw is the first four bytes
-        // of a SHA-256 digest rendered as eight
-        // lowercase hex characters, taken over the
-        // process id, the wall-clock time in
+        // BP-47, BP-55: the candidate's drawn
+        // characters come from draw_suffix over
+        // the process id, the wall-clock time in
         // nanoseconds, the write counter, the
-        // attempt, the temp directory's bytes, and
-        // the name's bytes. A clock that cannot be
-        // read refuses the write rather than
-        // drawing on a term an observer could
-        // supply (BP-47a).
-        use sha2::Digest;
+        // attempt, the temp directory's bytes,
+        // the name's bytes, and sixteen bytes of
+        // operating system entropy. A draw that
+        // yields None refuses the write.
         let counter = TEMP_COUNTER.fetch_add(1, std::sync::atomic::Ordering::SeqCst);
-        let nanos = match std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH) {
-            Ok(duration) => duration.as_nanos(),
-            Err(_) => return Err(()),
+        let suffix = match draw_suffix(counter, attempt, &dir_bytes, &name_bytes) {
+            Some(suffix) => suffix,
+            None => return Err(()),
         };
-        let mut hasher = sha2::Sha256::new();
-        hasher.update(std::process::id().to_le_bytes());
-        hasher.update(nanos.to_le_bytes());
-        hasher.update(counter.to_le_bytes());
-        hasher.update(attempt.to_le_bytes());
-        hasher.update(&dir_bytes);
-        hasher.update(&name_bytes);
-        let digest = hasher.finalize();
-        const HEX: &[u8; 16] = b"0123456789abcdef";
         let mut candidate_bytes = name_bytes.clone();
         candidate_bytes.push(b'.');
-        for byte in &digest[..4] {
-            candidate_bytes.push(HEX[usize::from(byte >> 4)]);
-            candidate_bytes.push(HEX[usize::from(byte & 0xF)]);
-        }
+        candidate_bytes.extend_from_slice(&suffix);
         let candidate = dir.join(crate::util::os_path_from_units(&fsdecode_units(
             &candidate_bytes,
         )));
@@ -1363,5 +1435,100 @@ pub fn run_cli() -> i32 {
             _ => diff(&parsed),
         },
         ParseOutcome::Exit(code) => code,
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn render(
+        nanos: u128,
+        counter: u32,
+        attempt: u32,
+        dir_bytes: &[u8],
+        name_bytes: &[u8],
+        entropy: &[u8; 16],
+    ) -> String {
+        String::from_utf8(suffix_from_terms(
+            nanos, counter, attempt, dir_bytes, name_bytes, entropy,
+        ))
+        .expect("the suffix is ascii")
+    }
+
+    #[test]
+    fn the_entropy_term_decides_the_suffix() {
+        // With every other term fixed, the
+        // entropy alone moves the suffix
+        // (BP-55): a mix that dropped or
+        // ignored the term fails here, and
+        // the same terms, entropy included,
+        // decide the same suffix, so the
+        // entropy is an input to the mix and
+        // not a hidden state.
+        let nanos = 1_700_000_000_123_456_789u128;
+        let a = render(nanos, 3, 3, b"/tmp/bp8", b"out.json", &[7u8; 16]);
+        let b = render(nanos, 3, 3, b"/tmp/bp8", b"out.json", &[8u8; 16]);
+        assert_ne!(a, b);
+        assert_eq!(a, render(nanos, 3, 3, b"/tmp/bp8", b"out.json", &[7u8; 16]));
+    }
+
+    #[test]
+    fn the_suffix_matches_an_independent_derivation() {
+        // The expected suffix is derived here
+        // from the contracted input layout
+        // (BP-47, BP-55), term by term, rather
+        // than trusted from the construction
+        // under test.
+        use sha2::Digest;
+        let nanos = 1_700_000_000_123_456_789u128;
+        let entropy = [42u8; 16];
+        let mut hasher = sha2::Sha256::new();
+        hasher.update(std::process::id().to_le_bytes());
+        hasher.update(nanos.to_le_bytes());
+        hasher.update(3u32.to_le_bytes());
+        hasher.update(3u32.to_le_bytes());
+        hasher.update(b"/tmp/bp8");
+        hasher.update(b"out.json");
+        hasher.update(entropy);
+        let digest = hasher.finalize();
+        let mut expected = String::new();
+        for byte in &digest[..4] {
+            expected.push_str(&format!("{byte:02x}"));
+        }
+        assert_eq!(expected.len(), 8);
+        assert_eq!(
+            render(nanos, 3, 3, b"/tmp/bp8", b"out.json", &entropy),
+            expected
+        );
+    }
+
+    #[test]
+    fn a_live_draw_renders_eight_hex_characters_or_refuses() {
+        // A live draw over fixed terms ends
+        // one of the two ways the contract
+        // allows (BP-55). Where the entropy
+        // source reads, the suffix keeps its
+        // contracted shape: eight lowercase
+        // hexadecimal characters. Where it
+        // cannot be read, and on every
+        // non-unix build, whose entropy arm
+        // yields None on every call, the draw
+        // yields None and the caller refuses
+        // the write, so the pin accepts the
+        // refusal rather than panicking on
+        // it. Two draws are not required to
+        // differ: the suffix carries
+        // thirty-two bits of the hash, so a
+        // collision between two valid draws
+        // breaks no term of the contract.
+        for attempt in 0..=1 {
+            if let Some(suffix) = draw_suffix(0, attempt, b"/tmp/bp8", b"out.json") {
+                assert_eq!(suffix.len(), 8);
+                assert!(suffix
+                    .iter()
+                    .all(|byte| byte.is_ascii_digit() || (b'a'..=b'f').contains(byte)));
+            }
+        }
     }
 }

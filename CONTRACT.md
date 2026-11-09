@@ -922,3 +922,303 @@ in the round dossier, never a silent approximation.
   home, the install landing the binary
   and the Quickstart outputs
   byte-identical to the page.
+
+## Round 8
+
+- BP-53. The round opens with the full
+  read-back of pull request 11, every
+  review body to its end, every review
+  comment thread, and every issue
+  comment, the follow-up shells and the
+  acknowledgment replies included. Four
+  of CodeRabbit's findings stand
+  disposed in BP-52 and on the pull
+  request, two of their threads
+  confirmed addressed by the bot
+  itself. Two items stood undisposed.
+  The first is this round's second
+  charge: the review body's additional
+  comment, a Minor on security, marked
+  unverified by its author, holding
+  that SHA-256 over public inputs does
+  not make the temp-name draw
+  unpredictable, a writer who knows a
+  fixed clock value and the next pid
+  and counter being able to calculate
+  and plant every candidate for the 65
+  attempts, so BP-47's draw does not
+  close BP-46's planted-candidate
+  failure under that condition, and
+  asking for operating system
+  randomness in each draw with refusal
+  when that source fails. BP-54
+  adjudicates it by measurement and
+  BP-55 repairs it. The second is the
+  acknowledgment reply on the
+  thresholds thread, posted after the
+  owner's replies on the final head,
+  holding that two details remained in
+  the README and asking that the
+  rewrite entry's fields be named; all
+  three points are repaired in this
+  item's commit, and their ground is
+  stated here exactly. The proposals
+  paragraph said that below either
+  threshold a rule earns no proposal,
+  which a supplied rewrites entry
+  answers with a rewrite proposal
+  below both thresholds; the sentence
+  now claims no delete or promote
+  proposal below either threshold.
+  The introduction said rules agents
+  misread are proposed rewritten,
+  where a misreading alone produces
+  no rewrite; it now says supplied
+  rewrites of misread rules are
+  proposed. And the rewrite paragraph
+  now names the entry's fields, rule,
+  misreading_quote, and replacement,
+  where it had described them without
+  naming them. The remainder of the
+  record owes nothing: the summary
+  shell is the rate-limit banner over
+  a complete walkthrough of the final
+  head, its Docstring Coverage check
+  passed at 100.00 percent over one
+  function, the follow-up command
+  shell is the plain rate-limit form
+  with no findings, and the remaining
+  reviews are empty-bodied reply
+  parents.
+
+- BP-54. The frozen-clock adjudication
+  convicts BP-47's draw, confirming
+  the unverified finding of BP-53 by
+  measurement. The battery freezes
+  the wall clock by interposition at
+  two readings, 1,700,000,000.123456789
+  and 1,800,000,000.987654321, fixes
+  the pid in a pid namespace at 1 and
+  at 250, and computes the draw's
+  candidates in advance over the
+  contracted mix, the counter and the
+  attempt running in lockstep from
+  zero in a fresh process's single
+  write. At the first reading and pid
+  1, planting all 65 candidates
+  refuses the write, exit 1 with the
+  cannot write the proposal file
+  refusal and the directory left
+  exactly as seeded, and planting 64
+  writes on the sixty-fifth candidate,
+  the document byte-identical to the
+  unshimmed baseline. At the second
+  reading and pid 250 the same split
+  stands, 65 refusing and 64 writing.
+  SHA-256 over the pid, the frozen
+  clock, the counter, the attempt,
+  the directory's bytes, and the
+  name's bytes is therefore a public
+  function of inputs an observer can
+  know or fix, and a planted
+  directory can deny the write
+  outright under a fixed clock, the
+  failure BP-46 convicted in the draw
+  the hash replaced.
+
+- BP-55. The repair adds the entropy
+  term. The mix keeps BP-47's order,
+  process id, nanoseconds, counter,
+  attempt, the directory's bytes, and
+  the name's bytes, and appends
+  sixteen bytes of operating system
+  randomness, drawn fresh per
+  candidate from /dev/urandom through
+  the standard library's file read.
+  Any failure of that source, the
+  open or a short or failed read,
+  refuses the write; the draw never
+  falls back to the computable mix,
+  and the non-unix arm, which has no
+  such source to read, refuses every
+  write rather than drawing
+  computably. The draw factors into a
+  terms function the tests pin term
+  by term and a live draw that yields
+  None on an unreadable or pre-epoch
+  clock (BP-47a, unchanged) or an
+  unreadable entropy source. The pins
+  are the entropy term deciding the
+  suffix with every other term fixed,
+  the suffix matching an independent
+  derivation from the contracted
+  layout, and a live draw rendering
+  eight lowercase hex characters or
+  refusing, two draws not being
+  required to differ, the suffix
+  carrying thirty-two bits of the
+  hash, so no collision-freedom is
+  claimed for it. The battery of
+  BP-54 rerun against the repaired
+  binary at the first reading and pid
+  1 leaves all 65 clock-only plants
+  inert, the write landing with the
+  document byte-identical to the
+  baseline, and under an interposition
+  that fails every open of
+  /dev/urandom with EACCES the write
+  refuses with the directory left
+  exactly as seeded; the pre-epoch
+  refusal also stands measured again.
+  The retry cap, the 0600 mode, the
+  placement, the rename target, and
+  the cannot-write text stand
+  unchanged, and no manifest change
+  is needed, the digest crate already
+  being a dependency and the entropy
+  read being the standard library's.
+
+- BP-56. The observations document's
+  version key is consumed, completing
+  the joint repair unheard's UH-59
+  opened: the document is versioned
+  on the writing side there and is
+  read and checked on this side here,
+  and the acceptance law stands in
+  this contract in its own text. The
+  shipped loader's behavior is
+  measured first: it read no version
+  key at all, accepting a document
+  carrying observations_version
+  "1.0", a document carrying "2.0",
+  the number 2, a list holding "1.0",
+  and the empty string exactly as it
+  accepts a document with no key, the
+  key wholly invisible to it. The
+  loader now checks the key when
+  present, after the document's shape
+  gate, whose refusal keeps its
+  precedence: the string "1.0", the
+  version UH-59 defines, is accepted,
+  and any other value, of whatever
+  type, refuses the load by name as
+  unsupported observations_version,
+  with the value rendered as the
+  loader renders an unknown kind,
+  since a version this reader does
+  not know may name a shape it cannot
+  absorb. A document with no version
+  key loads as it always has: absence
+  can only be a pre-version document
+  or a hand-written one, both of the
+  shape BP-6 defines, and the
+  Quickstart's own document carries
+  no key. BP-6's definition gains the
+  key by this item's statement: the
+  observations document may open with
+  observations_version, and a reader
+  of this contract knows its law
+  without opening unheard's. The
+  battery's version cells measure
+  the split on both binaries, and
+  the loader's pins cover the
+  accepted key, the refused values,
+  and the versioned document loading
+  as its unversioned twin.
+
+- BP-57. The round's verification is
+  BP-28's discipline over the new
+  cells. The differential harness
+  gains the observations version
+  case: the "1.0" arm compared
+  against the oracle, which reads no
+  version key and so accepts what
+  the port accepts, outputs and
+  trees byte for byte, and two solo
+  arms, "2.0" and the number 2,
+  pinning each side's own outcome,
+  the port's named refusal with
+  nothing written against the
+  oracle's write, the divergence
+  itself being the contracted
+  behavior of BP-56. The harness
+  stands at 16 cases, 577 steps, 0
+  failures against the repaired
+  binary, and the control run
+  against the pre-round binary fails
+  exactly the new case's two solo
+  arms and nothing else. The battery
+  of BP-54 and BP-55 stands in the
+  round's scratch as the draw's
+  instrument, the frozen-clock cells
+  being outside the harness's step
+  forms, as Round 7's clock battery
+  stood outside it (BP-51). Cargo
+  stands at 64 tests, the 59 of
+  Round 7 plus the draw's three pins
+  and the loader's two, with clippy
+  under -D warnings and fmt both
+  clean on the final tree.
+
+- BP-58. The closure moves the README
+  rounds line to 8 of 100 and is the
+  only change to that line this round
+  makes, the README's three repaired
+  sentences having landed with BP-53.
+
+- BP-59. CodeRabbit's step 0 pass on
+  the Round 8 pull request (pull
+  request 12) posted one review
+  comment and one finding in its
+  review body, both Minor, both
+  against the README, and both stand
+  repaired in this item's commit. The
+  comment holds that BP-53's repaired
+  threshold sentence still overclaims
+  in its tail: a rule with a single
+  ignored observation is not left
+  alone, since two followed
+  observations with the position and
+  section conditions earn it a
+  promote proposal and a supplied
+  rewrites entry earns it a rewrite.
+  The tail now claims only that a
+  single ignored observation by
+  itself earns a rule no delete
+  proposal, which is the threshold
+  the sentence illustrates. The body
+  finding holds that the non-unix
+  refusal of BP-55 is nowhere stated
+  where a user meets it: the
+  Quickstart now states, after its
+  run, that writing to a file draws
+  its temporary name with sixteen
+  bytes from the operating system's
+  randomness device at /dev/urandom,
+  that a build on a platform without
+  that device refuses the write
+  rather than drawing a computable
+  name, and that stdout, which needs
+  no draw, works on every build.
+
+- BP-60. The same pass's summary
+  shell carries one further item,
+  recorded here so the record stands
+  whole: its Docstring Coverage
+  check reports 44.44 percent
+  against a threshold of 80.00
+  percent, over nine functions
+  analyzed across three files, and
+  the shell is the rate-limit banner
+  over a complete walkthrough of the
+  head it reviewed. The item is
+  dismissed. It names no function,
+  this repository carries no
+  docstring configuration or
+  threshold of its own for the check
+  to enforce, and the check applies
+  the review tool's default profile.
+  The basis is the one secondtake's
+  ST-61 and unheard's UH-57 state
+  for the same item on their own
+  pull requests.

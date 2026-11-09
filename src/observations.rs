@@ -1,5 +1,6 @@
 //! Evidence enters as an observations file (BP-6,
-//! BP-22). The loader reads its file as UTF-8, with
+//! BP-22), its version key read and checked when
+//! present (BP-56). The loader reads its file as UTF-8, with
 //! no BOM stripping at this surface, and a failure
 //! to read, decode, or parse is reported with the
 //! CPython exception text the Python embeds in its
@@ -261,6 +262,23 @@ pub fn load_observations(
         return Err(Failure::named(
             "observations file must be a JSON object with an observations list",
         ));
+    }
+    // BP-56: the document's version key, when
+    // present, is read and checked. The string
+    // "1.0" is the version this loader knows;
+    // any other value, of any type, refuses by
+    // name, since its shape may have changed in
+    // ways this reader cannot absorb. A document
+    // with no version key is the pre-version
+    // BP-6 shape and loads as it always has.
+    if let Some(version) = document.get("observations_version") {
+        let supported = matches!(version, Value::Str(text) if text == &Text::from_str("1.0"));
+        if !supported {
+            return Err(Failure::named(&format!(
+                "unsupported observations_version {}",
+                crate::pyrepr::repr_value(version)
+            )));
+        }
     }
     let mut observations = Vec::new();
     for (index, entry) in entries(&document, "observations")?.iter().enumerate() {

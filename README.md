@@ -2,7 +2,7 @@
 
 An editor for rules files that works the way a copy editor works copy: strikes the rules no agent follows, rewrites the ones agents misread, and moves the buried ones to the top, receipts attached.
 
-Give bluepencil a rules file and the observations gathered on the sessions that ran under it, and it answers with a proposal document. Rules the evidence shows ignored are proposed for deletion, rules agents misread are proposed rewritten with the misreading quoted, and followed rules buried deep in the file are proposed moved up. Every proposal carries the observations it rests on as evidence, and nothing is applied on its own. The tool never writes to the files it reads.
+Give bluepencil a rules file and the observations gathered on the sessions that ran under it, and it answers with a proposal document. Rules the evidence shows ignored are proposed for deletion, supplied rewrites of rules agents misread are proposed with the misreading quoted, and followed rules buried deep in the file are proposed moved up. Every proposal carries the observations it rests on as evidence, and nothing is applied on its own. The tool never writes to the files it reads.
 
 ![ci](https://github.com/david-engelmann/bluepencil/actions/workflows/ci.yml/badge.svg)
 
@@ -126,6 +126,8 @@ target sha256 68737b58e096e689f132059ef8a4ef3350e3d746386995918f9fb3117f25133b
 
 The rule ignored twice is proposed for deletion with both observations quoted, and the followed rule earns no proposal.
 
+Writing to a file draws its temporary name with sixteen bytes from the operating system's randomness device at /dev/urandom, and a build on a platform without that device refuses the write rather than drawing a name an observer could compute. Sending the document to stdout, which is what either command does with no -o, needs no draw and works on every build.
+
 ## Usage
 
 The crate ships synthetic sample inputs under `tests/fixtures`. Propose over them and write the document to a file.
@@ -160,9 +162,9 @@ target sha256 1fc29c7a84fe5d0f7c6d066563dd4f53f5b646020303c318e786273b79df3450
   evidence, followed, "session 23 kept the new module under review size"
 ```
 
-The proposals follow fixed thresholds. A rule earns a delete proposal when at least two observations mark it ignored and none mark it followed. A rule earns a promote proposal when at least two observations mark it followed, the rule stands in the second half of the file by rule order, and its section differs from the section of the first rule. Below either threshold a rule earns no proposal, however the rest of its counts read, so a rule with a single ignored observation is left alone.
+The proposals follow fixed thresholds. A rule earns a delete proposal when at least two observations mark it ignored and none mark it followed. A rule earns a promote proposal when at least two observations mark it followed, the rule stands in the second half of the file by rule order, and its section differs from the section of the first rule. Below either threshold a rule earns no delete or promote proposal, however the rest of its counts read, so a single ignored observation by itself earns a rule no delete proposal.
 
-A misreading observation on its own never produces a rewrite. Rewrites come from the rewrites entries in the observations file, each one naming a rule by its exact text, quoting a misreading observation recorded against that rule, and giving the replacement text. An entry whose quote matches no misreading observation on its rule fails the run with a named error.
+A misreading observation on its own never produces a rewrite. Rewrites come from the rewrites entries in the observations file, each one carrying a rule field with the rule's exact text, a misreading_quote field quoting a misreading observation recorded against that rule, and a replacement field with the new text. An entry whose quote matches no misreading observation on its rule fails the run with a named error.
 
 The output path may not name an input, in any spelling. Point it at the rules file and the run refuses and exits 1.
 
@@ -178,7 +180,7 @@ error, bluepencil never writes to its inputs
 
 The tool is at its first working state. Both commands run, the input guard holds in every spelling the contract pins, and output writes land atomically beside their target under a drawn temp name. The behavior contract lives in CONTRACT.md and is pinned against the Python reference implementation by a differential harness.
 
-Closed perfection rounds, 7 of 100.
+Closed perfection rounds, 8 of 100.
 
 ## License
 
