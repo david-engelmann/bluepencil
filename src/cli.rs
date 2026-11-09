@@ -1034,26 +1034,6 @@ fn lexical_abspath(parent: &[u16]) -> Option<Vec<u16>> {
     Some(normpath_units(&absolute))
 }
 
-/// The mkstemp-shaped write: a sibling temp with
-/// the target's name and a dot for a prefix, no
-/// suffix, mode 0600, replaced onto the target,
-/// and unlinked on any failure. The temp is
-/// created under the parent's lexically
-/// absolutized form (BP-41), not under the
-/// parent as spelled: a symlink component the
-/// spelling pops with a following dotdot is
-/// never traversed for the temp, exactly as
-/// mkstemp's abspath never traverses it. The
-/// rename still targets the path itself. The
-/// candidate is the name's own bytes, a dot,
-/// and exactly eight drawn characters (BP-47):
-/// the lossy name and the decimal pid, counter,
-/// and attempt suffix it replaces stood
-/// convicted on all three arms in Round 7
-/// (BP-44, BP-45, BP-46). The draw's terms
-/// stand in draw_suffix; Round 8 adds the
-/// entropy term the frozen-clock conviction
-/// is owed to (BP-54, BP-55).
 /// Sixteen bytes of operating system
 /// randomness (BP-55), drawn from
 /// /dev/urandom, the kernel's randomness
@@ -1138,6 +1118,26 @@ fn suffix_from_terms(
     suffix
 }
 
+/// The mkstemp-shaped write: a sibling temp with
+/// the target's name and a dot for a prefix, no
+/// suffix, mode 0600, replaced onto the target,
+/// and unlinked on any failure. The temp is
+/// created under the parent's lexically
+/// absolutized form (BP-41), not under the
+/// parent as spelled: a symlink component the
+/// spelling pops with a following dotdot is
+/// never traversed for the temp, exactly as
+/// mkstemp's abspath never traverses it. The
+/// rename still targets the path itself. The
+/// candidate is the name's own bytes, a dot,
+/// and exactly eight drawn characters (BP-47):
+/// the lossy name and the decimal pid, counter,
+/// and attempt suffix it replaces stood
+/// convicted on all three arms in Round 7
+/// (BP-44, BP-45, BP-46). The draw's terms
+/// stand in draw_suffix; Round 8 adds the
+/// entropy term the frozen-clock conviction
+/// is owed to (BP-54, BP-55).
 fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
     let dir = match path.parent() {
         Some(parent) if !parent.as_os_str().is_empty() => parent.to_path_buf(),
