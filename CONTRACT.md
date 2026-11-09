@@ -1222,3 +1222,38 @@ in the round dossier, never a silent approximation.
   ST-61 and unheard's UH-57 state
   for the same item on their own
   pull requests.
+- BP-61. Two record items close
+  Round 8. First, BP-57's harness
+  sentence is qualified. The run
+  it reports, 16 cases, 577
+  steps, 0 failures, ran on the
+  binary built from the gated
+  slice tree. No code changed
+  after the slice. The closure,
+  the BP-59 repair, and the
+  BP-60 disposition touch only
+  CONTRACT.md and README.md, and
+  the standards repair that
+  followed the reviews touches
+  only a doc comment in
+  src/cli.rs, proven comment-only
+  by a byte-identical stripped
+  remainder. The battery's 22
+  cells ran on the final binary,
+  and cargo test 64 and hosted
+  CI stand on the final head,
+  so the run BP-57 reports is
+  evidence for the code that
+  shipped. Second, CodeRabbit's
+  follow-up review 5820358596
+  on the repair head carries one
+  item, the Docstring Coverage
+  recurrence, and it is dismissed
+  on the basis BP-60 states. The
+  standards repair itself stands
+  recorded here. The write's doc
+  paragraphs sit above
+  write_atomically again, and the
+  pull request body names the
+  final head 27deba11 and the
+  range BP-53 to BP-60.
