@@ -1422,11 +1422,24 @@ in the round dossier, never a silent approximation.
   dotdot names no input on the
   finished path, so the out.json
   spelling passes the guard and
-  refuses at the write seam, the
-  temp's parent being spelled
-  through the loop, while the
-  rules.md spelling in the same
-  shape refuses at the guard. No
+  refuses at the write seam: the
+  temp is created under the
+  parent's lexically absolutized
+  form, the cancelled loop never
+  traversed for it, as BP-41
+  states, and the rename, which
+  targets the spelling as given,
+  fails there and the temp is
+  removed, while the rules.md
+  spelling in the same shape
+  refuses at the guard. The
+  mechanism stands as the write
+  seam states it: the advisory
+  pass found the slice's first
+  form of this clause misstating
+  it, the finding was verified
+  against the code, and the
+  clause stands corrected. No
   apply command exists: the name
   meets the usage refusal at exit 2
   with identical streams on both
