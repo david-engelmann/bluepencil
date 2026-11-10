@@ -1257,3 +1257,207 @@ in the round dossier, never a silent approximation.
   pull request body names the
   final head 27deba11 and the
   range BP-53 to BP-60.
+
+## Round 9
+
+- BP-62. The round opens with the full
+  read-back of pull request 12, every
+  review body to its end, every review
+  comment thread, and every issue
+  comment, the follow-up shells and the
+  acknowledgment replies included. The
+  pass carries four reviews, three
+  review comments, and five issue
+  comments. Its two findings, the
+  threshold sentence's tail and the
+  non-unix output limitation, both
+  Minor and both against the README,
+  stand repaired in BP-59, the comment
+  thread confirmed addressed by the
+  bot itself. The summary shell's one
+  check item, Docstring Coverage,
+  stands dismissed in BP-60, and the
+  follow-up review 5820358596 on the
+  repair head, which carries that
+  item's recurrence and nothing else,
+  stands dismissed in BP-61 on
+  BP-60's basis. The shell's final
+  form reports the check at 55.56
+  percent where the form BP-60 read
+  reported 44.44; the item is the
+  same in both forms, a coverage
+  figure over nine functions across
+  three files naming no function, so
+  the dismissal covers the final form
+  as it covered the first, and the
+  shell's merge-risk sentence restates
+  the non-unix item BP-59 repaired,
+  the Quickstart sentence it asked
+  for standing in the README. No item
+  from the pass stands undisposed, so
+  this round's read-back charge
+  closes with no repair owed.
+
+- BP-63. The observations version law
+  of BP-56 is measured fresh, at the
+  shipped binary against the oracle,
+  over twenty cells. A document with
+  no version key and a document
+  carrying the string "1.0" load on
+  both sides, to stdout and to a
+  file, the output byte-identical to
+  the unversioned baseline. Eight
+  further values refuse the load on
+  this side by name, each rendered
+  as the loader renders an unknown
+  kind: the string "2.0", the empty
+  string, the integer 2, the float
+  1.0, true, null, a list holding
+  "1.0", and an object. The oracle,
+  which reads no version key, accepts
+  and writes every one of them; the
+  split is the contracted behavior of
+  BP-56, not a drift. A document
+  carrying the key twice takes the
+  last value on both readers, an
+  accepted "1.0" standing last
+  loading and a refused "2.0"
+  standing last refusing. The shape
+  gate keeps its precedence: a
+  document whose observations entry
+  is not a list meets the shape
+  refusal on both sides, its version
+  unexamined. The version check in
+  turn precedes entry validation: a
+  bad entry under a refused version
+  meets the version refusal here and
+  the entry refusal on the oracle,
+  and under "1.0" both sides name
+  the entry. A refused load writes
+  nothing. The law's statement is
+  BP-56's and is unchanged; this
+  item is its fresh evidence.
+
+- BP-64. The temp-name draw's posture
+  of BP-55 is measured fresh over
+  eight cells. The clock and entropy
+  interpositions are Round 8's,
+  carried into this round's scratch;
+  the cells are this round's
+  battery's own. The 65
+  candidates computed over the
+  pre-repair mix, planted at
+  1,700,000,000.123456789 with pid 1
+  and at 1,800,000,000.987654321 with
+  pid 250, are inert on the shipped
+  binary: the write lands at both
+  readings and the document is
+  byte-identical to the unshimmed
+  baseline. An entropy source whose
+  open fails refuses the write on
+  propose and on diff, the directory
+  left exactly as seeded, and a
+  source that opens but reads short,
+  the randomness device redirected
+  to /dev/null so the read comes up
+  empty, refuses the same way; that
+  arm is new this round. A clock
+  reading one nanosecond before the
+  epoch refuses both commands,
+  BP-47a standing. The oracle writes
+  under both interpositions, its own
+  temp naming never opening the
+  randomness device; the difference
+  is one of mechanism, measured and
+  recorded, and no contracted
+  behavior splits on it. The draw's
+  per-candidate freshness stands on
+  BP-55's factoring and its pins;
+  this battery measures the
+  single-candidate write and the
+  failure arms.
+
+- BP-65. The invariants of BP-4 and
+  BP-12 are measured fresh under
+  adversarial outputs, over
+  thirty-four cells, twenty-three on
+  propose and eleven on diff, every
+  paired cell byte-identical across
+  the port and the oracle in exit
+  code, streams, and the file tree
+  after the run. The guard refuses
+  an output naming an input by the
+  direct spelling, by a dot or
+  dotdot spelling, by a trailing
+  slash, by symlink, by hardlink,
+  through a symlinked parent, by a
+  dangling splice whose target
+  spelling lands on an input, through
+  a chain of forty-one links, and as
+  a bare loop, each refusal the
+  never-writes error with no file
+  changed. The same file standing in
+  both input seats is read as the
+  second seat's document and refused
+  by that seat's loader, nothing
+  written, on both commands. A valid
+  write changes nothing but its
+  target: the inputs stand
+  byte-identical, the output lands
+  at mode 0600, and no temp residue
+  remains. An output that is a
+  symlink to a safe file is itself
+  replaced, its target untouched,
+  and a dangling symlink to a fresh
+  name is itself replaced, its
+  target never created. An output
+  that cannot land, a missing
+  parent, a parent that is the rules
+  file itself, or an existing
+  directory, meets the named
+  cannot-write error and leaves no
+  residue. The cancelled loop splits
+  as BP-27 states it: a loop
+  component cancelled by a following
+  dotdot names no input on the
+  finished path, so the out.json
+  spelling passes the guard and
+  refuses at the write seam, the
+  temp's parent being spelled
+  through the loop, while the
+  rules.md spelling in the same
+  shape refuses at the guard. No
+  apply command exists: the name
+  meets the usage refusal at exit 2
+  with identical streams on both
+  sides, and a rendered diff changes
+  no file it renders from. The
+  unsearchable-directory stat arm of
+  BP-27a is not re-probed here; it
+  stands on its Round 4 measurement,
+  this battery's shapes being the
+  ones named above.
+
+- BP-66. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 62 cells, 0
+  failures, its version, draw, and
+  guard cells the instruments of
+  BP-63, BP-64, and BP-65. The
+  differential harness stands at 16
+  cases, 577 steps, 0
+  failures against the shipped
+  binary. The round changes no code:
+  cargo stands at 64 tests, clippy
+  under -D warnings and fmt both
+  clean on the final tree, and the
+  codepoint scan stands at zero on
+  both dash codepoints over the
+  changed files.
+
+- BP-67. The closure moves the README
+  rounds line to 9 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above.
