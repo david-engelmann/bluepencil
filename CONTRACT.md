@@ -1679,22 +1679,24 @@ in the round dossier, never a silent approximation.
   from 40 session batches with 200
   supplied rewrites, 912,741 bytes,
   carrying observations_version "1.0"
-  as unheard emits it. Seven cells
-  carry the material through both
-  command surfaces, propose and diff,
-  to stdout and to files, every
-  paired cell byte-identical across
-  the port and the oracle, the
-  proposal document over the material
-  standing at 770 proposals and
-  1,611,407 bytes. The refusal
-  surfaces are exercised at the same
-  scale: the big document carrying
-  version "2.0" refuses by name here
-  and is written in full by the
-  oracle, and an entry malformed at
-  index 2,999 refuses by name on both
-  sides.
+  as unheard emits it. Seven cells run over the
+  material in total: five carry
+  cells through both command
+  surfaces, propose and diff, to
+  stdout and to files, byte-identical
+  across the port and the oracle,
+  the proposal document over the
+  material standing at 770 proposals
+  and 1,611,407 bytes; one refusal
+  cell, an entry malformed at index
+  2,999, refusing by name on both
+  sides byte-identically; and one
+  split refusal cell, the big
+  document carrying version "2.0",
+  refusing by name here and written
+  in full by the oracle, as BP-56
+  contracts. Six of the seven cells
+  stand paired byte-identical.
 
 - BP-74. The round's verification is
   BP-28's discipline over the
@@ -1718,3 +1720,30 @@ in the round dossier, never a silent approximation.
   only change to that file this round
   makes, the round's slice being the
   contract items above.
+
+- BP-76. Repair record for this round.
+  BP-73's cell sentence stands
+  restated above to the battery's
+  own composition (five carry cells,
+  one byte-identical refusal cell,
+  one split refusal cell), the
+  round's spec and standards reviews
+  having graded its first form as
+  counting the refusal cells as
+  carry cells. The pull request
+  body's joint-clause narrowing,
+  made during the round, stands for
+  its text; the repair note that
+  accompanied it misstated this
+  round's review history and is
+  corrected by the owner's note on
+  the pull request, which is the
+  record of that correction. The
+  battery instrument's header
+  comment stands corrected in the
+  round's scratch record to describe
+  the instrument as coded (the
+  deterministic stream shim with
+  frozen clock and draw-count
+  arbitration); BP-71's own
+  description was correct throughout.
