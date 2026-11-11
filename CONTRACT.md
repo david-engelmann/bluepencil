@@ -1474,3 +1474,247 @@ in the round dossier, never a silent approximation.
   only change to that file this round
   makes, the round's slice being the
   contract items above.
+
+## Round 10
+
+- BP-68. The round opens with the full
+  read-back of pull request 13, every
+  review body to its end, every review
+  comment thread, and every issue
+  comment, the follow-up shells and
+  the acknowledgment replies included.
+  The pass carries one review, no
+  review comments, and six issue
+  comments. Its one finding, a Minor
+  in the review body against BP-65's
+  cancelled-loop clause, was verified
+  against the code and repaired in
+  the round, the correction recorded
+  in BP-65's own text; the trigger,
+  the rate-limit auto-reply, the step
+  0 disposition, the finisher lane's
+  landing comment, and the owner's
+  correction comment over it stand
+  read whole. The owner's correction
+  records that the merge and the
+  landing comment were performed by
+  the round's read-only finisher lane
+  against its brief, that the lane's
+  report and landing comment do not
+  stand as evidence under the
+  delegated-lane authority rule, and
+  that the landing rests on the
+  owner's re-audit of the merged
+  state, the merge tree equal to the
+  reviewed head's tree, the README at
+  9 of 100, hosted CI green on the
+  head, and the owner's own harness
+  run at 16 cases and 577 steps. One
+  sentence of the round's step 0
+  disposition does not survive this
+  read-back: it states the summary
+  shell's Docstring Coverage check
+  passed with no eligible functions,
+  where the shell as it finally
+  stands carries four passed checks,
+  Description, Title, Linked Issues,
+  and Out of Scope, and no Docstring
+  Coverage check at all. The sentence
+  is corrected here: the shell
+  carries no Docstring Coverage item
+  in its final form, and no
+  disposition of Round 9 turns on the
+  sentence, the pass's only finding
+  being the BP-65 Minor. No item from
+  the pass stands undisposed, so this
+  round's read-back charge closes
+  with the correction recorded and no
+  repair owed.
+
+- BP-69. The loader's precedence
+  chain of BP-56 and BP-63 is
+  measured fresh at its joints, at
+  the shipped binary against the
+  oracle, over twelve cells.
+  Documents violating two gates at
+  once answer at the first gate in
+  the chain: a refused version
+  standing beside a non-list
+  observations entry meets the shape
+  refusal on both sides, its version
+  unexamined, as do an accepted
+  version over the same shape, a
+  document with no observations key
+  at all, and a document that is
+  itself a list or a string. A
+  refused version standing over a
+  malformed entry meets the version
+  refusal here and the entry refusal
+  on the oracle, which reads no
+  version key, at both entry depths,
+  a non-object entry and an unknown
+  kind. Under an accepted version
+  the same malformed entry meets the
+  entry refusal on both sides. The
+  observations entries answer before
+  the rewrites seat is examined: a
+  malformed entry standing beside a
+  malformed rewrites seat meets the
+  entry refusal on both sides, and
+  the rewrites seat's own shape
+  refusal, rewrites must be a list,
+  answers only once every observation
+  entry validates. A version key
+  carried inside an entry is not the
+  document's key: the document loads
+  on both sides, the output
+  byte-identical.
+
+- BP-70. The observations version
+  acceptance set of BP-56 is measured
+  exactly, over thirteen cells. The
+  string "1.0" and absence load on
+  both sides to the baseline
+  document. Ten near values refuse
+  the load here by name, each
+  rendered as the loader renders an
+  unknown kind: "1.0" with a trailing
+  space, "1.0" with a leading space,
+  "1.00", "v1.0", "1", "01.0", "1.0"
+  with a trailing newline, "1.0"
+  spelled with fullwidth digits,
+  "1.0" carrying a zero-width space,
+  and the integer 1; the oracle
+  accepts and writes every one. The
+  renderings are Python's repr of
+  the parsed value, the spec the
+  port's repr mirrors, and the
+  fullwidth and zero-width arms
+  exercise its non-ASCII arms. A
+  refused load writes nothing, at
+  the file arm as at the stdout arm.
+  The law's statement is BP-56's and
+  is unchanged; this item is its
+  fresh evidence.
+
+- BP-71. The temp-name draw's posture
+  of BP-55 is measured fresh over
+  eleven cells. The 65 candidates
+  computed over the pre-repair mix
+  stay inert at two readings and two
+  pids. An entropy source whose open
+  fails refuses the write on propose
+  and on diff, and a source that
+  opens but reads short refuses the
+  same way, the directory left as
+  seeded in every arm; a clock
+  reading before the epoch refuses
+  both commands, BP-47a standing. The
+  per-candidate freshness the
+  factoring states is this round
+  measured dynamically: under a
+  frozen clock, a deterministic
+  entropy stream shim, and the pid
+  seated at 250, a single write draws
+  exactly once, and with the first
+  candidate's name and the name a
+  read-once draw would try second
+  both planted, the write lands after
+  exactly two draws, where a draw
+  that read its entropy once and
+  reused it would have needed a
+  third. The oracle writes under both
+  interpositions, its own temp naming
+  never opening the randomness
+  device; the difference is one of
+  mechanism, measured and recorded,
+  and no contracted behavior splits
+  on it. The draw's statement is
+  BP-55's and is unchanged.
+
+- BP-72. The invariants of BP-4 and
+  BP-12 are measured fresh at the
+  output guard's joints, over eight
+  cells, every paired cell
+  byte-identical across the port and
+  the oracle in exit code, streams,
+  and the file tree after the run.
+  The rules file standing as its own
+  run's target refuses with the
+  never-writes error on propose and
+  on diff, as do the observations
+  file on propose and the proposals
+  file on diff, and the paired tree
+  comparison proves every input
+  byte-identical after each run,
+  BP-12 in its own terms. An output
+  spelled through a parent that is a
+  bare loop refuses with the
+  never-writes error on both sides:
+  the parent cannot be resolved, and
+  an unresolvable output counts as
+  naming an input, BP-27's law
+  holding at the parent component as
+  at the output itself. An output
+  spelled through a dangling parent
+  meets the cannot-write error naming
+  the spelling as given, on both
+  sides. The valid file and stdout
+  arms stand as controls.
+
+- BP-73. The realistic pass runs the
+  judge over material at the shapes
+  the sibling tools produce,
+  generated deterministically for
+  this round and counted from the
+  documents themselves: a rules
+  document of 40 sections and 1,200
+  rules, 163,933 bytes, its fenced
+  blocks' lines never rules, prose
+  paragraphs standing as context,
+  continuation lines joined to their
+  rules, and numbered and bulleted
+  markers mixed; and an observations
+  document of 3,000 entries merged
+  from 40 session batches with 200
+  supplied rewrites, 912,741 bytes,
+  carrying observations_version "1.0"
+  as unheard emits it. Seven cells
+  carry the material through both
+  command surfaces, propose and diff,
+  to stdout and to files, every
+  paired cell byte-identical across
+  the port and the oracle, the
+  proposal document over the material
+  standing at 770 proposals and
+  1,611,407 bytes. The refusal
+  surfaces are exercised at the same
+  scale: the big document carrying
+  version "2.0" refuses by name here
+  and is written in full by the
+  oracle, and an entry malformed at
+  index 2,999 refuses by name on both
+  sides.
+
+- BP-74. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 51 cells, 0
+  failures, its joint, version, draw,
+  guard, and realistic cells the
+  instruments of BP-69 to BP-73. The
+  differential harness stands at 16
+  cases, 577 steps, 0 failures
+  against the shipped binary. The
+  round changes no code: cargo stands
+  at 64 tests, clippy under
+  -D warnings and fmt both clean on
+  the final tree, and the codepoint
+  scan stands at zero on both dash
+  codepoints over the changed files.
+
+- BP-75. The closure moves the README
+  rounds line to 10 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above.
