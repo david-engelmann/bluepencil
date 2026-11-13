@@ -2238,3 +2238,86 @@ in the round dossier, never a silent approximation.
   round's read-back charge closes
   with the corrections recorded and
   no repair owed.
+
+- BP-87. The loader's precedence chain
+  of BP-56 and BP-63 is measured fresh
+  at its joints, at the shipped binary
+  against the oracle, over twelve
+  cells, each cell named by its part.
+  Six shape-first cells (a refused
+  version standing beside a non-list
+  observations value; an accepted
+  version over a non-list observations
+  value; entry-shaped content inside
+  a non-list observations value; the
+  document itself a list; the
+  document itself a string; and a
+  document with no observations key
+  at all beside a refused version)
+  meet the shape refusal on both
+  sides, the version unexamined. Two
+  version-over-entry cells (a
+  non-object entry; an entry of
+  unknown kind) meet the version
+  refusal here and the entry refusal
+  on the oracle, which reads no
+  version key. One entry cell under
+  an accepted version (the same
+  non-object entry) meets the entry
+  refusal on both sides. Two
+  rewrites-seat cells: a malformed
+  entry standing beside a malformed
+  rewrites seat meets the entry
+  refusal on both sides, and the
+  rewrites seat's own shape refusal,
+  rewrites must be a list, answers
+  only once every observation entry
+  validates. One version-inside-entry
+  cell: a version key carried inside
+  an entry is not the document's
+  key, and the document loads on
+  both sides, the output
+  byte-identical. Six plus two plus
+  one plus two plus one is twelve.
+  The chain's statement is BP-56's
+  and BP-63's and is unchanged; this
+  item is its fresh evidence.
+
+- BP-88. The observations version
+  acceptance set of BP-56 is measured
+  exactly, over twenty-three cells,
+  each cell named by its part. Two
+  acceptance cells: the string "1.0"
+  and absence load on both sides to
+  the baseline document. Eighteen
+  refusal cells refuse the load here
+  by name, each rendered as Python's
+  repr of the parsed value, the spec
+  the port's repr mirrors, and the
+  oracle accepts every one: the ten
+  near values of BP-70 ("1.0" with a
+  trailing space, "1.0" with a
+  leading space, "1.00", "v1.0",
+  "1", "01.0", "1.0" with a trailing
+  newline, "1.0" spelled with
+  fullwidth digits, "1.0" carrying a
+  zero-width space, and the integer
+  1) and the eight values of BP-63
+  (the string "2.0", the empty
+  string, the integer 2, the float
+  1.0, true, null, a list holding
+  "1.0", and an object with a single
+  key). Two duplicate-key cells: a
+  key carried twice takes its last
+  value on both readers, an accepted
+  "1.0" standing last loading on
+  both sides, and a refused "2.0"
+  standing last refusing here and
+  loading on the oracle. One
+  file-arm cell: a refused load
+  writes nothing at the file arm, as
+  at the stdout arm. Two plus
+  eighteen plus two plus one is
+  twenty-three. The law's statement
+  is BP-56's and is unchanged; this
+  item is its fresh evidence.
