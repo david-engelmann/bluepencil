@@ -2434,3 +2434,91 @@ in the round dossier, never a silent approximation.
   statement is BP-55's and is
   unchanged; this item is its fresh
   evidence.
+
+- BP-91. The invariants of BP-4 and
+  BP-12 are measured fresh at the
+  output guard's joints, over eight
+  cells, each cell named by its
+  part, every paired cell
+  byte-identical across the port and
+  the oracle in exit code, streams,
+  and the file tree after the run.
+  Four input-as-target cells: the
+  rules file standing as its own
+  run's target refuses with the
+  never-writes error on propose and
+  on diff, as do the observations
+  file on propose and the proposals
+  file on diff, and the paired tree
+  comparison proves every input
+  byte-identical after each run,
+  BP-12 in its own terms. Two
+  parent cells: an output spelled
+  through a parent that is a bare
+  loop refuses with the
+  never-writes error on both sides:
+  the parent cannot be resolved,
+  and an unresolvable output counts
+  as naming an input, BP-27's law
+  holding at the parent component
+  as at the output itself; and an
+  output spelled through a dangling
+  parent meets the cannot-write
+  error naming the spelling as
+  given, on both sides. Two control
+  cells: the valid file arm and
+  the valid stdout arm stand as
+  controls, byte-identical on both
+  sides. Four plus two plus two is
+  eight. BP-4 stands as it stands:
+  the command surface carries
+  propose and diff only, the diff
+  renders a document for a human
+  and writes it atomically like any
+  other output, and no surface of
+  the tool applies it; the diff
+  cells of this round and of the
+  realistic pass produce documents
+  that stand unapplied.
+
+- BP-92. The realistic pass runs the
+  judge over material at the shapes
+  the sibling tools produce,
+  generated deterministically for
+  this round and counted from the
+  documents themselves, one step
+  above the last round's scale: a
+  rules document of 52 sections and
+  1,560 rules, 213,353 bytes, its
+  fenced blocks' lines never rules,
+  prose paragraphs standing as
+  context, continuation lines
+  joined to their rules, and
+  numbered and bulleted markers
+  mixed; and an observations
+  document of 3,900 entries merged
+  from 52 session batches with 260
+  supplied rewrites, 1,187,422
+  bytes, carrying
+  observations_version "1.0" as
+  unheard emits it. Seven cells run
+  over the material in total, in
+  three families. Five carry cells
+  through both command surfaces,
+  propose and diff, to stdout and
+  to files, and a file carry over
+  the document's unversioned twin,
+  every paired cell byte-identical,
+  the proposal document over the
+  material standing at 1,001
+  proposals and 2,108,385 bytes.
+  One refusal cell, an entry
+  malformed at index 3,899,
+  refusing by name on both sides
+  byte-identically. And one split
+  refusal cell, the big document
+  carrying version "2.0", refusing
+  by name here and written in full
+  by the oracle, as BP-56
+  contracts. Six of the seven cells
+  stand paired byte-identical.
