@@ -2813,3 +2813,44 @@ in the round dossier, never a silent approximation.
   applies it; every diff cell of this
   round produces a document that stands
   unapplied.
+
+- BP-100. The round's verification is
+  BP-28's discipline over the re-measured
+  surfaces. This round's battery stands at
+  44 cells, 0 failures: walk cells 4,
+  entropy cells 4, precedence cells 7,
+  version cells 23, and guard cells 6,
+  each item's total the sum of the named
+  parts its own text enumerates, with
+  BP-98 stating its two families as seven
+  plus twenty-three. The differential
+  harness stands at 16 cases, 577 steps, 0
+  failures against the shipped binary. The
+  round changes no code: cargo stands at
+  64 tests (3 in the library suite, 18 in
+  the diff suite, 18 in the inventory
+  suite, and 25 in the proposals suite),
+  clippy under -D warnings and fmt both
+  clean on the final tree, and the
+  codepoint scan stands at U+2014 = 0 and
+  U+2013 = 0 over the tree and over all
+  blobs at the head, by Python scan. The
+  oracle paired against the port is the
+  Python at 255d973, blob-verified against
+  the commit across all nineteen blobs
+  before pairing, the commit's tree
+  listing read through the API and each
+  local blob's hash compared against it;
+  that is the channel exactly as used, and
+  no tarball channel is claimed.
+  Cargo.toml carries no description field:
+  BP-48's third item stands open by name
+  and is carried open in this round, not
+  repaired. BP-4 and BP-12 stand as BP-99
+  restates them.
+
+- BP-101. The closure moves the README
+  rounds line to 13 of 100 and is the only
+  change to that file this round makes,
+  the round's slice being the contract
+  items above.
