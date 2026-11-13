@@ -2140,3 +2140,101 @@ in the round dossier, never a silent approximation.
   only change to that file this round
   makes, the round's slice being the
   contract items above.
+
+- BP-86. The round opens with the full
+  read-back of pull request 15, every
+  review body to its end, every review
+  comment thread, and every issue
+  comment, the follow-up shells and
+  the acknowledgment replies included.
+  The pass carries no reviews, no
+  review comments, and four issue
+  comments: the review bot's summary
+  shell, the trigger, the bot's
+  action-not-completed reply to the
+  trigger, and the landing comment.
+  The shell stands in its final form
+  at this read-back at 11,248
+  characters, created
+  2026-11-12T10:04:34Z and last
+  edited 2026-11-12T10:09:58Z: four
+  passed checks (Title, Linked
+  Issues, Out of Scope Changes, and
+  Description), and no Docstring
+  Coverage item at all, the word
+  occurring zero times in its final
+  text; its merge-risk read is
+  Minimal over the reviewed head
+  6035bab5, the range it reviews
+  running from the Round 10 merge
+  babc8791 to that head; and it
+  records that no actionable comments
+  were generated in the review, under
+  run 0fe0af71-6e28-41c6-9dcd-3ef6b2e931d0.
+  The bot's reply to the trigger
+  records that it had already
+  reviewed the last commit. The
+  dispositions the final record
+  confirms: the pass generated no
+  actionable comments; no review and
+  no review comments stand on the
+  pull request; and nothing stood to
+  fix or to dismiss, the step 0
+  disposition standing in the body
+  itself, as the landing comment
+  records. The pull request merged at
+  2124bb00, its merge tree c2a63f37
+  equal to the reviewed head's tree,
+  the README on main at 11 of 100,
+  and the three reviews of record
+  stand as the landing comment states
+  them: spec fidelity PASS with two
+  Notes and no findings, standards
+  APPROVE with three Notes and no
+  findings, and a red team APPROVE
+  with no findings, on hosted CI
+  green at the exact head. The
+  landing comment's four charges are
+  discharged as follows. The shell
+  above is contracted in its final
+  form on the closed record with the
+  landing comment itself in the
+  census, the first charge. The
+  second charge: BP-77 compressed the
+  parallel seat's Round 10 delta
+  sequence into one phrase, and it
+  stands here in its separated form:
+  the parallel seat's spec delta
+  review returned PASS; its standards
+  delta review returned NOT APPROVE
+  with one Minor, the battery
+  instrument's header correction
+  (D1) asserted in the delta's text
+  before the correction had landed;
+  and on the confirmation re-read
+  the correction stood on disk, D1
+  stood discharged, and the
+  standards APPROVE arrived on that
+  re-read. The third charge: this
+  round's own cell totals in BP-87
+  to BP-92 are each stated as a sum
+  of named parts, the parts
+  enumerated in the items
+  themselves, so every total closes
+  from its parts. The fourth charge:
+  the workspace copies owed for
+  Round 11's scratch are discharged
+  as unrecoverable, on evidence: the
+  scratch stood in /tmp/bp11-scratch,
+  /tmp has been wiped since, no
+  directory of that name and no file
+  of that scratch stands in /tmp or
+  in the workspace at this read, and
+  nothing is reconstructed here;
+  Round 11's record stands on pull
+  request 15's own record and on
+  BP-77 to BP-85. No item from the
+  pass stands undisposed, so this
+  round's read-back charge closes
+  with the corrections recorded and
+  no repair owed.
