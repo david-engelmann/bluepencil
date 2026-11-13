@@ -2321,3 +2321,116 @@ in the round dossier, never a silent approximation.
   twenty-three. The law's statement
   is BP-56's and is unchanged; this
   item is its fresh evidence.
+
+- BP-89. The output guard's walk is
+  measured fresh at its flip points,
+  at the shipped binary against the
+  oracle, over nine cells, each cell
+  named by its part, no constant
+  inherited from any sibling: the
+  bounds below were probed at this
+  binary before they were pinned.
+  Four parent-chain cells: an output
+  spelled through a parent chain of
+  links standing in its parent path
+  lands through a chain of 39 and of
+  40 links on both sides, the
+  document landing in the real
+  directory at the chain's end,
+  byte-identical; and at 41 links
+  both sides refuse and the classes
+  split, on propose and again on
+  diff: this side's guard answers
+  the never-writes refusal, its
+  finished-path walk meeting the
+  loop errno on the chain prefix and
+  counting the spelling as
+  unresolvable, hence as naming an
+  input, while the oracle's resolve
+  completes in user space and its
+  write meets the kernel's traversal
+  bound at the temp creation,
+  answering the cannot-write error
+  naming the spelling as given.
+  Three dangling-chain cells: a
+  chain of dangling links lands
+  replacing the head link at one
+  link and at forty, the write
+  replacing the head link itself,
+  the missing target never created,
+  and the document standing
+  byte-identical on both sides; and
+  at forty-one dangling links the
+  arms split outright, this side
+  refusing under the forty splice
+  bound of BP-27a and counting the
+  still-dangling chain as naming an
+  input, answering the never-writes
+  refusal with the chain left
+  standing, while the oracle's
+  resolve splices in user space past
+  the bound and the write lands in
+  full. Two head-link cells: a head
+  link standing as the output,
+  pointing at a standing file that
+  is not an input, is replaced by
+  the write at one link and at two,
+  the target byte-identical after
+  the run and the intermediate link
+  left standing. Four plus three
+  plus two is nine. The two forties
+  are one number in two seats: the
+  splice bound the walk transcribes
+  from the kernel, and the traversal
+  bound the kernel itself enforces
+  at the write; the guard's refusal
+  and the write's refusal are
+  separate laws, and the cells above
+  keep them apart.
+
+- BP-90. The temp-name draw's posture
+  of BP-55 is measured fresh over
+  eleven cells, each cell named by
+  its part. One baseline cell: an
+  unplanted write to a file lands on
+  both sides, the document
+  byte-identical. Two inert-plant
+  cells: the 65 candidates computed
+  over the pre-repair mix stay inert
+  at two readings and two pids, the
+  write landing past them on both
+  sides. Two entropy-open cells, on
+  propose and on diff: an entropy
+  source whose open fails refuses
+  the write here, the directory
+  left as seeded, and the oracle
+  writes, its own temp naming never
+  opening the randomness device. Two
+  short-read cells, on propose and
+  on diff, measured on this side: a
+  source that opens but reads short
+  refuses the write the same way,
+  the directory left as seeded. Two
+  pre-epoch cells, on propose and
+  on diff: a clock reading before
+  the epoch refuses the write here,
+  BP-47a standing, and the oracle
+  writes under the same
+  interposition. Two stream cells,
+  measured on this side under a
+  frozen clock, a deterministic
+  entropy stream shim, and the pid
+  seated at 250: an unplanted write
+  draws exactly once; and with the
+  first candidate's name and the
+  name a read-once draw would try
+  second both planted, the write
+  lands after exactly two draws, the
+  plants standing, where a draw that
+  read its entropy once and reused
+  it would have needed a third. One
+  plus two plus two plus two plus
+  two plus two is eleven. The draw's
+  statement is BP-55's and is
+  unchanged; this item is its fresh
+  evidence.
