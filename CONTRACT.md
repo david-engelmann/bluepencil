@@ -2727,3 +2727,89 @@ in the round dossier, never a silent approximation.
   four. The draw's statement is BP-55's
   and is unchanged; this item is its fresh
   evidence.
+
+- BP-98. The loader's precedence chain and
+  version law of BP-56 and BP-63 are
+  re-probed fresh, over thirty cells, each
+  cell named by its part. Seven precedence
+  cells: two shape-first cells (a refused
+  version standing beside a non-list
+  observations value, and the document
+  itself a list) meet the shape refusal on
+  both sides, the version and the entries
+  unexamined; two version-over-entry cells
+  (a non-object entry, and an entry of
+  unknown kind) meet the version refusal
+  here and the entry refusal on the
+  oracle, which reads no version key; one
+  entry cell under an accepted version
+  meets the entry refusal on both sides;
+  and two rewrites-seat cells, a malformed
+  entry standing beside a malformed
+  rewrites seat meeting the entry refusal
+  on both sides, and the rewrites seat's
+  own shape refusal answering only once
+  every observation entry validates.
+  Twenty-three version cells, the
+  acceptance set measured exactly: two
+  acceptance cells, the string "1.0" and
+  absence, load on both sides to the
+  baseline document; eighteen refusal
+  cells refuse the load here by name, each
+  rendered as Python's repr of the parsed
+  value, the oracle accepting every one
+  (the ten near values of BP-70: "1.0"
+  with a trailing space, "1.0" with a
+  leading space, "1.00", "v1.0", "1",
+  "01.0", "1.0" with a trailing newline,
+  "1.0" spelled with fullwidth digits,
+  "1.0" carrying a zero-width space, and
+  the integer 1; and the eight values of
+  BP-63: the string "2.0", the empty
+  string, the integer 2, the float 1.0,
+  true, null, a list holding "1.0", and an
+  object with a single key); two
+  duplicate-key cells, a key carried twice
+  taking its last value on both readers,
+  an accepted "1.0" standing last loading
+  on both sides and a refused "2.0"
+  standing last refusing here and loading
+  on the oracle; and one file-arm cell, a
+  refused load writing nothing at the file
+  arm, as at the stdout arm. Seven plus
+  twenty-three is thirty, and twenty-three
+  is two plus eighteen plus two plus one.
+  The chain's and the law's statements are
+  BP-56's and BP-63's and are unchanged;
+  this item is their fresh evidence.
+
+- BP-99. The invariants of BP-4 and BP-12
+  are re-verified at their surfaces, over
+  six cells, each cell named by its part,
+  every paired cell byte-identical across
+  the port and the oracle in exit code,
+  streams, and the file tree after the
+  run. Four input-as-target cells: the
+  rules file standing as its own run's
+  target refuses with the never-writes
+  error on propose and on diff, as do the
+  observations file on propose and the
+  proposals file on diff, and the paired
+  tree comparison proves every input
+  byte-identical after each run, BP-12 in
+  its own terms: the judge never writes to
+  the rules file it judges, nor to any
+  other input. Two control cells: the
+  valid file arm lands the proposal
+  document, and the diff at the stdout arm
+  renders its document with the tree after
+  the run standing exactly as it stood
+  before it, the rules file byte-identical
+  and the diff unapplied. Four plus two is
+  six. BP-4 stands as it stands: the
+  command surface carries propose and diff
+  only, the diff is a document for a
+  human, and no surface of the tool
+  applies it; every diff cell of this
+  round produces a document that stands
+  unapplied.
