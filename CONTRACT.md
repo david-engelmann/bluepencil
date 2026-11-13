@@ -2565,3 +2565,103 @@ in the round dossier, never a silent approximation.
   only change to that file this round
   makes, the round's slice being the
   contract items above.
+
+- BP-95. The round opens with the full
+  read-back of pull request 16, every
+  review, every review comment, and every
+  issue comment read whole, as the Round
+  12 landing comment 6843099703 charges.
+  The pass carries no reviews and no
+  review comments, and four issue
+  comments: the trigger, the review bot's
+  summary shell, the bot's
+  action-not-completed reply, and the
+  landing comment itself, which stands in
+  this census as the charge requires. The
+  trigger (comment 6842711302, by the
+  owner, created 2026-11-13T03:14:43Z,
+  never edited) is the twenty characters
+  of the standing trigger text. The shell
+  (comment 6842712421, by the review bot)
+  is contracted here in its true final
+  form at this read: 11,276 characters,
+  created 2026-11-13T03:14:48Z and last
+  edited 2026-11-13T03:21:54Z; four passed
+  checks (Title, Linked Issues, Out of
+  Scope Changes, and Description); no
+  Docstring Coverage item at all, the word
+  occurring zero times in its final text;
+  merge risk Minimal over the reviewed
+  head 25ee628f, the range it reviews
+  running from the base 2124bb00 to that
+  head, the reviewed commit the head
+  itself; and its own line standing that
+  no actionable comments were generated in
+  the recent review, under run
+  032c6882-1df9-4994-9610-d0745592a42c.
+  The body's step 0 restatement of the
+  shell does not stand as its final form:
+  the body records the shell at 11,274
+  characters last edited
+  2026-11-13T03:20:08Z, and the landing
+  comment records that the shell drifted
+  two characters after that restatement to
+  11,276 at the reviews' reads; the final
+  edit stamp, 2026-11-13T03:21:54Z, stands
+  later than either record, and the length
+  the landing comment states is the length
+  that stands. The bot's reply (comment
+  6842778168, created
+  2026-11-13T03:19:11Z, last edited
+  2026-11-13T03:19:18Z, 573 characters)
+  records that it had already reviewed the
+  last commit. The landing comment
+  (comment 6843099703, by the owner,
+  created 2026-11-13T03:40:48Z, 1,634
+  characters) records the merge and
+  charges this round. The pull request
+  body as it stands at this read is 12,760
+  characters, created 2026-11-13T03:14:33Z
+  with its updated stamp at
+  2026-11-13T03:40:48Z: it carries the
+  build lane's step 0 restatement as its
+  closing section and, appended after it,
+  the bot's auto-generated summary block;
+  the record exposes no per-edit history
+  of the body, so the body is censused as
+  it stands, not as a sequence of edits.
+  The pull request merged as 07d140be, its
+  merge tree bacbc871 equal to the
+  reviewed head's tree, the README on main
+  at 12 of 100. The second charge grades
+  Round 12's review record as it stands,
+  on the landing comment's own statement
+  of it: spec fidelity PASS with no
+  findings, the spec lane's first seating
+  having ended without delivering its
+  report and the axis reseated, the
+  reseat's report the one of record;
+  standards APPROVE with no findings; and
+  red team APPROVE with no findings, the
+  red team reproducing the battery's cells
+  firsthand, including the forty-one link
+  dangling split on both commands and the
+  round's own realistic corpus byte for
+  byte; hosted CI green on the exact head,
+  push run 43357347038 and pull request
+  run 43357630414, both standing success
+  at this read-back. Graded as it stands,
+  the record is complete: every axis
+  delivered a report of record, the reseat
+  is disclosed on the record itself rather
+  than smoothed over, and no finding from
+  any axis stands undisposed. The third
+  charge: any late CodeRabbit finding on
+  the pull request is owed a disposition,
+  and none stands: the shell's final form
+  generates no actionable comments, no
+  review and no review comments stand on
+  the pass, and no comment of any kind
+  stands after the landing comment;
+  nothing is owed, nothing is dismissed,
+  and nothing stood to fix.
