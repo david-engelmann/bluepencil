@@ -2140,3 +2140,428 @@ in the round dossier, never a silent approximation.
   only change to that file this round
   makes, the round's slice being the
   contract items above.
+
+- BP-86. The round opens with the full
+  read-back of pull request 15, every
+  review body to its end, every review
+  comment thread, and every issue
+  comment, the follow-up shells and
+  the acknowledgment replies included.
+  The pass carries no reviews, no
+  review comments, and four issue
+  comments: the review bot's summary
+  shell, the trigger, the bot's
+  action-not-completed reply to the
+  trigger, and the landing comment.
+  The shell stands in its final form
+  at this read-back at 11,248
+  characters, created
+  2026-11-12T10:04:34Z and last
+  edited 2026-11-12T10:09:58Z: four
+  passed checks (Title, Linked
+  Issues, Out of Scope Changes, and
+  Description), and no Docstring
+  Coverage item at all, the word
+  occurring zero times in its final
+  text; its merge-risk read is
+  Minimal over the reviewed head
+  6035bab5, the range it reviews
+  running from the Round 10 merge
+  babc8791 to that head; and it
+  records that no actionable comments
+  were generated in the review, under
+  run 0fe0af71-6e28-41c6-9dcd-3ef6b2e931d0.
+  The bot's reply to the trigger
+  records that it had already
+  reviewed the last commit. The
+  dispositions the final record
+  confirms: the pass generated no
+  actionable comments; no review and
+  no review comments stand on the
+  pull request; and nothing stood to
+  fix or to dismiss, the step 0
+  disposition standing in the body
+  itself, as the landing comment
+  records. The pull request merged at
+  2124bb00, its merge tree c2a63f37
+  equal to the reviewed head's tree,
+  the README on main at 11 of 100,
+  and the three reviews of record
+  stand as the landing comment states
+  them: spec fidelity PASS with two
+  Notes and no findings, standards
+  APPROVE with three Notes and no
+  findings, and a red team APPROVE
+  with no findings, on hosted CI
+  green at the exact head. The
+  landing comment's four charges are
+  discharged as follows. The shell
+  above is contracted in its final
+  form on the closed record with the
+  landing comment itself in the
+  census, the first charge. The
+  second charge: BP-77 compressed the
+  parallel seat's Round 10 delta
+  sequence into one phrase, and it
+  stands here in its separated form:
+  the parallel seat's spec delta
+  review returned PASS; its standards
+  delta review returned NOT APPROVE
+  with one Minor, the battery
+  instrument's header correction
+  (D1) asserted in the delta's text
+  before the correction had landed;
+  and on the confirmation re-read
+  the correction stood on disk, D1
+  stood discharged, and the
+  standards APPROVE arrived on that
+  re-read. The third charge: this
+  round's own cell totals in BP-87
+  to BP-92 are each stated as a sum
+  of named parts, the parts
+  enumerated in the items
+  themselves, so every total closes
+  from its parts. The fourth charge:
+  the workspace copies owed for
+  Round 11's scratch are discharged
+  as unrecoverable, on evidence: the
+  scratch stood in /tmp/bp11-scratch,
+  /tmp has been wiped since, no
+  directory of that name and no file
+  of that scratch stands in /tmp or
+  in the workspace at this read, and
+  nothing is reconstructed here;
+  Round 11's record stands on pull
+  request 15's own record and on
+  BP-77 to BP-85. No item from the
+  pass stands undisposed, so this
+  round's read-back charge closes
+  with the corrections recorded and
+  no repair owed.
+
+- BP-87. The loader's precedence chain
+  of BP-56 and BP-63 is measured fresh
+  at its joints, at the shipped binary
+  against the oracle, over twelve
+  cells, each cell named by its part.
+  Six shape-first cells (a refused
+  version standing beside a non-list
+  observations value; an accepted
+  version over a non-list observations
+  value; entry-shaped content inside
+  a non-list observations value; the
+  document itself a list; the
+  document itself a string; and a
+  document with no observations key
+  at all beside a refused version)
+  meet the shape refusal on both
+  sides, the version unexamined. Two
+  version-over-entry cells (a
+  non-object entry; an entry of
+  unknown kind) meet the version
+  refusal here and the entry refusal
+  on the oracle, which reads no
+  version key. One entry cell under
+  an accepted version (the same
+  non-object entry) meets the entry
+  refusal on both sides. Two
+  rewrites-seat cells: a malformed
+  entry standing beside a malformed
+  rewrites seat meets the entry
+  refusal on both sides, and the
+  rewrites seat's own shape refusal,
+  rewrites must be a list, answers
+  only once every observation entry
+  validates. One version-inside-entry
+  cell: a version key carried inside
+  an entry is not the document's
+  key, and the document loads on
+  both sides, the output
+  byte-identical. Six plus two plus
+  one plus two plus one is twelve.
+  The chain's statement is BP-56's
+  and BP-63's and is unchanged; this
+  item is its fresh evidence.
+
+- BP-88. The observations version
+  acceptance set of BP-56 is measured
+  exactly, over twenty-three cells,
+  each cell named by its part. Two
+  acceptance cells: the string "1.0"
+  and absence load on both sides to
+  the baseline document. Eighteen
+  refusal cells refuse the load here
+  by name, each rendered as Python's
+  repr of the parsed value, the spec
+  the port's repr mirrors, and the
+  oracle accepts every one: the ten
+  near values of BP-70 ("1.0" with a
+  trailing space, "1.0" with a
+  leading space, "1.00", "v1.0",
+  "1", "01.0", "1.0" with a trailing
+  newline, "1.0" spelled with
+  fullwidth digits, "1.0" carrying a
+  zero-width space, and the integer
+  1) and the eight values of BP-63
+  (the string "2.0", the empty
+  string, the integer 2, the float
+  1.0, true, null, a list holding
+  "1.0", and an object with a single
+  key). Two duplicate-key cells: a
+  key carried twice takes its last
+  value on both readers, an accepted
+  "1.0" standing last loading on
+  both sides, and a refused "2.0"
+  standing last refusing here and
+  loading on the oracle. One
+  file-arm cell: a refused load
+  writes nothing at the file arm, as
+  at the stdout arm. Two plus
+  eighteen plus two plus one is
+  twenty-three. The law's statement
+  is BP-56's and is unchanged; this
+  item is its fresh evidence.
+
+- BP-89. The output guard's walk is
+  measured fresh at its flip points,
+  at the shipped binary against the
+  oracle, over nine cells, each cell
+  named by its part, no constant
+  inherited from any sibling: the
+  bounds below were probed at this
+  binary before they were pinned.
+  Four parent-chain cells: an output
+  spelled through a parent chain of
+  links standing in its parent path
+  lands through a chain of 39 and of
+  40 links on both sides, the
+  document landing in the real
+  directory at the chain's end,
+  byte-identical; and at 41 links
+  both sides refuse and the classes
+  split, on propose and again on
+  diff: this side's guard answers
+  the never-writes refusal, its
+  finished-path walk meeting the
+  loop errno on the chain prefix and
+  counting the spelling as
+  unresolvable, hence as naming an
+  input, while the oracle's resolve
+  completes in user space and its
+  write meets the kernel's traversal
+  bound at the temp creation,
+  answering the cannot-write error
+  naming the spelling as given.
+  Three dangling-chain cells: a
+  chain of dangling links lands
+  replacing the head link at one
+  link and at forty, the write
+  replacing the head link itself,
+  the missing target never created,
+  and the document standing
+  byte-identical on both sides; and
+  at forty-one dangling links the
+  arms split outright, this side
+  refusing under the forty splice
+  bound of BP-27a and counting the
+  still-dangling chain as naming an
+  input, answering the never-writes
+  refusal with the chain left
+  standing, while the oracle's
+  resolve splices in user space past
+  the bound and the write lands in
+  full. Two head-link cells: a head
+  link standing as the output,
+  pointing at a standing file that
+  is not an input, is replaced by
+  the write at one link and at two,
+  the target byte-identical after
+  the run and the intermediate link
+  left standing. Four plus three
+  plus two is nine. The two forties
+  are one number in two seats: the
+  splice bound the walk transcribes
+  from the kernel, and the traversal
+  bound the kernel itself enforces
+  at the write; the guard's refusal
+  and the write's refusal are
+  separate laws, and the cells above
+  keep them apart.
+
+- BP-90. The temp-name draw's posture
+  of BP-55 is measured fresh over
+  eleven cells, each cell named by
+  its part. One baseline cell: an
+  unplanted write to a file lands on
+  both sides, the document
+  byte-identical. Two inert-plant
+  cells: the 65 candidates computed
+  over the pre-repair mix stay inert
+  at two readings and two pids, the
+  write landing past them on both
+  sides. Two entropy-open cells, on
+  propose and on diff: an entropy
+  source whose open fails refuses
+  the write here, the directory
+  left as seeded, and the oracle
+  writes, its own temp naming never
+  opening the randomness device. Two
+  short-read cells, on propose and
+  on diff, measured on this side: a
+  source that opens but reads short
+  refuses the write the same way,
+  the directory left as seeded. Two
+  pre-epoch cells, on propose and
+  on diff: a clock reading before
+  the epoch refuses the write here,
+  BP-47a standing, and the oracle
+  writes under the same
+  interposition. Two stream cells,
+  measured on this side under a
+  frozen clock, a deterministic
+  entropy stream shim, and the pid
+  seated at 250: an unplanted write
+  draws exactly once; and with the
+  first candidate's name and the
+  name a read-once draw would try
+  second both planted, the write
+  lands after exactly two draws, the
+  plants standing, where a draw that
+  read its entropy once and reused
+  it would have needed a third. One
+  plus two plus two plus two plus
+  two plus two is eleven. The draw's
+  statement is BP-55's and is
+  unchanged; this item is its fresh
+  evidence.
+
+- BP-91. The invariants of BP-4 and
+  BP-12 are measured fresh at the
+  output guard's joints, over eight
+  cells, each cell named by its
+  part, every paired cell
+  byte-identical across the port and
+  the oracle in exit code, streams,
+  and the file tree after the run.
+  Four input-as-target cells: the
+  rules file standing as its own
+  run's target refuses with the
+  never-writes error on propose and
+  on diff, as do the observations
+  file on propose and the proposals
+  file on diff, and the paired tree
+  comparison proves every input
+  byte-identical after each run,
+  BP-12 in its own terms. Two
+  parent cells: an output spelled
+  through a parent that is a bare
+  loop refuses with the
+  never-writes error on both sides:
+  the parent cannot be resolved,
+  and an unresolvable output counts
+  as naming an input, BP-27's law
+  holding at the parent component
+  as at the output itself; and an
+  output spelled through a dangling
+  parent meets the cannot-write
+  error naming the spelling as
+  given, on both sides. Two control
+  cells: the valid file arm and
+  the valid stdout arm stand as
+  controls, byte-identical on both
+  sides. Four plus two plus two is
+  eight. BP-4 stands as it stands:
+  the command surface carries
+  propose and diff only, the diff
+  renders a document for a human
+  and writes it atomically like any
+  other output, and no surface of
+  the tool applies it; the diff
+  cells of this round and of the
+  realistic pass produce documents
+  that stand unapplied.
+
+- BP-92. The realistic pass runs the
+  judge over material at the shapes
+  the sibling tools produce,
+  generated deterministically for
+  this round and counted from the
+  documents themselves, one step
+  above the last round's scale: a
+  rules document of 52 sections and
+  1,560 rules, 213,353 bytes, its
+  fenced blocks' lines never rules,
+  prose paragraphs standing as
+  context, continuation lines
+  joined to their rules, and
+  numbered and bulleted markers
+  mixed; and an observations
+  document of 3,900 entries merged
+  from 52 session batches with 260
+  supplied rewrites, 1,187,422
+  bytes, carrying
+  observations_version "1.0" as
+  unheard emits it. Seven cells run
+  over the material in total, in
+  three families. Five carry cells
+  through both command surfaces,
+  propose and diff, to stdout and
+  to files, and a file carry over
+  the document's unversioned twin,
+  every paired cell byte-identical,
+  the proposal document over the
+  material standing at 1,001
+  proposals and 2,108,385 bytes.
+  One refusal cell, an entry
+  malformed at index 3,899,
+  refusing by name on both sides
+  byte-identically. And one split
+  refusal cell, the big document
+  carrying version "2.0", refusing
+  by name here and written in full
+  by the oracle, as BP-56
+  contracts. Six of the seven cells
+  stand paired byte-identical.
+
+- BP-93. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 70 cells, 0
+  failures: joint cells 12, version
+  cells 23, walk cells 9, draw cells
+  11, guard cells 8, realistic cells
+  7, each item's total the sum of
+  the named parts its own text
+  enumerates. The differential
+  harness stands at 16 cases, 577
+  steps, 0 failures against the
+  shipped binary. The round changes
+  no code: cargo stands at 64 tests,
+  clippy under -D warnings and fmt
+  both clean on the final tree, and
+  the codepoint scan stands at
+  U+2014 = 0 and U+2013 = 0 over the
+  tree. The oracle paired against
+  the port is the Python at 255d973,
+  blob-verified against the commit
+  across all nineteen blobs before
+  pairing, the commit's tree listing
+  and the tree's tarball both read
+  through the API. The flighttape
+  tape format pin stands re-confirmed
+  live through the API in this round:
+  commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600799e
+  resolves in
+  david-engelmann/flighttape and its
+  tree
+  afd4d7d13520411e003762548fc79082a1b9cf6e
+  carries exactly fifty blobs. BP-4
+  and BP-12 stand as BP-91 restates
+  them.
+
+- BP-94. The closure moves the README
+  rounds line to 12 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above.
