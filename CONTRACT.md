@@ -2522,3 +2522,46 @@ in the round dossier, never a silent approximation.
   by the oracle, as BP-56
   contracts. Six of the seven cells
   stand paired byte-identical.
+
+- BP-93. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 70 cells, 0
+  failures: joint cells 12, version
+  cells 23, walk cells 9, draw cells
+  11, guard cells 8, realistic cells
+  7, each item's total the sum of
+  the named parts its own text
+  enumerates. The differential
+  harness stands at 16 cases, 577
+  steps, 0 failures against the
+  shipped binary. The round changes
+  no code: cargo stands at 64 tests,
+  clippy under -D warnings and fmt
+  both clean on the final tree, and
+  the codepoint scan stands at
+  U+2014 = 0 and U+2013 = 0 over the
+  tree. The oracle paired against
+  the port is the Python at 255d973,
+  blob-verified against the commit
+  across all nineteen blobs before
+  pairing, the commit's tree listing
+  and the tree's tarball both read
+  through the API. The flighttape
+  tape format pin stands re-confirmed
+  live through the API in this round:
+  commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600799e
+  resolves in
+  david-engelmann/flighttape and its
+  tree
+  afd4d7d13520411e003762548fc79082a1b9cf6e
+  carries exactly fifty blobs. BP-4
+  and BP-12 stand as BP-91 restates
+  them.
+
+- BP-94. The closure moves the README
+  rounds line to 12 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above.
