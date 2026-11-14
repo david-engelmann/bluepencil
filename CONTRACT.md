@@ -3189,3 +3189,119 @@ in the round dossier, never a silent approximation.
   (RUSTUP_TOOLCHAIN=1.91), the
   repository carrying no toolchain pin
   of its own.
+- BP-109. The round opens with the
+  full read-back of pull request 18,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 14 landing comment
+  6871612599 charges. The pass carries
+  no reviews and no review comments,
+  and four issue comments: the review
+  bot's summary shell, the trigger,
+  the bot's action-not-completed
+  reply, and the landing comment
+  itself, which stands in this census
+  as the charge requires. The shell
+  (comment 6871319606, by the review
+  bot) is contracted here in its true
+  final form at this read: 10,873
+  characters, created
+  2026-11-14T03:56:34Z and last edited
+  2026-11-14T04:00:17Z; four passed
+  checks (Description Check, Title
+  check, Linked Issues, Out of Scope
+  Changes); no Docstring Coverage item
+  at all, the word occurring zero
+  times in its final text; merge risk
+  Minimal over the reviewed head
+  f024b52f, the range it reviews
+  running from the base f856fe5d to
+  that head, the reviewed commit the
+  head itself; and its own line
+  standing that no actionable comments
+  were generated in the recent review,
+  under run
+  88fa94e8-d19f-4ebb-a8d1-e1ae1c88f056.
+  The two earlier records of the shell
+  do not stand as its final form: the
+  Round 14 body's step 0 records it at
+  10,871 characters last edited
+  2026-11-14T03:58:03Z, a
+  moment-bounded read, and the landing
+  comment records 10,873 characters at
+  the reviews' reads; the shell's last
+  edit stands at 2026-11-14T04:00:17Z,
+  later than the body's read and
+  standing unchanged since, and the
+  length that stands at this read is
+  10,873, agreeing with the reviews'
+  figure, with no disposition fact
+  moved, the checks, the merge risk,
+  the run, and the no-actionable line
+  all standing as recorded. The step 0
+  disposition stands in the body with
+  its one dismissal and its reason on
+  the body's face, and it is graded
+  here as it stands: the shell's
+  walkthrough changes table heads this
+  round's records "Round 13 records"
+  where BP-102 to BP-108 are Round
+  14's records, dismissed in the body
+  as bot summary wording only, no
+  check turning on it, all four checks
+  standing Passed and no actionable
+  comment generated; the heading
+  stands in the shell as read, and the
+  shell's own prose and Title check
+  name Round 14 correctly, so the
+  dismissal's grounds stand counted on
+  the record. The trigger (comment
+  6871319943, by the owner, created
+  2026-11-14T03:56:36Z, never edited)
+  is the twenty characters of the
+  standing trigger text. The bot's
+  reply (comment 6871344205, created
+  2026-11-14T03:58:42Z, last edited
+  2026-11-14T03:58:46Z, 573
+  characters) records that it had
+  already reviewed the last commit.
+  The landing comment (comment
+  6871612599, by the owner, created
+  2026-11-14T04:21:06Z, 1,935
+  characters) records the merge and
+  charges this round. The pull request
+  body as it stands at this read is
+  8,531 characters, created
+  2026-11-14T03:56:19Z with its
+  updated stamp at
+  2026-11-14T04:21:06Z; the record
+  exposes no per-edit history of the
+  body, so the body is censused as it
+  stands, not as a sequence of edits.
+  Round 13's owner body repair stands
+  graded as repaired, as Round 14
+  charged and as BP-102 graded it:
+  pull request 17's body as it stands
+  carries the repaired step 0 closing
+  recording the one silent dismissal,
+  the shell's walkthrough and
+  Title-check details calling BP-95 to
+  BP-101 "Round 12 clauses" where they
+  are Round 13's clauses recording
+  Round 12, with the owner repair note
+  on its face stating that the
+  dismissal itself was graded sound
+  and that the edit changed no tree;
+  no other sentence in that body
+  claims that nothing stands
+  dismissed, and the record is
+  coherent. Nothing stands on the pull
+  request after the landing comment at
+  this read, so no late CodeRabbit
+  finding stands and nothing further
+  is owed. The pull request merged as
+  19755a84, its merge tree 8234d173
+  equal to the reviewed head
+  f024b52f's tree, parents f856fe5d
+  and f024b52f, and the README on main
+  at 14 of 100.
