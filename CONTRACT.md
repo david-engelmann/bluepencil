@@ -3902,3 +3902,43 @@ in the round dossier, never a silent approximation.
   toolchain (RUSTUP_TOOLCHAIN=1.91),
   the repository carrying no toolchain
   pin of its own.
+- BP-123. Repair record, appended
+  after the closure and before the
+  merge at the step 0 review's one
+  actionable finding, BP-120
+  unrewritten. BP-120's closing
+  sentence states that every diff cell
+  of this round produces a document
+  that stands unapplied, and counted
+  against this round's own battery the
+  sentence overclaims its scope. The
+  round's diff cells are six, and they
+  divide three ways. Two produce their
+  document on both sides, the
+  forty-link walk cell and the stdout
+  guard cell, and the document stands
+  unapplied. Two produce their
+  document on the oracle's side only,
+  the forty-one-link walk cell and the
+  interposition cell, this side
+  refusing and producing no document
+  at all. Two produce no document on
+  either side, the rules file and the
+  proposals file standing as their own
+  run's target on diff, both sides
+  refusing. Two plus two plus two is
+  six. The corrected statement, at its
+  exact scope, is that every diff
+  document this round's cells produce
+  stands unapplied and no surface of
+  the tool applies it, and that the
+  cells which refuse produce no
+  document, which is BP-4's law in its
+  stronger form at those cells and no
+  counterexample to it. BP-4 and BP-12
+  stand as BP-120 restates them, and
+  the correction moves no measurement,
+  no cell, and no disposition;
+  BP-120's sentence stands corrected
+  here, in place of the reading its
+  words first carried.
