@@ -3531,3 +3531,146 @@ in the round dossier, never a silent approximation.
   toolchain (RUSTUP_TOOLCHAIN=1.91),
   the repository carrying no toolchain
   pin of its own.
+- BP-116. The round opens with the
+  full read-back of pull request 19,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 15 landing comment
+  6876341372 charges. The pass carries
+  no reviews and no review comments,
+  and four issue comments: the review
+  bot's summary shell, the trigger,
+  the bot's action-not-completed
+  reply, and the landing comment
+  itself, which stands in this census
+  as the charge requires. The shell
+  (comment 6876139818, by the review
+  bot) is contracted here in its true
+  final form at this read: 10,928
+  characters, created
+  2026-11-14T10:48:15Z and last edited
+  2026-11-14T10:55:27Z; four passed
+  checks (Description Check, Title
+  check, Linked Issues check, Out of
+  Scope Changes check); no Docstring
+  Coverage item at all, the word
+  occurring zero times in its final
+  text; merge risk Minimal over the
+  reviewed head 49e36d55, the range it
+  reviews running from the base
+  19755a84 to that head, the reviewed
+  commit the head itself; and its own
+  line standing that no actionable
+  comments were generated in the
+  recent review, under run
+  7daa01db-bdd2-4810-9fe1-86a42729e6a6.
+  The two earlier records of the shell
+  do not stand as its final form: the
+  Round 15 body's step 0 records it at
+  10,926 characters, last edited
+  2026-11-14T10:50:05Z, a
+  moment-bounded read, and the landing
+  comment records 10,928 characters at
+  the reviews' reads; the shell's last
+  edit stands at 2026-11-14T10:55:27Z,
+  later than the body's read and
+  standing unchanged since, and the
+  length that stands at this read is
+  10,928, agreeing with the reviews'
+  figure, with no disposition fact
+  moved, the checks, the merge risk,
+  the run, and the no-actionable line
+  all standing as recorded. The step 0
+  disposition stands in the body with
+  its one dismissal and its reason on
+  the body's face, and it is graded
+  here with the dismissal's
+  enumeration stated at its full
+  count, as the landing comment
+  charges: the lagging "Round 14"
+  label stands in four places in the
+  shell, all bot summary wording,
+  distributed two in the Walkthrough
+  section and two in the Title check's
+  two renderings. In the Walkthrough
+  section, the prose summary opens
+  "The contract adds the Round 14
+  review record, invariant
+  measurements, verification results,
+  and closure details", and the
+  changes table heads this round's
+  records "Round 14 documentation". In
+  the pre-merge checks section, the
+  Title check's row details state that
+  "the changeset adds CONTRACT.md
+  Round 14 record content", and the
+  Title check's full details
+  explanation states the same words
+  again, "the changeset adds
+  CONTRACT.md Round 14 record content
+  and changes the README rounds count
+  to 15 of 100". The body's account
+  names two of the four loci by their
+  form, the walkthrough changes
+  table's heading and the Title check
+  details, and states its reason over
+  the whole class, bot summary wording
+  only, no check turning on it, all
+  four checks standing Passed and no
+  actionable comment generated; it
+  claims no count, and counted at full
+  the enumeration adds the
+  Walkthrough's prose summary
+  sentence, which the body's loci do
+  not separately name, and splits the
+  Title check locus into its two
+  renderings, which the body's
+  "details likewise" covers jointly.
+  The dismissal's grounds stand
+  counted on the record for all four
+  occurrences: each is the same bot
+  summary wording in one of the two
+  sections the body names, the Title
+  check itself names Round 15 and
+  BP-109 to BP-115 correctly in both
+  its renderings, the word Round 15
+  standing exactly twice in the shell,
+  both times in those texts, and no
+  occurrence turns a check or carries
+  an actionable comment, so the fuller
+  count moves no disposition and the
+  dismissal stands sound at its full
+  scope. The trigger (comment
+  6876138664, by the owner, created
+  2026-11-14T10:48:08Z, never edited)
+  is the twenty characters of the
+  standing trigger text. The bot's
+  reply (comment 6876175507, created
+  2026-11-14T10:51:29Z, last edited
+  2026-11-14T10:51:33Z, 573
+  characters) records that it had
+  already reviewed the last commit.
+  The landing comment (comment
+  6876341372, by the owner, created
+  2026-11-14T11:05:33Z, 2,052
+  characters) records the merge and
+  charges this round. The pull request
+  body as it stands at this read is
+  9,455 characters, created
+  2026-11-14T10:47:59Z with its
+  updated stamp at
+  2026-11-14T11:05:33Z; the record
+  exposes no per-edit history of the
+  body, so the body is censused as it
+  stands, not as a sequence of edits.
+  Nothing stands on the pull request
+  after the landing comment at this
+  read, its threads and replies
+  standing read to their ends, so no
+  late CodeRabbit finding stands and
+  nothing further is owed. The pull
+  request merged as 2208bc37, its
+  merge tree e4006265 equal to the
+  reviewed head 49e36d55's tree,
+  parents 19755a84 and 49e36d55, and
+  the README on main at 15 of 100.
