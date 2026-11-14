@@ -2965,3 +2965,70 @@ in the round dossier, never a silent approximation.
   reviewed head 41e76c0b's tree,
   parents 07d140be and 41e76c0b, and
   the README on main at 13 of 100.
+- BP-103. The dangling-chain split of
+  BP-80 is re-measured at its exact
+  point, at the shipped binary against
+  the oracle, over four cells, each
+  cell named by its part. Two
+  forty-link cells, on propose and on
+  diff: a chain of forty dangling
+  links standing as the output lands
+  on both sides, the write replacing
+  the head link itself, the missing
+  target never created, the document
+  byte-identical on both sides, and
+  the paired cells byte-identical in
+  exit code, streams, and the file
+  tree after the run. Two
+  forty-one-link cells, on propose and
+  on diff: at forty-one dangling links
+  the arms split outright, this side
+  refusing under the forty splice
+  bound of BP-27a's MAX_SPLICES,
+  counting the still-dangling chain as
+  naming an input and answering the
+  never-writes refusal with the chain
+  left standing, while the oracle
+  writes in full, its write replacing
+  the head link and the document
+  standing complete. Two plus two is
+  four. The split's statement is
+  BP-80's and BP-27a's and is
+  unchanged; this item is its fresh
+  evidence.
+- BP-104. The entropy interposition
+  asymmetry of BP-81 is re-verified,
+  over four cells, each cell named by
+  its part. Two interposition cells,
+  on propose and on diff: under an
+  entropy source whose open fails with
+  EACCES, this side refuses both
+  commands with the cannot-write error
+  naming the output as given, the
+  directory left as seeded, while the
+  oracle writes on both commands, its
+  own temp naming never opening the
+  randomness device. Two stream
+  control cells, measured on this side
+  under a frozen clock, a
+  deterministic entropy stream shim,
+  and the pid seated at 250: an
+  unplanted write draws exactly once,
+  and with the first candidate's name
+  and the name a read-once draw would
+  try second both planted, the write
+  lands after exactly two draws, the
+  plants standing. The pid and the
+  draw count are verified from the
+  child's own record, never from
+  harness assertion alone: the pid
+  from the pid file and the NSpid line
+  the seated child itself writes
+  before it execs, both standing at
+  250 in each stream cell, and the
+  draws from the log the shim appends
+  to on each read the child makes, one
+  byte per served read. Two plus two
+  is four. The draw's statement is
+  BP-55's and is unchanged; this item
+  is its fresh evidence.
