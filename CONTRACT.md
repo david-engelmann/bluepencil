@@ -3466,3 +3466,68 @@ in the round dossier, never a silent approximation.
   of the tool applies it; every diff
   cell of this round produces a
   document that stands unapplied.
+- BP-114. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 44 cells, 0
+  failures: walk cells 4, entropy
+  cells 4, precedence cells 7, version
+  cells 23, and guard cells 6, each
+  item's total the sum of the named
+  parts its own text enumerates, with
+  BP-112 stating its two families as
+  seven plus twenty-three. The
+  differential harness stands at 16
+  cases, 577 steps, 0 failures against
+  the shipped binary. The round
+  changes no code: cargo stands at 64
+  tests (3 in the library suite, 18 in
+  the diff suite, 18 in the inventory
+  suite, and 25 in the proposals
+  suite), clippy under -D warnings and
+  fmt both clean on the final tree,
+  and the codepoint scan stands at
+  U+2014 = 0 and U+2013 = 0 over the
+  tree and over all blobs at the head,
+  by Python scan. The oracle paired
+  against the port is the Python at
+  255d973, blob-verified against the
+  commit across all nineteen blobs
+  before pairing, the commit's tree
+  listing read through the API and
+  each local blob's hash compared
+  against it; that is the channel
+  exactly as used, and no tarball
+  channel is claimed. Cargo.toml
+  carries no description field:
+  BP-48's third item stands open by
+  name and is carried open in this
+  round, not repaired. BP-4 and BP-12
+  stand as BP-113 restates them.
+- BP-115. The closure moves the README
+  rounds line to 15 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above. The round's
+  environment effects stand at their
+  true scope: the scratch stands in
+  the durable workspace, not in /tmp
+  or /dev/shm, the differential
+  harness's work root standing under
+  the round's scratch as well; the git
+  transport was not used, the base
+  tree fetched blob by blob through
+  the API (28 blobs, each size
+  asserted and each hash compared
+  against the commit's tree listing)
+  and every commit landed server-side
+  through the Data API with its pushed
+  tree SHA asserted equal to the local
+  tree SHA; no write fault event was
+  observed in this round's scratch,
+  and no file at any pushed head
+  stands truncated; the local builds
+  used the box's installed Rust 1.91
+  toolchain (RUSTUP_TOOLCHAIN=1.91),
+  the repository carrying no toolchain
+  pin of its own.
