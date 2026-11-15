@@ -3942,3 +3942,203 @@ in the round dossier, never a silent approximation.
   BP-120's sentence stands corrected
   here, in place of the reading its
   words first carried.
+- BP-124. The round opens with the
+  full read-back of pull request 20,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 16 landing comment
+  6884104688 charges. The pass carries
+  one review, one review comment, and
+  four issue comments: the owner's
+  trigger, the review bot's summary
+  shell, the bot's
+  action-not-completed reply, and the
+  landing comment itself, which stands
+  in this census as the charge
+  requires. The trigger (comment
+  6883842617, by the owner, created
+  2026-11-14T20:36:32Z, never edited)
+  is the twenty characters of the
+  standing trigger text. The shell
+  (comment 6883843777, by the review
+  bot) is contracted here in its true
+  final form at this read: 8,381
+  characters, created
+  2026-11-14T20:36:38Z and last edited
+  2026-11-14T20:57:41Z. Its history
+  stands as the record carries it, in
+  three forms. At the body's own
+  moment-bounded read it stood at
+  11,077 characters, last edited
+  2026-11-14T20:41:40Z, carrying at
+  its head the bot's rate-limit banner
+  for the repair increment (run
+  7a2e32c4-0d99-416b-b6e7-0c67d3274acf,
+  the increment 50c586bf to
+  0d2f49804d, CONTRACT.md the one file
+  selected), its included allowance
+  spent on the closure head's review.
+  It was re-rendered once more after
+  that read, the whole banner section
+  dropped at 2,698 characters,
+  standing at 8,379 characters, last
+  edited 2026-11-14T20:43:48Z, at the
+  round's three reviews' reads, in a
+  form carrying no banner and no run
+  7a2e32c4. It drifted two characters
+  further to the form contracted here,
+  its last edit standing at
+  2026-11-14T20:57:41Z, before the
+  landing comment, and no disposition
+  fact moved at any step: in its final
+  form it is a completed review of the
+  closure head 50c586bf, its change
+  assessment pinned to that head,
+  merge risk Minimal up to 50c58, four
+  passed checks (Description Check,
+  Title check, Linked Issues check,
+  Out of Scope Changes check), no
+  Docstring Coverage item at all, the
+  word occurring zero times in its
+  final text, and no line standing
+  that no actionable comments were
+  generated, the one actionable
+  comment standing in the review
+  instead. The review (5907010955,
+  COMMENTED, submitted
+  2026-11-14T20:38:45Z) records one
+  actionable comment posted, under run
+  2c9028ec-e53b-40d2-a838-8d02d002b672
+  in the review object, its range
+  running from the base 2208bc37 to
+  the closure head 50c586bf, the two
+  files selected CONTRACT.md and
+  README.md, and its included
+  allowance used with none remaining.
+  The review comment (4575551947, on
+  CONTRACT.md at line 3839, created
+  2026-11-14T20:38:44Z, last edited
+  2026-11-14T20:41:46Z) is the bot's
+  one actionable finding, that
+  BP-120's closing sentence claimed
+  every diff cell produces a document
+  standing unapplied; it stands valid
+  and fixed by the repair record
+  BP-123, not dismissed, and its
+  thread stands read to its end in
+  this round: the comment stands alone
+  with no replies, and at its foot the
+  bot's own marker records it
+  addressed in commit 0d2f498. The
+  bot's reply (comment 6883885304,
+  created 2026-11-14T20:40:06Z, 573
+  characters) records that it had
+  already reviewed the last commit.
+  The step 0 disposition stands in the
+  body with its dismissals and their
+  reasons on the body's face, and they
+  are graded here at their full scope.
+  The walkthrough's lagging Round 15
+  label stands in the shell's final
+  form in exactly the two places the
+  body names, its prose summary
+  opening "The pull request adds the
+  Round 15 record" and its changes
+  table heading this round's records
+  "Round 15 documentation", the word
+  Round 15 standing exactly twice in
+  the shell, both times in those
+  texts, and the Title check naming
+  Round 16 and BP-116 to BP-122
+  correctly in both its renderings,
+  the word Round 16 standing exactly
+  twice, both times there; the Title
+  check's full details also call the
+  title long at 121 characters and not
+  concise while passing it and naming
+  its content correctly. Each
+  dismissal's grounds stand counted:
+  the label and the title prose are
+  bot summary and check wording only,
+  all four checks stand Passed, and
+  neither carries an actionable
+  comment, so the dismissals stand
+  sound. The owner's banner-sentence
+  repair is graded here as repaired,
+  segment by segment against the body
+  as it stands. The sentence itself
+  now scopes its claim to the read at
+  which it stood, "at the read at
+  which this account was written its
+  shell carried its rate-limit
+  banner", naming the banner's run,
+  the increment, and the one file
+  selected, exactly the banner the
+  shell's earlier form carried; its
+  second half records the included
+  allowance spent on the closure
+  head's review, which the review
+  object confirms, its allowance
+  standing used with none remaining
+  after that review; and its
+  conclusion, that the repair head
+  stands unreviewed by the bot, stands
+  independently on the two grounds the
+  repair note names, both verified
+  firsthand in this round: the review
+  object's range ends at the closure
+  head 50c586bf, and the review
+  comment carries the bot's own
+  Addressed marker at its foot. The
+  repair note stands on the account's
+  face, recording that the sentence
+  first stood in the present tense as
+  a standing fact, that the shell was
+  re-rendered once more after that
+  read to a form carrying no banner
+  and no run 7a2e32c4, and that the
+  repair changes no tree; the one
+  figure the note carries, the
+  re-rendered shell at 8,379
+  characters, has since drifted by the
+  two characters recorded above, which
+  moves no segment of the repair, and
+  the body stands at 12,070 characters
+  as repaired. The body's foot carries
+  the review bot's release-notes
+  appendix inside the bot's own
+  markers, and it is censused here at
+  its true scope: within its markers
+  the lagging Round 15 label stands
+  exactly once, its summary bullet
+  reading "Added a record of Round
+  15", where the branch adds Round
+  16's records, and its second bullet
+  records the README at 16 of 100
+  correctly. The appendix is the bot's
+  own text, its label error is the
+  bot's, no authored sentence adopts
+  it, and it is accounted separately
+  from the authored body. The landing
+  comment (comment 6884104688, by the
+  owner, created 2026-11-14T20:58:28Z,
+  3,115 characters) records the merge
+  and charges this round. Nothing
+  stands on the pull request after the
+  landing comment at this read, the
+  shell's last edit standing before it
+  and its threads and replies standing
+  read to their ends, so no late
+  CodeRabbit finding stands and
+  nothing further is owed. The pull
+  request merged as fcf81210, its
+  merge tree b7971268 equal to the
+  reviewed repair head 0d2f4980's
+  tree, parents 2208bc37 and 0d2f4980,
+  and the README on main at 16 of 100.
+  BP-48 stands open by name and
+  untouched: Cargo.toml carries no
+  description field at the base,
+  verified from its fetched blob in
+  this round, and it is carried open
+  in BP-129 and the closure.
