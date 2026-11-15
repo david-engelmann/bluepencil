@@ -4375,3 +4375,494 @@ in the round dossier, never a silent approximation.
   toolchain (RUSTUP_TOOLCHAIN=1.91),
   the repository carrying no toolchain
   pin of its own.
+- BP-131. The round opens with the
+  full read-back of pull request 21,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 17 landing comment
+  6888550183 charges. The pass carries
+  no review, no review comment, and
+  four issue comments: the owner's
+  trigger, the review bot's summary
+  shell, the bot's
+  action-not-completed reply, and the
+  landing comment itself, which stands
+  in this census as the charge
+  requires. The trigger (comment
+  6888362630, by the owner, created
+  2026-11-15T03:08:57Z, never edited)
+  is the twenty characters of the
+  standing trigger text. The shell
+  (comment 6888364417, by the review
+  bot) is contracted here in its true
+  final form at this read: 11,218
+  characters, created
+  2026-11-15T03:09:07Z and last edited
+  2026-11-15T03:15:42Z, the same form
+  the round's three reviews read, so
+  no drift past their read stands to
+  record. The body's own
+  moment-bounded read stood at 11,216
+  characters, the shell then last
+  edited 2026-11-15T03:11:29Z; the
+  two-character edit that followed
+  stands before the landing comment
+  and moves no disposition fact. In
+  its final form the shell is a
+  completed review of the closure head
+  468272259d, its change assessment
+  pinned to that head, its range
+  running from the base fcf81210 to
+  that head over the two files
+  CONTRACT.md and README.md, merge
+  risk Minimal up to 46827, four
+  passed checks (Description Check,
+  Title check, Linked Issues check,
+  Out of Scope Changes check), no
+  Docstring Coverage item at all, the
+  word occurring zero times in its
+  final text, its own line standing
+  that no actionable comments were
+  generated in the recent review,
+  under run
+  1efa1d6c-9221-4c9b-948f-c00b426a34af
+  in the shell itself, and its
+  included allowance used with none
+  remaining. The bot's reply (comment
+  6888396313, created
+  2026-11-15T03:12:12Z, last edited
+  2026-11-15T03:12:16Z, 573
+  characters) records that it had
+  already reviewed the last commit.
+  The step 0 disposition stands in the
+  body with its two dismissals and
+  their reasons on the body's face,
+  and they are re-graded here at their
+  full scope against the shell's final
+  form. The first dismissal: the
+  shell's walkthrough frames this
+  branch's records as Round 16's in
+  exactly three places, its prose
+  summary opening "The pull request
+  adds Round 16 review, measurement,
+  verification, and closure records",
+  its changes table heading them
+  "Round 16 records", and its closure
+  row naming "the Round 16 closure",
+  the word Round 16 standing exactly
+  three times in the shell, all three
+  in the walkthrough, where BP-124 to
+  BP-130 are Round 17's records and
+  Round 16 stands as the read-back's
+  subject; the Title check names Round
+  17 and BP-124 to BP-130 correctly in
+  its renderings, all four checks
+  stand Passed, and no actionable
+  comment stands, so the dismissal
+  stands sound: bot summary wording
+  only, no check turning on it. The
+  second dismissal: the Title check's
+  full details call the title specific
+  and related to the main change,
+  though dense, and note that it uses
+  internal identifiers a teammate may
+  not recognize, while the check
+  stands Passed and names the title's
+  content correctly; the title carries
+  the standing form at 121 characters,
+  identical in shape to PR 20's title,
+  both verified at this read, so the
+  dismissal stands sound: the check's
+  own prose on a passed check,
+  carrying no action. The body's foot
+  carries the review bot's
+  release-notes appendix inside the
+  bot's own markers, and it is
+  censused here at its true scope: its
+  three bullets record that the
+  project's review and verification
+  records were updated with fresh
+  measurements and closure details,
+  that the status count shows 17 of
+  100 rounds closed, and that the
+  package manifest still has no
+  description field, all three
+  correct, and no lagging round label
+  stands inside its markers this
+  round. The appendix is the bot's own
+  text, adopted by no authored
+  sentence, and it is accounted
+  separately from the authored body.
+  The landing comment (comment
+  6888550183, by the owner, created
+  2026-11-15T03:27:20Z, 1,911
+  characters) records the merge and
+  charges this round. Nothing stands
+  on the pull request after the
+  landing comment at this read, the
+  shell's last edit standing before
+  it, so no late CodeRabbit material
+  stands and nothing further is owed.
+  The pull request merged as dcba93ef,
+  its merge tree 4a0ea8d3 equal to the
+  reviewed closure tree, parents
+  fcf81210 and 46827225, and the
+  README on main at 17 of 100. BP-48
+  stands open by name and untouched:
+  Cargo.toml carries no description
+  field at the base, verified from its
+  fetched blob in this round, and it
+  is carried open in the closure item
+  and the closure.
+- BP-132. The dangling-chain split of
+  BP-80 is re-measured at its exact
+  point, at the shipped binary against
+  the oracle, over the battery's four
+  cells and a neighbor probe at
+  thirty-nine and forty-two links on
+  both commands. Two forty-link cells,
+  on propose and on diff: a chain of
+  forty dangling links standing as the
+  output lands on both sides, the
+  write replacing the head link
+  itself, the missing target never
+  created, the document byte-identical
+  on both sides, and the paired cells
+  byte-identical in exit code,
+  streams, and the file tree after the
+  run. Two forty-one-link cells, on
+  propose and on diff: at forty-one
+  dangling links the arms split
+  outright, this side refusing under
+  the forty splice bound of BP-27a's
+  MAX_SPLICES, counting the
+  still-dangling chain as naming an
+  input and answering the never-writes
+  refusal, the refusal's stderr
+  standing byte for byte as "error,
+  bluepencil never writes to its
+  inputs", with the chain left
+  standing, while the oracle writes in
+  full, its write replacing the head
+  link and the document standing
+  complete. The neighbor probe states
+  the split at its exact point only:
+  at thirty-nine links both commands
+  on both arms land byte-identical, as
+  at forty; at forty-two the split
+  persists in the same form, this side
+  refusing with the same stderr byte
+  for byte and the chain left
+  standing, the oracle writing in
+  full. Two plus two is four battery
+  cells, and the probe adds two
+  controls on each side of the point.
+  The split's statement is BP-80's and
+  BP-27a's and is unchanged; this item
+  is its fresh evidence.
+- BP-133. The entropy interposition
+  asymmetry of BP-81 is re-verified,
+  over four cells, each cell named by
+  its part. Two interposition cells,
+  on propose and on diff: under an
+  entropy source whose open fails with
+  EACCES, this side refuses both
+  commands with the cannot-write error
+  naming the output as given, the
+  directory left as seeded, while the
+  oracle writes on both commands, its
+  own temp naming never opening the
+  randomness device. Two stream
+  control cells, measured on this side
+  under a frozen clock, a
+  deterministic entropy stream shim,
+  and the pid seated at 250: an
+  unplanted write draws exactly once,
+  and with the first candidate's name
+  and the name a read-once draw would
+  try second both planted, the write
+  lands after exactly two draws, the
+  plants standing. The pid and the
+  draw count are verified from the
+  child's own record, never from
+  harness assertion alone: the pid
+  from the pid file and the NSpid line
+  the seated child itself writes
+  before it execs, both standing at
+  250 in each stream cell, and the
+  draws from the log the shim appends
+  to on each read the child makes, one
+  byte per served read. Two plus two
+  is four. The draw's statement is
+  BP-55's and is unchanged; this item
+  is its fresh evidence.
+- BP-134. The loader's precedence
+  chain and version law of BP-56 and
+  BP-63 are re-probed fresh, over
+  thirty cells, each cell named by its
+  part. Seven precedence cells: two
+  shape-first cells (a refused version
+  standing beside a non-list
+  observations value, and the document
+  itself a list) meet the shape
+  refusal on both sides, the version
+  and the entries unexamined; two
+  version-over-entry cells (a
+  non-object entry, and an entry of
+  unknown kind) meet the version
+  refusal here and the entry refusal
+  on the oracle, which reads no
+  version key; one entry cell under an
+  accepted version meets the entry
+  refusal on both sides; and two
+  rewrites-seat cells, a malformed
+  entry standing beside a malformed
+  rewrites seat meeting the entry
+  refusal on both sides, and the
+  rewrites seat's own shape refusal
+  answering only once every
+  observation entry validates.
+  Twenty-three version cells, the
+  acceptance set measured exactly: two
+  acceptance cells, the string "1.0"
+  and absence, load on both sides to
+  the baseline document; eighteen
+  refusal cells refuse the load here
+  by name, each rendered as Python's
+  repr of the parsed value, the oracle
+  accepting every one (the ten near
+  values of BP-70: "1.0" with a
+  trailing space, "1.0" with a leading
+  space, "1.00", "v1.0", "1", "01.0",
+  "1.0" with a trailing newline, "1.0"
+  spelled with fullwidth digits, "1.0"
+  carrying a zero-width space, and the
+  integer 1; and the eight values of
+  BP-63: the string "2.0", the empty
+  string, the integer 2, the float
+  1.0, true, null, a list holding
+  "1.0", and an object with a single
+  key); two duplicate-key cells, a key
+  carried twice taking its last value
+  on both readers, an accepted "1.0"
+  standing last loading on both sides
+  and a refused "2.0" standing last
+  refusing here and loading on the
+  oracle; and one file-arm cell, a
+  refused load writing nothing at the
+  file arm, as at the stdout arm.
+  Seven plus twenty-three is thirty,
+  and twenty-three is two plus
+  eighteen plus two plus one. The
+  chain's and the law's statements are
+  BP-56's and BP-63's and are
+  unchanged; this item is their fresh
+  evidence.
+- BP-135. The invariants of BP-4 and
+  BP-12 are re-verified at their
+  surfaces, over six cells, each cell
+  named by its part, every paired cell
+  byte-identical across the port and
+  the oracle in exit code, streams,
+  and the file tree after the run.
+  Four input-as-target cells: the
+  rules file standing as its own run's
+  target refuses with the never-writes
+  error on propose and on diff, as do
+  the observations file on propose and
+  the proposals file on diff, and the
+  paired tree comparison proves every
+  input byte-identical after each run,
+  BP-12 in its own terms: the judge
+  never writes to the rules file it
+  judges, nor to any other input. Two
+  control cells: the valid file arm
+  lands the proposal document, and the
+  diff at the stdout arm renders its
+  document with the tree after the run
+  standing exactly as it stood before
+  it, the rules file byte-identical
+  and the diff unapplied. Four plus
+  two is six. BP-4 stands as it
+  stands: the command surface carries
+  propose and diff only, the diff is a
+  document for a human, and no surface
+  of the tool applies it; and at the
+  corrected scope BP-123 settles,
+  every diff document this item's
+  cells produce stands unapplied, the
+  two diff cells whose target is an
+  input producing no document on
+  either side, both sides refusing.
+- BP-136. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 44 cells, 0
+  failures: walk cells 4, entropy
+  cells 4, precedence cells 7, version
+  cells 23, and guard cells 6, each
+  item's total the sum of the named
+  parts its own text enumerates, with
+  BP-134 stating its two families as
+  seven plus twenty-three and BP-132's
+  neighbor probe standing beside the
+  battery's walk cells. The
+  differential harness stands rebuilt
+  this round, the prior harness script
+  not standing in the line's scratch,
+  the same gap Round 17's gate record
+  notes of its own differential: the
+  rebuilt harness runs sixteen cases
+  over the whole command surface at
+  220 steps, 0 failures against the
+  shipped binary, every step paired
+  byte-identical across the arms
+  except the version grid's split
+  steps, which stand in BP-56's
+  contracted form exactly, the oracle
+  accepting and the port refusing by
+  name. The round changes no code:
+  cargo stands at 64 tests (3 in the
+  library suite, 18 in the diff suite,
+  18 in the inventory suite, and 25 in
+  the proposals suite) on the base
+  tree and again on the final tree,
+  clippy under -D warnings and fmt
+  both clean on both trees, and the
+  codepoint scan stands at U+2014 = 0
+  and U+2013 = 0 over the tree and
+  over all blobs at the head, by
+  Python scan. The oracle paired
+  against the port is the Python at
+  255d973, blob-verified against the
+  commit across all nineteen blobs
+  before pairing, the commit's tree
+  listing read through the API and
+  each local blob's hash compared
+  against it; that is the channel
+  exactly as used, and no tarball
+  channel is claimed. The flighttape
+  tape format pin stands reconfirmed
+  through the API in this round:
+  commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600799e
+  resolves in
+  david-engelmann/flighttape, its tree
+  afd4d7d13520411e003762548fc79082a1b9cf6e
+  carrying 58 entries untruncated and
+  exactly fifty blobs, and the golden
+  fixture stands executed at a fresh
+  checkout of the pinned commit, its
+  digest-bearing suites passing there
+  (convert 34, digest_cli 5, identity
+  13), the digest
+  cc9c4e01fca418dcc33114caf75fae1f6bf0d401f297b5d61f6776903fa955a3
+  standing in the pin's own test
+  files. The binary the battery, the
+  split probe, and the differential
+  drove was built from the base tree
+  at this round's scratch target, its
+  provenance stated at that build
+  path's scope, md5
+  d7cf80fe4770809418e809b9bfa0778b.
+  Cargo.toml carries no description
+  field: BP-48's third item stands
+  open by name and is carried open in
+  this round, not repaired. BP-4 and
+  BP-12 stand as BP-135 restates them,
+  at BP-123's corrected scope.
+- BP-137. The closure moves the README
+  rounds line to 18 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above. BP-48 stands
+  carried open by name at the closure,
+  as at the round's opening. The
+  round's environment effects stand at
+  their true scope: the scratch stands
+  in the durable workspace, not in
+  /tmp or /dev/shm, the battery's, the
+  split probe's, and the differential
+  harness's work roots standing under
+  the round's scratch as well; the git
+  transport was not used, the base
+  tree fetched blob by blob through
+  the API (28 blobs, each hash
+  compared against the commit's tree
+  listing, the assembled local tree
+  standing at the base tree 4a0ea8d3
+  exactly) and every commit landed
+  server-side through the Data API
+  with its pushed tree SHA asserted
+  equal to the local tree SHA; no
+  write fault event was observed in
+  this round's scratch, and no file at
+  any pushed head stands truncated;
+  the local builds used the box's
+  installed Rust 1.91 toolchain
+  (RUSTUP_TOOLCHAIN=1.91), the
+  repository carrying no toolchain pin
+  of its own.
+- BP-138. A repair record, appended on
+  the owner's Round 18 gate and
+  rewriting nothing. BP-136's
+  differential account is qualified on
+  two points. First, the rebuilt
+  harness's sixteen cases are a fresh
+  topical partition, not the
+  historical differential's case set
+  continued. The historical harness,
+  defined at BP-26 as comparing exit
+  codes, streams, and files after
+  every step, a step being one paired
+  invocation, grew by named families:
+  the deleted-cwd launch and the
+  tailed output cells of BP-36, the
+  popped-link case with its abs and
+  escape step forms of BP-42, and the
+  two pid-posture step forms and the
+  temp suffix boundary case of BP-49,
+  standing at 15 cases and 574 steps
+  before BP-57's version case carried
+  it to 16 cases and 577 steps, the
+  step unit the same throughout. The
+  rebuilt harness carries none of
+  those four families: no deleted-cwd
+  launch, no popped-link case, no
+  pid-posture form, and no temp suffix
+  boundary case stands in its runner.
+  Its step unit is the unit BP-26
+  defines, so the fall from 577 to 220
+  paired steps is a real reduction of
+  357 steps, not a counting
+  difference, and BP-136's figures
+  stand as the rebuilt harness's own
+  measurement, not as the historical
+  differential's continuation. The
+  round's battery covers every surface
+  the round's charges name
+  independently of the differential,
+  so no charged surface stands
+  unmeasured. Second, the rebuilt
+  harness's attempt history stands
+  disclosed. Its first run compared
+  the version grid's split steps byte
+  for byte and mis-registered 36 of
+  them as failures: the grid runs
+  nineteen values at two arms each, 38
+  steps, of which the acceptance
+  value's two steps compare byte for
+  byte and the remaining 36 are BP-56
+  split steps, the oracle accepting
+  and the port refusing by name, which
+  no byte comparison can pass. The
+  harness was fixed to grade split
+  steps by BP-56's contracted form
+  exactly, and the counted run re-ran
+  clean at 16 cases, 220 steps, 0
+  failures. The first run is counted
+  nowhere. BP-136 stands unrewritten,
+  and this record stands outside the
+  round's item range, as BP-61's
+  qualification of BP-57 stands
+  outside its own round's range.
