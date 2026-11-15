@@ -4375,3 +4375,142 @@ in the round dossier, never a silent approximation.
   toolchain (RUSTUP_TOOLCHAIN=1.91),
   the repository carrying no toolchain
   pin of its own.
+- BP-131. The round opens with the
+  full read-back of pull request 21,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 17 landing comment
+  6888550183 charges. The pass carries
+  no review, no review comment, and
+  four issue comments: the owner's
+  trigger, the review bot's summary
+  shell, the bot's
+  action-not-completed reply, and the
+  landing comment itself, which stands
+  in this census as the charge
+  requires. The trigger (comment
+  6888362630, by the owner, created
+  2026-11-15T03:08:57Z, never edited)
+  is the twenty characters of the
+  standing trigger text. The shell
+  (comment 6888364417, by the review
+  bot) is contracted here in its true
+  final form at this read: 11,218
+  characters, created
+  2026-11-15T03:09:07Z and last edited
+  2026-11-15T03:15:42Z, the same form
+  the round's three reviews read, so
+  no drift past their read stands to
+  record. The body's own
+  moment-bounded read stood at 11,216
+  characters, the shell then last
+  edited 2026-11-15T03:11:29Z; the
+  two-character edit that followed
+  stands before the landing comment
+  and moves no disposition fact. In
+  its final form the shell is a
+  completed review of the closure head
+  468272259d, its change assessment
+  pinned to that head, its range
+  running from the base fcf81210 to
+  that head over the two files
+  CONTRACT.md and README.md, merge
+  risk Minimal up to 46827, four
+  passed checks (Description Check,
+  Title check, Linked Issues check,
+  Out of Scope Changes check), no
+  Docstring Coverage item at all, the
+  word occurring zero times in its
+  final text, its own line standing
+  that no actionable comments were
+  generated in the recent review,
+  under run
+  1efa1d6c-9221-4c9b-948f-c00b426a34af
+  in the shell itself, and its
+  included allowance used with none
+  remaining. The bot's reply (comment
+  6888396313, created
+  2026-11-15T03:12:12Z, last edited
+  2026-11-15T03:12:16Z, 573
+  characters) records that it had
+  already reviewed the last commit.
+  The step 0 disposition stands in the
+  body with its two dismissals and
+  their reasons on the body's face,
+  and they are re-graded here at their
+  full scope against the shell's final
+  form. The first dismissal: the
+  shell's walkthrough frames this
+  branch's records as Round 16's in
+  exactly three places, its prose
+  summary opening "The pull request
+  adds Round 16 review, measurement,
+  verification, and closure records",
+  its changes table heading them
+  "Round 16 records", and its closure
+  row naming "the Round 16 closure",
+  the word Round 16 standing exactly
+  three times in the shell, all three
+  in the walkthrough, where BP-124 to
+  BP-130 are Round 17's records and
+  Round 16 stands as the read-back's
+  subject; the Title check names Round
+  17 and BP-124 to BP-130 correctly in
+  its renderings, all four checks
+  stand Passed, and no actionable
+  comment stands, so the dismissal
+  stands sound: bot summary wording
+  only, no check turning on it. The
+  second dismissal: the Title check's
+  full details call the title specific
+  and related to the main change,
+  though dense, and note that it uses
+  internal identifiers a teammate may
+  not recognize, while the check
+  stands Passed and names the title's
+  content correctly; the title carries
+  the standing form at 121 characters,
+  identical in shape to PR 20's title,
+  both verified at this read, so the
+  dismissal stands sound: the check's
+  own prose on a passed check,
+  carrying no action. The body's foot
+  carries the review bot's
+  release-notes appendix inside the
+  bot's own markers, and it is
+  censused here at its true scope: its
+  three bullets record that the
+  project's review and verification
+  records were updated with fresh
+  measurements and closure details,
+  that the status count shows 17 of
+  100 rounds closed, and that the
+  package manifest still has no
+  description field, all three
+  correct, and no lagging round label
+  stands inside its markers this
+  round. The appendix is the bot's own
+  text, adopted by no authored
+  sentence, and it is accounted
+  separately from the authored body.
+  The landing comment (comment
+  6888550183, by the owner, created
+  2026-11-15T03:27:20Z, 1,911
+  characters) records the merge and
+  charges this round. Nothing stands
+  on the pull request after the
+  landing comment at this read, the
+  shell's last edit standing before
+  it, so no late CodeRabbit material
+  stands and nothing further is owed.
+  The pull request merged as dcba93ef,
+  its merge tree 4a0ea8d3 equal to the
+  reviewed closure tree, parents
+  fcf81210 and 46827225, and the
+  README on main at 17 of 100. BP-48
+  stands open by name and untouched:
+  Cargo.toml carries no description
+  field at the base, verified from its
+  fetched blob in this round, and it
+  is carried open in the closure item
+  and the closure.
