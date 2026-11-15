@@ -4803,3 +4803,66 @@ in the round dossier, never a silent approximation.
   (RUSTUP_TOOLCHAIN=1.91), the
   repository carrying no toolchain pin
   of its own.
+- BP-138. A repair record, appended on
+  the owner's Round 18 gate and
+  rewriting nothing. BP-136's
+  differential account is qualified on
+  two points. First, the rebuilt
+  harness's sixteen cases are a fresh
+  topical partition, not the
+  historical differential's case set
+  continued. The historical harness,
+  defined at BP-26 as comparing exit
+  codes, streams, and files after
+  every step, a step being one paired
+  invocation, grew by named families:
+  the deleted-cwd launch and the
+  tailed output cells of BP-36, the
+  popped-link case with its abs and
+  escape step forms of BP-42, and the
+  two pid-posture step forms and the
+  temp suffix boundary case of BP-49,
+  standing at 15 cases and 574 steps
+  before BP-57's version case carried
+  it to 16 cases and 577 steps, the
+  step unit the same throughout. The
+  rebuilt harness carries none of
+  those four families: no deleted-cwd
+  launch, no popped-link case, no
+  pid-posture form, and no temp suffix
+  boundary case stands in its runner.
+  Its step unit is the unit BP-26
+  defines, so the fall from 577 to 220
+  paired steps is a real reduction of
+  357 steps, not a counting
+  difference, and BP-136's figures
+  stand as the rebuilt harness's own
+  measurement, not as the historical
+  differential's continuation. The
+  round's battery covers every surface
+  the round's charges name
+  independently of the differential,
+  so no charged surface stands
+  unmeasured. Second, the rebuilt
+  harness's attempt history stands
+  disclosed. Its first run compared
+  the version grid's split steps byte
+  for byte and mis-registered 36 of
+  them as failures: the grid runs
+  nineteen values at two arms each, 38
+  steps, of which the acceptance
+  value's two steps compare byte for
+  byte and the remaining 36 are BP-56
+  split steps, the oracle accepting
+  and the port refusing by name, which
+  no byte comparison can pass. The
+  harness was fixed to grade split
+  steps by BP-56's contracted form
+  exactly, and the counted run re-ran
+  clean at 16 cases, 220 steps, 0
+  failures. The first run is counted
+  nowhere. BP-136 stands unrewritten,
+  and this record stands outside the
+  round's item range, as BP-61's
+  qualification of BP-57 stands
+  outside its own round's range.
