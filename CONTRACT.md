@@ -5210,3 +5210,153 @@ in the round dossier, never a silent approximation.
   two diff cells whose target is an
   input producing no document on
   either side, both sides refusing.
+- BP-144. The round's verification is
+  BP-28's discipline over the
+  re-measured surfaces. This round's
+  battery stands at 44 cells, 0
+  failures: walk cells 4, entropy
+  cells 4, precedence cells 7, version
+  cells 23, and guard cells 6, each
+  item's total the sum of the named
+  parts its own text enumerates, with
+  BP-142 stating its two families as
+  seven plus twenty-three and BP-140's
+  neighbor probe standing beside the
+  battery's walk cells. The
+  differential stands at the rebuilt
+  harness's figures, with BP-138's
+  qualification carried by name: the
+  harness rebuilt in Round 18 stands
+  in the line's scratch and runs as it
+  stands this round, carried forward
+  with only its round labels changed,
+  its sixteen cases a fresh topical
+  partition (baseline flow, usage,
+  missing inputs, the version grid,
+  version keys, malformed
+  observations, rules shapes, output
+  spellings, proposals shapes,
+  unicode, number shapes, rewrites
+  shapes, big documents, symlink
+  inputs, repeat runs, and deep
+  nesting, at 9, 16, 11, 38, 5, 38,
+  24, 10, 17, 6, 10, 16, 5, 6, and 3
+  steps, summing to 220), none of the
+  historical families standing in it:
+  no deleted-cwd launch or tailed
+  output cells of BP-36, no
+  popped-link case of BP-42, and no
+  pid-posture step forms or temp
+  suffix boundary case of BP-49,
+  verified against the runner's own
+  text at this round. Under the step
+  unit BP-26 defines, the fall from
+  the historical 577 steps to the
+  rebuilt 220 is a real reduction of
+  357 steps, not a counting
+  difference, and no comparison
+  between the two figures is like for
+  like; this round's figures stand as
+  the rebuilt harness's own
+  measurement, not as the historical
+  differential's continuation. The
+  counted run is this round's first
+  and only run of the harness,
+  completing clean at 16 cases, 220
+  steps, 0 failures against the
+  shipped binary, every step paired
+  byte-identical across the arms
+  except the version grid's split
+  steps, which stand in BP-56's
+  contracted form exactly, the oracle
+  accepting and the port refusing by
+  name; no run of the harness
+  mis-registered, and no run stands
+  discarded or counted nowhere this
+  round. The round changes no code:
+  cargo stands at 64 tests (3 in the
+  library suite, 18 in the diff suite,
+  18 in the inventory suite, and 25 in
+  the proposals suite) on the base
+  tree and again on the final tree,
+  clippy under -D warnings and fmt
+  both clean on both trees, and the
+  codepoint scan stands at U+2014 = 0
+  and U+2013 = 0 over the tree and
+  over all blobs at the head, by
+  Python scan. The oracle paired
+  against the port is the Python at
+  255d973, blob-verified against the
+  commit across all nineteen blobs
+  before pairing, the commit's tree
+  listing read through the API and
+  each local blob's hash compared
+  against it, no mismatch standing;
+  that is the channel exactly as used,
+  and no tarball channel is claimed.
+  The flighttape tape format pin
+  stands reconfirmed through the API
+  in this round: commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600799e
+  resolves in
+  david-engelmann/flighttape, its tree
+  afd4d7d13520411e003762548fc79082a1b9cf6e
+  carrying 58 entries untruncated and
+  exactly fifty blobs, and the golden
+  fixture stands executed at a fresh
+  checkout of the pinned commit
+  assembled blob by blob through the
+  API in this round's scratch, its
+  digest-bearing suites passing there
+  (convert 34, digest_cli 5, identity
+  13), the digest
+  cc9c4e01fca418dcc33114caf75fae1f6bf0d401f297b5d61f6776903fa955a3
+  standing in the pin's own test
+  files. The binary the battery, the
+  split probe, and the differential
+  drove was built from the base tree
+  at this round's scratch target, its
+  provenance stated at that build
+  path's scope, md5
+  d7cf80fe4770809418e809b9bfa0778b,
+  the same figure the fresh build of
+  Round 18 produced at its own build
+  path. Cargo.toml carries no
+  description field: BP-48's third
+  item stands open by name and is
+  carried open in this round, not
+  repaired. BP-4 and BP-12 stand as
+  BP-143 restates them, at BP-123's
+  corrected scope.
+- BP-145. The closure moves the README
+  rounds line to 19 of 100 and is the
+  only change to that file this round
+  makes, the round's slice being the
+  contract items above. BP-48 stands
+  carried open by name at the closure,
+  as at the round's opening. The
+  round's environment effects stand at
+  their true scope: the scratch stands
+  in the durable workspace, not in
+  /tmp or /dev/shm, the battery's, the
+  split probe's, and the differential
+  harness's work roots standing under
+  the round's scratch as well; the git
+  transport was not used, the base
+  tree fetched blob by blob through
+  the API (28 blobs, each hash
+  compared against the commit's tree
+  listing, the assembled local tree
+  standing at the base tree 8190409896
+  exactly) and every commit landed
+  server-side through the Data API
+  with its pushed tree SHA asserted
+  equal to the local tree SHA; no
+  write fault event was observed in
+  this round's scratch, and no file at
+  any pushed head stands truncated;
+  the local builds used the box's
+  installed Rust 1.91 toolchain
+  (RUSTUP_TOOLCHAIN=1.91, rustc
+  1.91.1), the repository carrying no
+  toolchain pin of its own.
