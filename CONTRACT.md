@@ -5979,3 +5979,47 @@ in the round dossier, never a silent approximation.
   any repair record of this round
   standing outside it as BP-138 and
   BP-146 stand outside theirs.
+- BP-154. Repair record, standing
+  outside the round's range as BP-138
+  and BP-146 stand outside theirs,
+  qualifying BP-151 on the review
+  bot's actionable comment at step 0
+  (review comment 4584529865, Minor,
+  Data Integrity and Integration),
+  graded here at its full scope. The
+  comment is valid in its attribution
+  limb. BP-151 says the paired tree
+  comparison proves every input
+  byte-identical after each run; the
+  cross-arm comparison that wording
+  names establishes the narrower
+  result that the port and the oracle
+  leave identical trees after each
+  run, and standing alone it would not
+  exclude both arms making the same
+  write before refusing, which is the
+  comment's stated hypothetical. The
+  proving comparison for BP-151's
+  claim stands inside the same paired
+  cells and is each side's own
+  before-and-after snapshot: the
+  battery's paired driver snapshots
+  each side's seeded tree before the
+  run and again after it, the snapshot
+  carrying each entry's kind, mode,
+  and bytes, and the guard cells'
+  refusal expectation requires the
+  after snapshot to equal the before
+  snapshot on that side, so a write to
+  any input on either arm fails its
+  cell outright, the hypothetical
+  excluded by measurement rather than
+  by the cross-arm agreement. BP-151's
+  conclusion stands as measured, and
+  its proof stands attributed here to
+  the per-side before-and-after
+  snapshot comparison; the comment's
+  alternative remedy, a pre-run byte
+  comparison for each input, already
+  stands in the harness as that
+  snapshot. BP-151 stands unrewritten.
