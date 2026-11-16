@@ -5360,3 +5360,49 @@ in the round dossier, never a silent approximation.
   (RUSTUP_TOOLCHAIN=1.91, rustc
   1.91.1), the repository carrying no
   toolchain pin of its own.
+- BP-146. A repair record, appended on
+  the round's own step 0 pass and
+  rewriting nothing. BP-144's
+  differential account is qualified on
+  one point. Its per-case step
+  enumeration names the rebuilt
+  harness's sixteen cases but lists
+  fifteen step counts: baseline flow
+  9, usage 16, missing inputs 11, the
+  version grid 38, version keys 5,
+  malformed observations 38, rules
+  shapes 24, output spellings 10,
+  proposals shapes 17, unicode 6,
+  number shapes 10, rewrites shapes
+  16, big documents 5, symlink inputs
+  6, and deep nesting 3, the printed
+  counts summing to 214, not the 220
+  the item reports. The runner's own
+  accounting, read from its run log at
+  this repair, carries one count for
+  each of the sixteen cases: the same
+  fifteen and, standing between
+  symlink inputs and deep nesting,
+  repeat runs at 6 steps, the sixteen
+  summing to 220 exactly. The
+  harness's totals stand as measured
+  (16 cases, 220 steps, 0 failures),
+  and BP-144's case names and its
+  total are correct; its enumeration
+  alone dropped the repeat-runs count,
+  so the item's figures could not be
+  audited from its own text. The
+  defect was named by the review bot's
+  step 0 pass on this round's pull
+  request, in its Merge Risk prose and
+  in its one actionable review
+  comment, and it is valid: the
+  correction stands here, verified
+  against the runner's results, the
+  missing count read from the run log
+  and not inferred. BP-144 stands
+  unrewritten, and this record stands
+  outside the round's item range, as
+  BP-138's qualification of BP-136
+  stands outside its own round's
+  range.
