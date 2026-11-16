@@ -6023,3 +6023,38 @@ in the round dossier, never a silent approximation.
   comparison for each input, already
   stands in the harness as that
   snapshot. BP-151 stands unrewritten.
+- BP-155. Repair record, standing
+  outside the round's range as BP-138,
+  BP-146, and BP-154 stand outside
+  theirs, qualifying BP-153 on the
+  Round 20 gate's spec fidelity
+  finding (Minor): the round's
+  attempt-history disclosure as first
+  written omitted one environment
+  event. BP-153 and the pull request
+  body's attempt-history account as
+  first written each disclose one
+  file-count-quota refusal, the first
+  writing of BP-153's own source file
+  in the round's scratch. A second
+  refusal of the same kind stands in
+  the build lane's scratch accounting
+  and in its report to the owner, and
+  it is disclosed here so that the
+  attempt history stands complete on
+  the pull request record: during the
+  step 0 wait, with the pull request
+  open and the lane waiting on the
+  review bot's shell, the box's
+  file-count quota refused a scratch
+  write, the redirect of an API read's
+  JSON output to a scratch file; the
+  lane took that read's output from
+  stdout instead. No banked file, no
+  measurement figure, and no gate run
+  rests on the refused write, which is
+  counted nowhere. The pull request
+  body is amended in this same repair
+  to carry this disclosure in its
+  attempt-history account. BP-153
+  stands unrewritten.
