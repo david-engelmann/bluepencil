@@ -4866,3 +4866,165 @@ in the round dossier, never a silent approximation.
   round's item range, as BP-61's
   qualification of BP-57 stands
   outside its own round's range.
+- BP-139. The round opens with the
+  full read-back of pull request 22,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 18 landing comment
+  6893740038 charges. The pass carries
+  no review and no review comment, and
+  exactly two issue comments: the
+  review bot's summary shell and the
+  landing comment itself, which stands
+  in this census as the charge
+  requires; no trigger comment stands,
+  the bot having reviewed
+  automatically at the pull request's
+  opening, and no action-not-completed
+  reply stands. The shell (comment
+  6893456639, by the review bot,
+  created 2026-11-15T11:12:07Z) is
+  contracted here in its true final
+  form at this read: 11,281
+  characters, last edited
+  2026-11-15T11:32:43Z, unchanged at
+  the owner's brief-time re-read and
+  at this read. Its earlier forms
+  stand on the record with their
+  moments: 11,275 characters at the
+  Round 18 body's read, the shell then
+  last edited 2026-11-15T11:13:56Z;
+  two characters more at 11,277, last
+  edited 2026-11-15T11:16:22Z, the
+  form the round's reviews read; and,
+  after the repair commit landed,
+  13,979 characters, last edited
+  2026-11-15T11:30:29Z, a form
+  recording an incremental attempt on
+  the repair head that stands
+  expressly rate limited, before the
+  shell re-rendered back to the
+  closure-review form at 11,281
+  characters, the attempt's record
+  dropped from its text while the
+  posture it recorded stands: in no
+  form does a completed review of the
+  repair head stand. In its final form
+  the shell is a completed review of
+  the closure head b1378f4d0e, its
+  change assessment pinned to that
+  head, its range running from the
+  base dcba93e to that head over the
+  two files CONTRACT.md and README.md,
+  merge risk Minimal up to b1378, four
+  passed checks (Description Check,
+  Title check, Linked Issues check,
+  Out of Scope Changes check), no
+  Docstring Coverage item at all, the
+  word occurring zero times in its
+  final text, its own line standing
+  that no actionable comments were
+  generated in the recent review,
+  under run
+  5618ee39-77fb-4066-b457-d77973457bf7
+  in the shell itself, and its
+  included allowance used with none
+  remaining. The step 0 disposition
+  stands in the body with its two
+  dismissals and their reasons on the
+  body's face, and they are re-graded
+  here at their full scope against the
+  shell's final form. The first
+  dismissal: the shell frames this
+  branch's records as Round 17's in
+  exactly four places, its walkthrough
+  prose opening "This PR adds Round 17
+  review, measurement, verification,
+  and closure records", its changes
+  table heading them "Round 17
+  records", and the Title check's
+  summary cell and its full details
+  each describing the changeset as
+  adding Round 17 read-back records,
+  the word Round 17 standing exactly
+  four times in the shell at this
+  read, where BP-131 to BP-137 are
+  Round 18's records and Round 17
+  stands as the read-back's subject;
+  the Title check names Round 18 and
+  BP-131 to BP-137 correctly in both
+  its renderings, all four checks
+  stand Passed, and no actionable
+  comment stands, so the dismissal
+  stands sound: bot summary wording
+  only, no check turning on it. The
+  second dismissal: the Title check's
+  full details call the title mostly
+  aligned but long at 121 characters
+  and note that it uses internal round
+  and ticket labels a reviewer
+  scanning history may not understand,
+  while the check stands Passed and
+  names the title's content correctly;
+  the title carries the standing form
+  at 121 characters, identical in
+  shape to PR 21's title at 121
+  characters, both verified at this
+  read, so the dismissal stands sound:
+  the check's own prose on a passed
+  check, carrying no action. The
+  repair head stands read back whole
+  as the body's repair note charges:
+  commit
+  97229f8e6ce9cc45bc4f9d3c779c1afecfb8c6a1,
+  its single parent the closure head
+  b1378f4d0e, its tree
+  8190409896eaaf261f6a4f874ff4413dc295da16,
+  the closure-to-repair difference
+  standing at CONTRACT.md alone, 63
+  lines added and none removed, the
+  appended record BP-138 carrying the
+  standing sign-off trailer. BP-138's
+  two qualifications of BP-136 are
+  graded against the record here: the
+  first stands, the rebuilt
+  differential runner standing in the
+  line's scratch carrying sixteen
+  cases as a fresh topical partition,
+  none of the historical families of
+  BP-36, BP-42, and BP-49 standing in
+  it, as BP-144 re-verifies at this
+  round's run; and the second stands,
+  BP-138 disclosing the rebuilt
+  harness's first run and its 36
+  mis-registered split steps, that run
+  counted nowhere and the counted run
+  re-run clean. No release-notes
+  appendix stands on the pull
+  request's body at this read: the
+  body ends with its Disclosures
+  section and carries no bot appendix
+  inside any markers, so the appendix
+  census stands at none, and nothing
+  of the bot's stands adopted by any
+  authored sentence. The landing
+  comment (comment 6893740038, by the
+  owner, created 2026-11-15T11:38:13Z,
+  1,919 characters) records the merge
+  and charges this round. Nothing
+  stands on the pull request after the
+  landing comment at this read, the
+  shell's last edit standing before
+  it, so no late CodeRabbit material
+  stands and nothing further is owed.
+  The pull request merged as 9369b0a5,
+  its merge tree 8190409896 equal to
+  the reviewed repair tree, parents
+  dcba93ef and 97229f8e, and the
+  README on main at 18 of 100. BP-48
+  stands open by name and untouched:
+  Cargo.toml carries no description
+  field at the base, verified from its
+  fetched blob in this round, and it
+  is carried open in the closure item
+  and the closure.
