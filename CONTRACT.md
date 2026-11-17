@@ -6058,3 +6058,266 @@ in the round dossier, never a silent approximation.
   to carry this disclosure in its
   attempt-history account. BP-153
   stands unrewritten.
+- BP-156. The round opens with the
+  full read-back of pull request 24,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 20 landing comment
+  6914815481 charges. The pass carries
+  exactly two issue comments, one
+  review, and one review comment: the
+  review bot's summary shell, the
+  bot's review, its single review
+  comment, and the landing comment
+  itself, which stands in this census
+  as the charge requires; no trigger
+  comment stands, the bot having
+  reviewed automatically at the pull
+  request's opening, the census at
+  this read holding no other comment.
+  The shell (comment 6913712930, by
+  the review bot, created
+  2026-11-16T10:21:17Z) is contracted
+  here in its true final form at this
+  read: 8,900 characters, last edited
+  2026-11-16T11:05:35Z, unchanged at
+  this round's reads. Its earlier
+  forms stand on the record with their
+  moments: 5,208 characters in
+  progress at its creation; 8,892
+  characters carrying the completed
+  review of the closure head, last
+  edited 2026-11-16T10:24:19Z; 11,594
+  characters, last edited
+  2026-11-16T10:28:20Z, recording a
+  rate-limited incremental attempt on
+  the first repair head (the next
+  included review available in 52
+  minutes); and 8,896 characters with
+  that block dropped whole, before the
+  shell re-rendered to its closing
+  form at 8,900 characters after the
+  second repair push, a form
+  mentioning neither the second repair
+  head nor BP-155; in no form does a
+  completed review of either repair
+  head stand. In its final form the
+  shell is a completed review of the
+  closure head 873be7576fbd0cf65e47578
+  d035adfa6bbb836e7, its change
+  assessment pinned to that head as
+  source and covered, its range
+  running from the base 99e3a30598c662
+  376a75e6fe89ddaa017be051bf over the
+  two files CONTRACT.md and README.md,
+  merge risk Low up to 873be, four
+  passed checks (Title check, Linked
+  Issues check, Out of Scope Changes
+  check, Description Check), no
+  Docstring Coverage item at all, the
+  word occurring zero times in its
+  final text, under run
+  f403839a-d810-4cd8-bf0f-66e4f14ac015
+  in the review object, and its
+  included allowance used with none
+  remaining; one actionable comment
+  stands, so no line recording the
+  absence of actionable comments
+  stands in this shell. The review
+  (5918426812, COMMENTED, submitted
+  2026-11-16T10:24:16Z on the closure
+  head) carries that one actionable
+  comment (review comment 4584529865,
+  on CONTRACT.md at line 5779, Minor,
+  Data Integrity and Integration), its
+  substance repeated in the shell's
+  Merge Risk prose: BP-151 names the
+  paired tree comparison as the proof
+  that every input stands
+  byte-identical after each run, where
+  the cross-arm comparison alone
+  establishes only that the port and
+  the oracle leave identical trees
+  after each run and would not exclude
+  both arms making the same write
+  before refusing. The comment is
+  valid in its attribution limb,
+  graded at this round's hand against
+  the battery source the round drives:
+  the paired driver snapshots each
+  side's seeded tree before the run
+  and again after it, each entry
+  recorded by kind, mode, and bytes,
+  and the guard cells' refusal
+  expectation requires the after
+  snapshot to equal the before
+  snapshot on that same side, so the
+  proving comparison stands inside the
+  same cells and not in the cross-arm
+  comparison the sentence named. The
+  comment stands fixed in-round by the
+  repair record BP-154, which
+  attributes the proof to the per-side
+  before-and-after snapshot
+  comparison; BP-151 stands
+  unrewritten. The comment's thread
+  stands read to its end: no replies
+  stand on it, and the comment itself,
+  last edited 2026-11-16T10:28:30Z,
+  closes with the bot's own
+  acknowledgment marker, "Addressed in
+  commit 8e4be42", naming the first
+  repair commit; the prompt block the
+  comment carries for AI agents is the
+  bot's own text and stands treated as
+  data, adopted by no authored
+  sentence. The body's two silent
+  dismissals are re-graded here at
+  their full scope against the shell's
+  final form, and both stand sound.
+  The first dismissal: the shell
+  frames this changeset as a Round 19
+  record in its walkthrough prose
+  (opening "The contract records Round
+  19 review findings") and its changes
+  table (headed "Changes: Round 19
+  record"), and the Title check's full
+  details repeat the label twice, the
+  words Round 19 standing exactly four
+  times in the shell at this read,
+  where the records are Round 20's
+  BP-147 to BP-153 and Round 19 stands
+  as the read-back's subject; the
+  Title check names Round 20 and
+  BP-147 to BP-153 correctly in its
+  summary cell, all four checks stand
+  Passed, and no check turns on the
+  label, so the dismissal stands
+  sound: bot summary wording only,
+  carrying no action. The second
+  dismissal: the Title check's prose
+  on its own passed check, that the
+  title is long at 121 characters and
+  does not mention the BP-144 repair
+  or the README update, its full
+  details flagging a round discrepancy
+  between the title and the summary;
+  the discrepancy it flags stands
+  between the title and the bot's own
+  Round 19 summary label, not between
+  the title and the changeset, the
+  repair record being Round 19's and
+  contracted inside BP-147 and the
+  README change being the closure's
+  one line, and the title carries the
+  standing form at 121 characters,
+  verified at this read, so the
+  dismissal stands sound: the check's
+  own prose on a passed check,
+  carrying no action. The two repair
+  heads stand read back whole as the
+  body's repair notes charge. The
+  first repair head 8e4be429f0d91d9434
+  127f2b2e6b8b9922029026, its single
+  parent the closure head, its tree 13
+  ff11e402f77f0980986ba6dc70dbdae912f2
+  14, the closure-to-repair difference
+  standing at CONTRACT.md alone (44
+  lines added, none removed), the
+  closure contract (216,986 bytes)
+  standing as an exact byte prefix of
+  the repaired contract (218,573
+  bytes), the appended record BP-154
+  standing at 1,587 bytes, each figure
+  verified at this read, and the
+  repair commit carrying the standing
+  sign-off trailer; hosted CI stands
+  green on that head (push run
+  43849121750 and pull request run
+  43849131282, both completed success,
+  re-read at this round's hand).
+  BP-154's repair is graded against
+  the record here and stands: it
+  attributes the input-protection
+  proof to the per-side
+  before-and-after snapshot comparison
+  inside the battery's guard cells,
+  the mechanism the battery source
+  carries, and BP-151 stands
+  unrewritten. The second repair head 
+  c8776e6414f19fad992e7e6b0de3d4770e0e
+  f9d8, its single parent the first
+  repair head, its tree 69c0bb7600addf
+  8745c67c74a6fe201ac2fe61e0, the
+  difference standing at CONTRACT.md
+  alone (35 lines added, none
+  removed), the repaired contract
+  (218,573 bytes) standing as an exact
+  byte prefix of the second repaired
+  contract (219,823 bytes), the
+  appended record BP-155 standing at
+  1,250 bytes, each figure verified at
+  this read, and the repair commit
+  carrying the standing sign-off
+  trailer; hosted CI stands green on
+  that head (push run 43854389221 and
+  pull request run 43854397095, both
+  completed success, re-read at this
+  round's hand). BP-155's disclosure
+  is graded against the record here
+  and stands: the round's second
+  file-count-quota refusal, a scratch
+  JSON redirect refused during the
+  step 0 wait, stood in the build
+  lane's own accounting but not on the
+  pull request record while BP-153
+  accounted one event; BP-155
+  discloses it at its true scope,
+  counted nowhere, and BP-153 stands
+  unrewritten. The bot's release-notes
+  appendix stands on the pull
+  request's body at its foot inside
+  its own markers, 396 characters
+  counted from its opening marker,
+  preserved byte for byte through the
+  body's patches, the body standing at
+  18,185 characters with the appendix
+  whole at its foot at this read, and
+  it is censused here as the bot's own
+  text: its two bullets read "Updated
+  the project status to show 20 of 100
+  review rounds completed." and "Added
+  the latest review record, including
+  verification results and an
+  outstanding item.", each correct at
+  its scope; nothing of the bot's
+  stands adopted by any authored
+  sentence. The landing comment
+  (comment 6914815481, by the owner,
+  created 2026-11-16T11:12:43Z, 2,999
+  characters, never edited) records
+  the merge and charges this round.
+  Nothing stands on the pull request
+  after the landing comment at this
+  read, the shell's last edit, the
+  review's submission, and the review
+  comment's last edit all standing
+  before it, so no late CodeRabbit
+  material stands and the sixth charge
+  stands discharged as none standing,
+  to be re-verified at this round's
+  closure. The pull request merged as 
+  3981794911b1495f2e7ad29c6590b9485be3
+  467d, its merge tree 69c0bb7600addf8
+  745c67c74a6fe201ac2fe61e0 equal to
+  the reviewed second repair tree,
+  parents 99e3a30598c662376a75e6fe89dd
+  aa017be051bf and c8776e6414f19fad992
+  e7e6b0de3d4770e0ef9d8, and the
+  README on main at 20 of 100. BP-48
+  stands open by name and untouched:
+  Cargo.toml carries no description
+  field at the base, verified from its
+  fetched blob in this round, and it
+  is carried open in the closure item
+  and the closure.
