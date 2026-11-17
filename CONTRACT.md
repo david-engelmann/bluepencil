@@ -6801,3 +6801,45 @@ in the round dossier, never a silent approximation.
   any route; the round stops at the
   owner's gate, and the three reviews
   are the owner's.
+- BP-163. Repair record, appended at
+  the gate on the bot's two actionable
+  comments on pull request 25
+  (4600652835 at lines 6483 to 6489 of
+  the closure head's contract, and
+  4600652851 at lines 6491 to 6494,
+  both inside BP-160), each graded
+  valid at this hand before writing.
+  BP-160 stands qualified in two
+  limbs, its text unrewritten. The
+  snapshot limb: the per-side
+  before-and-after snapshot
+  establishes unchanged final state
+  per side on kind, mode, bytes, and
+  exp_refuse_inputs; it does not by
+  itself observe writes during a run,
+  and no sentence of this contract
+  rests the never-writes conclusion on
+  the snapshots alone. That
+  conclusion, for the four
+  input-as-target cells, rests jointly
+  on the refusals those cells record,
+  each command answering with the
+  never-writes error and writing
+  nothing, and on the snapshots'
+  unchanged final state for every
+  other input the cells carry. The
+  scope limb: BP-12's proof at BP-160
+  stands scoped to the four tested
+  input-as-target cells and their
+  named files, the rules file standing
+  as its own run's target on propose
+  and on diff, the observations file
+  on propose, and the proposals file
+  on diff; no protection is claimed
+  for any other input spelling on this
+  item's evidence. BP-154's
+  attribution settlement stands as it
+  stands; this record narrows the
+  claim BP-160 states, and the
+  narrowing is the whole of the
+  repair.
