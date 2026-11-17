@@ -6058,3 +6058,788 @@ in the round dossier, never a silent approximation.
   to carry this disclosure in its
   attempt-history account. BP-153
   stands unrewritten.
+- BP-156. The round opens with the
+  full read-back of pull request 24,
+  every review, every review comment,
+  and every issue comment read whole,
+  as the Round 20 landing comment
+  6914815481 charges. The pass carries
+  exactly two issue comments, one
+  review, and one review comment: the
+  review bot's summary shell, the
+  bot's review, its single review
+  comment, and the landing comment
+  itself, which stands in this census
+  as the charge requires; no trigger
+  comment stands, the bot having
+  reviewed automatically at the pull
+  request's opening, the census at
+  this read holding no other comment.
+  The shell (comment 6913712930, by
+  the review bot, created
+  2026-11-16T10:21:17Z) is contracted
+  here in its true final form at this
+  read: 8,900 characters, last edited
+  2026-11-16T11:05:35Z, unchanged at
+  this round's reads. Its earlier
+  forms stand on the record with their
+  moments: 5,208 characters in
+  progress at its creation; 8,892
+  characters carrying the completed
+  review of the closure head, last
+  edited 2026-11-16T10:24:19Z; 11,594
+  characters, last edited
+  2026-11-16T10:28:20Z, recording a
+  rate-limited incremental attempt on
+  the first repair head (the next
+  included review available in 52
+  minutes); and 8,896 characters with
+  that block dropped whole, before the
+  shell re-rendered to its closing
+  form at 8,900 characters after the
+  second repair push, a form
+  mentioning neither the second repair
+  head nor BP-155; in no form does a
+  completed review of either repair
+  head stand. In its final form the
+  shell is a completed review of the
+  closure head 873be7576fbd0cf65e47578
+  d035adfa6bbb836e7, its change
+  assessment pinned to that head as
+  source and covered, its range
+  running from the base 99e3a30598c662
+  376a75e6fe89ddaa017be051bf over the
+  two files CONTRACT.md and README.md,
+  merge risk Low up to 873be, four
+  passed checks (Title check, Linked
+  Issues check, Out of Scope Changes
+  check, Description Check), no
+  Docstring Coverage item at all, the
+  word occurring zero times in its
+  final text, under run
+  f403839a-d810-4cd8-bf0f-66e4f14ac015
+  in the review object, and its
+  included allowance used with none
+  remaining; one actionable comment
+  stands, so no line recording the
+  absence of actionable comments
+  stands in this shell. The review
+  (5918426812, COMMENTED, submitted
+  2026-11-16T10:24:16Z on the closure
+  head) carries that one actionable
+  comment (review comment 4584529865,
+  on CONTRACT.md at line 5779, Minor,
+  Data Integrity and Integration), its
+  substance repeated in the shell's
+  Merge Risk prose: BP-151 names the
+  paired tree comparison as the proof
+  that every input stands
+  byte-identical after each run, where
+  the cross-arm comparison alone
+  establishes only that the port and
+  the oracle leave identical trees
+  after each run and would not exclude
+  both arms making the same write
+  before refusing. The comment is
+  valid in its attribution limb,
+  graded at this round's hand against
+  the battery source the round drives:
+  the paired driver snapshots each
+  side's seeded tree before the run
+  and again after it, each entry
+  recorded by kind, mode, and bytes,
+  and the guard cells' refusal
+  expectation requires the after
+  snapshot to equal the before
+  snapshot on that same side, so the
+  proving comparison stands inside the
+  same cells and not in the cross-arm
+  comparison the sentence named. The
+  comment stands fixed in-round by the
+  repair record BP-154, which
+  attributes the proof to the per-side
+  before-and-after snapshot
+  comparison; BP-151 stands
+  unrewritten. The comment's thread
+  stands read to its end: no replies
+  stand on it, and the comment itself,
+  last edited 2026-11-16T10:28:30Z,
+  closes with the bot's own
+  acknowledgment marker, "Addressed in
+  commit 8e4be42", naming the first
+  repair commit; the prompt block the
+  comment carries for AI agents is the
+  bot's own text and stands treated as
+  data, adopted by no authored
+  sentence. The body's two silent
+  dismissals are re-graded here at
+  their full scope against the shell's
+  final form, and both stand sound.
+  The first dismissal: the shell
+  frames this changeset as a Round 19
+  record in its walkthrough prose
+  (opening "The contract records Round
+  19 review findings") and its changes
+  table (headed "Changes: Round 19
+  record"), and the Title check's full
+  details repeat the label twice, the
+  words Round 19 standing exactly four
+  times in the shell at this read,
+  where the records are Round 20's
+  BP-147 to BP-153 and Round 19 stands
+  as the read-back's subject; the
+  Title check names Round 20 and
+  BP-147 to BP-153 correctly in its
+  summary cell, all four checks stand
+  Passed, and no check turns on the
+  label, so the dismissal stands
+  sound: bot summary wording only,
+  carrying no action. The second
+  dismissal: the Title check's prose
+  on its own passed check, that the
+  title is long at 121 characters and
+  does not mention the BP-144 repair
+  or the README update, its full
+  details flagging a round discrepancy
+  between the title and the summary;
+  the discrepancy it flags stands
+  between the title and the bot's own
+  Round 19 summary label, not between
+  the title and the changeset, the
+  repair record being Round 19's and
+  contracted inside BP-147 and the
+  README change being the closure's
+  one line, and the title carries the
+  standing form at 121 characters,
+  verified at this read, so the
+  dismissal stands sound: the check's
+  own prose on a passed check,
+  carrying no action. The two repair
+  heads stand read back whole as the
+  body's repair notes charge. The
+  first repair head 8e4be429f0d91d9434
+  127f2b2e6b8b9922029026, its single
+  parent the closure head, its tree 13
+  ff11e402f77f0980986ba6dc70dbdae912f2
+  14, the closure-to-repair difference
+  standing at CONTRACT.md alone (44
+  lines added, none removed), the
+  closure contract (216,986 bytes)
+  standing as an exact byte prefix of
+  the repaired contract (218,573
+  bytes), the appended record BP-154
+  standing at 1,587 bytes, each figure
+  verified at this read, and the
+  repair commit carrying the standing
+  sign-off trailer; hosted CI stands
+  green on that head (push run
+  43849121750 and pull request run
+  43849131282, both completed success,
+  re-read at this round's hand).
+  BP-154's repair is graded against
+  the record here and stands: it
+  attributes the input-protection
+  proof to the per-side
+  before-and-after snapshot comparison
+  inside the battery's guard cells,
+  the mechanism the battery source
+  carries, and BP-151 stands
+  unrewritten. The second repair head 
+  c8776e6414f19fad992e7e6b0de3d4770e0e
+  f9d8, its single parent the first
+  repair head, its tree 69c0bb7600addf
+  8745c67c74a6fe201ac2fe61e0, the
+  difference standing at CONTRACT.md
+  alone (35 lines added, none
+  removed), the repaired contract
+  (218,573 bytes) standing as an exact
+  byte prefix of the second repaired
+  contract (219,823 bytes), the
+  appended record BP-155 standing at
+  1,250 bytes, each figure verified at
+  this read, and the repair commit
+  carrying the standing sign-off
+  trailer; hosted CI stands green on
+  that head (push run 43854389221 and
+  pull request run 43854397095, both
+  completed success, re-read at this
+  round's hand). BP-155's disclosure
+  is graded against the record here
+  and stands: the round's second
+  file-count-quota refusal, a scratch
+  JSON redirect refused during the
+  step 0 wait, stood in the build
+  lane's own accounting but not on the
+  pull request record while BP-153
+  accounted one event; BP-155
+  discloses it at its true scope,
+  counted nowhere, and BP-153 stands
+  unrewritten. The bot's release-notes
+  appendix stands on the pull
+  request's body at its foot inside
+  its own markers, 396 characters
+  counted from its opening marker,
+  preserved byte for byte through the
+  body's patches, the body standing at
+  18,185 characters with the appendix
+  whole at its foot at this read, and
+  it is censused here as the bot's own
+  text: its two bullets read "Updated
+  the project status to show 20 of 100
+  review rounds completed." and "Added
+  the latest review record, including
+  verification results and an
+  outstanding item.", each correct at
+  its scope; nothing of the bot's
+  stands adopted by any authored
+  sentence. The landing comment
+  (comment 6914815481, by the owner,
+  created 2026-11-16T11:12:43Z, 2,999
+  characters, never edited) records
+  the merge and charges this round.
+  Nothing stands on the pull request
+  after the landing comment at this
+  read, the shell's last edit, the
+  review's submission, and the review
+  comment's last edit all standing
+  before it, so no late CodeRabbit
+  material stands and the sixth charge
+  stands discharged as none standing,
+  to be re-verified at this round's
+  closure. The pull request merged as 
+  3981794911b1495f2e7ad29c6590b9485be3
+  467d, its merge tree 69c0bb7600addf8
+  745c67c74a6fe201ac2fe61e0 equal to
+  the reviewed second repair tree,
+  parents 99e3a30598c662376a75e6fe89dd
+  aa017be051bf and c8776e6414f19fad992
+  e7e6b0de3d4770e0ef9d8, and the
+  README on main at 20 of 100. BP-48
+  stands open by name and untouched:
+  Cargo.toml carries no description
+  field at the base, verified from its
+  fetched blob in this round, and it
+  is carried open in the closure item
+  and the closure.
+- BP-157. The dangling-chain split of
+  BP-80 is re-measured at its exact
+  point, at the shipped binary against
+  the oracle, over the battery's four
+  cells and a neighbor probe at
+  thirty-nine, forty, forty-one, and
+  forty-two links on both commands,
+  the probe run in the battery's cell
+  shape over all four points. Two
+  forty-link cells, on propose and on
+  diff: a chain of forty dangling
+  links standing as the output lands
+  on both sides, the write replacing
+  the head link itself, the missing
+  target never created, the document
+  byte-identical on both sides, and
+  the paired cells byte-identical in
+  exit code, streams, and the file
+  tree after the run. Two
+  forty-one-link cells, on propose and
+  on diff: at forty-one dangling links
+  the arms split outright, this side
+  refusing under the forty splice
+  bound of BP-27a's MAX_SPLICES,
+  counting the still-dangling chain as
+  naming an input and answering the
+  never-writes refusal, the refusal's
+  stderr standing byte for byte as
+  "error, bluepencil never writes to
+  its inputs", with the chain left
+  standing, while the oracle writes in
+  full, its write replacing the head
+  link and the document standing
+  complete. The neighbor probe states
+  the split at its exact point only:
+  at thirty-nine links both commands
+  on both arms land byte-identical, as
+  at forty; at forty-two the split
+  persists in the same form, this side
+  refusing with the same stderr byte
+  for byte and the chain left
+  standing, the oracle writing in
+  full. Two plus two is four battery
+  cells, and the probe adds two
+  controls on each side of the point.
+  The split's statement is BP-80's and
+  BP-27a's and is unchanged; this item
+  is its fresh evidence.
+- BP-158. The entropy interposition
+  asymmetry of BP-81 is re-verified,
+  over four cells, each cell named by
+  its part. Two interposition cells,
+  on propose and on diff: under an
+  entropy source whose open fails with
+  EACCES, this side refuses both
+  commands with the cannot-write error
+  naming the output as given, the
+  directory left as seeded, while the
+  oracle writes on both commands, its
+  own temp naming never opening the
+  randomness device. Two stream
+  control cells, measured on this side
+  under a frozen clock, a
+  deterministic entropy stream shim,
+  and the pid seated at 250: an
+  unplanted write draws exactly once,
+  and with the first candidate's name
+  and the name a read-once draw would
+  try second both planted, the write
+  lands after exactly two draws, the
+  plants standing. The pid and the
+  draw count are verified from the
+  child's own record, never from
+  harness assertion alone: the pid
+  from the pid file and the NSpid line
+  the seated child itself writes
+  before it execs, both standing at
+  250 in each stream cell, and the
+  draws from the log the shim appends
+  to on each read the child makes, one
+  byte per served read. Two plus two
+  is four. The draw's statement is
+  BP-55's and is unchanged; this item
+  is its fresh evidence.
+- BP-159. The loader's precedence
+  chain and version law of BP-56 and
+  BP-63 are re-probed fresh, over
+  thirty cells, each cell named by its
+  part. Seven precedence cells: two
+  shape-first cells (a refused version
+  standing beside a non-list
+  observations value, and the document
+  itself a list) meet the shape
+  refusal on both sides, the version
+  and the entries unexamined; two
+  version-over-entry cells (a
+  non-object entry, and an entry of
+  unknown kind) meet the version
+  refusal here and the entry refusal
+  on the oracle, which reads no
+  version key; one entry cell under an
+  accepted version meets the entry
+  refusal on both sides; and two
+  rewrites-seat cells, a malformed
+  entry standing beside a malformed
+  rewrites seat meeting the entry
+  refusal on both sides, and the
+  rewrites seat's own shape refusal
+  answering only once every
+  observation entry validates.
+  Twenty-three version cells, the
+  acceptance set measured exactly: two
+  acceptance cells, the string "1.0"
+  and absence, load on both sides to
+  the baseline document; eighteen
+  refusal cells refuse the load here
+  by name, each rendered as Python's
+  repr of the parsed value, the oracle
+  accepting every one (the ten near
+  values of BP-70: "1.0" with a
+  trailing space, "1.0" with a leading
+  space, "1.00", "v1.0", "1", "01.0",
+  "1.0" with a trailing newline, "1.0"
+  spelled with fullwidth digits, "1.0"
+  carrying a zero-width space, and the
+  integer 1; and the eight values of
+  BP-63: the string "2.0", the empty
+  string, the integer 2, the float
+  1.0, true, null, a list holding
+  "1.0", and an object with a single
+  key); two duplicate-key cells, a key
+  carried twice taking its last value
+  on both readers, an accepted "1.0"
+  standing last loading on both sides
+  and a refused "2.0" standing last
+  refusing here and loading on the
+  oracle; and one file-arm cell, a
+  refused load writing nothing at the
+  file arm, as at the stdout arm.
+  Seven plus twenty-three is thirty,
+  and twenty-three is two plus
+  eighteen plus two plus one. The
+  chain's and the law's statements are
+  BP-56's and BP-63's and are
+  unchanged; this item is their fresh
+  evidence.
+- BP-160. The invariants of BP-4 and
+  BP-12 are re-verified at their
+  surfaces, over six cells, each cell
+  named by its part, every paired cell
+  byte-identical across the port and
+  the oracle in exit code, streams,
+  and the file tree after the run.
+  Four input-as-target cells: the
+  rules file standing as its own run's
+  target refuses with the never-writes
+  error on propose and on diff, as do
+  the observations file on propose and
+  the proposals file on diff. The
+  proving comparison for input
+  protection is the per-side
+  before-and-after snapshot the
+  harness records on each side of each
+  run (after equals before per side on
+  kind, mode, and bytes,
+  exp_refuse_inputs), as BP-154
+  settles the attribution against
+  BP-151's original wording: BP-12
+  stands proven in its own terms, the
+  judge never writes to the rules file
+  it judges, nor to any other input.
+  Two control cells: the valid file
+  arm lands the proposal document, and
+  the diff at the stdout arm renders
+  its document with the tree after the
+  run standing exactly as it stood
+  before it, the rules file
+  byte-identical and the diff
+  unapplied. Four plus two is six.
+  BP-4 stands as it stands: the
+  command surface carries propose and
+  diff only, the diff is a document
+  for a human, and no surface of the
+  tool applies it; and at the
+  corrected scope BP-123 settles,
+  every diff document this item's
+  cells produce stands unapplied, the
+  two diff cells whose target is an
+  input producing no document on
+  either side, both sides refusing.
+- BP-161. The round's verification
+  accounting stands as follows, every
+  figure executed fresh in this round
+  and none inherited. The battery
+  stands whole at forty-four cells
+  with zero failures on the base build
+  and on the closure build: four walk
+  cells, four entropy cells, seven
+  precedence cells, twenty-three
+  version cells, and six guard cells;
+  four plus four plus seven plus
+  twenty-three plus six is forty-four.
+  The split probe stands clean on both
+  builds: the chains at thirty-nine
+  and forty links paired-identical on
+  both commands, and the chains at
+  forty-one and forty-two links
+  splitting the arms outright in the
+  form BP-157 records. The rebuilt
+  differential stands at sixteen cases
+  and two hundred twenty steps with
+  zero failures on both builds, its
+  enumeration re-added at this round's
+  hand: baseline-flow 9, usage 16,
+  missing-inputs 11, version-grid 38,
+  version-keys 5,
+  malformed-observations 38,
+  rules-shapes 24, output-spellings
+  10, proposals-shapes 17, unicode 6,
+  number-shapes 10, rewrites-shapes
+  16, big-documents 5, symlink-inputs
+  6, repeat-runs 6, and deep-nesting
+  3; the sixteen counts sum to two
+  hundred twenty exactly. The
+  differential's qualification stands
+  as BP-138 settles it and as BP-144,
+  BP-146, and BP-152 carry it by name:
+  the harness is rebuilt in this
+  line's own hand from the oracle's
+  behavior, its step counts are the
+  rebuilt harness's own, and the
+  historical five hundred
+  seventy-seven step figure of the
+  earlier harness is not like for like
+  with them and is never summed with
+  them. Cargo stands at sixty-four
+  tests on the base tree and on the
+  closure tree, three library, zero
+  binary, eighteen diff, eighteen
+  inventory, and twenty-five
+  proposals; three plus eighteen plus
+  eighteen plus twenty-five is
+  sixty-four. Clippy stands clean with
+  warnings denied and the format check
+  stands clean on both trees.
+  Provenance stands reproduced by
+  identity: the binary built fresh at
+  the worktree target path and the
+  binary built fresh at the scratch
+  target path carry the same md5,
+  d7cf80fe4770809418e809b9bfa0778b,
+  the figure Rounds 18, 19, and 20
+  record, stated at build-path scope
+  as those rounds state it. The
+  flighttape pin stands reconfirmed
+  through the API at commit 74a83298ae
+  b31c82e62b9fb0c613f5bc8600799e, tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e, fifty-eight tree entries of
+  which exactly fifty are blobs, and
+  the assembled pin checkout stands
+  blob-identical to that tree at zero
+  mismatches, zero missing, and zero
+  extra outside its target directory.
+  The pin's suite stands at two
+  hundred forty-one tests passing with
+  zero failures, and its golden stands
+  executed: the synthetic fixture
+  converts at exit zero to a tape of
+  one thousand six hundred sixty-three
+  bytes whose digest prints cc9c4e01fc
+  a418dcc33114caf75fae1f6bf0d401f297b5
+  d61f6776903fa955a3, and verify
+  answers digest matches at exit zero.
+  The oracle stands verified through
+  the API at commit 255d973dc51ba9e80d
+  056afd1575688a3432a370, tree 9ca149d
+  bf934ba7e54e8409101d06c86990a035e,
+  nineteen blobs, the local oracle
+  copy standing at zero mismatches and
+  zero missing by recomputed git blob
+  id. No figure in this item rests on
+  a killed or refused attempt; the
+  round's attempt history stands whole
+  in BP-162.
+- BP-162. Round 21 closes. The round's
+  families stand pushed server-side
+  through the Data API onto the
+  existing branch refine/bp-round21,
+  one commit per finished work family,
+  each pushed tree asserted equal to
+  its local tree before the next
+  family was written, and the push
+  route stands disclosed in the pull
+  request body itself. The read-back
+  family stands at head 624f1bf07a3f08
+  ef898e61f748f764e62f87c2f9, tree 4bd
+  4b18587e0809a5fdf6b548d25b0c0e7daefb
+  a, carrying BP-156 alone over the
+  base 3981794911b1495f2e7ad29c6590b94
+  85be3467d. The measurement family
+  stands at head 12c52b088ba2209194a51
+  0b3d9f17b9f99fdfc4a, tree 25e2f7a0b6
+  653b78c0a78a62349e1da770e2221a,
+  carrying BP-157 to BP-160. This
+  closure family carries BP-161 and
+  this record and the README rounds
+  line, which moves to 21 of 100 in
+  this closure commit only. The head
+  contract carries the base contract
+  as an exact byte prefix, and the
+  contract's range stands extended
+  through BP-162. BP-48 stands carried
+  open by name at the closure:
+  Cargo.toml carries no description
+  field, the surface stands untouched
+  in this round, and storefront item 3
+  stands honestly not passing in the
+  pull request body, as it stood in
+  Round 20. The sixth charge stands
+  re-verified at this closure: nothing
+  stands on pull request 24 after the
+  landing comment 6914815481 at this
+  round's closing read, the census
+  standing at two issue comments, one
+  review, and one review comment, so
+  no late CodeRabbit material stands
+  and none is owed a disposition. The
+  round's completion stands disclosed
+  on its face: the first build lane's
+  session ended without a final answer
+  after banking the round's entire
+  read-back half in its progress file;
+  a completion lane then banked the
+  measurement set and the two pushed
+  families and drafted this closure,
+  and its session in turn errored on a
+  transport failure before the closure
+  gate landed; and a second completion
+  lane adopted that banked state,
+  re-verified every load-bearing
+  figure at its own hand, and
+  corrected this closure's draft, and
+  its session in turn errored on a
+  transport failure with the closure
+  gate still unexecuted; and a third
+  completion lane, the last lane on
+  the round, adopted the banked state
+  whole and finished the round. The
+  round's attempt history stands whole
+  here, every event counted nowhere.
+  The first lane's two events: its
+  first API verification pass was
+  killed by a service restart mid-run,
+  its completed reads saved and used
+  with the single missing read, the
+  review comments, re-run whole; and
+  its local base assembly's first
+  commit missed two test files,
+  tests/test_inventory.rs and
+  tests/test_proposals.rs, that its
+  backgrounded fetch had not yet
+  landed, both blobs re-fetched and
+  hash-verified, the base commit
+  amended before any item work, and
+  the assembled tree asserted equal to
+  the base tree before building. The
+  completion lane's events: the save
+  of the live shell text to its
+  scratch was refused by the box write
+  fault, the file standing at zero
+  bytes as the trace and the shell
+  re-fetched from the API wherever
+  needed; its first base-gate hold
+  completed clippy and the format
+  check clean and reproduced the
+  provenance md5 at both build paths,
+  but its cargo test exited 101 with
+  its redirected log standing at zero
+  bytes, so no test outcome stood from
+  that hold; a gate re-run on the
+  session pipe then ran the library
+  and binary suites clean and failed
+  test_diff at eleven passed and seven
+  failed, a diagnostic re-run showing
+  all seven failures panicking in
+  their own setup on content writes
+  refused with PermissionDenied, a raw
+  probe at the same moment refused in
+  the scratch, the worktree, home,
+  /tmp, and /dev/shm alike; a second
+  probe loop was killed by a runtime
+  restart with its log empty; a
+  post-restart base gate failed
+  test_diff again at eleven and seven,
+  and a write-matrix probe then
+  characterized the flicker, writes
+  landing whole in four locations at
+  one minute and refused again two
+  minutes later, one matrix probe file
+  landing inside the worktree during a
+  flicker and removed, the worktree
+  standing clean after; the
+  measurement runner's first hold
+  exhausted six cycles with every
+  write probe refused and no stage
+  run; four counted probe loops
+  recorded two hundred thirty refused
+  probes between them; a sixth probe
+  loop was killed by a runtime restart
+  after about seven minutes, and that
+  restart cleared the wave; the
+  measurement runner's first relaunch
+  queued one hundred nineteen minutes
+  behind another lane's hold and was
+  killed by a service restart before
+  it ever held the slot, its successor
+  completing the whole base
+  measurement set clean in a single
+  cycle; the scratch copy of the
+  appended contract was refused by the
+  fault, its target created at zero
+  bytes, and the family construction
+  was rebuilt deterministically from
+  the base contract and the item files
+  instead, the first family commit's
+  git object writes also refused once
+  before the commits landed whole
+  after a restart; a closure runner
+  holding the slot and cycling against
+  the shut wave was killed by a
+  runtime restart with its log
+  standing at zero bytes and no stage
+  executed, its successor standing
+  relaunched under the build slot; and
+  the completion lane's session
+  errored on a transport failure after
+  the two families stood pushed and
+  this closure stood drafted, the
+  closure runner it had relaunched
+  still queued on the build slot and
+  standing adopted whole by its
+  successor; and on the second
+  completion lane's watch the adopted
+  runner was killed queued by a
+  service restart with no stage
+  executed, the launch replaying as a
+  fresh instance of the same command,
+  which acquired the build slot and
+  exhausted its twelve cycles against
+  the shut wave with every probe and
+  log write refused and no stage
+  executed, and was relaunched whole
+  in its turn; the relaunched instance
+  died in its turn without executing,
+  standing absent from the process
+  table at the last lane's entering
+  check with the closure log still at
+  zero bytes and no stage executed;
+  the last lane's own first seating
+  failed at bootstrap on the same
+  transport failure and did nothing;
+  the last lane relaunched the same
+  sequence whole, and that instance
+  queued on the build slot for about
+  two hours and was killed queued by a
+  runtime restart with no stage
+  executed; and the last lane
+  relaunched the sequence whole again,
+  and the closure gate executed whole
+  in a single cycle on that hold. No
+  counted pass in this round rests on
+  any of these attempts. The gate
+  figures for both trees stand in
+  BP-161. No lane on this round
+  spawned subagents, ran review lanes
+  of its own, or merged anything by
+  any route; the round stops at the
+  owner's gate, and the three reviews
+  are the owner's.
+- BP-163. Repair record, appended at
+  the gate on the bot's two actionable
+  comments on pull request 25
+  (4600652835 at lines 6483 to 6489 of
+  the closure head's contract, and
+  4600652851 at lines 6491 to 6494,
+  both inside BP-160), each graded
+  valid at this hand before writing.
+  BP-160 stands qualified in two
+  limbs, its text unrewritten. The
+  snapshot limb: the per-side
+  before-and-after snapshot
+  establishes unchanged final state
+  per side on kind, mode, bytes, and
+  exp_refuse_inputs; it does not by
+  itself observe writes during a run,
+  and no sentence of this contract
+  rests the never-writes conclusion on
+  the snapshots alone. That
+  conclusion, for the four
+  input-as-target cells, rests jointly
+  on the refusals those cells record,
+  each command answering with the
+  never-writes error and writing
+  nothing, and on the snapshots'
+  unchanged final state for every
+  other input the cells carry. The
+  scope limb: BP-12's proof at BP-160
+  stands scoped to the four tested
+  input-as-target cells and their
+  named files, the rules file standing
+  as its own run's target on propose
+  and on diff, the observations file
+  on propose, and the proposals file
+  on diff; no protection is claimed
+  for any other input spelling on this
+  item's evidence. BP-154's
+  attribution settlement stands as it
+  stands; this record narrows the
+  claim BP-160 states, and the
+  narrowing is the whole of the
+  repair.
