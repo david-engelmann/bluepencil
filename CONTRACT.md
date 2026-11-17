@@ -6321,3 +6321,193 @@ in the round dossier, never a silent approximation.
   fetched blob in this round, and it
   is carried open in the closure item
   and the closure.
+- BP-157. The dangling-chain split of
+  BP-80 is re-measured at its exact
+  point, at the shipped binary against
+  the oracle, over the battery's four
+  cells and a neighbor probe at
+  thirty-nine, forty, forty-one, and
+  forty-two links on both commands,
+  the probe run in the battery's cell
+  shape over all four points. Two
+  forty-link cells, on propose and on
+  diff: a chain of forty dangling
+  links standing as the output lands
+  on both sides, the write replacing
+  the head link itself, the missing
+  target never created, the document
+  byte-identical on both sides, and
+  the paired cells byte-identical in
+  exit code, streams, and the file
+  tree after the run. Two
+  forty-one-link cells, on propose and
+  on diff: at forty-one dangling links
+  the arms split outright, this side
+  refusing under the forty splice
+  bound of BP-27a's MAX_SPLICES,
+  counting the still-dangling chain as
+  naming an input and answering the
+  never-writes refusal, the refusal's
+  stderr standing byte for byte as
+  "error, bluepencil never writes to
+  its inputs", with the chain left
+  standing, while the oracle writes in
+  full, its write replacing the head
+  link and the document standing
+  complete. The neighbor probe states
+  the split at its exact point only:
+  at thirty-nine links both commands
+  on both arms land byte-identical, as
+  at forty; at forty-two the split
+  persists in the same form, this side
+  refusing with the same stderr byte
+  for byte and the chain left
+  standing, the oracle writing in
+  full. Two plus two is four battery
+  cells, and the probe adds two
+  controls on each side of the point.
+  The split's statement is BP-80's and
+  BP-27a's and is unchanged; this item
+  is its fresh evidence.
+- BP-158. The entropy interposition
+  asymmetry of BP-81 is re-verified,
+  over four cells, each cell named by
+  its part. Two interposition cells,
+  on propose and on diff: under an
+  entropy source whose open fails with
+  EACCES, this side refuses both
+  commands with the cannot-write error
+  naming the output as given, the
+  directory left as seeded, while the
+  oracle writes on both commands, its
+  own temp naming never opening the
+  randomness device. Two stream
+  control cells, measured on this side
+  under a frozen clock, a
+  deterministic entropy stream shim,
+  and the pid seated at 250: an
+  unplanted write draws exactly once,
+  and with the first candidate's name
+  and the name a read-once draw would
+  try second both planted, the write
+  lands after exactly two draws, the
+  plants standing. The pid and the
+  draw count are verified from the
+  child's own record, never from
+  harness assertion alone: the pid
+  from the pid file and the NSpid line
+  the seated child itself writes
+  before it execs, both standing at
+  250 in each stream cell, and the
+  draws from the log the shim appends
+  to on each read the child makes, one
+  byte per served read. Two plus two
+  is four. The draw's statement is
+  BP-55's and is unchanged; this item
+  is its fresh evidence.
+- BP-159. The loader's precedence
+  chain and version law of BP-56 and
+  BP-63 are re-probed fresh, over
+  thirty cells, each cell named by its
+  part. Seven precedence cells: two
+  shape-first cells (a refused version
+  standing beside a non-list
+  observations value, and the document
+  itself a list) meet the shape
+  refusal on both sides, the version
+  and the entries unexamined; two
+  version-over-entry cells (a
+  non-object entry, and an entry of
+  unknown kind) meet the version
+  refusal here and the entry refusal
+  on the oracle, which reads no
+  version key; one entry cell under an
+  accepted version meets the entry
+  refusal on both sides; and two
+  rewrites-seat cells, a malformed
+  entry standing beside a malformed
+  rewrites seat meeting the entry
+  refusal on both sides, and the
+  rewrites seat's own shape refusal
+  answering only once every
+  observation entry validates.
+  Twenty-three version cells, the
+  acceptance set measured exactly: two
+  acceptance cells, the string "1.0"
+  and absence, load on both sides to
+  the baseline document; eighteen
+  refusal cells refuse the load here
+  by name, each rendered as Python's
+  repr of the parsed value, the oracle
+  accepting every one (the ten near
+  values of BP-70: "1.0" with a
+  trailing space, "1.0" with a leading
+  space, "1.00", "v1.0", "1", "01.0",
+  "1.0" with a trailing newline, "1.0"
+  spelled with fullwidth digits, "1.0"
+  carrying a zero-width space, and the
+  integer 1; and the eight values of
+  BP-63: the string "2.0", the empty
+  string, the integer 2, the float
+  1.0, true, null, a list holding
+  "1.0", and an object with a single
+  key); two duplicate-key cells, a key
+  carried twice taking its last value
+  on both readers, an accepted "1.0"
+  standing last loading on both sides
+  and a refused "2.0" standing last
+  refusing here and loading on the
+  oracle; and one file-arm cell, a
+  refused load writing nothing at the
+  file arm, as at the stdout arm.
+  Seven plus twenty-three is thirty,
+  and twenty-three is two plus
+  eighteen plus two plus one. The
+  chain's and the law's statements are
+  BP-56's and BP-63's and are
+  unchanged; this item is their fresh
+  evidence.
+- BP-160. The invariants of BP-4 and
+  BP-12 are re-verified at their
+  surfaces, over six cells, each cell
+  named by its part, every paired cell
+  byte-identical across the port and
+  the oracle in exit code, streams,
+  and the file tree after the run.
+  Four input-as-target cells: the
+  rules file standing as its own run's
+  target refuses with the never-writes
+  error on propose and on diff, as do
+  the observations file on propose and
+  the proposals file on diff. The
+  proving comparison for input
+  protection is the per-side
+  before-and-after snapshot the
+  harness records on each side of each
+  run (after equals before per side on
+  kind, mode, and bytes,
+  exp_refuse_inputs), as BP-154
+  settles the attribution against
+  BP-151's original wording: BP-12
+  stands proven in its own terms, the
+  judge never writes to the rules file
+  it judges, nor to any other input.
+  Two control cells: the valid file
+  arm lands the proposal document, and
+  the diff at the stdout arm renders
+  its document with the tree after the
+  run standing exactly as it stood
+  before it, the rules file
+  byte-identical and the diff
+  unapplied. Four plus two is six.
+  BP-4 stands as it stands: the
+  command surface carries propose and
+  diff only, the diff is a document
+  for a human, and no surface of the
+  tool applies it; and at the
+  corrected scope BP-123 settles,
+  every diff document this item's
+  cells produce stands unapplied, the
+  two diff cells whose target is an
+  input producing no document on
+  either side, both sides refusing.
