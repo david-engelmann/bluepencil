@@ -6511,3 +6511,293 @@ in the round dossier, never a silent approximation.
   two diff cells whose target is an
   input producing no document on
   either side, both sides refusing.
+- BP-161. The round's verification
+  accounting stands as follows, every
+  figure executed fresh in this round
+  and none inherited. The battery
+  stands whole at forty-four cells
+  with zero failures on the base build
+  and on the closure build: four walk
+  cells, four entropy cells, seven
+  precedence cells, twenty-three
+  version cells, and six guard cells;
+  four plus four plus seven plus
+  twenty-three plus six is forty-four.
+  The split probe stands clean on both
+  builds: the chains at thirty-nine
+  and forty links paired-identical on
+  both commands, and the chains at
+  forty-one and forty-two links
+  splitting the arms outright in the
+  form BP-157 records. The rebuilt
+  differential stands at sixteen cases
+  and two hundred twenty steps with
+  zero failures on both builds, its
+  enumeration re-added at this round's
+  hand: baseline-flow 9, usage 16,
+  missing-inputs 11, version-grid 38,
+  version-keys 5,
+  malformed-observations 38,
+  rules-shapes 24, output-spellings
+  10, proposals-shapes 17, unicode 6,
+  number-shapes 10, rewrites-shapes
+  16, big-documents 5, symlink-inputs
+  6, repeat-runs 6, and deep-nesting
+  3; the sixteen counts sum to two
+  hundred twenty exactly. The
+  differential's qualification stands
+  as BP-138 settles it and as BP-144,
+  BP-146, and BP-152 carry it by name:
+  the harness is rebuilt in this
+  line's own hand from the oracle's
+  behavior, its step counts are the
+  rebuilt harness's own, and the
+  historical five hundred
+  seventy-seven step figure of the
+  earlier harness is not like for like
+  with them and is never summed with
+  them. Cargo stands at sixty-four
+  tests on the base tree and on the
+  closure tree, three library, zero
+  binary, eighteen diff, eighteen
+  inventory, and twenty-five
+  proposals; three plus eighteen plus
+  eighteen plus twenty-five is
+  sixty-four. Clippy stands clean with
+  warnings denied and the format check
+  stands clean on both trees.
+  Provenance stands reproduced by
+  identity: the binary built fresh at
+  the worktree target path and the
+  binary built fresh at the scratch
+  target path carry the same md5,
+  d7cf80fe4770809418e809b9bfa0778b,
+  the figure Rounds 18, 19, and 20
+  record, stated at build-path scope
+  as those rounds state it. The
+  flighttape pin stands reconfirmed
+  through the API at commit 74a83298ae
+  b31c82e62b9fb0c613f5bc8600799e, tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e, fifty-eight tree entries of
+  which exactly fifty are blobs, and
+  the assembled pin checkout stands
+  blob-identical to that tree at zero
+  mismatches, zero missing, and zero
+  extra outside its target directory.
+  The pin's suite stands at two
+  hundred forty-one tests passing with
+  zero failures, and its golden stands
+  executed: the synthetic fixture
+  converts at exit zero to a tape of
+  one thousand six hundred sixty-three
+  bytes whose digest prints cc9c4e01fc
+  a418dcc33114caf75fae1f6bf0d401f297b5
+  d61f6776903fa955a3, and verify
+  answers digest matches at exit zero.
+  The oracle stands verified through
+  the API at commit 255d973dc51ba9e80d
+  056afd1575688a3432a370, tree 9ca149d
+  bf934ba7e54e8409101d06c86990a035e,
+  nineteen blobs, the local oracle
+  copy standing at zero mismatches and
+  zero missing by recomputed git blob
+  id. No figure in this item rests on
+  a killed or refused attempt; the
+  round's attempt history stands whole
+  in BP-162.
+- BP-162. Round 21 closes. The round's
+  families stand pushed server-side
+  through the Data API onto the
+  existing branch refine/bp-round21,
+  one commit per finished work family,
+  each pushed tree asserted equal to
+  its local tree before the next
+  family was written, and the push
+  route stands disclosed in the pull
+  request body itself. The read-back
+  family stands at head 624f1bf07a3f08
+  ef898e61f748f764e62f87c2f9, tree 4bd
+  4b18587e0809a5fdf6b548d25b0c0e7daefb
+  a, carrying BP-156 alone over the
+  base 3981794911b1495f2e7ad29c6590b94
+  85be3467d. The measurement family
+  stands at head 12c52b088ba2209194a51
+  0b3d9f17b9f99fdfc4a, tree 25e2f7a0b6
+  653b78c0a78a62349e1da770e2221a,
+  carrying BP-157 to BP-160. This
+  closure family carries BP-161 and
+  this record and the README rounds
+  line, which moves to 21 of 100 in
+  this closure commit only. The head
+  contract carries the base contract
+  as an exact byte prefix, and the
+  contract's range stands extended
+  through BP-162. BP-48 stands carried
+  open by name at the closure:
+  Cargo.toml carries no description
+  field, the surface stands untouched
+  in this round, and storefront item 3
+  stands honestly not passing in the
+  pull request body, as it stood in
+  Round 20. The sixth charge stands
+  re-verified at this closure: nothing
+  stands on pull request 24 after the
+  landing comment 6914815481 at this
+  round's closing read, the census
+  standing at two issue comments, one
+  review, and one review comment, so
+  no late CodeRabbit material stands
+  and none is owed a disposition. The
+  round's completion stands disclosed
+  on its face: the first build lane's
+  session ended without a final answer
+  after banking the round's entire
+  read-back half in its progress file;
+  a completion lane then banked the
+  measurement set and the two pushed
+  families and drafted this closure,
+  and its session in turn errored on a
+  transport failure before the closure
+  gate landed; and a second completion
+  lane adopted that banked state,
+  re-verified every load-bearing
+  figure at its own hand, and
+  corrected this closure's draft, and
+  its session in turn errored on a
+  transport failure with the closure
+  gate still unexecuted; and a third
+  completion lane, the last lane on
+  the round, adopted the banked state
+  whole and finished the round. The
+  round's attempt history stands whole
+  here, every event counted nowhere.
+  The first lane's two events: its
+  first API verification pass was
+  killed by a service restart mid-run,
+  its completed reads saved and used
+  with the single missing read, the
+  review comments, re-run whole; and
+  its local base assembly's first
+  commit missed two test files,
+  tests/test_inventory.rs and
+  tests/test_proposals.rs, that its
+  backgrounded fetch had not yet
+  landed, both blobs re-fetched and
+  hash-verified, the base commit
+  amended before any item work, and
+  the assembled tree asserted equal to
+  the base tree before building. The
+  completion lane's events: the save
+  of the live shell text to its
+  scratch was refused by the box write
+  fault, the file standing at zero
+  bytes as the trace and the shell
+  re-fetched from the API wherever
+  needed; its first base-gate hold
+  completed clippy and the format
+  check clean and reproduced the
+  provenance md5 at both build paths,
+  but its cargo test exited 101 with
+  its redirected log standing at zero
+  bytes, so no test outcome stood from
+  that hold; a gate re-run on the
+  session pipe then ran the library
+  and binary suites clean and failed
+  test_diff at eleven passed and seven
+  failed, a diagnostic re-run showing
+  all seven failures panicking in
+  their own setup on content writes
+  refused with PermissionDenied, a raw
+  probe at the same moment refused in
+  the scratch, the worktree, home,
+  /tmp, and /dev/shm alike; a second
+  probe loop was killed by a runtime
+  restart with its log empty; a
+  post-restart base gate failed
+  test_diff again at eleven and seven,
+  and a write-matrix probe then
+  characterized the flicker, writes
+  landing whole in four locations at
+  one minute and refused again two
+  minutes later, one matrix probe file
+  landing inside the worktree during a
+  flicker and removed, the worktree
+  standing clean after; the
+  measurement runner's first hold
+  exhausted six cycles with every
+  write probe refused and no stage
+  run; four counted probe loops
+  recorded two hundred thirty refused
+  probes between them; a sixth probe
+  loop was killed by a runtime restart
+  after about seven minutes, and that
+  restart cleared the wave; the
+  measurement runner's first relaunch
+  queued one hundred nineteen minutes
+  behind another lane's hold and was
+  killed by a service restart before
+  it ever held the slot, its successor
+  completing the whole base
+  measurement set clean in a single
+  cycle; the scratch copy of the
+  appended contract was refused by the
+  fault, its target created at zero
+  bytes, and the family construction
+  was rebuilt deterministically from
+  the base contract and the item files
+  instead, the first family commit's
+  git object writes also refused once
+  before the commits landed whole
+  after a restart; a closure runner
+  holding the slot and cycling against
+  the shut wave was killed by a
+  runtime restart with its log
+  standing at zero bytes and no stage
+  executed, its successor standing
+  relaunched under the build slot; and
+  the completion lane's session
+  errored on a transport failure after
+  the two families stood pushed and
+  this closure stood drafted, the
+  closure runner it had relaunched
+  still queued on the build slot and
+  standing adopted whole by its
+  successor; and on the second
+  completion lane's watch the adopted
+  runner was killed queued by a
+  service restart with no stage
+  executed, the launch replaying as a
+  fresh instance of the same command,
+  which acquired the build slot and
+  exhausted its twelve cycles against
+  the shut wave with every probe and
+  log write refused and no stage
+  executed, and was relaunched whole
+  in its turn; the relaunched instance
+  died in its turn without executing,
+  standing absent from the process
+  table at the last lane's entering
+  check with the closure log still at
+  zero bytes and no stage executed;
+  the last lane's own first seating
+  failed at bootstrap on the same
+  transport failure and did nothing;
+  the last lane relaunched the same
+  sequence whole, and that instance
+  queued on the build slot for about
+  two hours and was killed queued by a
+  runtime restart with no stage
+  executed; and the last lane
+  relaunched the sequence whole again,
+  and the closure gate executed whole
+  in a single cycle on that hold. No
+  counted pass in this round rests on
+  any of these attempts. The gate
+  figures for both trees stand in
+  BP-161. No lane on this round
+  spawned subagents, ran review lanes
+  of its own, or merged anything by
+  any route; the round stops at the
+  owner's gate, and the three reviews
+  are the owner's.
