@@ -7820,3 +7820,59 @@ in the round dossier, never a silent approximation.
   a planted control carrying one em
   dash and two en dashes, counted
   exactly.
+- BP-178. Round 23 closes. The
+  contract stands at BP-1 to BP-178,
+  with the repair records BP-138,
+  BP-146, BP-154, BP-155, and BP-163
+  outside the range, at 284,115 bytes
+  at this closure, and the closure
+  commit alone carries the README
+  rounds line at 23 of 100. The round
+  ran in one seating, this build lane,
+  and no seating spawned a subagent or
+  a review lane and no seating merged
+  anything; the merge is the owner's
+  act alone. The round's execution
+  history stands here whole. This
+  lane's gate runner stood as one
+  launch under the build slot (flock
+  pid 724164) and ran forty cycles:
+  its first cycle banked the assembly,
+  both discharge gates and harness
+  sets on the Round 22 closure and
+  base trees, the pin stage, the
+  codepoint scan, and the base gate,
+  and its base harness stage's first
+  attempt completed the battery and
+  the split probe clean and died
+  inside the differential at its tenth
+  case on a refused seeding write as
+  the write fault's hard wave closed
+  in, the stage standing unbanked;
+  cycles 2 to 39 refused at the probe
+  while the wave held, one shell write
+  of a commit message file refused
+  among them and rewritten through the
+  file tools; cycle 40 found the
+  window and banked the base harness
+  stage whole, all stages done at
+  2026-11-18T12:02:55Z. Every refused
+  cycle and the dead differential
+  attempt stand counted nowhere; the
+  figures at BP-173 to BP-177 stand on
+  the completed stages' logs, each
+  read at this lane's hand. The
+  closure tree stands scanned before
+  its push at U+2014 0 and U+2013 0
+  over its 28 files, the scan run by
+  Python on the assembled closure tree
+  whose blobs the closure push
+  asserts, the scan proven on a
+  planted control counted at one em
+  dash and two en dashes. BP-48 stands
+  carried to Round 24 by name:
+  Cargo.toml stands at 170 bytes with
+  no description key, re-verified at
+  this closure, and item 3 of the
+  storefront checklist stands not
+  passing on that ground.
