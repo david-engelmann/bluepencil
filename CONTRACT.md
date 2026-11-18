@@ -7699,3 +7699,36 @@ in the round dossier, never a silent approximation.
   round's own base harness stage, and
   its whole history stands in the
   closure item.
+- BP-174. The round's own set opens on
+  the base tree, which is main
+  7f5df9d9eb957f37cfd4b849a406093ba665
+  2048's tree
+  1bc3b4546edbc066e179b956f1e4bb7c0c75
+  9623, the Round 22 repair tree,
+  differing from the Round 22 closure
+  tree in CONTRACT.md alone as that
+  round's repair push asserted. The
+  tree was assembled through the API
+  at 28 blobs with zero mismatches,
+  and the oracle the harnesses pair
+  against stands verified at this
+  round's hand before any pairing:
+  commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e, 19 blobs, the standing
+  extraction recomputed blob by blob
+  with zero mismatches. The base gate
+  stands clean on the fresh build:
+  cargo test 64 passed and 0 failed (3
+  library, 0 binary, 18 diff, 18
+  inventory, 25 proposals, 0 doc),
+  clippy with warnings denied clean,
+  fmt clean, and the build clean. The
+  fresh build's binary stands at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's base harness path, the
+  same md5 as the closure tree's build
+  at its own path, the two trees' code
+  being identical.
