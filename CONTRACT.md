@@ -7586,3 +7586,116 @@ in the round dossier, never a silent approximation.
   this census, and no other
   post-landing material stands on the
   pull request.
+- BP-173. The Round 22 red team's
+  carried executions stand discharged
+  at this round's hand, as the Round
+  22 landing comment 6976619354
+  charges. The red team's probe-gated
+  runner never executed: it stood
+  armed in its scratch as flock pid
+  1385834, launched 2026-11-18 about
+  05:06Z, queued on the build slot
+  behind a sibling lane's hold; at
+  this lane's entering check the pid
+  stands absent from the process
+  table, no process references its
+  scratch or its script, and its
+  scratch carries no gate log, no
+  stages directory, and no completion
+  marker, and since its script creates
+  the stages directory and the gate
+  log before its first probe cycle,
+  had its body ever executed both
+  would stand. It died queued and
+  unexecuted, nothing was banked under
+  it, and nothing of its stands
+  undisclosed. The discharge set was
+  executed whole by this round's own
+  runner on trees assembled through
+  the API at this hand, each verified
+  blob by blob: the Round 21 closure
+  tree
+  ae5ebc1487bab98544233ff5522dc5882e91
+  a269 (28 blobs, zero mismatches) and
+  the Round 22 base tree
+  9b369be451fe46424e33922cf3abea1bc701
+  41e6 (28 blobs, zero mismatches),
+  the harnesses Round 21's own files
+  with the pid positioner included in
+  every harness copy from the start,
+  and the oracle verified at BP-174's
+  hand before any pairing. On the
+  closure tree the gate stands at
+  cargo test 64 passed and 0 failed (3
+  library, 0 binary, 18 diff, 18
+  inventory, 25 proposals, 0 doc),
+  clippy with warnings denied clean,
+  fmt clean, and the build clean, its
+  binary at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's rt-closure harness
+  path, the Round 22 closure build md5
+  exactly. The battery stands at 44
+  cells and 0 failures on that build
+  (walk 4, entropy 4, precedence 7,
+  version 23, guard 6). The split
+  probe stands at 0 failures in its
+  contracted shape: chains of 39 and
+  40 links paired-identical on both
+  commands, chains of 41 and 42 split
+  outright, the oracle writing in full
+  while the port refuses at exit 1
+  with stderr exactly "error,
+  bluepencil never writes to its
+  inputs" and its head standing as the
+  link. The differential stands at 16
+  cases, 220 steps, 0 failures, at the
+  rebuilt harness's figures under
+  BP-138's qualification as BP-176
+  states it. The BP-163 guard-cell
+  re-derivation stands re-derived from
+  this run's battery: the four
+  input-as-target guard cells (rules
+  and observations under propose,
+  rules and proposals under diff) each
+  refuse on both arms at exit 1 with
+  matching stderr and the per-side
+  tree unchanged before and after, the
+  valid file arm lands its output, and
+  the stdout diff arm renders
+  unapplied, which is exactly the
+  joint basis BP-163 states for
+  BP-12's proof, the refusals those
+  cells record together with the
+  snapshots' unchanged final state per
+  side, scoped to those four tested
+  input-as-target cells. On the base
+  tree the gate stands at the same
+  figures, cargo test 64 passed and 0
+  failed at the same split, clippy
+  with warnings denied clean, fmt
+  clean, its binary at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's rt-base harness path;
+  the battery stands at 44 cells and 0
+  failures, the split probe at 0
+  failures in the same shape, and the
+  differential at 16 cases, 220 steps,
+  0 failures. The discharge's pin limb
+  is executed in the same pin stage
+  whose figures BP-177 contracts, the
+  pin suite being a property of the
+  pinned flighttape tree alone and not
+  of the tree under test. This round's
+  own codepoint scan stands at U+2014
+  0 and U+2013 0 over both trees' 28
+  files each, the scan proven on a
+  planted control counted at one em
+  dash and two en dashes before the
+  trees were scanned. The discharge
+  stages stand banked complete in this
+  round's runner's first cycle; the
+  runner's remaining stage is this
+  round's own base harness stage, and
+  its whole history stands in the
+  closure item.
