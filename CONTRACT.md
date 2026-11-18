@@ -7455,3 +7455,134 @@ in the round dossier, never a silent approximation.
   graded valid and fixed here;
   BP-170's remaining accounting stands
   as written.
+- BP-172. Round 23 opens on main
+  7f5df9d9eb957f37cfd4b849a406093ba665
+  2048, its tree
+  1bc3b4546edbc066e179b956f1e4bb7c0c75
+  9623 the Round 22 repair tree,
+  verified live through the API at
+  this lane's entering check: 28
+  blobs, the contract at 269,394 bytes
+  with BP-171 its tail item and no
+  BP-172 standing, the README rounds
+  line at 22 of 100, Cargo.toml at 170
+  bytes with no description key. Pull
+  request 27 stands read back whole at
+  this item, as the Round 22 landing
+  comment 6976619354 charges. The pull
+  request stands closed and merged,
+  its merge commit
+  7f5df9d9eb957f37cfd4b849a406093ba665
+  2048 standing as main, its head the
+  repair head
+  e028bcd96ffcbbac6526913acb97650b9352
+  7cfe over the closure head
+  d155e9004221c3ba93e6c62b0a24e1d89298
+  b34c over base
+  a35bc94d55f820745d1fe02599f1ab0967e5
+  4266. The body stands at 11,864
+  chars, the figure the lane's
+  read-back recorded, and the bot's
+  release-notes appendix stands whole
+  at the body's foot at 432 chars from
+  its marker at this hand, both of its
+  Documentation bullets correct. The
+  census stands exact at this read:
+  four issue comments, one review, two
+  review comments, no replies standing
+  on either review comment, and
+  nothing posted after the landing
+  comment. The Trunk note 6965585171
+  stands at 113 chars in its final
+  form, its pre-merge informational
+  form of 403 chars re-rendered at the
+  merge (updated 2026-11-18T07:26:37Z)
+  to the merged-successfully line with
+  the queue details link. The owner's
+  queue comment 6971896734 stands at
+  12 chars (2026-11-18T07:19:29Z), and
+  the landing comment 6976619354
+  stands last at 2,194 chars
+  (2026-11-18T11:01:54Z), its four
+  charges standing as this round's
+  charges. The CodeRabbit shell
+  6965588506 stands in its true final
+  form at this read at 8,651 chars,
+  last edited 2026-11-18T01:06:01Z:
+  the body's census named three forms
+  ending at 11,349 chars at its patch,
+  and the shell re-rendered shorter
+  before the merge, no
+  disposition-bearing element moving
+  between the body's census and the
+  final form. Its walkthrough stands
+  accurate in its three rows; Merge
+  Risk stands Low up to
+  d155e9004221c3ba93e6c62b0a24e1d89298
+  b34c with coverage source and
+  covered commit both the closure
+  head, kind reviewed; the pre-merge
+  checks stand at 4 passed with the
+  Title check Passed, its details
+  calling the title long and dense and
+  overly broad. The repair head's
+  posture stands contracted expressly
+  as charged: the bot's completed
+  review covers the closure head
+  alone, and no completed bot review
+  of the repair head
+  e028bcd96ffcbbac6526913acb97650b9352
+  7cfe stands. Review 5949191817
+  stands COMMENTED on the closure head
+  under Run ID
+  282d0c56-7de7-4880-8451-80ece0ab6fe0
+  , recording two actionable comments.
+  The Title disposition stands on its
+  counted grounds re-measured at this
+  hand: the title stands at exactly
+  121 chars in the standing shape, as
+  PRs 22 to 25 stood at BP-164's read.
+  Review comment 4607856563 stands
+  re-graded VALID at this hand and
+  fixed at BP-171: BP-170's counting
+  sentence did conflate launch
+  outcomes with banked stages as
+  written, and BP-171 qualifies
+  exactly that limb, a dead launch
+  counting nowhere as a launch and a
+  refused cycle nowhere as a cycle
+  while the stages a launch banked
+  before it died stand as completed
+  stages on their own logs, launch 4's
+  and launch 8's named among them; the
+  comment carries the bot's Addressed
+  in commit e028bcd, and BP-170 stands
+  unrewritten, the contract at this
+  base an exact byte prefix chain with
+  BP-171 a pure append of 973 bytes.
+  Review comment 4607856554 stands
+  re-graded sound in its dismissal at
+  this hand: the qualification it
+  demands is the one BP-163 states and
+  BP-165 restates in the cited
+  passage, BP-12's proof resting
+  jointly on the refusals the four
+  input-as-target cells record and on
+  the snapshots' unchanged final state
+  per side, scoped to those four
+  tested cells, nowhere claiming
+  writes were observed absent during a
+  run; the never-writes phrase stands
+  in Round 22's authored text only as
+  the binary's quoted stderr, and no
+  Addressed line stands on the
+  comment, consistent with a
+  dismissal. The landing comment's
+  fourth charge stands discharged
+  here: nothing stands posted after
+  the landing comment, the Trunk
+  note's merge-moment re-render
+  predates it and stands contracted in
+  this census, and no other
+  post-landing material stands on the
+  pull request.
