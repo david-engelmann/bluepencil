@@ -7876,3 +7876,19 @@ in the round dossier, never a silent approximation.
   this closure, and item 3 of the
   storefront checklist stands not
   passing on that ground.
+- BP-179. Repair record, qualifying
+  BP-173 under the standing
+  convention, BP-173 unrewritten.
+  BP-173 names the tree
+  ae5ebc1487bab98544233ff5522dc5882e91
+  a269 the Round 21 closure tree; that
+  tree is the Round 22 closure tree,
+  BP-170's tree, and the label alone
+  stands corrected here. Every figure
+  at BP-173 stands as executed on that
+  tree at this round's hand, and no
+  other statement at BP-173 is
+  qualified. The correction answers
+  this lane's own re-read of the Round
+  22 record before this round's gate;
+  no review had yet graded the item.
