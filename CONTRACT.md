@@ -7315,3 +7315,115 @@ in the round dossier, never a silent approximation.
   a planted control carrying one em
   dash and two en dashes, counted
   exactly.
+- BP-170. Round 22 closes. The
+  contract stands at BP-1 to BP-170,
+  with the repair records BP-138,
+  BP-146, BP-154, BP-155, and BP-163
+  outside the range, at 268,421 bytes
+  at this closure, and the closure
+  commit alone carries the README
+  rounds line at 22 of 100. The round
+  ran in three seatings, disclosed
+  here whole: the build lane banked
+  BP-164 and the execution runner's
+  first six launches, then errored on
+  transport at 2026-11-17T22:03:13Z
+  (database write admission timeout
+  after 5000ms) and could not be
+  resumed; a first completion seating
+  verified the oracle at its own hand,
+  assembled both trees, adopted the
+  banked closure gate stage, diagnosed
+  and repaired the missing pid
+  positioner recorded at BP-165, and
+  ran the runner's seventh and eighth
+  launches; this second completion
+  seating harvested the eighth launch,
+  ran the ninth, and carries the
+  closure. No seating spawned a
+  subagent or a review lane, and no
+  seating merged anything; the merge
+  is the owner's act alone. The
+  runner's whole attempt history
+  stands here: launch 1 queued one
+  hour seven minutes, acquired the
+  slot, and was killed by the box
+  restart at about 17:40Z before any
+  stage banked, its log never carrying
+  content; launch 2 queued seventeen
+  minutes, acquired, cycled its probe
+  twelve times without a pass, and
+  exited at its bound at about 18:25Z;
+  launch 3 was killed still queued by
+  the restart at about 19:50Z; launch
+  4 acquired within minutes and banked
+  the assembly and the Round 21
+  closure tree's gate, its harness
+  attempts then dying on the missing
+  positioner before the probe refused
+  through cycle 12 and it exited
+  exhausted at about 20:28Z; launch 5
+  was killed still queued by the
+  restart at about 20:44Z; launch 6,
+  queued at 20:45Z, was found dead at
+  the first completion seating's first
+  act, its pid absent and no log line
+  standing after launch 4's
+  exhaustion, the restart at about
+  22:01Z its presumed killer; launch 7
+  queued at about 22:07Z, waited about
+  one hour forty-three minutes behind
+  a sibling lane's slot hold, and was
+  killed still queued by the restart
+  at about 23:50Z, executing and
+  banking nothing; launch 8 queued at
+  about 23:52Z, acquired, and banked
+  the closure harnesses, the base
+  gate, and the base harnesses, its
+  pin stage failing two cycles on the
+  file-count quota (os error 122)
+  before the restart at about 00:11Z
+  killed it; launch 9 queued at about
+  00:16Z, its pin stage failing cycles
+  4 to 9 on the same quota, one
+  cycle's own log write refused, the
+  completion seating clearing the
+  download caches and deleting Round
+  21's closed target directories
+  against it, and banked the pin suite
+  and the codepoint scan at cycle 10,
+  all stages done at
+  2026-11-18T00:39:37Z. Every dead
+  launch and every refused cycle
+  stands counted nowhere; the figures
+  at BP-165 to BP-169 stand on the
+  banked stage logs, each read at the
+  completion seating's hand. The
+  post-landing census of PR 25 stands
+  re-verified at this closure at six
+  issue comments: the four of BP-164's
+  read, exact at its read, and after
+  the landing the owner's duplicate
+  queue comment 6954368191
+  (2026-11-17T16:37:42Z, 12 chars, the
+  stale-script error of the Session
+  186 landing) and the Trunk bot's
+  error notice 6954370323
+  (2026-11-17T16:37:47Z, 84 chars,
+  recording that the submission was
+  refused because the pull request was
+  already merged); both stand inert,
+  no queue action was taken on either,
+  and main stands unmoved at
+  a35bc94d55f820745d1fe02599f1ab0967e5
+  4266, re-verified at this closure.
+  The shell 6950250936 stands unmoved
+  in its final form at 8,504 chars,
+  last edited 2026-11-17T15:56:53Z,
+  re-read at this closure. BP-48
+  stands carried to Round 23 by name:
+  Cargo.toml stands at 170 bytes with
+  no description key, re-verified at
+  this closure, and item 3 of the
+  storefront checklist stands not
+  passing on that ground.
