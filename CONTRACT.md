@@ -8213,3 +8213,74 @@ in the round dossier, never a silent approximation.
   and zero en dashes over its 28
   files. The scan over the closure
   tree stands charged to BP-186.
+- BP-186. Round 24 closes on the
+  evidence of BP-182 to BP-185: the
+  base gate clean on the base tree
+  assembled and verified blob by blob,
+  the oracle verified blob by blob
+  before any pairing, the battery at
+  44 cells with zero failures, the
+  split probe in its contracted shape,
+  the differential at 16 cases and 220
+  steps under the qualification BP-138
+  carries, the pin suite at 241 with
+  the golden executed, and the base
+  copy scan at zero and zero with its
+  control counted. The read-back of
+  pull request 29 stands at BP-180
+  with its census exact, its shell
+  contracted in its true final form,
+  and no dismissal standing on it, and
+  the Round 23 red team's runner
+  stands dispositioned completed at
+  BP-181, nothing armed and nothing
+  owed from that gate. The closure
+  gate stands charged to the pull
+  request record: the closure tree
+  assembled through the API and
+  verified blob by blob, cargo 64 on
+  it with clippy and the format check
+  clean, the battery at 44 cells and
+  the differential at 16 cases and 220
+  steps re-run on the closure build,
+  the copy scan at zero and zero over
+  the closure tree with its control
+  counted, and the hosted gate green
+  on the closure head. This round's
+  own runner stands disclosed whole:
+  launched detached under the build
+  slot at 2026-11-18T15:26:30Z and
+  refused at its probe while the box's
+  write fault stood in a hard wave,
+  its probe file observed standing at
+  zero bytes and the log's own
+  intermediate lines among the writes
+  the wave refused, the two cycle
+  headers the log kept standing five
+  probe intervals apart, and every
+  stage then completing in the sixth
+  cycle at 2026-11-18T15:43:01Z,
+  stage-marked on the disk, its
+  figures counted only from completed
+  stages. The entering wave's other
+  refused writes stand counted in the
+  pull request body's attempt history:
+  the first helper copies landing at
+  zero bytes and a content probe
+  refused at read-back, each counted
+  nowhere. BP-48 stands carried open
+  by name to Round 25: Cargo.toml
+  stands at 170 bytes with no
+  description key, untouched this
+  round as every round, the canonical
+  description line standing as the
+  recommendation already routed, its
+  setting an owner's or the main
+  chat's act, not a build lane's.
+  Round 25 opens on this closure: the
+  CodeRabbit shell on this round's
+  pull request read back in its true
+  final form, whatever stands armed or
+  owed from this round's gates, and
+  BP-48 carried by name until it
+  closes.
