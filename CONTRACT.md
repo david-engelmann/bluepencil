@@ -7093,3 +7093,104 @@ in the round dossier, never a silent approximation.
   description key), and it is carried
   open in the closure item and the
   closure.
+- BP-165. The Round 21 red team's
+  carried executions stand discharged
+  at this round's hand on the Round 21
+  closure tree
+  2a223abae66a83ea003eaf674d2de6468c7e
+  6932, as the Round 21 landing
+  comment 6953696429 charges. The red
+  team's probe-gated runner never
+  executed: it stood armed in its
+  scratch as flock pid 47046, queued
+  on the build slot, its gate log
+  never created because the script
+  writes it only after acquiring the
+  slot; the build lane stood it down
+  by that exact pid at its entering
+  check and verified it gone, and at
+  this round's completion seating the
+  scratch still carries no gate log
+  and no process stands, so nothing
+  ran under it and nothing of its
+  stands undisclosed. The discharge
+  set was executed by this round's own
+  runner on the closure tree assembled
+  through the API at 28 blobs with
+  zero mismatches. The closure tree's
+  gate stands at cargo test 64 passed
+  and 0 failed (3 library, 0 binary,
+  18 diff, 18 inventory, 25 proposals,
+  0 doc), clippy with warnings denied
+  clean, fmt clean, and the build
+  clean, its binary at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's closure harness path,
+  Round 21's closure build md5
+  exactly. The battery stands at 44
+  cells and 0 failures on that build:
+  walk 4, entropy 4, precedence 7,
+  version 23, guard 6. The split probe
+  stands at 0 failures in its
+  contracted shape: chains of 39 and
+  40 links paired-identical on both
+  commands, chains of 41 and 42 split
+  outright, the oracle writing in full
+  while the port refuses at exit 1
+  with stderr exactly "error,
+  bluepencil never writes to its
+  inputs" and its head standing as the
+  link. The differential stands at 16
+  cases, 220 steps, 0 failures, at the
+  rebuilt harness's figures under
+  BP-138's qualification as BP-168
+  states it for the base build. The
+  BP-163 guard-cell re-derivation
+  stands re-derived from this run's
+  battery: the four input-as-target
+  guard cells (rules and observations
+  under propose, rules and proposals
+  under diff) each refuse on both arms
+  at exit 1 with matching stderr and
+  the per-side tree unchanged before
+  and after, the valid file arm lands
+  its output, and the stdout diff arm
+  renders unapplied, which is exactly
+  the joint basis BP-163 states for
+  BP-12's proof, the refusals those
+  cells record together with the
+  snapshots' unchanged final state per
+  side, scoped to those four tested
+  input-as-target cells. The
+  discharge's pin limb is executed in
+  the same pin stage whose figures
+  BP-169 contracts, the pin suite
+  being a property of the pinned
+  flighttape tree alone and not of the
+  tree under test. One instrument
+  defect of this round's own assembly
+  stands corrected here: the battery
+  resolves its pid positioner as
+  rt_position.py inside the harness
+  directory, and this round's harness
+  preparation copied the battery, the
+  split probe, the differential, and
+  the three interposition shims into
+  the fresh harness directories but
+  not the positioner, so every
+  pid-namespace cell died at the
+  parent's read of a pid file no child
+  had written, a failure the round's
+  earlier record charged to the write
+  fault; the positioner is Round 21's
+  own file unmodified (1,368 bytes,
+  md5
+  087b7373ecb3a7969e32e678052cc525),
+  copied into both harness directories
+  and verified in place at the
+  completion seating, the battery
+  script itself untouched, and every
+  attempt that died on the missing
+  file stands counted nowhere, as the
+  attempt history in the closure item
+  states whole.
