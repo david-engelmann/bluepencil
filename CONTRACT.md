@@ -6843,3 +6843,615 @@ in the round dossier, never a silent approximation.
   claim BP-160 states, and the
   narrowing is the whole of the
   repair.
+- BP-164. The round opens with the
+  full read-back of pull request 25,
+  every issue comment, the review, and
+  every review comment read whole, as
+  the Round 21 landing comment
+  6953696429 charges. The pass carries
+  exactly four issue comments, one
+  review, and two review comments: the
+  review bot's summary shell, the
+  trunk merge queue's notice, the
+  owner's queue comment, and the
+  landing comment itself, which stands
+  in this census as the charge
+  requires; no trigger comment stands,
+  the bot having reviewed
+  automatically at the pull request's
+  opening, and no other comment stands
+  at this read. The shell (comment
+  6950250936, by the review bot,
+  created 2026-11-17T14:02:12Z) is
+  contracted here in its true final
+  form at this read: 8,504 characters,
+  last edited 2026-11-17T15:56:53Z.
+  Its earlier forms stand on the
+  record with their moments, as the
+  pull request's body states them:
+  5,208 characters in progress at the
+  opening; 8,496 characters carrying
+  the completed review of the closure
+  head, last edited
+  2026-11-17T14:05:41Z; 11,198
+  characters, last edited
+  2026-11-17T14:27:13Z, recording a
+  rate-limited incremental attempt
+  against the repair head (run
+  928e3d77-5d0f-4f27-8b1b-453d5f73f159
+  in that form, the bot's included
+  allowance standing spent) and
+  carrying the closure-head review's
+  elements over with its merge risk
+  restated as previous review; 8,500
+  characters, last edited
+  2026-11-17T14:30:44Z, dropping the
+  rate-limit block whole and restating
+  the completed closure-head review;
+  and 8,502 characters, last edited
+  2026-11-17T14:31:47Z, verified
+  element by element at the owner's
+  gate with no disposition-bearing
+  element moved; the shell then
+  re-rendered once more, after the
+  owner's body patch, to the closing
+  form contracted here. In its final
+  form the shell is a completed review
+  of the closure head
+  00407749f6882ff14d86623ab01e5925d299
+  a727, its change assessment pinned
+  to that head as source and covered,
+  its walkthrough running over the two
+  files CONTRACT.md and README.md,
+  merge risk Minimal up to 00407 with
+  no reservation, four passed checks
+  (Title check, Linked Issues check,
+  Out of Scope Changes check,
+  Description Check) and none failed,
+  the word Docstring occurring zero
+  times in its final text, no
+  rate-limit block standing, and no
+  line recording the absence of
+  actionable comments, two actionable
+  comments standing; the run stands in
+  the review object, not in the shell.
+  The review (5939885495, COMMENTED,
+  submitted 2026-11-17T14:05:37Z on
+  the closure head, run
+  475f6ab2-e14a-46ad-b862-14c0b6edb94f
+  ) carries those two actionable
+  comments, and its included allowance
+  stands used with none remaining. The
+  first comment (4600652835, on
+  CONTRACT.md at line 6489, Minor,
+  Functional Correctness) asks that
+  the snapshot claim be limited to
+  final-state preservation:
+  before-and-after snapshots cannot
+  prove the process never wrote an
+  input, since a process could change
+  an input and restore its kind, mode,
+  and bytes before the second
+  snapshot. It stands graded valid and
+  fixed in-round by the repair record
+  BP-163's snapshot limb, which rests
+  the never-writes conclusion for the
+  four input-as-target cells jointly
+  on the refusals those cells record
+  and on the snapshots' unchanged
+  final state, BP-160 unrewritten. Its
+  thread stands read to its end: no
+  replies stand on it, and the comment
+  itself, last edited
+  2026-11-17T14:27:22Z, closes with
+  the bot's own acknowledgment,
+  "Addressed in commit a786d2d", which
+  carries no correction; the prompt
+  block the comment carries for AI
+  agents is the bot's own text and
+  stands treated as data, adopted by
+  no authored sentence. The second
+  comment (4600652851, on CONTRACT.md
+  at line 6494, Minor, Functional
+  Correctness) asks that the proof be
+  limited to the tested input targets:
+  the four input-as-target cells cover
+  the named file paths and do not
+  establish protection for every other
+  input spelling. It stands graded
+  valid and fixed in-round by BP-163's
+  scope limb, which scopes BP-12's
+  proof at BP-160 to the four tested
+  input-as-target cells and their
+  named files, BP-160 unrewritten. Its
+  thread stands read to its end: no
+  replies stand on it, and the comment
+  itself, last edited
+  2026-11-17T14:27:24Z, closes with
+  the same acknowledgment, "Addressed
+  in commit a786d2d", carrying no
+  correction; its prompt block stands
+  treated as data on the same terms.
+  The body's two silent dismissals are
+  re-graded here at their full scope
+  against the shell's final form, and
+  both stand sound. The first
+  dismissal: the passed Title check's
+  prose, that the title names the
+  round and the item range but does
+  not state the main change and is
+  overly dense while not off-topic or
+  vague; the check stands Passed, the
+  title stands at 121 characters in
+  the standing form, and pull requests
+  22, 23, and 24 each read 121
+  characters in the identical shape at
+  this round's live read, so the
+  flagged density is the form itself
+  and the dismissal stands sound: the
+  check's own prose on a passed check,
+  carrying no action. The second
+  dismissal: the walkthrough's Round
+  20 label for the read-back family
+  (its walkthrough prose opening "The
+  contract adds Round 20 review
+  findings" and its changes table
+  headed "Round 20 read-back"), the
+  bot's summary wording for the
+  read-back's subject, pull request 24
+  being Round 20's own and the records
+  standing as Round 21's BP-156
+  onward; no check turns on the label,
+  so the dismissal stands sound: bot
+  summary wording only, carrying no
+  action. The repair head's unreviewed
+  posture stands graded as the body
+  charges it: the repair head
+  a786d2d5a6955b114cc80863c3c4324d0456
+  1af7 stands with no completed review
+  of its own, the only attempt against
+  it the rate-limited incremental
+  attempt the shell's third form
+  records, attested by that form read
+  whole at the Round 21 gate and by
+  the review bot check's neutral
+  conclusion on that head; the final
+  shell's assessment and merge risk
+  remain pinned to the closure head,
+  and the two actionable comments were
+  produced against the closure head's
+  text and fixed at the repair head by
+  BP-163. The charge stands discharged
+  by this grading: the posture is
+  exactly as recorded, and no
+  completed review of the repair head
+  exists to read back. The trunk
+  notice (comment 6950246165, by the
+  merge queue, created
+  2026-11-17T14:02:00Z) stood at 403
+  characters at the body's read; the
+  queue edited it at the merge, last
+  edited 2026-11-17T16:04:20Z, to its
+  final form at 113 characters,
+  recording the merge as successful
+  with its queue link; it is fleet
+  infrastructure, not review material.
+  The owner's queue comment
+  (6953290944, created
+  2026-11-17T15:57:17Z, 12 characters,
+  never edited) carries the queue
+  submission alone. The bot's
+  release-notes appendix stands on the
+  pull request's body at its foot
+  inside its own markers, 423
+  characters counted from its opening
+  marker, the body standing at 13,126
+  characters with the appendix whole
+  at its foot at this read, preserved
+  byte for byte through the owner's
+  body patch as the body states, and
+  it is censused here as the bot's own
+  text: its two bullets read "Updated
+  the project status to show 21 of 100
+  perfection rounds completed." and
+  "Added the Round 20 record,
+  including verification results,
+  measurements, review findings, and
+  closure details.", each correct at
+  its scope, the second carrying the
+  same Round 20 label graded above;
+  nothing of the bot's stands adopted
+  by any authored sentence. The
+  landing comment (comment 6953696429,
+  by the owner, created
+  2026-11-17T16:12:37Z, 2,155
+  characters, never edited) records
+  the merge and charges this round.
+  Nothing stands on the pull request
+  after the landing comment at this
+  read, the shell's last edit, the
+  review comments' last edits, and the
+  trunk notice's edit all standing
+  before it, so no late material
+  stands and the fourth charge stands
+  discharged as none standing, to be
+  re-verified at this round's closure.
+  The pull request merged through the
+  trunk merge queue as squash commit
+  a35bc94d55f820745d1fe02599f1ab0967e5
+  4266, its merge tree
+  9b369be451fe46424e33922cf3abea1bc701
+  41e6 equal to the reviewed repair
+  tree, its single parent the base
+  3981794911b1495f2e7ad29c6590b9485be3
+  467d, and the README on main at 21
+  of 100. BP-48 stands open by name
+  and untouched: Cargo.toml carries no
+  description field at the base,
+  verified from its fetched blob in
+  this round (170 bytes, no
+  description key), and it is carried
+  open in the closure item and the
+  closure.
+- BP-165. The Round 21 red team's
+  carried executions stand discharged
+  at this round's hand on the Round 21
+  closure tree
+  2a223abae66a83ea003eaf674d2de6468c7e
+  6932, as the Round 21 landing
+  comment 6953696429 charges. The red
+  team's probe-gated runner never
+  executed: it stood armed in its
+  scratch as flock pid 47046, queued
+  on the build slot, its gate log
+  never created because the script
+  writes it only after acquiring the
+  slot; the build lane stood it down
+  by that exact pid at its entering
+  check and verified it gone, and at
+  this round's completion seating the
+  scratch still carries no gate log
+  and no process stands, so nothing
+  ran under it and nothing of its
+  stands undisclosed. The discharge
+  set was executed by this round's own
+  runner on the closure tree assembled
+  through the API at 28 blobs with
+  zero mismatches. The closure tree's
+  gate stands at cargo test 64 passed
+  and 0 failed (3 library, 0 binary,
+  18 diff, 18 inventory, 25 proposals,
+  0 doc), clippy with warnings denied
+  clean, fmt clean, and the build
+  clean, its binary at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's closure harness path,
+  Round 21's closure build md5
+  exactly. The battery stands at 44
+  cells and 0 failures on that build:
+  walk 4, entropy 4, precedence 7,
+  version 23, guard 6. The split probe
+  stands at 0 failures in its
+  contracted shape: chains of 39 and
+  40 links paired-identical on both
+  commands, chains of 41 and 42 split
+  outright, the oracle writing in full
+  while the port refuses at exit 1
+  with stderr exactly "error,
+  bluepencil never writes to its
+  inputs" and its head standing as the
+  link. The differential stands at 16
+  cases, 220 steps, 0 failures, at the
+  rebuilt harness's figures under
+  BP-138's qualification as BP-168
+  states it for the base build. The
+  BP-163 guard-cell re-derivation
+  stands re-derived from this run's
+  battery: the four input-as-target
+  guard cells (rules and observations
+  under propose, rules and proposals
+  under diff) each refuse on both arms
+  at exit 1 with matching stderr and
+  the per-side tree unchanged before
+  and after, the valid file arm lands
+  its output, and the stdout diff arm
+  renders unapplied, which is exactly
+  the joint basis BP-163 states for
+  BP-12's proof, the refusals those
+  cells record together with the
+  snapshots' unchanged final state per
+  side, scoped to those four tested
+  input-as-target cells. The
+  discharge's pin limb is executed in
+  the same pin stage whose figures
+  BP-169 contracts, the pin suite
+  being a property of the pinned
+  flighttape tree alone and not of the
+  tree under test. One instrument
+  defect of this round's own assembly
+  stands corrected here: the battery
+  resolves its pid positioner as
+  rt_position.py inside the harness
+  directory, and this round's harness
+  preparation copied the battery, the
+  split probe, the differential, and
+  the three interposition shims into
+  the fresh harness directories but
+  not the positioner, so every
+  pid-namespace cell died at the
+  parent's read of a pid file no child
+  had written, a failure the round's
+  earlier record charged to the write
+  fault; the positioner is Round 21's
+  own file unmodified (1,368 bytes,
+  md5
+  087b7373ecb3a7969e32e678052cc525),
+  copied into both harness directories
+  and verified in place at the
+  completion seating, the battery
+  script itself untouched, and every
+  attempt that died on the missing
+  file stands counted nowhere, as the
+  attempt history in the closure item
+  states whole.
+- BP-166. The round's own set opens on
+  the base tree, which is main
+  a35bc94d55f820745d1fe02599f1ab0967e5
+  4266's tree
+  9b369be451fe46424e33922cf3abea1bc701
+  41e6, the Round 21 repair tree,
+  differing from the Round 21 closure
+  tree in CONTRACT.md alone as that
+  round's repair push asserted. The
+  tree was assembled through the API
+  at 28 blobs with zero mismatches,
+  and the oracle the harnesses pair
+  against stands verified at this
+  round's hand before any pairing:
+  commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e, 19 blobs, the standing
+  extraction recomputed blob by blob
+  with zero mismatches. The base gate
+  stands clean on the fresh build:
+  cargo test 64 passed and 0 failed (3
+  library, 0 binary, 18 diff, 18
+  inventory, 25 proposals, 0 doc),
+  clippy with warnings denied clean,
+  fmt clean, and the build clean. The
+  fresh build's binary stands at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's base harness path, the
+  same md5 as the closure tree's build
+  at its own path, the two trees' code
+  being identical.
+- BP-167. On the fresh base build, the
+  battery stands at 44 cells and 0
+  failures (walk 4, entropy 4,
+  precedence 7, version 23, guard 6),
+  and the split probe stands at 0
+  failures, the two harnesses run
+  against the verified oracle
+  extraction. The battery's families
+  re-measure the standing law at the
+  same cells as the closure discharge:
+  the dangling-chain split of BP-80 at
+  its exact point, the entropy
+  interposition asymmetry of BP-81
+  with its stream controls seated at
+  pid 250 and verified from the
+  child's own record, the loader's
+  precedence chain of BP-56 and BP-63
+  (shape before version before
+  entries), the observations_version
+  acceptance set exact at "1.0" and
+  absence with eighteen other values
+  refusing by name, and the
+  input-protection cells of BP-4 and
+  BP-12, whose four input-as-target
+  cells refuse on both arms with the
+  per-side tree unchanged, as BP-165
+  re-derives for the closure tree. The
+  split probe stands in its contracted
+  shape on this build: chains of 39
+  and 40 links paired-identical on
+  both commands, chains of 41 and 42
+  split outright, the oracle writing
+  in full while the port refuses at
+  exit 1 with stderr exactly "error,
+  bluepencil never writes to its
+  inputs" and its head standing as the
+  link.
+- BP-168. The differential stands at
+  16 cases, 220 steps, 0 failures on
+  the fresh base build, and at the
+  same figures on the closure tree at
+  BP-165. The qualification of BP-138
+  stands carried by name: the
+  historical differential harness has
+  no surviving script, and these
+  figures are the rebuilt harness's
+  fresh topical partition, whose case
+  count coincides with the historical
+  count without establishing
+  continuity with the historical
+  families; the figures are contracted
+  as the rebuilt harness's own, on
+  both builds, and no continuity with
+  the pre-Round 18 families is
+  claimed.
+- BP-169. The flighttape pin stands
+  reconfirmed at commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e, tree afd4d7d1, 50 blobs, the
+  pin tree assembled through the API
+  with zero mismatches. The pin suite
+  stands at 241 passed and 0 failed on
+  the pin build, summed over its
+  nineteen result lines. The golden
+  stands executed inside that build:
+  the fixture tape stands at 1,663
+  bytes and its SHA-256 digest stands
+  at
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  digest the pin build's digest
+  subcommand reproduces, the check
+  printing the match. Provenance
+  stands at build-path scope: this
+  round's fresh builds of the base
+  tree and of the Round 21 closure
+  tree each reproduce md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  their own harness paths, the value
+  Round 21's closure build carried.
+  The codepoint scan stands at U+2014
+  zero and U+2013 zero over the base
+  tree's 28 files and over the Round
+  21 closure tree's 28 files, by
+  Python scan only, the scan proven on
+  a planted control carrying one em
+  dash and two en dashes, counted
+  exactly.
+- BP-170. Round 22 closes. The
+  contract stands at BP-1 to BP-170,
+  with the repair records BP-138,
+  BP-146, BP-154, BP-155, and BP-163
+  outside the range, at 268,421 bytes
+  at this closure, and the closure
+  commit alone carries the README
+  rounds line at 22 of 100. The round
+  ran in three seatings, disclosed
+  here whole: the build lane banked
+  BP-164 and the execution runner's
+  first six launches, then errored on
+  transport at 2026-11-17T22:03:13Z
+  (database write admission timeout
+  after 5000ms) and could not be
+  resumed; a first completion seating
+  verified the oracle at its own hand,
+  assembled both trees, adopted the
+  banked closure gate stage, diagnosed
+  and repaired the missing pid
+  positioner recorded at BP-165, and
+  ran the runner's seventh and eighth
+  launches; this second completion
+  seating harvested the eighth launch,
+  ran the ninth, and carries the
+  closure. No seating spawned a
+  subagent or a review lane, and no
+  seating merged anything; the merge
+  is the owner's act alone. The
+  runner's whole attempt history
+  stands here: launch 1 queued one
+  hour seven minutes, acquired the
+  slot, and was killed by the box
+  restart at about 17:40Z before any
+  stage banked, its log never carrying
+  content; launch 2 queued seventeen
+  minutes, acquired, cycled its probe
+  twelve times without a pass, and
+  exited at its bound at about 18:25Z;
+  launch 3 was killed still queued by
+  the restart at about 19:50Z; launch
+  4 acquired within minutes and banked
+  the assembly and the Round 21
+  closure tree's gate, its harness
+  attempts then dying on the missing
+  positioner before the probe refused
+  through cycle 12 and it exited
+  exhausted at about 20:28Z; launch 5
+  was killed still queued by the
+  restart at about 20:44Z; launch 6,
+  queued at 20:45Z, was found dead at
+  the first completion seating's first
+  act, its pid absent and no log line
+  standing after launch 4's
+  exhaustion, the restart at about
+  22:01Z its presumed killer; launch 7
+  queued at about 22:07Z, waited about
+  one hour forty-three minutes behind
+  a sibling lane's slot hold, and was
+  killed still queued by the restart
+  at about 23:50Z, executing and
+  banking nothing; launch 8 queued at
+  about 23:52Z, acquired, and banked
+  the closure harnesses, the base
+  gate, and the base harnesses, its
+  pin stage failing two cycles on the
+  file-count quota (os error 122)
+  before the restart at about 00:11Z
+  killed it; launch 9 queued at about
+  00:16Z, its pin stage failing cycles
+  4 to 9 on the same quota, one
+  cycle's own log write refused, the
+  completion seating clearing the
+  download caches and deleting Round
+  21's closed target directories
+  against it, and banked the pin suite
+  and the codepoint scan at cycle 10,
+  all stages done at
+  2026-11-18T00:39:37Z. Every dead
+  launch and every refused cycle
+  stands counted nowhere; the figures
+  at BP-165 to BP-169 stand on the
+  banked stage logs, each read at the
+  completion seating's hand. The
+  post-landing census of PR 25 stands
+  re-verified at this closure at six
+  issue comments: the four of BP-164's
+  read, exact at its read, and after
+  the landing the owner's duplicate
+  queue comment 6954368191
+  (2026-11-17T16:37:42Z, 12 chars, the
+  stale-script error of the Session
+  186 landing) and the Trunk bot's
+  error notice 6954370323
+  (2026-11-17T16:37:47Z, 84 chars,
+  recording that the submission was
+  refused because the pull request was
+  already merged); both stand inert,
+  no queue action was taken on either,
+  and main stands unmoved at
+  a35bc94d55f820745d1fe02599f1ab0967e5
+  4266, re-verified at this closure.
+  The shell 6950250936 stands unmoved
+  in its final form at 8,504 chars,
+  last edited 2026-11-17T15:56:53Z,
+  re-read at this closure. BP-48
+  stands carried to Round 23 by name:
+  Cargo.toml stands at 170 bytes with
+  no description key, re-verified at
+  this closure, and item 3 of the
+  storefront checklist stands not
+  passing on that ground.
+- BP-171. Repair record, qualifying
+  BP-170 under the standing
+  convention, BP-170 unrewritten.
+  BP-170's counting sentence, that
+  every dead launch and every refused
+  cycle stands counted nowhere, is
+  qualified on exactly one limb: a
+  dead launch counts nowhere as a
+  launch and a refused cycle counts
+  nowhere as a cycle, and no figure in
+  this record rests on a launch or a
+  cycle as such; the stages a launch
+  banked before it died or exited
+  stand as completed stages on their
+  own logs, and the figures at BP-165
+  to BP-169 rest on those banked stage
+  logs, launch 4's assembly and
+  closure gate stages and launch 8's
+  closure harness, base gate, and base
+  harness stages among them, with
+  launch 9's pin and scan stages
+  standing on the same footing from a
+  launch that completed. The
+  qualification answers CodeRabbit's
+  review comment 4607856563 on PR 27,
+  graded valid and fixed here;
+  BP-170's remaining accounting stands
+  as written.
