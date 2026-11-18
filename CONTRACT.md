@@ -7427,3 +7427,31 @@ in the round dossier, never a silent approximation.
   this closure, and item 3 of the
   storefront checklist stands not
   passing on that ground.
+- BP-171. Repair record, qualifying
+  BP-170 under the standing
+  convention, BP-170 unrewritten.
+  BP-170's counting sentence, that
+  every dead launch and every refused
+  cycle stands counted nowhere, is
+  qualified on exactly one limb: a
+  dead launch counts nowhere as a
+  launch and a refused cycle counts
+  nowhere as a cycle, and no figure in
+  this record rests on a launch or a
+  cycle as such; the stages a launch
+  banked before it died or exited
+  stand as completed stages on their
+  own logs, and the figures at BP-165
+  to BP-169 rest on those banked stage
+  logs, launch 4's assembly and
+  closure gate stages and launch 8's
+  closure harness, base gate, and base
+  harness stages among them, with
+  launch 9's pin and scan stages
+  standing on the same footing from a
+  launch that completed. The
+  qualification answers CodeRabbit's
+  review comment 4607856563 on PR 27,
+  graded valid and fixed here;
+  BP-170's remaining accounting stands
+  as written.
