@@ -7194,3 +7194,124 @@ in the round dossier, never a silent approximation.
   file stands counted nowhere, as the
   attempt history in the closure item
   states whole.
+- BP-166. The round's own set opens on
+  the base tree, which is main
+  a35bc94d55f820745d1fe02599f1ab0967e5
+  4266's tree
+  9b369be451fe46424e33922cf3abea1bc701
+  41e6, the Round 21 repair tree,
+  differing from the Round 21 closure
+  tree in CONTRACT.md alone as that
+  round's repair push asserted. The
+  tree was assembled through the API
+  at 28 blobs with zero mismatches,
+  and the oracle the harnesses pair
+  against stands verified at this
+  round's hand before any pairing:
+  commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e, 19 blobs, the standing
+  extraction recomputed blob by blob
+  with zero mismatches. The base gate
+  stands clean on the fresh build:
+  cargo test 64 passed and 0 failed (3
+  library, 0 binary, 18 diff, 18
+  inventory, 25 proposals, 0 doc),
+  clippy with warnings denied clean,
+  fmt clean, and the build clean. The
+  fresh build's binary stands at md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  this round's base harness path, the
+  same md5 as the closure tree's build
+  at its own path, the two trees' code
+  being identical.
+- BP-167. On the fresh base build, the
+  battery stands at 44 cells and 0
+  failures (walk 4, entropy 4,
+  precedence 7, version 23, guard 6),
+  and the split probe stands at 0
+  failures, the two harnesses run
+  against the verified oracle
+  extraction. The battery's families
+  re-measure the standing law at the
+  same cells as the closure discharge:
+  the dangling-chain split of BP-80 at
+  its exact point, the entropy
+  interposition asymmetry of BP-81
+  with its stream controls seated at
+  pid 250 and verified from the
+  child's own record, the loader's
+  precedence chain of BP-56 and BP-63
+  (shape before version before
+  entries), the observations_version
+  acceptance set exact at "1.0" and
+  absence with eighteen other values
+  refusing by name, and the
+  input-protection cells of BP-4 and
+  BP-12, whose four input-as-target
+  cells refuse on both arms with the
+  per-side tree unchanged, as BP-165
+  re-derives for the closure tree. The
+  split probe stands in its contracted
+  shape on this build: chains of 39
+  and 40 links paired-identical on
+  both commands, chains of 41 and 42
+  split outright, the oracle writing
+  in full while the port refuses at
+  exit 1 with stderr exactly "error,
+  bluepencil never writes to its
+  inputs" and its head standing as the
+  link.
+- BP-168. The differential stands at
+  16 cases, 220 steps, 0 failures on
+  the fresh base build, and at the
+  same figures on the closure tree at
+  BP-165. The qualification of BP-138
+  stands carried by name: the
+  historical differential harness has
+  no surviving script, and these
+  figures are the rebuilt harness's
+  fresh topical partition, whose case
+  count coincides with the historical
+  count without establishing
+  continuity with the historical
+  families; the figures are contracted
+  as the rebuilt harness's own, on
+  both builds, and no continuity with
+  the pre-Round 18 families is
+  claimed.
+- BP-169. The flighttape pin stands
+  reconfirmed at commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e, tree afd4d7d1, 50 blobs, the
+  pin tree assembled through the API
+  with zero mismatches. The pin suite
+  stands at 241 passed and 0 failed on
+  the pin build, summed over its
+  nineteen result lines. The golden
+  stands executed inside that build:
+  the fixture tape stands at 1,663
+  bytes and its SHA-256 digest stands
+  at
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  digest the pin build's digest
+  subcommand reproduces, the check
+  printing the match. Provenance
+  stands at build-path scope: this
+  round's fresh builds of the base
+  tree and of the Round 21 closure
+  tree each reproduce md5
+  d7cf80fe4770809418e809b9bfa0778b at
+  their own harness paths, the value
+  Round 21's closure build carried.
+  The codepoint scan stands at U+2014
+  zero and U+2013 zero over the base
+  tree's 28 files and over the Round
+  21 closure tree's 28 files, by
+  Python scan only, the scan proven on
+  a planted control carrying one em
+  dash and two en dashes, counted
+  exactly.
