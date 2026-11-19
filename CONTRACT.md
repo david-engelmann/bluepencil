@@ -8939,3 +8939,96 @@ in the round dossier, never a silent approximation.
   and zero en dashes over its 28
   files. The scan over the closure
   tree stands charged to BP-200.
+- BP-200. Round 26 closes on the
+  evidence of BP-196 to BP-199: the
+  base gate clean on the base tree
+  assembled and verified blob by blob,
+  the oracle verified blob by blob
+  before any pairing, the battery at
+  44 cells with zero failures, the
+  split probe in its contracted shape,
+  the differential at 16 cases and 220
+  steps under the qualification BP-138
+  carries, the pin suite at 241 with
+  the golden executed, and the base
+  copy scan at zero and zero with its
+  control counted. The read-back of
+  pull request 33 stands at BP-194
+  with its census exact, its shell
+  contracted in its true final form,
+  and no dismissal standing on it, and
+  the Round 25 red team's runner
+  stands dispositioned completed at
+  BP-195, nothing armed and nothing
+  owed from that gate. The closure
+  gate stands charged to the pull
+  request record: the closure tree
+  assembled through the API and
+  verified blob by blob, cargo 64 on
+  it with clippy and the format check
+  clean, the battery at 44 cells and
+  the differential at 16 cases and 220
+  steps re-run on the closure build,
+  the copy scan at zero and zero over
+  the closure tree with its control
+  counted, and the hosted gate green
+  on the closure head. This round's
+  own runners stand disclosed whole.
+  The first base runner launched
+  detached under the build slot at
+  2026-11-19T08:23Z, queued behind a
+  sibling lane's red-team gate, took
+  the slot at 2026-11-19T08:39:47Z,
+  assembled the base tree blob by blob
+  in its first cycle, and died inside
+  the pin assembly as the box write
+  fault rose over the box; its
+  remaining cycles stood
+  probe-refused, a 3,000-character
+  probe at this lane's own hand
+  reading back mismatched and a copy
+  of the 310,622-byte base contract
+  failing with operation not permitted
+  and leaving a zero-byte file, and
+  the runner exhausted its 60 cycles
+  at 2026-11-19T09:25:13Z and exited
+  on its own, its no-window marker
+  standing. A relaunch watcher armed
+  at 2026-11-19T09:26Z probed the
+  fault at a 45-second cadence without
+  finding a window and died in the
+  runtime restart that also killed
+  this lane's monitor; the restart
+  cleared the fault, a fresh probe at
+  this lane's hand landing clean, and
+  the base runner relaunched into the
+  calm completed every stage in its
+  first cycle at 2026-11-19T10:38:34Z,
+  stage-marked on the disk, its
+  figures counted only from completed
+  stages. The uv and pip caches do not
+  exist on this replica, so the
+  standing first quota lever stood
+  already spent, and the disk stood at
+  94 percent with 17 gigabytes free,
+  the refusal standing as the write
+  fault and not a quota. Every
+  refusal, exhaustion, restart death,
+  and stood-down process stands in the
+  pull request body's attempt history,
+  each counted nowhere. BP-48 stands
+  carried open by name to Round 27:
+  Cargo.toml stands at 170 bytes with
+  no description key, untouched this
+  round as every round, the canonical
+  description line standing as the
+  recommendation already routed, its
+  setting an owner's or the main
+  chat's act, not a build lane's.
+  Round 27 opens on this closure: the
+  CodeRabbit shell on this round's
+  pull request read back in its true
+  final form, whatever stands armed or
+  owed from this round's gates, and
+  BP-48 carried by name until it
+  closes.
