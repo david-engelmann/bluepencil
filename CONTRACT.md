@@ -8413,3 +8413,22 @@ in the round dossier, never a silent approximation.
   BP-48 stands verified open at this
   item: Cargo.toml at 170 bytes with
   no description key, untouched.
+- BP-188. The Round 24 red team's
+  disclosed gate runner stands
+  dispositioned at this item, as the
+  closure BP-186 charged in opening
+  Round 25 on whatever stands armed or
+  owed from Round 24's gates. The
+  runner's done marker rt_gate_done
+  stands in its scratch at
+  bp24-rt-scratch, its log ends with
+  every stage done in a single cycle
+  at 2026-11-18T21:36:55Z, the runner
+  exited on its own at that writing,
+  and a scan of the process table at
+  this lane's hand finds no process
+  referencing that scratch or its
+  script. Nothing stands armed from
+  the Round 24 gate, nothing banked by
+  that runner is owed to this round,
+  and nothing stands to be stood down.
