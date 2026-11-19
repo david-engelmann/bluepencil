@@ -9179,3 +9179,37 @@ in the round dossier, never a silent approximation.
   one. BP-48 stands verified open at
   this item: Cargo.toml at 170 bytes
   with no description key, untouched.
+- BP-202. The Round 26 red team's
+  disclosed gate runner stands
+  dispositioned at this item, as the
+  closure BP-200 charged in opening
+  Round 27 on whatever stands armed or
+  owed from Round 26's gates. The
+  runner's script stands at rt_gate.sh
+  in its scratch at bp26-rt-scratch,
+  the reviewer's own instrument in the
+  reviewer's own scratch, launched
+  detached under the build slot with
+  the slot held for its whole
+  lifetime; its done marker
+  rt_gate_done stands in that scratch
+  at 2026-11-19T12:31:46Z, its log
+  ending with every stage done in its
+  fourth cycle, the runner exited on
+  its own at that writing, and its
+  120-cycle no-window stand-down never
+  came into play. No process
+  referencing that scratch stands in
+  the process table at this lane's
+  checks, and no flock of that gate
+  stands on the build slot at this
+  writing. The runner completed at its
+  own hand; nothing stands armed from
+  that gate and nothing is owed. Round
+  26's own build runners stand the
+  same way: both done markers stand in
+  bp26-scratch, run26_done and
+  run26b_done, each runner exited on
+  its own at its writing, and no
+  process of that lane remains at this
+  lane's checks.
