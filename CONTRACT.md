@@ -8631,3 +8631,145 @@ in the round dossier, never a silent approximation.
   owed from this round's gates, and
   BP-48 carried by name until it
   closes.
+- BP-194. Round 26 opens on main
+  33d9c3e9e32337f3680b78cfc760f4411fee
+  7725, its tree
+  ee127e3941793c6c2c9ffaa44d0976733d58
+  624e the Round 25 closure tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 310,622 bytes with
+  BP-193 its tail item and no BP-194
+  standing, the range last stated at
+  BP-178 as BP-1 to BP-178 with Round
+  24's items BP-180 to BP-186 and
+  Round 25's items BP-187 to BP-193
+  standing after it and the closures
+  BP-186 and BP-193 carrying no range
+  sentence of their own, the README
+  rounds line at 25 of 100, Cargo.toml
+  at 170 bytes with no description
+  key. Pull request 33 stands read
+  back whole at this item, as the
+  Round 25 landing comment 7003594679
+  charges. The pull request stands
+  closed and merged, its merge commit
+  33d9c3e9e32337f3680b78cfc760f4411fee
+  7725 standing as main, its head the
+  closure head
+  fced38ff5d53d47f34fd4ba0f65406878dba
+  de0f over base
+  8f739fad45480deb76f30efb8039d1e3020a
+  0c8b, and the merge tree stands
+  equal to the reviewed head tree
+  ee127e3941793c6c2c9ffaa44d0976733d58
+  624e. The title stands at 121 chars
+  in the standing shape. The body
+  stands at 10,597 chars at this read,
+  and the bot's release-notes appendix
+  stands whole at the body's foot at
+  480 chars from its opening marker at
+  this hand, byte-identical to the
+  appendix the Round 25 lane recorded,
+  its three bullets each correct: the
+  status updated to show 25 of 100
+  rounds closed, the record of the
+  latest round's verification and
+  closure added, and one tracked item
+  noted as remaining open. The census
+  stands exact at this read: four
+  issue comments, no reviews, no
+  review comments, and nothing posted
+  after the landing comment. The Trunk
+  note 6999496132 stands at 113 chars
+  in its final post-merge form,
+  updated 2026-11-19T07:06:46Z. The
+  owner's queue comment 7002174748
+  stands at 12 chars
+  (2026-11-19T06:59:34Z), and the
+  landing comment 7003594679 stands
+  last at 1,086 chars
+  (2026-11-19T08:15:31Z), its three
+  charges standing as this round's
+  charges, the third of them
+  discharged as empty at this item:
+  nothing stands posted after it. The
+  CodeRabbit shell 6999499046 stands
+  in its true final form at this read
+  at 10,926 chars, last edited
+  2026-11-19T06:59:38Z. Its forms
+  stand as the record gives them:
+  first read in its in-progress form
+  at 5,208 chars, which counted
+  nowhere; the lane's completed read
+  at 10,920 chars, last edited
+  2026-11-19T04:18:51Z; one re-render
+  to 10,922 chars, last edited
+  2026-11-19T04:21:36Z; one further
+  re-render to 10,924 chars, last
+  edited 2026-11-19T04:24:03Z, the
+  form the owner's patch restated; and
+  one further re-render at the queue
+  moment to the final form above, four
+  seconds after the owner's queue
+  comment. The last two re-renders
+  stand diffed at this hand against
+  the lane's saved 10,922 form: blank
+  lines only, no disposition-bearing
+  element moving between any of the
+  forms, the Run ID, the no-actionable
+  statement, the Merge Risk coverage,
+  and the four passed checks each
+  standing identical. The shell
+  records that no actionable comments
+  were generated in the recent review,
+  under Run ID
+  bff0c59f-75ac-4afe-ba02-8b3883e09be3
+  . Its walkthrough stands accurate in
+  its summary and its three rows: the
+  round opening and runner
+  disposition, the base-tree and test
+  verification, and the round closure
+  and status. Merge Risk stands at
+  Minimal up to the closure head,
+  coverage source and covered both
+  fced38ff5d53d47f34fd4ba0f65406878dba
+  de0f, kind reviewed, the head itself
+  covered and no unreviewed-head
+  posture standing; the pre-merge
+  checks stand at four passed, Title
+  Passed among them. The Round 25 gate
+  verdicts stand contracted as this
+  lane read them firsthand in the
+  review reports: spec fidelity REPAIR
+  with one Minor, body-only, its F1
+  the body's own shell figure for pull
+  request 33, 10,922 chars stated
+  against 10,924 standing; standards
+  REPAIR with one Minor, body-only, on
+  the same fact at its S-1; red team
+  APPROVE with no findings and nothing
+  untested at its hand. The owner's
+  pre-merge body patch stands graded
+  at this item: the patched sentence
+  stands in the body in the landing
+  comment's words, the shell restated
+  at 10,924 chars, last edited
+  2026-11-19T04:24:03Z, exact at its
+  own moment, the appendix standing
+  byte-identical at the same 480 chars
+  from its marker, and the head
+  unchanged through it, the merge tree
+  equal to the head tree as above; the
+  patch's figure stands superseded in
+  figure only by the queue-moment
+  re-render to 10,926 chars, no
+  disposition-bearing element moving
+  between the two forms at this hand.
+  No dismissal stands on pull request
+  33: no actionable comment stood
+  anywhere on it, and nothing required
+  one. BP-48 stands verified open at
+  this item: Cargo.toml at 170 bytes
+  with no description key, untouched.
