@@ -9744,3 +9744,90 @@ in the round dossier, never a silent approximation.
   and zero en dashes over its 28
   files. The scan over the closure
   tree stands charged to BP-214.
+- BP-214. Round 28 closes on the
+  evidence of BP-210 to BP-213: the
+  base gate clean on the base tree
+  assembled and verified blob by blob,
+  the oracle verified blob by blob
+  before any pairing, the battery at
+  44 cells with zero failures, the
+  split probe in its contracted shape,
+  the differential at 16 cases and 220
+  steps under the qualification BP-138
+  carries, the pin suite at 241 with
+  the golden executed, and the base
+  copy scan at zero and zero with its
+  control counted. The read-back of
+  pull request 37 stands at BP-208
+  with its census exact, its shell
+  contracted in its true final form,
+  the owner's gate patch graded at
+  this lane's hand, and the dismissal
+  it recorded graded sound on its
+  counted grounds re-measured here;
+  the post-landing material and the
+  BP-48 carry stand dispositioned at
+  BP-209. The closure gate stands
+  charged to the pull request record:
+  the closure tree assembled through
+  the API and verified blob by blob,
+  cargo 64 on it with clippy and the
+  format check clean, the battery at
+  44 cells and the differential at 16
+  cases and 220 steps re-run on the
+  closure build, the copy scan at zero
+  and zero over the closure tree with
+  its control counted, and the hosted
+  gate green on the closure head. This
+  round's own runner stands disclosed
+  whole. The base runner's first
+  launch went detached under the build
+  slot and died queued in a runtime
+  restart before it took the slot,
+  banking nothing. Its second launch
+  took the slot, and its first cycle's
+  assembly died on the fleet's REST
+  rate limit standing at zero, the
+  first refusal at
+  2026-11-19T23:52:41Z; the lane
+  stopped that runner under the
+  hard-stop rule and probed the limit
+  once, finding the window already
+  reset with 4,926 of 5,000 remaining,
+  and relaunched. The third launch's
+  first cycle, at
+  2026-11-20T00:02:22Z, banked the
+  assembly and the cargo gate clean,
+  and inside the same cycle the
+  battery and the split probe passed
+  whole before the differential died
+  mid-write on a write-fault flicker,
+  an environment event and not the
+  tree's, so the harness stage banked
+  nothing and stood to rerun whole. A
+  box-wide write wave then held: the
+  runner probe-refused through its 120
+  cycles and stood down exhausted at
+  2026-11-20T01:38:27Z. A fourth
+  launch, armed on the banked stage
+  marks, died queued in a further
+  restart amid the post-restart slot
+  scramble, counted nowhere like every
+  killed launch before it. The fifth
+  launch took the slot at
+  2026-11-20T04:21:56Z and completed
+  the harness stage, the pin stage,
+  and the scan in one cycle, all
+  stages done at 2026-11-20T04:26:40Z,
+  its figures counted only from
+  completed stages. Every failed
+  cycle, refused probe, killed launch,
+  and the rate-limit stop stand in the
+  pull request body's attempt history,
+  each counted nowhere. Round 29 opens
+  on this closure: the CodeRabbit
+  shell on this round's pull request
+  read back in its true final form,
+  whatever stands armed or owed from
+  this round's gates, and BP-48
+  carried by name until it closes.
