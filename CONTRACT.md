@@ -10189,3 +10189,63 @@ in the round dossier, never a silent approximation.
   and zero en dashes over its 28
   files. The scan over the closure
   tree stands charged to BP-221.
+- BP-221. Round 29 closes on the
+  evidence of BP-217 to BP-220: the
+  base gate clean on the base tree
+  assembled and verified blob by blob,
+  the oracle verified blob by blob
+  before any pairing, the battery at
+  44 cells with zero failures, the
+  split probe in its contracted shape,
+  the differential at 16 cases and 220
+  steps under the qualification BP-138
+  carries, the pin suite at 241 with
+  the golden executed, and the base
+  copy scan at zero and zero with its
+  control counted. The read-back of
+  pull request 39 stands at BP-215
+  with its census exact, its shell
+  contracted in its true final form,
+  the build lane's one body patch
+  graded at this lane's hand, and the
+  dismissal it recorded graded sound
+  on its counted grounds re-measured
+  here; the post-landing material and
+  the BP-48 carry stand dispositioned
+  at BP-216. The closure gate stands
+  charged to the pull request record:
+  the closure tree assembled through
+  the API and verified blob by blob,
+  cargo 64 on it with clippy and the
+  format check clean, the battery at
+  44 cells and the differential at 16
+  cases and 220 steps re-run on the
+  closure build, the copy scan at zero
+  and zero over the closure tree with
+  its control counted, and the hosted
+  gate green on the closure head. This
+  round's own runner stands disclosed
+  whole. The base runner's first
+  launch went detached under the build
+  slot at 2026-11-20T18:38Z, queued
+  behind sibling lanes' holds, and
+  died queued in a runtime restart
+  before it ever took the slot,
+  banking nothing; the box stood back
+  up at 2026-11-20T19:27Z and the lane
+  relaunched at once. The second
+  launch took the slot, began its
+  first cycle at 2026-11-20T19:29:59Z,
+  and completed every stage in that
+  one cycle, all stages done at
+  2026-11-20T19:43:36Z, its figures
+  counted only from completed stages.
+  Every killed launch stands in the
+  pull request body's attempt history,
+  each counted nowhere. Round 30 opens
+  on this closure: the CodeRabbit
+  shell on this round's pull request
+  read back in its true final form,
+  whatever stands armed or owed from
+  this round's gates, and BP-48
+  carried by name until it closes.
