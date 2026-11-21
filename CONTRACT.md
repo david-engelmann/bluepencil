@@ -10509,3 +10509,49 @@ in the round dossier, never a silent approximation.
   finding stood on any axis, no tree
   change stood owed, and no repair
   head stood on the pull request.
+- BP-223. The post-landing material on
+  pull request 41 stands dispositioned
+  at this item, as the landing
+  comment's third charge directs. The
+  Trunk note 7053302125 stands in its
+  post-merge form at 113 chars, last
+  edited 2026-11-21T03:36:36Z at the
+  merge, the landing it announced
+  standing verified at BP-222; nothing
+  stands owed on it. The landing
+  comment 7056748633 stands last on
+  the pull request at this read, its
+  first charge discharged at BP-222
+  and its second and third at this
+  item. Nothing else stands posted on
+  the pull request after the merge:
+  the census at BP-222 stands at four
+  issue comments, one review, and one
+  review comment, and no post-landing
+  review, comment, or reply stands
+  anywhere on the record beyond the
+  landing comment itself, so the
+  charge's remainder stands discharged
+  as empty. Round 29's own gates stand
+  closed on the record: the three
+  review reports stand completed on
+  the review record, the spec report
+  at 16,366 bytes, the standards
+  report at 15,977, and the red team's
+  at 15,729 with its whole contracted
+  set banked across its three runner
+  launches, and no process referencing
+  any Round 29 scratch stands in the
+  process table at this lane's
+  entering check; nothing stands armed
+  and nothing stands owed from Round
+  29's gates. BP-48 stands carried
+  open by name to Round 31, untouched
+  this round as every round:
+  Cargo.toml stands at 170 bytes with
+  no description key at this lane's
+  entering check, the canonical
+  description line standing as the
+  recommendation already routed to the
+  main chat, its setting an owner's
+  act, not a build lane's.
