@@ -10744,3 +10744,131 @@ in the round dossier, never a silent approximation.
   and zero en dashes over its 28
   files. The scan over the closure
   tree stands charged to BP-228.
+- BP-228. Round 30 closes on the
+  evidence of BP-224 to BP-227: the
+  base gate clean on the base tree
+  assembled and verified blob by blob,
+  the oracle verified blob by blob
+  before any pairing, the battery at
+  44 cells with zero failures, the
+  split probe in its contracted shape,
+  the differential at 16 cases and 220
+  steps under the qualification BP-138
+  carries, the pin suite at 241 with
+  the golden executed, and the base
+  copy scan at zero and zero with its
+  control counted. The read-back of
+  pull request 41 stands at BP-222
+  with its census exact, its shell
+  contracted in its true final form,
+  the owner's gate patch graded at
+  that hand, and the dismissal it
+  recorded graded sound on its counted
+  grounds re-measured there; the
+  post-landing material and the BP-48
+  carry stand dispositioned at BP-223.
+  The closure gate stands charged to
+  the pull request record: the closure
+  tree assembled through the API and
+  verified blob by blob, cargo 64 on
+  it with clippy and the format check
+  clean, the battery at 44 cells and
+  the differential at 16 cases and 220
+  steps re-run on the closure build,
+  the copy scan at zero and zero over
+  the closure tree with its control
+  counted, and the hosted gate green
+  on the closure head. This round's
+  own course stands disclosed whole.
+  The harness prep source had gone
+  from the disk before the round's
+  gate ran, a workspace cleanup
+  casualty, and its seven files stand
+  restored byte for byte before the
+  prep ran, the four Python files
+  through the file-tool write path and
+  the three interposition libraries by
+  a restore loop whose copies stand
+  cmp-verified, the restore landing at
+  2026-11-21T11:05:17Z in a brief
+  window after a runtime restart, each
+  md5 standing at BP-224. The base
+  runner's first launch went detached
+  under the build slot at
+  2026-11-21T04:00Z, queued behind a
+  sibling lane's hold, and died in the
+  runtime restart of about
+  2026-11-21T05:28Z before it banked
+  any stage. The completion lane
+  relaunched it at 2026-11-21T05:29Z;
+  the box's write fault stood shut
+  through the morning, the runner's
+  probes refused at every cycle, and
+  that launch exhausted its 120 cycles
+  at 2026-11-21T07:17:21Z banking no
+  further stage; relaunched at
+  2026-11-21T07:20Z, it queued, took
+  the slot, and cycled with probes
+  still refused, and died in the
+  runtime restart of about
+  2026-11-21T10:51Z; relaunched at
+  about 2026-11-21T10:54Z, it
+  exhausted its 120 cycles a second
+  time at 2026-11-21T12:35:12Z;
+  relaunched at about
+  2026-11-21T12:37Z, it queued behind
+  sibling lanes' long holds on the
+  slot, took the slot at about
+  2026-11-21T16:05Z, and died in the
+  runtime restart of about
+  2026-11-21T16:24Z; relaunched at
+  about 2026-11-21T16:25Z, that
+  launch's first cycle's probe passed
+  and every stage completed in the one
+  cycle, all stages done at
+  2026-11-21T16:39:28Z, its figures
+  counted only from completed stages
+  and standing at BP-224 to BP-227.
+  The items BP-224 to BP-227 stand
+  pushed as one commit at about
+  2026-11-21T16:47Z, and the
+  completion lane died at the fleet
+  REST rate limit at
+  2026-11-21T16:48:22Z on the push
+  script's final step, the landed
+  contract blob's byte-compare read,
+  the commit standing landed on the
+  branch with its commit and tree
+  identifiers unrecorded and the
+  byte-compare owed. A later
+  completion lane read the branch head
+  at
+  2ee36cd62ca8e84aa916d783c621ff984140
+  324d, its tree
+  ff414f41f8f6934cfe672ec29615612ea7c5
+  8158 over parent
+  79b98c71e135e4b46311d1e641dfc189a38f
+  1e4e, and finished the owed
+  byte-compare at its own hand: the
+  landed contract blob
+  6814cc0884f047db4e8a3f06b984fce98d27
+  5fbe at 385,268 bytes stands
+  byte-identical to the locally
+  reconstructed contract, the BP-223
+  contract at 378,752 bytes plus the
+  wrapped items BP-224 to BP-227, and
+  every other blob in the tree stands
+  verified unchanged against the
+  BP-223 tree
+  fb9ecebbf9d3260d455073f0c8d19a849dbc
+  c319. Every killed launch, refused
+  probe, and interrupted verification
+  stands in the pull request body's
+  attempt history, each counted
+  nowhere. Round 31 opens on this
+  closure: the CodeRabbit shell on
+  this round's pull request read back
+  in its true final form, whatever
+  stands armed or owed from this
+  round's gates, and BP-48 carried by
+  name until it closes.
