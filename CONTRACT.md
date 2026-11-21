@@ -10555,3 +10555,192 @@ in the round dossier, never a silent approximation.
   recommendation already routed to the
   main chat, its setting an owner's
   act, not a build lane's.
+- BP-224. The Round 30 base tree, main
+  a1d0f6fb271f0af09d573f1540cbba0f45b8
+  8294, tree
+  e5347417d96c6b1a618810c8aee4cfe21153
+  6cd2, stands assembled through the
+  API into this lane's worktree and
+  verified blob by blob before any
+  run: 28 blobs, zero mismatches. The
+  oracle stands verified the same way
+  before any pairing relies on it:
+  commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e, 19 blobs, each fetched through
+  the API and matched byte for byte
+  against the standing extraction,
+  zero mismatches. On the base tree
+  the cargo gate stands clean: 64
+  tests pass, 3 library, 0 binary, 18
+  diff, 18 inventory, 25 proposals, 0
+  doc, none failed, none ignored, each
+  target's count paired at this hand
+  with its own Running header in the
+  run's log; clippy with warnings
+  denied stands clean and the format
+  check stands clean. The binary built
+  at the base harness path stands at
+  md5
+  d7cf80fe4770809418e809b9bfa0778b,
+  the figure Rounds 21 to 29
+  reproduced at the same build-path
+  scope, contracted here at that scope
+  only, exactly as BP-174 states the
+  scope: same code, same profile, same
+  path shape, and no claim past it.
+  The harness directory for this
+  round's runs carries rt_position.py
+  from the start, the positioner
+  standing in every harness copy of
+  this round under the prep law, so no
+  run of this round stands on a copy
+  lacking a file the harness resolves.
+  The prep source the harness copies
+  stand drawn from had itself gone
+  from the disk before this round's
+  gate ran, and its seven files stand
+  restored byte for byte before the
+  prep ran, each md5 measured at this
+  hand against the copies standing in
+  the surviving harness directories of
+  Rounds 25 to 29: battery21.py at
+  fbbe91ffaa756094ebea480fd5865906,
+  split_probe21.py at
+  cb87cded93c3b5754a7c84c6f81b61f6,
+  differential21.py at
+  9f346303a241cdef3c863713cdd68503,
+  rt_position.py at
+  087b7373ecb3a7969e32e678052cc525,
+  and the three interposition
+  libraries at
+  8edb43b98c3234ac47d041c02a25f492,
+  19875fdc80c29455282e7832cdcf5422,
+  and
+  2719afc20af3aa2a765180311c74e4e4,
+  the harness copy of this round
+  carrying each at the same figure;
+  the loss and the restore stand in
+  this round's attempt history whole
+  at BP-228.
+- BP-225. The behavioral battery
+  stands re-run whole against the base
+  build and the verified oracle
+  extraction: 44 cells, zero failures,
+  the cells standing 4 walk, 4
+  entropy, 7 precedence, 23 version, 6
+  guard, each counted from the run's
+  own PASS lines. The battery is the
+  Round 18 rebuilt script unmodified,
+  measured as a fresh topical
+  partition of the behaviors it names,
+  as BP-138 qualifies it; every cell
+  compares the port against the oracle
+  on behavior, error text, and tree
+  state, and the guard section's proof
+  stands in BP-163's shape: for each
+  of the four tested input-as-target
+  cells, rules target on propose,
+  observations target on propose,
+  rules target on diff, and proposals
+  target on diff, the snapshot of the
+  tree before the run stands
+  byte-identical to the snapshot after
+  it on the oracle side and on the
+  port side alike, the tree-same
+  figure standing on each of the four
+  PASS lines, with the valid-file and
+  diff-stdout controls standing
+  paired-identical beside them, BP-4
+  and BP-12 standing probed through
+  that family. The entropy cells stand
+  in their contracted shape under
+  BP-55 and BP-81: under entropy
+  interposition the oracle writes and
+  the port refuses both commands, and
+  the stream cells count 1 and 2 draws
+  over 250 candidates. The version
+  cells stand in BP-56's shape:
+  absence and the string 1.0 accepted
+  paired-identical, every other form
+  refused by name across the padded,
+  prefixed, numeric, and null forms
+  the family names. The precedence
+  cells stand in BP-63's order, shape
+  then version then entries: the
+  shape-over-version cell
+  paired-identical, the two
+  version-over-entry cells standing as
+  the contracted divergences the
+  record carries, the port naming the
+  unsupported version where the oracle
+  names the entry error, and the entry
+  cells under a good version
+  paired-identical. The split probe
+  stands re-run on the same pair of
+  builds: paired-identical at 39 and
+  40 links on propose and on diff,
+  split at 41 and 42 on both verbs,
+  the port's refusal carrying exit 1
+  and the stderr error, bluepencil
+  never writes to its inputs byte for
+  byte, the refusal BP-80 states.
+- BP-226. The differential stands
+  re-run whole against the base build
+  and the verified oracle extraction:
+  16 cases, 220 steps, zero failures,
+  the cases and steps counted from the
+  run's own log, which names each case
+  and its step count before the total.
+  The differential is the Round 18
+  rebuilt harness unmodified, and the
+  run stands measured as a fresh
+  topical partition of the command
+  surface, case by case across the
+  propose and diff verbs, their error
+  paths, and their tree effects, as
+  BP-138 qualifies the partition; no
+  case stands inherited from any
+  earlier round's run, and no step
+  stands counted from any earlier
+  round's log.
+- BP-227. The pin suite stands re-run
+  on pin
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e, its tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e assembled through the API and
+  verified blob by blob: exactly 50
+  blobs, zero mismatches. The suite
+  stands at 241 tests, zero failures,
+  the count summed at this lane's hand
+  from the run's own result lines. The
+  golden stands executed on the pin
+  build: the synthetic session
+  converts at 1,663 bytes, its digest
+  stands at
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, and
+  the verify step accepts the tape
+  against that digest in the harness's
+  own words. The pin binary stands
+  built at this round's pin target
+  path; no md5 figure is contracted
+  for it, the pin's identity standing
+  in the commit, the tree, the
+  blob-by-blob verification, the
+  suite, and the golden, the
+  provenance posture BP-177 set and
+  this round keeps. The copy scan
+  stands run at this lane's own hand
+  over the base tree by a Python
+  codepoint scan, never a shell grep:
+  the planted control stands counted
+  at exactly one em dash and two en
+  dashes before the scan ran, and the
+  base tree stands at zero em dashes
+  and zero en dashes over its 28
+  files. The scan over the closure
+  tree stands charged to BP-228.
