@@ -10872,3 +10872,68 @@ in the round dossier, never a silent approximation.
   stands armed or owed from this
   round's gates, and BP-48 carried by
   name until it closes.
+- BP-229. Repair record, correcting
+  BP-222 under the standing
+  convention, BP-222 unrewritten.
+  BP-222 states that the oracle commit
+  ID stands split in all eight of its
+  occurrences, at lines 7212, 7717,
+  8093, 8446, 8821, 9227, 9626, and
+  10041, and contiguous in none. The
+  total stands corrected here: the
+  oracle commit ID
+  255d973dc51ba9e80d056afd1575688a3432
+  a370 occurs nine times in full in
+  the contract BP-222 measured, not
+  eight. The eight enumerated
+  occurrences stand as stated, each
+  split 36 and 4 across the wrap, the
+  first 36 chars closing the named
+  line and the last four opening the
+  next. A ninth occurrence stands at
+  lines 6599 to 6600 in BP-161, split
+  18 and 22 mid-sentence, the line at
+  6599 closing with the ID's first 18
+  chars, in the words the API at
+  commit 255d973dc51ba9e80d, and the
+  line at 6600 opening with its
+  remaining 22 chars. The count stands
+  measured in two agreeing forms over
+  the base contract's exact bytes, the
+  blob
+  b03e0d4ec8e3f232e734d4e86c2e48e33700
+  8d63 at 367,835 bytes: a
+  whitespace-stripped full-text count
+  of the ID, and a per-line
+  classification of every line
+  carrying any part of it. Both give
+  nine full occurrences, every one
+  split across the wrap, and zero
+  standing contiguous anywhere, so
+  BP-222's contiguous in none stands
+  exactly true, and no ground of the
+  dismissal BP-222 re-measures rests
+  on the total: the enumeration alone
+  stands corrected, and the
+  dismissal's substance stands
+  untouched. A count of the lines
+  ending with the ID's first 36 chars
+  reaches eight and stands not
+  contradicted by this record, because
+  the ninth occurrence is split 18 and
+  22 and no line ends with its first
+  36 chars, so that count does not
+  reach it. The body of pull request
+  41 carries the same total of eight
+  in the dismissal's counted grounds,
+  and it stands corrected by this
+  record with it. The correction
+  answers the spec axis of this
+  round's gate, and the count stands
+  re-measured in the same two forms at
+  the hand that appends this record.
+  This record stands outside the
+  contract's Status range, as the
+  earlier repair records do; the range
+  line does not move, and no other
+  statement at BP-222 is qualified.
