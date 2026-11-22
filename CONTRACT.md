@@ -11143,3 +11143,168 @@ in the round dossier, never a silent approximation.
   charged to this round and standing
   at BP-231. No other finding stood on
   any axis.
+- BP-231. The owed executions,
+  discharged by execution on the Round
+  30 final tree. Round 30's red team
+  closed its report with two limbs
+  UNTESTED on the box write fault,
+  charged to this round in IP-189's
+  form: (a) the closure-tree test-leg
+  reproduction on a clean extraction
+  of the Round 30 final tree, and (b)
+  the hostile probe set the red team
+  wrote and compiled at
+  bp30-rt-scratch/probes.py, fourteen
+  probes against that tree's build.
+  Both limbs stand executed in this
+  round's fifth runner launch, cycle
+  1, on 2026-11-22, after the fleet
+  pool reset at 06:03:28Z (the
+  launch's own rate reads stand in the
+  runner log: 0 of 5,000 remaining
+  four times, then 4,984). Each limb
+  is registered here as executed, with
+  the figures the executions produced.
+  Limb (a), the test leg. The final
+  tree
+  5f2518531dac044dc70fdf642acc56581e2d
+  8a6c was extracted fresh through the
+  Data API by this round's
+  assemble31.py (28 blobs, 0
+  mismatches, the asm stage log of
+  06:06Z), and the harness copy
+  h-final31 was prepared under the
+  standing prep law, rt_position.py in
+  the copy from the start, the seven
+  harness files' md5s verified and the
+  fixtures cmp-verified against the
+  tree (the runner log's prep line).
+  The cargo gate on that extraction,
+  RUSTUP_TOOLCHAIN=1.91 and offline:
+  build finished, clippy with warnings
+  denied clean, fmt clean, and the
+  test run paired mechanically by
+  pair31.py against the Running header
+  at library 3 passed, binary 0
+  passed, diff 18 passed, inventory 18
+  passed, proposals 25 passed, doc 0
+  passed, TOTAL 64 passed, 0 failed, 0
+  ignored, the contracted split
+  reproduced exactly. The built binary
+  at the h-final31 harness path
+  carries md5
+  d7cf80fe4770809418e809b9bfa0778b,
+  the contracted figure reproduced at
+  this hand. The limb is executed;
+  nothing in it is carried. Limb (b),
+  the hostile probes. This round's
+  probes31.py is the red team's
+  probes.py with its paths re-aimed at
+  the h-final31 build and fixtures and
+  its window-wait fitted to this
+  round, run in the same cycle (its
+  log opens at 06:10:51Z). Baseline
+  first: an ordinary propose stands at
+  rc 0 with a 4,991-byte document and
+  empty stderr. The fourteen outcomes,
+  as executed, none as expected. HP-1,
+  string observations with version
+  2.0: rc 1, the shape error named
+  (observations file must be a JSON
+  object with an observations list),
+  so the shape stage fires over the
+  version. HP-2, version 3.5 over a
+  bad-kind entry: rc 1, the version
+  named (unsupported
+  observations_version '3.5'), so the
+  version stage fires over the kind.
+  HP-3, version 2.0 with a rewrites
+  object: rc 1, the version error
+  again (unsupported
+  observations_version '2.0'), so the
+  version stage precedes the rewrites
+  shape check. HP-4, a duplicated
+  observations key, bad first and good
+  last: rc 0, the document
+  byte-identical to the baseline, last
+  value wins. HP-5, a BOM-prefixed
+  document: rc 1 at the read
+  (Unexpected UTF-8 BOM, line 1 column
+  1), no document produced. HP-6, a
+  trailing NUL: rc 1 at the read
+  (Extra data, line 24 column 1, char
+  1181), no document produced. HP-7,
+  the entropy interposition under
+  LD_PRELOAD, in two halves: propose
+  rc 1 (cannot write the proposal
+  file, out.json) with out.json not
+  existing, and diff rc 1 (cannot
+  write the diff file, out.txt) with
+  out.txt not existing. HP-8, a
+  dangling three-link chain on the
+  observations path: rc 1 (no such
+  observations file, l1.json). HP-9,
+  the observations path a symlink to a
+  directory: rc 1 (no such
+  observations file,
+  observations.json). HP-10, the rules
+  file reached through a 41-link
+  chain: rc 1 in the no-such-file form
+  (no such rules file, c1.md), not the
+  never-writes form; the chain is
+  refused, and the refusal's shape is
+  recorded as it executed. HP-11,
+  propose with its output naming the
+  rules file: rc 1, stderr byte-exact
+  "error, bluepencil never writes to
+  its inputs", the rules file
+  unchanged. HP-12, propose with its
+  output a symlink to the rules file:
+  rc 1, the same refusal, the rules
+  file unchanged and the link still a
+  link. HP-13, diff with its output
+  naming the proposals file: rc 1, the
+  same refusal, the proposals file
+  unchanged. HP-14, propose with its
+  output in a nonexistent directory:
+  rc 1 (cannot write the proposal
+  file, no/dir/out.json). The probe
+  run closed PROBES DONE with every
+  probe at a verdict. The attempt
+  record for these limbs, in IP-189's
+  form, each attempt counted nowhere.
+  The first runner launch
+  (2026-11-21T23:56Z) queued on the
+  build slot behind two sibling holds
+  and died in a runtime restart at
+  about 00:26Z having banked nothing.
+  The second launch took the slot at
+  00:36Z, banked the rate stage and
+  the final and base assemblies, and
+  died at the pin assembly on an HTTP
+  403 from the shared fleet pool; its
+  remaining 135 cycles found the write
+  probe refused, and a second restart
+  killed it at about 02:25Z. The third
+  launch queued again, took the slot
+  at about 02:47Z, recorded 129
+  refused write probes, and was
+  terminated at about 04:24Z. The
+  fourth launch opened a window at
+  04:40:03Z, repeated the final and
+  base assemblies, died at the pin
+  assembly on the same 403 with the
+  pool later read at this hand at 0 of
+  5,000 (reset 06:03:28Z), and
+  recorded 92 refused cycles before
+  its termination at about 05:53Z. The
+  fifth launch, its rate stage
+  re-armed after the stale mark was
+  removed at this hand, waited out
+  that reset inside its first cycle
+  and executed both limbs whole, as
+  registered above. The limbs' long
+  road is the fault's and the pool's,
+  not the device's; on the one cycle
+  where the ground held, both executed
+  clean at the first asking.
