@@ -11358,3 +11358,178 @@ in the round dossier, never a silent approximation.
   recommendation already routed to the
   main chat, its setting an owner's
   act, not a build lane's.
+- BP-233. The base gate, executed on
+  the Round 31 base tree. The base is
+  main at
+  7add41ab5c9b8a3a0484292edbc645a3ac08
+  d49c, tree
+  5f2518531dac044dc70fdf642acc56581e2d
+  8a6c, verified live at this round's
+  entry. The tree was extracted
+  through the Data API by
+  assemble31.py (28 blobs, 0
+  mismatches, to the base worktree,
+  the asm stage log of the fifth
+  runner launch at 06:08Z on
+  2026-11-22). The oracle was verified
+  in the same stage: the extraction at
+  bp-oracle against commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e, at 19 blobs, 0 mismatches
+  (oracle-verify.log). The harness
+  copy h-base31 was prepared under the
+  standing prep law, rt_position.py in
+  the copy from the start, the seven
+  harness files' md5s verified against
+  the figures recorded at this round's
+  entry (battery21.py
+  fbbe91ffaa756094ebea480fd5865906,
+  split_probe21.py
+  cb87cded93c3b5754a7c84c6f81b61f6,
+  differential21.py
+  9f346303a241cdef3c863713cdd68503,
+  rt_position.py
+  087b7373ecb3a7969e32e678052cc525,
+  bp10_clock.so
+  8edb43b98c3234ac47d041c02a25f492,
+  bp10_urandom.so
+  19875fdc80c29455282e7832cdcf5422,
+  bp10_ustream.so
+  2719afc20af3aa2a765180311c74e4e4)
+  and the fixtures cmp-verified
+  against the tree (the runner log's
+  prep line). The cargo gate on the
+  base extraction,
+  RUSTUP_TOOLCHAIN=1.91 and offline:
+  build finished, clippy with warnings
+  denied clean, fmt clean, and the
+  test run paired mechanically by
+  pair31.py at library 3 passed,
+  binary 0 passed, diff 18 passed,
+  inventory 18 passed, proposals 25
+  passed, doc 0 passed, TOTAL 64
+  passed, 0 failed, 0 ignored. The
+  built binary at the h-base31 harness
+  path carries md5
+  d7cf80fe4770809418e809b9bfa0778b,
+  the contracted figure, matching the
+  final-tree build of BP-231 byte for
+  byte in digest. The gate's own
+  attempt record, counted nowhere: its
+  first execution, in the fifth
+  launch's first cycle, died mid-build
+  when the write fault closed over it,
+  cargo refused with Operation not
+  permitted writing full.rmeta for
+  crypto-common and block-buffer
+  (base31-test.log as it stood at
+  06:10Z), minutes after the same
+  tree's final-tree gate had passed
+  whole in BP-231; the sixth launch
+  reran the gate clean at the first
+  asking (07:53Z to 07:55Z), and the
+  figures above are that rerun's.
+- BP-234. The battery and the split
+  probe, executed on the base tree's
+  build. The battery (battery21.py
+  against the h-base31 harness, the
+  BP-138-qualified harness as restored
+  in Round 30) ran its 44 cells at 0
+  failures: walk 4, entropy 4,
+  precedence 7, version 23, guard 6,
+  the contracted composition. The
+  guard cells stand in the BP-163
+  shape: around each of the four
+  input-as-target cells, the per-side
+  before and after snapshots are
+  byte-identical on both the oracle
+  side and the rust side
+  (tree-same=True in every guard line
+  of base31-battery.log), so the
+  refusal is proven to leave the input
+  trees untouched, not merely to have
+  erred. The split probe
+  (split_probe21.py, same harness)
+  walked the symlink chain lengths on
+  both verbs: at 39 and 40 links
+  propose and diff are
+  paired-identical between oracle and
+  rust, both rc 0; at 41 and 42 links
+  the pair splits on both verbs, the
+  oracle writing through the chain at
+  rc 0 while the rust side refuses at
+  rc 1 with stderr byte-exact "error,
+  bluepencil never writes to its
+  inputs" and the chain head still a
+  link. Split probe failures: 0
+  (base31-split.log). Both executions
+  ran in the sixth runner launch's
+  single cycle, 2026-11-22, on the
+  base gate's build of BP-233.
+- BP-235. The differential, executed
+  on the base tree's build.
+  differential21.py, on the harness
+  qualified at BP-138 (the
+  bp21-scratch harness as restored in
+  Round 30, its seven files' md5s
+  verified at this round's entry and
+  again at the h-base31 prep in
+  BP-233), ran the oracle and the rust
+  binary side by side through 16 cases
+  and 220 steps at 0 failures
+  (base31-diff.log, whose closing line
+  carries the three figures). The case
+  set is the standing one, from
+  baseline-flow at 9 steps and usage
+  at 16 through version-grid at 38 to
+  symlink-inputs and repeat-runs at 6
+  each and deep-nesting at 3; every
+  step's paired outputs agreed, or the
+  case is not in the count. The
+  execution ran in the sixth runner
+  launch's single cycle, 2026-11-22,
+  on the base gate's build of BP-233.
+- BP-236. The pin suite, the golden
+  tape, and the base codepoint scan.
+  The pin tree was assembled through
+  the Data API by assemble31.py from
+  flighttape at pin
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e, tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e, at exactly 50 blobs, 0
+  mismatches (asm-pin.log), after two
+  earlier assembly attempts in this
+  round's second and fourth runner
+  launches died on HTTP 403 from the
+  shared fleet pool, each counted
+  nowhere and recorded in BP-231's
+  attempt record. The pin suite on
+  that assembly: 241 tests passed, 0
+  failed, summed at this hand from the
+  19 test-result lines of
+  pin-test.log, every line ok. The
+  golden tape was executed against the
+  base build: the tape stands at 1,663
+  bytes with SHA-256 digest
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  digest matches, and verification
+  accepts (golden.log). The codepoint
+  scan of the base tree, by Python
+  only and never shell grep, counted
+  its planted control first: a control
+  file carrying exactly 1 U+2014 and 2
+  U+2013 read back at exactly 1 and 2,
+  so the scan is proven able to see
+  what it then reports absent; the
+  base tree's 28 files then scanned at
+  U+2014 0 and U+2013 0
+  (scan-base31.log). All three
+  executions ran in the runner's asm
+  and closing stages, the pin assembly
+  in the fifth launch and the suite,
+  tape, and scan in the sixth,
+  2026-11-22.
