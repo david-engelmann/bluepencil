@@ -12454,3 +12454,70 @@ in the round dossier, never a silent approximation.
   0d05d012b703da56d3d7670a8d54b0aaafe2
   e4ac standing as main with its tree
   equal to the reviewed repair tree.
+- BP-247. The post-landing material on
+  pull request 47 stands dispositioned
+  at this item, as the landing
+  comment's charges direct. The Trunk
+  note 7085785410 stands in its
+  post-merge form at 113 chars, last
+  edited 2026-11-22T22:37:16Z at the
+  merge, the landing it announced
+  standing verified at BP-246; nothing
+  stands owed on it. The landing
+  comment 7086995240 stands last on
+  the pull request at this read, its
+  first charge, this record read back
+  whole, discharged at BP-246, its
+  second, the base gate re-measure,
+  standing charged to BP-248 to BP-251
+  of this round, and its third, the
+  BP-48 carry, at this item. Nothing
+  else stands posted on the pull
+  request after the merge: the census
+  at BP-246 stands at four issue
+  comments, one review, and one review
+  comment, the review comment
+  4660033447 carrying no reply, and no
+  post-landing review, comment, or
+  reply stands anywhere on the record
+  beyond the landing comment itself,
+  so the charge's remainder stands
+  discharged as empty. Round 32's own
+  gates stand closed on the record:
+  the five review reports stand
+  completed on the review record, the
+  spec report at 11,524 bytes
+  returning REPAIR on two Minors, the
+  standards report at 8,274 bytes
+  returning REPAIR on one Minor, the
+  red team's report at 20,618 bytes
+  returning REPAIR on one Minor, the
+  same appendix offset pair the other
+  axes found, and the two delta
+  reports over repair record BP-245,
+  the spec delta at 8,539 bytes
+  returning PASS and the standards
+  delta at 7,849 bytes returning
+  APPROVE; the appendix offset pair
+  stands discharged by the owner's
+  body patch and the harness-phrase
+  finding by BP-245, both verified on
+  the record at BP-246. The red team's
+  harness re-executions stood untested
+  at its hand and stand charged to
+  Round 33's red team by name; they
+  are no build item's debt. No process
+  referencing any Round 32 scratch
+  stands in the process table at this
+  lane's entering check; nothing
+  stands armed and nothing stands owed
+  from Round 32's gates. BP-48 stands
+  carried open by name to Round 34,
+  untouched this round as every round:
+  Cargo.toml stands at 170 bytes with
+  no description key at this lane's
+  entering check, the canonical
+  description line standing as the
+  recommendation already routed to the
+  main chat, its setting an owner's
+  act, not a build lane's.
