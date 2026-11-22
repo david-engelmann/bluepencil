@@ -12178,3 +12178,73 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-245. Repair record, qualifying
+  BP-241 and BP-242 under the standing
+  convention, both unrewritten. The
+  spec axis of this round's gate, at
+  its finding F-2, sustains CodeRabbit
+  comment 4660033447 in part, and this
+  record answers it. BP-241 calls the
+  battery harness "the
+  BP-138-qualified harness", and
+  BP-242 calls the differential's
+  harness "the harness qualified at
+  BP-138". BP-138, read whole,
+  qualifies one thing: BP-136's
+  differential account, settling that
+  the rebuilt harness's sixteen cases
+  are a fresh topical partition, not
+  the historical differential's case
+  set continued, and that its figures
+  stand as the rebuilt harness's own
+  measurement, not as the historical
+  differential's continuation, with
+  the rebuilt harness's attempt
+  history disclosed beside it. It
+  qualifies the differential's figures
+  and their provenance, not the
+  harness as an artifact, and it does
+  not qualify the battery at all; its
+  only battery sentence states that
+  Round 18's battery covered the
+  surfaces that round's charges named
+  independently of the differential.
+  The two phrases therefore stand
+  narrowed. At BP-241, the battery
+  harness is the line's standing
+  harness copy, its identity standing
+  on the per-round prep verification
+  and on BP-233's record of the seven
+  harness files' md5s, the md5s
+  verified again at this round's entry
+  and at the h-base32 prep in BP-240,
+  and its 44 cells stand as this
+  round's own measurement; no
+  qualification by BP-138 stands
+  behind it. At BP-242, what BP-138
+  qualifies is the differential's
+  figures, as a fresh topical
+  partition measurement; the harness
+  artifact that produced them stands
+  identified, as BP-242 itself states,
+  by its seven files' md5s against
+  BP-233's record, not by BP-138.
+  Neither item claims the sixteen
+  cases continue the historical
+  differential's case set, and that
+  settlement stands untouched; no
+  measured figure moves, the battery's
+  44 cells and the differential's 16
+  cases and 220 steps standing as
+  measured. The body's Step 0
+  disposition of the comment answered
+  the differential limb on its
+  fresh-partition and prefix-law
+  grounds and did not reach the
+  battery limb; this record supplies
+  the qualification for both. This
+  record stands outside the contract's
+  Status range, as the earlier repair
+  records do; the range line does not
+  move, and no other statement at
+  BP-241 or BP-242 is qualified.
