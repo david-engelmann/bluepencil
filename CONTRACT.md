@@ -10937,3 +10937,209 @@ in the round dossier, never a silent approximation.
   earlier repair records do; the range
   line does not move, and no other
   statement at BP-222 is qualified.
+- BP-230. Round 31 opens on main
+  7add41ab5c9b8a3a0484292edbc645a3ac08
+  d49c, its tree
+  5f2518531dac044dc70fdf642acc56581e2d
+  8a6c the Round 30 repair tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 391,951 bytes with
+  BP-228 its tail item of the round
+  range and BP-229 standing after it
+  as a repair record outside the
+  range, the range last stated as BP-1
+  to BP-178 with Round 24's items
+  BP-180 to BP-186, Round 25's items
+  BP-187 to BP-193, Round 26's items
+  BP-194 to BP-200, Round 27's items
+  BP-201 to BP-207, Round 28's items
+  BP-208 to BP-214, Round 29's items
+  BP-215 to BP-221, and Round 30's
+  items BP-222 to BP-228 standing
+  after it, the README rounds line at
+  30 of 100, Cargo.toml at 170 bytes
+  with no description key. Pull
+  request 43 stands read back whole at
+  this item, as the Round 30 landing
+  comment 7071107573 and BP-228's
+  closing charge direct. The pull
+  request stands closed and merged
+  through the Trunk queue at
+  2026-11-21T23:46:04Z, its merge
+  commit
+  7add41ab5c9b8a3a0484292edbc645a3ac08
+  d49c standing as main, its head the
+  repair head
+  9c9859b09bd3b740f9ccd7f8972e479dab2f
+  c296 over base
+  a1d0f6fb271f0af09d573f1540cbba0f45b8
+  8294, and the merge tree stands
+  equal to the reviewed repair tree
+  5f2518531dac044dc70fdf642acc56581e2d
+  8a6c, both read at this hand. The
+  title stands at 121 chars and 19
+  words in the standing shape, counted
+  at this hand, its range naming
+  BP-222 to BP-228 with the repair
+  record standing outside it as it
+  stands outside the contract's range.
+  The body stands at 16,753 chars at
+  this read, in the form the owner's
+  gate patch left it, and the bot's
+  release-notes appendix stands whole
+  at the body's foot at 579 chars from
+  its opening marker, at offset 16,174
+  in the body, its three Documentation
+  bullets each correct: the project
+  record updated with Round 30's
+  review, verification, and closure
+  details, including the final status
+  of outstanding follow-up items; the
+  recorded evidence expanded for build
+  checks, behavioral and differential
+  testing, link validation, and final
+  verification; and the
+  perfection-round status updated from
+  29 of 100 to 30 of 100. The census
+  stands exact at this read: four
+  issue comments, no reviews, no
+  review comments, and nothing posted
+  after the landing comment. The Trunk
+  note 7070271914 stands at 113 chars
+  in its final post-merge form,
+  updated 2026-11-21T23:46:08Z at the
+  merge. The owner's queue comment
+  7071006502 stands at 12 chars
+  (2026-11-21T23:38:24Z), and the
+  landing comment 7071107573 stands
+  last at 1,331 chars
+  (2026-11-21T23:47:31Z), its charges
+  standing as this round's charges:
+  the shell's true final form
+  contracted at this item, the red
+  team's two untested limbs at BP-231,
+  and the BP-48 carry at BP-232. No
+  formal review stands on the pull
+  request: CodeRabbit reviewed
+  automatically at the opening and
+  generated no actionable comments,
+  and no review comment stands
+  anywhere on it. The CodeRabbit shell
+  7070273796 stands in its true final
+  form at this read at 11,059 chars,
+  last edited 2026-11-21T23:37:47Z,
+  read whole at this hand, discharging
+  the charge the Round 30 body laid on
+  this read-back. Its forms stand as
+  the record gives them: the build
+  lane's completed read at 11,053
+  chars, last edited
+  2026-11-21T22:36:16Z; the standards
+  hand at 11,055 chars, last edited
+  2026-11-21T22:39:53Z, the plus-two
+  re-render; a longer form at 13,756
+  chars standing at the standards
+  delta hand's read of
+  2026-11-21T23:27:40Z as the head
+  moved to the repair head; and the
+  final form above. The delta between
+  the 13,756 form and the final form
+  stands unmeasured at this hand, no
+  diffable saved copy of the longer
+  form standing on the record, so no
+  diff stands available; every
+  disposition-bearing element in the
+  final form stands verified by this
+  whole read against the gate record:
+  no actionable comments generated in
+  the recent review; the walkthrough
+  accurate in its summary and its
+  three rows (the review and
+  post-landing disposition, the
+  base-tree and behavioral
+  verification, and the closure
+  evidence and round count); the
+  change assessment at effort 2
+  (Simple) with Change Other and its
+  assessment commit the closure head;
+  Merge Risk standing Minimal up to
+  ca34f with coverage source and
+  covered commit both the closure head
+  ca34f99daea99e1890b4166502a11f8d068b
+  78ff and kind reviewed, the repair
+  head standing covered not by the
+  shell but by the gate's delta
+  reviews the body's repair bullet
+  records; the four pre-merge checks
+  Passed, the Title check Passed with
+  its explanation noting the title
+  long and dense with a bracketed
+  ticket range while naming the main
+  change, its internal phrasing
+  standing as jargon a reader outside
+  the project may not parse, resolving
+  on its own terms; no operational
+  warning standing in the final form;
+  the finishing touches unticked; and
+  the Run ID
+  6af3322d-d793-4e37-8ef1-120497cd424f
+  standing in the shell's own run
+  configuration block, the reviewed
+  range standing as the branch from
+  base
+  a1d0f6fb271f0af09d573f1540cbba0f45b8
+  8294 to closure head
+  ca34f99daea99e1890b4166502a11f8d068b
+  78ff over the two changed files,
+  CONTRACT.md and README.md, the
+  included allowance used with none
+  remaining. The owner's gate patch
+  stands graded at this hand by
+  reconstruction: the patch changed
+  exactly three elements and nothing
+  else, the five-for-four sentence in
+  the first Verified bullet restated
+  over the four round commits (the
+  patched sentence standing exactly
+  once in the live body and the
+  original nowhere), the first
+  bullet's chain extended to name the
+  repair head over the closure head,
+  and one repair bullet added to the
+  Verified block; reversing the three
+  edits restores exactly 15,704 chars,
+  the pre-patch body length the gate
+  record states, with the appendix
+  marker back at offset 15,125, and
+  the appendix stands byte-identical
+  at 579 chars from its marker in both
+  forms; the head stands unmoved at
+  9c9859b09bd3b740f9ccd7f8972e479dab2f
+  c296 through the patch, the reviewed
+  head standing as the merged head.
+  Hosted CI on the repair head stands
+  read at this hand: the push run
+  44961891312 and the pull_request run
+  44961895623 both completed with
+  success. The gate stood as the
+  landing comment records it: spec
+  REPAIR with one Minor (the BP-222
+  enumeration, repaired in-round by
+  BP-229), standards REPAIR with one
+  Minor and red team REPAIR with one
+  Minor, the same body sentence at
+  both hands, repaired by the owner's
+  patch graded above; the delta
+  reviews on the repair commit passed
+  on both axes with no findings; and
+  the red team's two local limbs, the
+  test-leg reproduction on its own
+  extraction and its hostile probe
+  set, stood UNTESTED under the box
+  write fault with their attempt
+  histories whole in its report,
+  charged to this round and standing
+  at BP-231. No other finding stood on
+  any axis.
