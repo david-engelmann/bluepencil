@@ -11533,3 +11533,133 @@ in the round dossier, never a silent approximation.
   in the fifth launch and the suite,
   tape, and scan in the sixth,
   2026-11-22.
+- BP-237. Closure. This commit closes
+  Round 31 and moves the README rounds
+  line from 30 of 100 to 31 of 100;
+  that line moves in this commit only.
+  The round's chain over the base
+  7add41ab5c9b8a3a0484292edbc645a3ac08
+  d49c stands at five commits, each
+  carrying the Signed-off-by trailer
+  in its message: BP-230
+  (759424cd0c967619db077a2ef06ce02d615
+  115c2, the contract growing 391,951
+  to 399,146 bytes), BP-231
+  (13ffc7ae63eccdb4f2eaae0ec795eec198c
+  92611, to 404,975 bytes), BP-232
+  (7b571eb2123926806a9251309d18ad58c34
+  8e478, to 406,762 bytes), BP-233 to
+  BP-236 in one commit
+  (28dd75ddf7b1d3b1a562d4718eb0dee7495
+  d0923, to 412,695 bytes), and this
+  closure commit. The round's
+  substance stands in the items
+  themselves: PR 43 read back whole
+  and the owner's gate patch graded by
+  reconstruction (BP-230), the two
+  owed executions discharged on the
+  Round 30 final tree (BP-231), Round
+  30's review reports closed and BP-48
+  carried (BP-232), and the standing
+  family executed on the base tree
+  (BP-233 to BP-236: cargo 64 in the
+  paired split with the binary digest
+  reproduced, battery 44 cells at 0
+  failures, the split probe splitting
+  at 41, the differential at 16 cases
+  and 220 steps, the pin suite at 241,
+  the golden tape's digest matching,
+  the codepoint scan clean against its
+  planted control). The closure gate
+  on this commit's tree executes after
+  this item lands and reports on the
+  pull request record. The round's
+  whole attempt history, each event
+  counted nowhere. At entry on
+  2026-11-21 the fleet REST pool stood
+  at 0 of 5,000 (read at 23:51Z, reset
+  00:02:32Z, recovered to 4,908 by the
+  00:03Z read); a fresh 3,006-byte
+  exec write at entry landed at 0
+  bytes on the write fault and was
+  removed; the first PR 43 read run
+  died after printing only its rate
+  line, and a later file-redirect
+  capture of it landed at 0 bytes with
+  exit 120, direct stdout capture
+  being the route that held. BP-230
+  pushed clean at 00:07Z. The gate
+  runner took six launches. The first
+  (23:56Z) queued on the build slot
+  behind two sibling holds and died in
+  a runtime restart at about 00:26Z,
+  banking nothing and leaving no log.
+  The second took the slot at
+  00:36:06Z, banked the rate stage and
+  the final and base assemblies, died
+  at the pin assembly on an HTTP 403
+  from the shared pool, recorded
+  refused write probes through cycle
+  136, and died in a second restart at
+  about 02:25Z. The third queued
+  behind a sibling hold, took the slot
+  at about 02:47Z, recorded 129
+  refused pre-log probes, and was
+  terminated at about 04:24Z. The
+  fourth opened a window at 04:40:03Z,
+  repeated the two assemblies, died at
+  the pin assembly on the same 403,
+  and recorded 92 refused cycles
+  before its termination at about
+  05:53Z. A diagnostic pin assembly
+  run at this hand at 05:56Z died on
+  the same 403 with the pool read at 0
+  of 5,000 (reset 06:03:28Z), which
+  named the pool, not the fault, as
+  that leg's blocker; the stale
+  rate-stage mark was removed at this
+  hand so the next launch would
+  re-wait the pool. The fifth launch
+  opened a window at 06:00:47Z, waited
+  out the reset inside its first
+  cycle, completed every assembly,
+  verified the oracle, executed the
+  final-tree gate and all fourteen
+  hostile probes whole, then lost the
+  base gate mid-build to an Operation
+  not permitted rmeta write as the
+  window closed, and was terminated at
+  about 07:53Z after refused cycles.
+  The sixth launch opened at 07:53:36Z
+  and ran every remaining stage clean
+  in one cycle, closing
+  RUN31_ALL_STAGES_DONE at 07:55:19Z.
+  BP-231's first push attempt, at
+  07:57Z, died on an HTTP 403 with the
+  pool again at 0 (reset 08:04:02Z),
+  and the verification reads behind it
+  were rate-limited in the open; the
+  head was confirmed unmoved at the
+  BP-230 commit after that reset, and
+  BP-231, BP-232, and BP-233 to BP-236
+  then pushed in order with every tree
+  assertion passing. Charges to Round
+  32. First, the read-back of this
+  round's pull request shell in its
+  true final form, on the pattern of
+  BP-230, with whatever stands armed
+  or owed at that gate measured and
+  contracted there. Second, the
+  closure gate's figures, reported on
+  the pull request record, stand as
+  this round's last word; Round 32's
+  base gate re-measures the standing
+  figures on the new base as its own
+  first family. Third, BP-48 carries
+  open by name: the absent description
+  key in Cargo.toml, the file standing
+  at exactly 170 bytes, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
