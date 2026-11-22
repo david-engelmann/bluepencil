@@ -11663,3 +11663,588 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-238. Round 32 opens on main
+  65ba9517d52f8edb846179e5901b1c04cadf
+  c835, its tree
+  af19236dad2eec0467c00f27d23ab1642de5
+  9b51 the Round 31 closure tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 417,407 bytes with
+  BP-237 its tail item, the range last
+  stated as BP-1 to BP-178 with Round
+  24's items BP-180 to BP-186, Round
+  25's items BP-187 to BP-193, Round
+  26's items BP-194 to BP-200, Round
+  27's items BP-201 to BP-207, Round
+  28's items BP-208 to BP-214, Round
+  29's items BP-215 to BP-221, Round
+  30's items BP-222 to BP-228 standing
+  after it with the repair record
+  BP-229 after them outside the range,
+  and Round 31's items BP-230 to
+  BP-237 standing after it, the README
+  rounds line at 31 of 100, Cargo.toml
+  at 170 bytes with no description
+  key. Pull request 45 stands read
+  back whole at this item, as the
+  Round 31 landing comment 7079297700
+  and BP-237's closing charges direct.
+  The pull request stands closed and
+  merged through the Trunk queue at
+  2026-11-22T12:38:54Z, its merge
+  commit
+  65ba9517d52f8edb846179e5901b1c04cadf
+  c835 standing as main, its head the
+  closure head
+  9cff8e465b81508577e4ad00ec486a65b46c
+  b1dc over base
+  7add41ab5c9b8a3a0484292edbc645a3ac08
+  d49c, and the merge tree stands
+  equal to the reviewed closure tree
+  af19236dad2eec0467c00f27d23ab1642de5
+  9b51, both read at this hand. The
+  title stands at 121 chars and 19
+  words in the standing shape, counted
+  at this hand, its range naming
+  BP-230 to BP-237. The body stands at
+  15,483 chars at this read, in the
+  form the build lane's single patch
+  left it, no owner patch standing at
+  this gate, and the bot's
+  release-notes appendix stands whole
+  at the body's foot at 459 chars from
+  its opening marker, at offset 15,024
+  in the body, its two Documentation
+  bullets each correct: the records
+  for Round 31 added, including build,
+  test, behavioral, and
+  codepoint-check results, along with
+  round closure details and items
+  carried forward; and the README's
+  completed-round count updated from
+  30 to 31 of 100. The census stands
+  exact at this read: four issue
+  comments, no reviews, no review
+  comments, and nothing posted after
+  the landing comment. The Trunk note
+  7077304430 stands at 113 chars in
+  its final post-merge form, updated
+  2026-11-22T12:38:57Z at the merge;
+  at the gate it stood at 403 chars in
+  informational form. The owner's
+  queue comment 7079174732 stands at
+  12 chars (2026-11-22T12:32:00Z), and
+  the landing comment 7079297700
+  stands last at 799 chars
+  (2026-11-22T12:42:37Z), its charges
+  standing as this round's charges:
+  this record read back whole at this
+  item, and BP-48 carried open by name
+  at BP-239. No formal review stands
+  on the pull request: CodeRabbit
+  reviewed automatically at the
+  opening and generated no actionable
+  comments, and no review comment
+  stands anywhere on it. The
+  CodeRabbit shell 7077306327 stands
+  in its true final form at this read
+  at 10,882 chars, last edited
+  2026-11-22T09:46:17Z, read whole at
+  this hand, discharging the charge
+  BP-237 laid on this read-back. Its
+  forms stand as the record gives
+  them: the build lane's read at
+  10,880 chars, last edited
+  2026-11-22T09:43:04Z, and the
+  standards hand's read at 10,882
+  chars, last edited
+  2026-11-22T09:46:17Z, the plus-two
+  re-render, the final form standing
+  unchanged from that edit through the
+  merge and this read. Every
+  disposition-bearing element in the
+  final form stands verified by this
+  whole read against the gate record:
+  no actionable comments generated in
+  the recent review; the walkthrough
+  accurate in its summary and its
+  three rows (the Round 30 follow-up,
+  the base-tree checks, and the Round
+  31 closure); the change assessment
+  at effort 2 (Simple) with Change
+  Other and its assessment commit the
+  closure head; Merge Risk standing
+  Minimal up to 9cff8 with coverage
+  source and covered commit both the
+  closure head
+  9cff8e465b81508577e4ad00ec486a65b46c
+  b1dc and kind reviewed; the four
+  pre-merge checks Passed, the Title
+  check Passed with its explanation
+  noting the title dense and bearing
+  domain-specific jargon while naming
+  the main change and standing not
+  vague or off-topic, resolving on its
+  own terms; no operational warning
+  standing in the final form; the
+  finishing touches and the Autofix
+  box unticked; and the Run ID
+  8d4a3ec7-8f84-4b9a-8fa5-67b3f0a42ca0
+  standing in the shell's own run
+  configuration block, the reviewed
+  range standing as the whole branch
+  from base
+  7add41ab5c9b8a3a0484292edbc645a3ac08
+  d49c to closure head
+  9cff8e465b81508577e4ad00ec486a65b46c
+  b1dc over the two changed files,
+  CONTRACT.md and README.md, the
+  included allowance used with none
+  remaining. Hosted CI on the closure
+  head stands read at this hand: the
+  push run 45001505949 and the
+  pull_request run 45008736655 both
+  completed with success. The gate
+  stood fully clean, as the landing
+  comment records it: spec PASS with
+  no findings, standards APPROVE with
+  no findings, and red team APPROVE
+  with no findings and nothing
+  untested, every charge re-executed
+  at the red team's own hand; no owner
+  body patch stood owed, and no limb
+  stands owed out of Round 31 into
+  this round.
+- BP-239. The post-landing material on
+  pull request 45 stands dispositioned
+  at this item, as the landing
+  comment's charges direct. The Trunk
+  note 7077304430 stands in its
+  post-merge form at 113 chars, last
+  edited 2026-11-22T12:38:57Z at the
+  merge, the landing it announced
+  standing verified at BP-238; nothing
+  stands owed on it. The landing
+  comment 7079297700 stands last on
+  the pull request at this read, its
+  first charge, this record read back
+  whole, discharged at BP-238, and its
+  second, the BP-48 carry, at this
+  item. Nothing else stands posted on
+  the pull request after the merge:
+  the census at BP-238 stands at four
+  issue comments, no reviews, and no
+  review comments, and no post-landing
+  review, comment, or reply stands
+  anywhere on the record beyond the
+  landing comment itself, so the
+  charge's remainder stands discharged
+  as empty. Round 31's own gates stand
+  closed on the record: the three
+  review reports stand completed on
+  the review record, the spec report
+  at 9,482 bytes, the standards report
+  at 9,602, and the red team's at
+  17,280, every verdict clean with no
+  findings on any axis and nothing
+  left untested at the red team's
+  hand, and no process referencing any
+  Round 31 scratch stands in the
+  process table at this lane's
+  entering check; nothing stands armed
+  and nothing stands owed from Round
+  31's gates. BP-48 stands carried
+  open by name to Round 33, untouched
+  this round as every round:
+  Cargo.toml stands at 170 bytes with
+  no description key at this lane's
+  entering check, the canonical
+  description line standing as the
+  recommendation already routed to the
+  main chat, its setting an owner's
+  act, not a build lane's.
+- - BP-240. The base gate, executed on
+  the Round 32 base tree. The base is
+  main at
+  65ba9517d52f8edb846179e5901b1c04cadf
+  c835, tree
+  af19236dad2eec0467c00f27d23ab1642de5
+  9b51, verified live at this round's
+  entry. The tree was extracted
+  through the Data API by
+  assemble32.py (28 blobs, 0
+  mismatches, to the base worktree at
+  the lane path, the asm stage log of
+  the relaunched runner at 17:32Z on
+  2026-11-22); the same stage's git
+  step had fetched main and added that
+  worktree on refine/bp-round32 at the
+  base, and the extraction verified
+  the tree it stands on blob by blob.
+  The oracle was verified in the same
+  stage: the extraction at bp-oracle
+  against commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e, at 19 blobs, 0 mismatches
+  (oracle-verify.log). The harness
+  copy h-base32 was prepared under the
+  standing prep law, rt_position.py in
+  the copy from the start, the seven
+  harness files' md5s verified against
+  the figures recorded at this round's
+  entry (battery21.py
+  fbbe91ffaa756094ebea480fd5865906,
+  split_probe21.py
+  cb87cded93c3b5754a7c84c6f81b61f6,
+  differential21.py
+  9f346303a241cdef3c863713cdd68503,
+  rt_position.py
+  087b7373ecb3a7969e32e678052cc525,
+  bp10_clock.so
+  8edb43b98c3234ac47d041c02a25f492,
+  bp10_urandom.so
+  19875fdc80c29455282e7832cdcf5422,
+  bp10_ustream.so
+  2719afc20af3aa2a765180311c74e4e4)
+  and the fixtures cmp-verified
+  against the tree (the runner log's
+  prep line). The cargo gate on the
+  base extraction,
+  RUSTUP_TOOLCHAIN=1.91 and offline:
+  build finished, clippy with warnings
+  denied clean, fmt clean, and the
+  test run paired mechanically by
+  pair32.py at library 3 passed,
+  binary 0 passed, diff 18 passed,
+  inventory 18 passed, proposals 25
+  passed, doc 0 passed, TOTAL 64
+  passed, 0 failed, 0 ignored. The
+  built binary at the h-base32 harness
+  path carries md5
+  d7cf80fe4770809418e809b9bfa0778b,
+  the contracted figure, reproduced at
+  this round's base harness path and
+  contracted at build-path scope only.
+  The gate's own attempt record,
+  counted nowhere: the first runner
+  launch queued on the build slot for
+  3 hours 7 minutes behind the
+  onrecord hold and the secondtake red
+  team's gates, its flock firing at
+  about 16:01Z; it then cycled its
+  pre-log write probes for about 80
+  minutes in the write fault's hard
+  wave, no byte of its output ever
+  landing, and died silently between
+  the 17:18Z and 17:31Z checks with no
+  stage completed and nothing banked
+  to lose; the relaunched runner,
+  under a fresh flock that acquired
+  the slot at once in an open write
+  window, ran the whole pre-closure
+  set clean in a single cycle, 17:32Z
+  to 17:38Z, and the figures above are
+  that cycle's. - BP-241. The battery
+  and the split probe, executed on the
+  base tree's build. The battery
+  (battery21.py against the h-base32
+  harness, the BP-138-qualified
+  harness) ran its 44 cells at 0
+  failures: walk 4, entropy 4,
+  precedence 7, version 23, guard 6,
+  the contracted composition, each
+  family counted from the run's own
+  PASS lines. The guard cells stand in
+  the BP-163 shape: around each of the
+  four input-as-target cells, the
+  per-side before and after snapshots
+  are byte-identical on both the
+  oracle side and the rust side
+  (tree-same=True in every guard line
+  of base32-battery.log), so the
+  refusal is proven to leave the input
+  trees untouched, not merely to have
+  erred; the claim is scoped to
+  exactly those four tested cells. The
+  split probe (split_probe21.py, same
+  harness) walked the symlink chain
+  lengths on both verbs: at 39 and 40
+  links propose and diff are
+  paired-identical between oracle and
+  rust, both rc 0; at 41 and 42 links
+  the pair splits on both verbs, the
+  oracle writing through the chain at
+  rc 0 while the rust side refuses at
+  rc 1 with stderr byte-exact "error,
+  bluepencil never writes to its
+  inputs" and the chain head still a
+  link. Split probe failures: 0
+  (base32-split.log). Both executions
+  ran in the relaunched runner's
+  single cycle, 2026-11-22, on the
+  base gate's build of BP-240. -
+  BP-242. The differential, executed
+  on the base tree's build.
+  differential21.py, on the harness
+  qualified at BP-138 (the
+  bp21-scratch harness, its seven
+  files' md5s verified at this round's
+  entry and again at the h-base32 prep
+  in BP-240), ran the oracle and the
+  rust binary side by side through 16
+  cases and 220 steps at 0 failures
+  (base32-diff.log, whose closing line
+  carries the three figures). The case
+  set is the standing one, from
+  baseline-flow at 9 steps and usage
+  at 16 through version-grid at 38 to
+  symlink-inputs and repeat-runs at 6
+  each and deep-nesting at 3; every
+  step's paired outputs agreed, or the
+  case is not in the count. The
+  execution ran in the relaunched
+  runner's single cycle, 2026-11-22,
+  on the base gate's build of BP-240.
+  - BP-243. The pin suite, the golden
+  tape, and the base codepoint scan.
+  The pin tree was assembled through
+  the Data API by assemble32.py from
+  flighttape at pin
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e, tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e, at exactly 50 blobs, 0
+  mismatches (asm-pin.log), in the
+  relaunched runner's asm stage. The
+  pin suite on that assembly: 241
+  tests passed, 0 failed, summed at
+  this hand from the 19 test-result
+  lines of pin-test.log, every line
+  ok. The golden tape was executed
+  against the pin build: the tape
+  stands at 1,663 bytes with SHA-256
+  digest
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  digest matches, and verification
+  accepts (golden.log). The codepoint
+  scan of the base tree, by Python
+  only and never shell grep, counted
+  its planted control first: a control
+  file carrying exactly 1 U+2014 and 2
+  U+2013 read back at exactly 1 and 2,
+  so the scan is proven able to see
+  what it then reports absent; the
+  assembled worktree's 29 files (the
+  tree's 28 files and the linked
+  worktree's .git pointer file) then
+  scanned at U+2014 0 and U+2013 0
+  (scan-base32.log). All three
+  executions ran in the relaunched
+  runner's single cycle, the assembly
+  in its asm stage and the suite,
+  tape, and scan in their own stages,
+  2026-11-22.
+- - BP-244. Closure. This commit
+  closes Round 32 and moves the README
+  rounds line from 31 of 100 to 32 of
+  100; that line moves in this commit
+  only. The round's chain over the
+  base
+  65ba9517d52f8edb846179e5901b1c04cadf
+  c835 stands at four commits, each
+  carrying the Signed-off-by trailer
+  in its message: BP-238
+  (0c9a8a5b980896ae8b14585c536e6a26399
+  36e9f, the contract growing 417,407
+  to 422,787 bytes), BP-239
+  (4e03b08f7713ec6135579f31a6916e47398
+  cdda2, to 424,512 bytes), BP-240 to
+  BP-243 in one commit
+  (3b35f759148164efed255622f1f3738b535
+  b1c1c, to 430,824 bytes), and this
+  closure commit. The round's
+  substance stands in the items
+  themselves: PR 45 read back whole,
+  its CodeRabbit shell contracted in
+  its true final form and its gate
+  graded fully clean on all three axes
+  (BP-238), the post-landing material
+  dispositioned, Round 31's three
+  review reports closed, and BP-48
+  carried (BP-239), and the standing
+  family executed on the base tree
+  (BP-240 to BP-243: cargo 64 in the
+  paired split with the binary digest
+  reproduced and the oracle verified
+  blob for blob, battery 44 cells at 0
+  failures, the split probe splitting
+  at 41, the differential at 16 cases
+  and 220 steps, the pin suite at 241,
+  the golden tape's digest matching,
+  the codepoint scan clean against its
+  planted control). The closure gate
+  on this commit's tree executes after
+  this item lands and reports on the
+  pull request record. The round's
+  whole attempt history, each event
+  counted nowhere. At entry on
+  2026-11-22 the write fault stood in
+  a hard wave: the read-back's first
+  version wrote its record through
+  files that landed at 0 bytes
+  repeatedly, and the run was killed
+  and restructured to direct stdout
+  capture, the route that held; the
+  scratch saves stand deferred and the
+  figures stand contracted from the
+  capture. The fleet REST pool read at
+  342 of 5,000 at the first read
+  (about 12:52Z) and 305 at the second
+  (about 12:56Z), reset 13:04:53Z; the
+  lane waited out the reset on a
+  single probe (4,978 at 13:06Z)
+  before pushing, and BP-238 and
+  BP-239 then pushed clean with every
+  tree assertion passing. The first
+  git fetch for the lane worktree died
+  in index-pack with a write error,
+  Operation not permitted, the base
+  object standing absent from the
+  local clone; the round's method
+  stayed server-side, and the
+  relaunched runner's git step later
+  fetched clean and added the worktree
+  at the lane path. A convenience copy
+  of the PR 45 body into this round's
+  scratch failed with Operation not
+  permitted during the wave and stands
+  unmade, its source intact in the
+  Round 31 scratch. The gate runner
+  took two launches. The first
+  (12:54Z) queued on the build slot
+  behind the onrecord battery hold and
+  the secondtake red team's gates;
+  forensics at 14:32Z showed the
+  onrecord flock childless and off the
+  lock file and the kernel lock table
+  carrying no entry for the lock's
+  inode while both queued flocks stood
+  blocked below the storage layer,
+  transient holders taking and
+  releasing the lock in the meantime;
+  an orphaning hypothesis for this
+  lane's queue entry was tested at
+  16:24Z and disproven, the runner
+  standing in the process table as its
+  flock's child, the flock having
+  fired at about 16:01Z after 3 hours
+  7 minutes queued. The runner then
+  cycled its pre-log write probes for
+  about 80 minutes in the hard wave,
+  no byte of its output ever landing,
+  and died silently between the 17:18Z
+  and 17:31Z checks with no stage
+  completed and nothing banked to
+  lose. The second launch (17:32Z),
+  under a fresh flock, acquired the
+  slot at once in an open write window
+  and ran every pre-closure stage
+  clean in a single cycle, closing
+  RUN32_ALL_STAGES_DONE at 17:38:31Z.
+  BP-240 to BP-243 then pushed in
+  order with every tree assertion
+  passing. Charges to Round 33. First,
+  the read-back of this round's pull
+  request shell in its true final
+  form, on the pattern of BP-238, with
+  whatever stands armed or owed at
+  that gate measured and contracted
+  there. Second, the closure gate's
+  figures, reported on the pull
+  request record, stand as this
+  round's last word; Round 33's base
+  gate re-measures the standing
+  figures on the new base as its own
+  first family. Third, BP-48 carries
+  open by name: the absent description
+  key in Cargo.toml, the file standing
+  at exactly 170 bytes, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
+- BP-245. Repair record, qualifying
+  BP-241 and BP-242 under the standing
+  convention, both unrewritten. The
+  spec axis of this round's gate, at
+  its finding F-2, sustains CodeRabbit
+  comment 4660033447 in part, and this
+  record answers it. BP-241 calls the
+  battery harness "the
+  BP-138-qualified harness", and
+  BP-242 calls the differential's
+  harness "the harness qualified at
+  BP-138". BP-138, read whole,
+  qualifies one thing: BP-136's
+  differential account, settling that
+  the rebuilt harness's sixteen cases
+  are a fresh topical partition, not
+  the historical differential's case
+  set continued, and that its figures
+  stand as the rebuilt harness's own
+  measurement, not as the historical
+  differential's continuation, with
+  the rebuilt harness's attempt
+  history disclosed beside it. It
+  qualifies the differential's figures
+  and their provenance, not the
+  harness as an artifact, and it does
+  not qualify the battery at all; its
+  only battery sentence states that
+  Round 18's battery covered the
+  surfaces that round's charges named
+  independently of the differential.
+  The two phrases therefore stand
+  narrowed. At BP-241, the battery
+  harness is the line's standing
+  harness copy, its identity standing
+  on the per-round prep verification
+  and on BP-233's record of the seven
+  harness files' md5s, the md5s
+  verified again at this round's entry
+  and at the h-base32 prep in BP-240,
+  and its 44 cells stand as this
+  round's own measurement; no
+  qualification by BP-138 stands
+  behind it. At BP-242, what BP-138
+  qualifies is the differential's
+  figures, as a fresh topical
+  partition measurement; the harness
+  artifact that produced them stands
+  identified, as BP-242 itself states,
+  by its seven files' md5s against
+  BP-233's record, not by BP-138.
+  Neither item claims the sixteen
+  cases continue the historical
+  differential's case set, and that
+  settlement stands untouched; no
+  measured figure moves, the battery's
+  44 cells and the differential's 16
+  cases and 220 steps standing as
+  measured. The body's Step 0
+  disposition of the comment answered
+  the differential limb on its
+  fresh-partition and prefix-law
+  grounds and did not reach the
+  battery limb; this record supplies
+  the qualification for both. This
+  record stands outside the contract's
+  Status range, as the earlier repair
+  records do; the range line does not
+  move, and no other statement at
+  BP-241 or BP-242 is qualified.
