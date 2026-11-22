@@ -12248,3 +12248,209 @@ in the round dossier, never a silent approximation.
   records do; the range line does not
   move, and no other statement at
   BP-241 or BP-242 is qualified.
+- BP-246. Round 33 opens on main
+  0d05d012b703da56d3d7670a8d54b0aaafe2
+  e4ac, its tree
+  c80f9078b1d9c0bb2ad78e117f62d305f797
+  7c86 the Round 32 repair tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 437,915 bytes with
+  BP-245 its tail item, the range last
+  stated as BP-1 to BP-178 with Round
+  24's items BP-180 to BP-186, Round
+  25's items BP-187 to BP-193, Round
+  26's items BP-194 to BP-200, Round
+  27's items BP-201 to BP-207, Round
+  28's items BP-208 to BP-214, Round
+  29's items BP-215 to BP-221, Round
+  30's items BP-222 to BP-228 standing
+  after it with the repair record
+  BP-229 after them outside the range,
+  Round 31's items BP-230 to BP-237
+  standing after it, and Round 32's
+  items BP-238 to BP-244 standing
+  after them with the repair record
+  BP-245 after them outside the range,
+  the README rounds line at 32 of 100,
+  Cargo.toml at 170 bytes with no
+  description key. Pull request 47
+  stands read back whole at this item,
+  as the Round 32 landing comment
+  7086995240 and BP-244's closing
+  charges direct. The pull request
+  stands closed and merged through the
+  Trunk queue at 2026-11-22T22:37:13Z,
+  its merge commit
+  0d05d012b703da56d3d7670a8d54b0aaafe2
+  e4ac standing as main, its head the
+  repair head
+  1f2e7595c6fa440bc858cd3e9dc4fc9a003d
+  cd5a over the closure head
+  dc73531aafea045f8020c5288b44e06fd51a
+  0109 over base
+  65ba9517d52f8edb846179e5901b1c04cadf
+  c835, and the merge tree stands
+  equal to the reviewed repair tree
+  c80f9078b1d9c0bb2ad78e117f62d305f797
+  7c86, both read at this hand. The
+  title stands at 121 chars and 19
+  words in the standing shape, counted
+  at this hand, its range naming
+  BP-238 to BP-244. The body stands at
+  15,606 chars at this read, in the
+  form the owner's gate patch left it,
+  an owner patch standing at this
+  gate, and the bot's release-notes
+  appendix stands whole at the body's
+  foot at 683 chars from its opening
+  marker, at offset 14,923 in the
+  body, its four Documentation bullets
+  each correct: the README's progress
+  count from 31 to 32 of 100; a Round
+  32 record summarizing review
+  outcomes, verification results,
+  behavioral measurements, and
+  follow-up disposition; the listed
+  checks recorded as completed,
+  including 64 passing tests and a
+  clean codepoint scan; and the
+  clarification that a qualification
+  applies to the differential
+  measurement only, the behavioral
+  battery results and reported counts
+  unchanged. The census stands exact
+  at this read: four issue comments,
+  one review, and one review comment,
+  and nothing posted after the landing
+  comment. The Trunk note 7085785410
+  stands at 113 chars in its final
+  post-merge form, updated
+  2026-11-22T22:37:16Z at the merge.
+  The owner's queue comment 7086860062
+  stands at 12 chars
+  (2026-11-22T22:29:52Z), and the
+  landing comment 7086995240 stands
+  last at 1,368 chars
+  (2026-11-22T22:40:33Z), its charges
+  standing as this round's charges:
+  this record read back whole at this
+  item, Round 33's base gate
+  re-measuring the standing figures as
+  its own first family at BP-248 to
+  BP-251, and BP-48 carried open by
+  name at BP-247. A formal review
+  stands on the pull request:
+  CodeRabbit reviewed automatically at
+  the opening, and its formal review
+  6014544262 (COMMENTED, submitted
+  2026-11-22T21:09:07Z) posts one
+  actionable comment, 4660033447
+  (Minor, Functional Correctness), on
+  CONTRACT.md at line 11995, read
+  whole at this hand with no reply
+  standing on it; the review's
+  reviewed range stands at
+  65ba9517d52f8edb846179e5901b1c04cadf
+  c835 to
+  dc73531aafea045f8020c5288b44e06fd51a
+  0109 over CONTRACT.md and README.md,
+  its run configuration carrying Run
+  ID
+  4598bbea-86af-4ab2-8fc3-ba30919fbb4c
+  , and the included allowance used
+  with none remaining. The CodeRabbit
+  shell 7085787835 stands in its true
+  final form at this read at 12,197
+  chars, last edited
+  2026-11-22T22:23:51Z, read whole at
+  this hand, discharging the charge
+  BP-244 laid and the landing comment
+  repeated: no re-render stands after
+  that edit at this read, the figure
+  standing unchanged from the landing
+  verification. The shell is the
+  repair head's render: its
+  walkthrough stands accurate in its
+  summary and its three rows (the PR
+  45 read-back and disposition; the
+  base-tree verification results, the
+  second row recording that the
+  appended repair record clarifies
+  that BP-138 qualifies the
+  differential measurement, not the
+  battery harness or its results, with
+  recorded totals unchanged; and the
+  Round 32 closure), its change
+  assessment effort 2 (Simple) at
+  about 10 minutes with Change Other,
+  its assessment commit the repair
+  head
+  1f2e7595c6fa440bc858cd3e9dc4fc9a003d
+  cd5a, Merge Risk Minimal up to
+  `1f2e7` with coverage source and
+  covered commit both the repair head,
+  kind reviewed, its Merge Risk
+  paragraph stating that the earlier
+  wording ambiguity about the
+  differential harness is now
+  addressed by the BP-245 repair
+  record, its possibly related pull
+  request, PR 45, the right one, its
+  four pre-merge checks Passed with
+  the Title check Passed on its own
+  terms, no actionable comments
+  generated in its recent review, no
+  operational warning standing, the
+  finishing touches and Autofix boxes
+  unticked, Run ID
+  99ee3ff9-a6fd-4ffe-96a8-b578c40819bf
+  standing in the shell's own run
+  configuration, its reviewed range
+  dc73531aafea045f8020c5288b44e06fd51a
+  0109 to
+  1f2e7595c6fa440bc858cd3e9dc4fc9a003d
+  cd5a over CONTRACT.md, and the
+  included allowance used with none
+  remaining after that review. The
+  gate stands graded in the open at
+  this item: all three axes returned
+  REPAIR, the spec axis on two Minors,
+  the standards axis on one Minor, and
+  the red team on one Minor, the
+  appendix offset pair standing
+  convergent at all three hands; the
+  owner's body patch corrected that
+  pair on the body itself, and repair
+  record BP-245 discharged the spec
+  axis's second finding, sustaining
+  comment 4660033447 in part and
+  narrowing the harness phrases at
+  BP-241 and BP-242 to what BP-138
+  qualifies, the differential's
+  figures as a fresh-partition
+  measurement, the battery's harness
+  standing on the per-round prep
+  verification and BP-233's md5
+  record, both items unrewritten, with
+  the delta reviews PASS on the spec
+  axis and APPROVE on the standards
+  axis over the repair; the build
+  lane's not-taken disposition of the
+  comment, recorded on the body's face
+  at the opening, stands corrected on
+  the record by BP-245. The red team's
+  own harness re-executions stood
+  untested at its hand under the hard
+  write-fault wave, corroborated by
+  the build lane's stage logs read
+  whole, and stand charged to Round
+  33's red team by name on the landing
+  comment; nothing else stands owed
+  from Round 32's gate at this item,
+  and the landing stands verified,
+  merge
+  0d05d012b703da56d3d7670a8d54b0aaafe2
+  e4ac standing as main with its tree
+  equal to the reviewed repair tree.
