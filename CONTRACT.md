@@ -12718,3 +12718,112 @@ in the round dossier, never a silent approximation.
   in its asm stage and the suite,
   tape, and scan in their own stages,
   2026-11-22.
+- BP-252. Closure. This commit closes
+  Round 33 and moves the README rounds
+  line from 32 of 100 to 33 of 100;
+  that line moves in this commit only.
+  The contract stands at BP-1 to
+  BP-252, with the repair records
+  BP-138, BP-146, BP-154, BP-155,
+  BP-163, BP-171, BP-179, BP-229, and
+  BP-245 outside the range, at 458,031
+  bytes at this closure. The round ran
+  in one seating, this build lane, and
+  no seating spawned a subagent or a
+  review lane and no seating merged
+  anything; the merge is the owner's
+  act alone. The round's chain over
+  the base
+  0d05d012b703da56d3d7670a8d54b0aaafe2
+  e4ac stands at four commits, each
+  carrying the Signed-off-by trailer
+  in its message: BP-246
+  (73d1206d7c84f13d265ca76f2b33c643be7
+  ae63e, the contract growing 437,915
+  to 445,040 bytes), BP-247
+  (ab384986e75f713f986e75082e11a9fe60e
+  3d217, to 447,447 bytes), BP-248 to
+  BP-251 in one commit
+  (e68178578e849ccede08f0e3c8605a89cc0
+  2b860, to 454,182 bytes), and this
+  closure commit. The round's
+  substance stands in the items
+  themselves: PR 47 read back whole,
+  its CodeRabbit shell contracted in
+  its true final form and its gate
+  graded in the open on all three axes
+  (BP-246), the post-landing material
+  dispositioned, Round 32's five
+  review reports closed, and BP-48
+  carried (BP-247), and the standing
+  family re-measured fresh on the new
+  base as BP-244 charged (BP-248 to
+  BP-251: cargo 64 in the paired split
+  with the binary digest reproduced
+  and the oracle verified blob for
+  blob, battery 44 cells at 0
+  failures, the split probe splitting
+  at 41, the differential at 16 cases
+  and 220 steps under BP-138's
+  qualification as BP-245 restated it,
+  the pin suite at 241, the golden
+  tape's digest matching, the
+  codepoint scan clean against its
+  planted control). The closure gate
+  on this commit's tree executes after
+  this item lands and reports on the
+  pull request record. The round's
+  whole attempt history, each event
+  counted nowhere. At entry on
+  2026-11-22 the write fault stood in
+  a hard wave: a verified-write probe
+  at this hand failed sixty retries
+  over 300 seconds, the PR 47
+  read-back's first banking write was
+  refused with Operation not permitted
+  and the read was restructured to
+  direct stdout capture, and the
+  lane's text banking ran through the
+  file tools while the pool read at
+  1,585 of 5,000 at the entering
+  check. BP-246 and BP-247 pushed
+  clean with every tree assertion
+  passing. The gate runner took two
+  launches. The first (22:55Z) held
+  the build slot and cycled fifteen
+  refused pre-log write probes in the
+  hard wave, no byte of its output
+  ever landing, and died in the
+  runtime restart at about 23:07Z with
+  no stage completed and nothing
+  banked to lose. The second launch
+  (23:09Z), under a fresh flock,
+  acquired the slot at once in the
+  post-restart open window and ran
+  every pre-closure stage clean in a
+  single cycle, closing
+  RUN33_ALL_STAGES_DONE at 23:16:11Z,
+  its rate stage reading the pool
+  recovered at 4,888 of 5,000. BP-248
+  to BP-251 then pushed in order with
+  every tree assertion passing.
+  Charges to Round 34. First, the
+  read-back of this round's pull
+  request shell in its true final
+  form, on the pattern of BP-246, with
+  whatever stands armed or owed at
+  that gate measured and contracted
+  there. Second, the closure gate's
+  figures, reported on the pull
+  request record, stand as this
+  round's last word; Round 34's base
+  gate re-measures the standing
+  figures on the new base as its own
+  first family. Third, BP-48 carries
+  open by name: the absent description
+  key in Cargo.toml, the file standing
+  at exactly 170 bytes, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
