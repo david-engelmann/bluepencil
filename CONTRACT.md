@@ -11308,3 +11308,53 @@ in the round dossier, never a silent approximation.
   not the device's; on the one cycle
   where the ground held, both executed
   clean at the first asking.
+- BP-232. The post-landing material on
+  pull request 43 stands dispositioned
+  at this item, as the landing
+  comment's charges direct. The Trunk
+  note 7070271914 stands in its
+  post-merge form at 113 chars, last
+  edited 2026-11-21T23:46:08Z at the
+  merge, the landing it announced
+  standing verified at BP-230; nothing
+  stands owed on it. The landing
+  comment 7071107573 stands last on
+  the pull request at this read, its
+  first charge, the shell's true final
+  form, discharged at BP-230, its
+  second, the red team's two untested
+  limbs, at BP-231, and its third at
+  this item. Nothing else stands
+  posted on the pull request after the
+  merge: the census at BP-230 stands
+  at four issue comments, no reviews,
+  and no review comments, and no
+  post-landing review, comment, or
+  reply stands anywhere on the record
+  beyond the landing comment itself,
+  so the charge's remainder stands
+  discharged as empty. Round 30's own
+  gates stand closed on the record:
+  the five review reports stand
+  completed on the review record, the
+  spec report at 15,723 bytes, the
+  standards report at 15,633, the red
+  team's at 15,562, the spec delta
+  report at 6,796, and the standards
+  delta report at 7,897, and no
+  process referencing any Round 30
+  scratch stands in the process table
+  at this lane's entering check;
+  nothing stands armed and nothing
+  stands owed from Round 30's gates
+  beyond the two untested limbs BP-231
+  discharges. BP-48 stands carried
+  open by name to Round 32, untouched
+  this round as every round:
+  Cargo.toml stands at 170 bytes with
+  no description key at this lane's
+  entering check, the canonical
+  description line standing as the
+  recommendation already routed to the
+  main chat, its setting an owner's
+  act, not a build lane's.
