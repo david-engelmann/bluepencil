@@ -13204,3 +13204,125 @@ in the round dossier, never a silent approximation.
   stands over the base tree at 0
   U+2014 and 0 U+2013 across its 29
   files.
+- BP-259. Closure. This commit closes
+  Round 34 and moves the README rounds
+  line from 33 of 100 to 34 of 100;
+  that line moves in this commit only.
+  The contract stands at BP-1 to
+  BP-259, with the repair records
+  BP-138, BP-146, BP-154, BP-155,
+  BP-163, BP-171, BP-179, BP-229, and
+  BP-245 outside the range, at 475,529
+  bytes at this closure. The round ran
+  in one seating, this build lane, and
+  no seating spawned a subagent or a
+  review lane and no seating merged
+  anything; the merge is the owner's
+  act alone. The round's chain over
+  the base
+  3d1b716d6a51e3285d8e6c8ba59943cfdc68
+  74e6 stands at four commits, each
+  carrying the Signed-off-by trailer
+  in its message: BP-253
+  (ebabeb8bfc75db133bc4188545823c75c0b
+  32f02, the contract growing 458,031
+  to 464,935 bytes), BP-254
+  (866cd0b4ea27d1b1812ad1e917e34b43d07
+  98a0f, to 467,282 bytes), BP-255 to
+  BP-258 in one commit
+  (aadf6440084cf3fbd58d5d2ab48ff4be89d
+  3ae8a, to 471,174 bytes), and this
+  closure commit. The round's
+  substance stands in the items
+  themselves: PR 49 read back whole,
+  its CodeRabbit shell contracted in
+  its true final form and its gate
+  graded in the open on all three axes
+  (BP-253), the post-landing material
+  dispositioned, Round 33's three
+  review reports closed, and BP-48
+  carried (BP-254), and the standing
+  family re-measured fresh on the new
+  base as the landing comment charged
+  (BP-255 to BP-258: cargo 64 in the
+  paired split with the binary digest
+  reproduced and the oracle verified
+  blob for blob, battery 44 cells at 0
+  failures, the split probe splitting
+  at 41, the differential at 16 cases
+  and 220 steps under BP-138's
+  qualification as BP-245 restated it,
+  the pin suite at 241, the golden
+  tape's digest matching, the
+  codepoint scan clean against its
+  planted control). The closure gate
+  on this commit's tree executes after
+  this item lands and reports on the
+  pull request record. The round's
+  whole attempt history, each event
+  counted nowhere. At entry on
+  2026-11-23 the write fault stood in
+  a hard wave: verified-write probes
+  at this hand to /tmp and to the
+  workspace were both refused with
+  Operation not permitted at the
+  entering check, the PR 49 read-back
+  ran to direct stdout capture from
+  the start, and the lane's text
+  banking ran through the file tools.
+  The fleet REST pool read at 394 of
+  5,000 after the read-back and
+  drained to 0 during sibling work,
+  its reset standing at 04:08:24Z; API
+  work paused at the wall and resumed
+  on the single reset probe reading
+  4,985 of 5,000, and one shell
+  re-check call died against the
+  drained pool, the one clause it
+  would have verified struck from
+  BP-253 rather than asserted
+  unverified. BP-253 and BP-254 pushed
+  clean after the reset with every
+  tree assertion passing. The base
+  gate runner took two launches. The
+  first (03:48Z) queued on the build
+  slot behind the secondtake Round 33
+  gate hold, which held the slot from
+  03:35Z with its cargo segment
+  retrying after an exit 101, and the
+  onrecord closure build ahead of it;
+  the flock was granted at about
+  05:24Z as a runtime restart cleared
+  the queue, its first pre-log write
+  probe was refused in the wave, and
+  that restart killed it with no stage
+  completed and nothing banked to
+  lose. The second launch (05:25Z),
+  under a fresh flock, opened its
+  window at the first pre-log probe
+  and ran every stage clean in a
+  single cycle, closing
+  RUN34_ALL_STAGES_DONE at 05:36:25Z,
+  its rate stage reading the pool at
+  3,563 of 5,000. BP-255 to BP-258
+  then pushed in order with every tree
+  assertion passing. Charges to Round
+  35. First, the read-back of this
+  round's pull request shell in its
+  true final form, on the pattern of
+  BP-253, with whatever stands armed
+  or owed at that gate measured and
+  contracted there. Second, the
+  closure gate's figures, reported on
+  the pull request record, stand as
+  this round's last word; Round 35's
+  base gate re-measures the standing
+  figures on the new base as its own
+  first family. Third, BP-48 carries
+  open by name: the absent description
+  key in Cargo.toml, the file standing
+  at exactly 170 bytes, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
