@@ -13832,3 +13832,53 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-267. Repair record, correcting
+  BP-265 under the standing
+  convention, BP-265 unrewritten. The
+  standards axis of this round's gate,
+  at its finding S-1, sustains one
+  Minor against BP-265, and this
+  record answers it. BP-265 states
+  that the base codepoint scan stands
+  over the base tree at 0 U+2014 and 0
+  U+2013 across its 29 files, and the
+  Verified block of pull request 53's
+  body repeats the figure. The count
+  stands corrected here: the base
+  tree, the tree
+  15499bd0dfb87ec78b2a5d154edac3f136f9
+  ab40 of the base commit
+  f7f042b8d2b7573a3596891200a5467bbdeb
+  d5cb, carries 28 files, its
+  recursive listing standing at 28
+  blobs and 6 tree entries, measured
+  at the hand that appends this
+  record, and BP-260 contracts the
+  same tree at 28 blobs in this same
+  round; the figure 29 has no source
+  in the tree. The record carries a
+  correct form for the nearby
+  situation, a scan over an assembled
+  worktree holding one file beyond the
+  tree's own, stated in earlier items
+  as the assembled worktree's 29
+  files; BP-265 does not use that form
+  and instead attributes the 29 to the
+  tree, and that attribution alone
+  stands corrected. The scan's
+  substance is unaffected: its result
+  stands at 0 U+2014 and 0 U+2013 over
+  the tree's actual 28 files, verified
+  at three hands, the build lane's,
+  the standards reviewer's, and the
+  red team's, and no measured figure
+  and no gate figure moves. The body's
+  figure stands corrected by this
+  record with it. This record stands
+  outside the contract's Status range,
+  as the earlier repair records do,
+  the tenth repair record, the range
+  standing at BP-1 to BP-266; the
+  range line does not move, and no
+  other statement at BP-265 is
+  qualified.
