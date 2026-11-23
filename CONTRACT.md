@@ -14312,3 +14312,135 @@ in the round dossier, never a silent approximation.
   from, where BP-265 stated 29 files
   against the base tree's 28 before
   BP-267 discharged it.
+- BP-274. Closure. This commit closes
+  Round 36 and moves the README rounds
+  line from 35 of 100 to 36 of 100;
+  that line moves in this commit only.
+  The contract stands at BP-1 to
+  BP-274, with the repair records
+  BP-138, BP-146, BP-154, BP-155,
+  BP-163, BP-171, BP-179, BP-229,
+  BP-245, and BP-267 outside the
+  range, at 514,677 bytes at this
+  closure. The round ran in one
+  seating, this build lane, and the
+  seating spawned no subagent, ran and
+  seated no review, and merged
+  nothing; the merge is the owner's
+  act alone. The round's chain over
+  the base
+  4faba1fc706fd97200a81803dfd9bd857b61
+  e259 stands at four commits, each
+  carrying the Signed-off-by trailer
+  in its message: BP-268
+  (b752abde52404b51d41bde2ea06fdb90481
+  28f9f, the contract growing 494,962
+  to 502,564 bytes), BP-269
+  (289c6eba7e7e3e383e579025871a9513511
+  3cc4c, to 505,578 bytes), BP-270 to
+  BP-273 in one commit
+  (73ab093afe5bfd0be01df159e032f9da87a
+  26e0d, to 509,957 bytes), and this
+  closure commit. The round's
+  substance stands in the items
+  themselves: PR 53 read back whole
+  over both its heads, its CodeRabbit
+  shell contracted in its true final
+  form at 11,486 characters, its
+  census verified at this hand (four
+  issue comments, no formal review, no
+  review comments, nothing posted
+  after the landing comment), its gate
+  graded in the open (spec PASS, red
+  team APPROVE with every limb
+  executed and nothing charged
+  forward, standards REPAIR on the one
+  scan figure, discharged inside the
+  round by repair record BP-267 with
+  both delta reviews clean), and its
+  merge tree standing equal to the
+  reviewed repair tree (BP-268), the
+  post-landing material dispositioned
+  and BP-48 carried by name (BP-269),
+  and the standing family re-measured
+  fresh on the new base as BP-266 and
+  the landing comment charged (BP-270
+  to BP-273: the base tree assembled
+  blob for blob into a plain directory
+  holding exactly its own 28 files,
+  the oracle verified 19 blobs before
+  reliance, cargo 64 in the paired
+  split with the binary digest
+  reproduced, battery 44 cells at 0
+  failures, the split probe splitting
+  at 41, the differential at 16 cases
+  and 220 steps under BP-138's
+  qualification as BP-245 restated it,
+  the pin suite at 241, the golden
+  tape's digest matching, the
+  codepoint scan clean against its
+  planted control over the tree's own
+  28 files). The closure gate on this
+  commit's tree executes after this
+  item lands and reports on the pull
+  request record. The round's whole
+  attempt history, each event counted
+  nowhere. At entry on 2026-11-23 the
+  write fault stood active at this
+  hand: verified-write probes to /tmp
+  and to the workspace both refused at
+  about 14:12Z, and a git fetch of the
+  base object through the deploy key
+  was refused on loose-object writes
+  at about 14:15Z, so no git worktree
+  stood at entry and the round's
+  pushes proceeded on the server-side
+  route, its text banking running
+  through the file tools with each
+  write verified as it landed. The
+  fleet REST pool read 375 of 5,000 at
+  the first entering check, its reset
+  standing at 14:10:30Z, and 4,758
+  after that reset; it never reached
+  the wall again this round. BP-268
+  and BP-269 pushed in order before
+  the gate, each with every tree
+  assertion passing. The base gate
+  runner took two launches: the first,
+  under the build slot flock at
+  14:16Z, queued behind a sibling
+  lane's hold standing from 13:44Z and
+  a second sibling gate hold queued at
+  the same minute, never acquired the
+  slot, and was killed with the whole
+  queue by a runtime restart at about
+  15:26Z with no stage banked; the
+  second, relaunched at 15:28Z in the
+  post-restart window, acquired the
+  slot at once, the git fetch landed
+  and the round's worktree stood up at
+  the base in that window, and every
+  stage ran clean in a single cycle,
+  closing all stages done at
+  15:37:26Z. BP-270 to BP-273 then
+  pushed with every tree assertion
+  passing. Charges to Round 37. First,
+  the read-back of this round's pull
+  request shell in its true final
+  form, on the pattern of BP-260, with
+  whatever stands armed or owed at
+  that gate measured and contracted
+  there. Second, the closure gate's
+  figures, reported on the pull
+  request record, stand as this
+  round's last word; Round 37's base
+  gate re-measures the standing
+  figures on the new base as its own
+  first family. Third, BP-48 carries
+  open by name: the absent description
+  key in Cargo.toml, the file standing
+  at exactly 170 bytes, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
