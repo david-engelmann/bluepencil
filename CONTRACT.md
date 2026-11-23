@@ -13533,3 +13533,81 @@ in the round dossier, never a silent approximation.
   f7f042b8d2b7573a3596891200a5467bbdeb
   d5cb standing as main with its tree
   equal to the reviewed closure tree.
+- BP-261. The post-landing material on
+  pull request 51 stands dispositioned
+  at this item, as the landing
+  comment's charges and BP-259's
+  closing charges direct. The Trunk
+  note 7094518675 stands in its
+  post-merge form at 113 chars, last
+  edited 2026-11-23T09:40:06Z at the
+  merge, the landing it announced
+  standing verified at BP-260; nothing
+  stands owed on it. The landing
+  comment 7097034987 stands last on
+  the pull request at this read, its
+  first charge, this record read back
+  whole, discharged at BP-260, and its
+  second, the BP-48 carry, at this
+  item. BP-259's charges stand
+  likewise: its first, the read-back
+  of the round's shell in its true
+  final form on the pattern of BP-253,
+  discharged at BP-260 with the shell
+  contracted at 8,536 chars; its
+  second, the closure gate's figures
+  standing as the round's last word
+  with Round 35's base gate
+  re-measuring the standing figures on
+  the new base as its own first
+  family, standing charged to BP-262
+  to BP-265 of this round; and its
+  third, the BP-48 carry, at this
+  item. Nothing else stands posted on
+  the pull request after the merge:
+  the census at BP-260 stands at four
+  issue comments, one formal review,
+  and one review comment, and no
+  post-landing review, comment, or
+  reply stands anywhere on the record
+  beyond the landing comment itself,
+  so the charges' remainder stands
+  discharged as empty. The formal
+  review 6017959651 and its one
+  comment 4662922652 stand read to
+  their ends at BP-260, the comment
+  carrying no replies and no
+  acknowledgment standing owed on
+  either, so no disposition on this
+  record is discharged by a merge-time
+  read. Round 34's own gates stand
+  closed on the record: the three
+  review reports stand completed on
+  the review record, the spec report
+  at 6,702 bytes returning PASS with
+  no findings, the standards report at
+  5,333 bytes returning APPROVE with
+  no findings, and the red team's
+  report at 10,322 bytes returning
+  APPROVE with no findings, its six
+  inherited execution limbs executed
+  at its hand and every figure
+  reproduced, nothing charged forward
+  from them; the gate stood fully
+  clean, no body patch stood owed and
+  none was made, and no delta reviews
+  stood owed. No process referencing
+  any Round 34 scratch stands in the
+  process table at this lane's
+  entering check; nothing stands armed
+  and nothing stands owed from Round
+  34's gates. BP-48 stands carried
+  open by name to Round 36, untouched
+  this round as every round:
+  Cargo.toml stands at 170 bytes with
+  no description key at this lane's
+  entering check, the canonical
+  description line standing as the
+  recommendation already routed to the
+  main chat, its setting an owner's
+  act, not a build lane's.
