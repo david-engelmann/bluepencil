@@ -13882,3 +13882,222 @@ in the round dossier, never a silent approximation.
   range line does not move, and no
   other statement at BP-265 is
   qualified.
+- BP-268. Round 36 opens on main
+  4faba1fc706fd97200a81803dfd9bd857b61
+  e259, its tree
+  f39c5c89ec50f8771d6e6647104fcd92e53e
+  9e77 the Round 35 repair tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 494,962 bytes with
+  BP-267 its tail item, the contract
+  standing at BP-1 to BP-266 with the
+  repair records BP-138, BP-146,
+  BP-154, BP-155, BP-163, BP-171,
+  BP-179, BP-229, BP-245, and BP-267
+  outside the range, the README rounds
+  line at 35 of 100, Cargo.toml at 170
+  bytes with no description key. Pull
+  request 53 stands read back whole at
+  this item, over both its heads, as
+  BP-266's closing charges and the
+  Round 35 landing comment 7103373779
+  direct. The pull request stands
+  closed and merged through the Trunk
+  queue at 2026-11-23T13:58:53Z, its
+  merge commit
+  4faba1fc706fd97200a81803dfd9bd857b61
+  e259 standing as main, its head
+  chain the repair head
+  809434b3c0b35eb316f1d4e0b4b45e7dcba8
+  be52 (tree
+  f39c5c89ec50f8771d6e6647104fcd92e53e
+  9e77) over the closure head
+  490665d0bafb6249510b545da1cd5b4a83d1
+  b461 (tree
+  0a0561fd83351805f6c81c008fcaebc66352
+  3f1e) over
+  667c78bd07a5612adde758770b1a68863422
+  a37b over
+  927fd6a5ee185ed694e279a33dba6997705a
+  3ca8 over
+  ba9a4b97b80d704954fb396f1b33551e048e
+  be4b over base
+  f7f042b8d2b7573a3596891200a5467bbdeb
+  d5cb, and the merge tree stands
+  equal to the reviewed repair tree
+  f39c5c89ec50f8771d6e6647104fcd92e53e
+  9e77, both read at this hand. The
+  title stands at 121 chars and 19
+  words in the standing shape, counted
+  at this hand, its range naming
+  BP-260 to BP-266. The body stands at
+  14,364 chars at this read, in the
+  form the owner's gate patch left it:
+  the Verified block's base-scan
+  figure corrected from 29 files to 28
+  files, and the owner's gate record
+  appended after the bot's appendix.
+  The bot's release-notes appendix
+  stands whole at offset 12,586 in the
+  body, in its final re-rendered form
+  494 chars from its opening marker,
+  its three Documentation bullets each
+  correct (the Round 35 review and
+  verification record added; the
+  progress count updated to 35 of 100;
+  and the recorded base-tree file
+  count corrected), the offset and
+  span summing to 13,080 chars, the
+  body's length as it stood before the
+  gate record was appended after the
+  appendix, and the appendix preserved
+  byte for byte at its offset in the
+  body as patched. The census stands
+  exact at this read: four issue
+  comments, no formal review, and no
+  review comment, and nothing posted
+  after the landing comment. The Trunk
+  note 7099767172 stands at 113 chars
+  in its final merged form, updated
+  2026-11-23T13:58:57Z at the merge.
+  The owner's queue comment 7103133588
+  stands at 12 chars
+  (2026-11-23T13:51:35Z), and the
+  landing comment 7103373779 stands
+  last at 951 chars
+  (2026-11-23T14:01:40Z), its charges
+  standing as this round's charges:
+  this record read back whole first,
+  and BP-48 carried open by name. The
+  CodeRabbit shell 7099770508 stands
+  in its true final form at this read
+  at 11,486 chars, last edited
+  2026-11-23T13:50:18Z, read whole at
+  this hand, discharging the first
+  charge BP-266 laid and the forward
+  charge the body itself laid: the
+  body's moment-bounded figure stood
+  at 10,798 chars at the build lane's
+  last read, the shell then last
+  edited 2026-11-23T11:33:56Z in its
+  closure-head render; the shell
+  re-rendered to 10,800 chars by
+  2026-11-23T11:38:04Z, the charged
+  situation exactly, and after the
+  repair push it re-rendered again, to
+  11,486 chars at 13:50:18Z, with no
+  edit after that edit standing at
+  this read, so 11,486 chars stands as
+  the shell's true final form. The
+  shell in its true final form is the
+  repair head's render: its
+  walkthrough stands accurate in its
+  summary and its three rows (the pull
+  request 51 disposition; the Round 35
+  verification, its row recording that
+  a repair corrects the base-tree file
+  count from 29 to 28; and the Round
+  35 closure and count), its change
+  assessment effort 2 (Simple) at
+  about 10 minutes with Change Other,
+  its assessment commit the repair
+  head
+  809434b3c0b35eb316f1d4e0b4b45e7dcba8
+  be52, Merge Risk Minimal up to
+  `80943`, with coverage source and
+  covered commit both the repair head,
+  kind reviewed, its Merge Risk
+  paragraph stating that the change
+  adds the Round 35 record and updates
+  the README progress count from 34 to
+  35 of 100 and has no runtime impact,
+  its four pre-merge checks Passed
+  with the Title check Passed, its
+  full explanation naming the title
+  partially related to the changeset,
+  dense with terms a teammate may not
+  parse at a glance, and omitting the
+  README progress-count update, one
+  actionable comment standing nowhere
+  on the record, the shell stating no
+  actionable comments were generated
+  in the recent review, no operational
+  warning standing, the finishing
+  touches and Autofix boxes unticked,
+  and Run ID
+  1f8d6831-4de3-47cb-a967-ba8b2bd5c768
+  standing in its recent review info,
+  the reviewed increment standing
+  between the closure head
+  490665d0bafb6249510b545da1cd5b4a83d1
+  b461 and the repair head
+  809434b3c0b35eb316f1d4e0b4b45e7dcba8
+  be52 over CONTRACT.md alone, and the
+  included allowance used with none
+  remaining after that review. The
+  shell's earlier closure-head render
+  (Run ID
+  f4622781-62a1-4eff-b462-0c174ac828bd
+  , the reviewed range
+  f7f042b8d2b7573a3596891200a5467bbdeb
+  d5cb to
+  490665d0bafb6249510b545da1cd5b4a83d1
+  b461 over CONTRACT.md and README.md)
+  stands recorded on the body's Step
+  0; the shell itself carries only its
+  latest render. No formal review
+  stands on the pull request and no
+  review comments stand, verified at
+  this hand, so no review or comment
+  stands anywhere on this record owed
+  a disposition, and no disposition on
+  this record is discharged by a
+  merge-time read: the shell and the
+  comments stand read to their ends at
+  this item. Hosted CI on both heads
+  stands verified at this hand through
+  the API: on the closure head the
+  push run 45158702600 and the
+  pull_request run 45166072075 both
+  completed with success, and on the
+  repair head the push run 45187112644
+  and the pull_request run 45187123177
+  both completed with success, the
+  gate check standing green on each
+  head in both. The gate stands graded
+  in the open at this item, on the
+  owner's landing comment: spec PASS
+  with no findings; the red team
+  APPROVE with no findings, every limb
+  executed at its own hand on both
+  trees and nothing charged forward;
+  standards REPAIR with one Minor,
+  S-1, that BP-265 and the body's
+  Verified block stated the base
+  codepoint scan ran across 29 files
+  of a base tree that carries 28
+  files, the scan's substance standing
+  at 0 U+2014 and 0 U+2013 over the
+  actual 28 files at three hands. The
+  repair stands landed inside the
+  round as BP-267 (commit
+  809434b3c0b35eb316f1d4e0b4b45e7dcba8
+  be52, tree
+  f39c5c89ec50f8771d6e6647104fcd92e53e
+  9e77, the contract growing 493,212
+  to 494,962 bytes by pure append,
+  BP-265 unrewritten), correcting the
+  attribution in the record, the
+  owner's patch correcting the same
+  figure in the body, and the two
+  delta reviews stand clean, spec
+  delta PASS and standards delta
+  APPROVE. Nothing else stands owed
+  from Round 35's gate at this item,
+  and the landing stands verified,
+  merge
+  4faba1fc706fd97200a81803dfd9bd857b61
+  e259 standing as main with its tree
+  equal to the reviewed repair tree.
