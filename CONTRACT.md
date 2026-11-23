@@ -12827,3 +12827,202 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-253. Round 34 opens on main
+  3d1b716d6a51e3285d8e6c8ba59943cfdc68
+  74e6, its tree
+  ab2415a2c6c298957a5d7709d432a0a26c58
+  0580 the Round 33 closure tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 458,031 bytes with
+  BP-252 its tail item, the contract
+  standing at BP-1 to BP-252 with the
+  repair records BP-138, BP-146,
+  BP-154, BP-155, BP-163, BP-171,
+  BP-179, BP-229, and BP-245 outside
+  the range, the README rounds line at
+  33 of 100, Cargo.toml at 170 bytes
+  with no description key. Pull
+  request 49 stands read back whole at
+  this item, as BP-252's closing
+  charges and the Round 33 landing
+  comment 7090890934 direct. The pull
+  request stands closed and merged
+  through the Trunk queue at
+  2026-11-23T03:34:00Z, its merge
+  commit
+  3d1b716d6a51e3285d8e6c8ba59943cfdc68
+  74e6 standing as main, its head the
+  closure head
+  f89db218f529bec9b8aff75ac19fd0d4fdaf
+  3d17 over
+  e68178578e849ccede08f0e3c8605a89cc02
+  b860 over
+  ab384986e75f713f986e75082e11a9fe60e3
+  d217 over
+  73d1206d7c84f13d265ca76f2b33c643be7a
+  e63e over base
+  0d05d012b703da56d3d7670a8d54b0aaafe2
+  e4ac, and the merge tree stands
+  equal to the reviewed closure tree
+  ab2415a2c6c298957a5d7709d432a0a26c58
+  0580, both read at this hand. The
+  title stands at 121 chars and 19
+  words in the standing shape, counted
+  at this hand, its range naming
+  BP-246 to BP-252. The body stands at
+  13,728 chars at this read, in the
+  form the owner's gate patch left it,
+  an owner patch standing at this
+  gate: the bot's release-notes
+  appendix stands whole at 414 chars
+  from its opening marker, at offset
+  12,621 in the body, preserved byte
+  for byte, its two Documentation
+  bullets each correct, the record of
+  the latest review round, including
+  verification results and the status
+  of an outstanding item, and the
+  project status updated to show 33 of
+  100 rounds completed; and the
+  owner's gate record stands appended
+  after the appendix in the body's
+  closing 693 chars. The census stands
+  exact at this read: four issue
+  comments, no formal review, and no
+  review comments, and nothing posted
+  after the landing comment. The Trunk
+  note 7089099589 stands at 113 chars
+  in its final post-merge form,
+  updated 2026-11-23T03:34:03Z at the
+  merge. The owner's queue comment
+  7090752099 stands at 12 chars
+  (2026-11-23T03:26:56Z), and the
+  landing comment 7090890934 stands
+  last at 727 chars
+  (2026-11-23T03:37:16Z), its charges
+  standing as this round's charges:
+  this record read back whole at this
+  item, Round 34's base gate
+  re-measuring the standing figures as
+  its own first family at BP-255 to
+  BP-258, BP-48 carried open by name
+  at BP-254, and Round 34's red team
+  charged by name with the six
+  execution limbs the Round 33 red
+  team left untested. No formal review
+  stands on the pull request and no
+  review comments stand: CodeRabbit
+  reviewed automatically at the
+  opening, no manual trigger was
+  posted, and its whole review stands
+  in its shell comment; the reviews
+  list and the review comments list
+  both read back empty at this hand,
+  each read to its end, so no
+  disposition stands owed on either
+  and none is discharged by a
+  merge-time read. The CodeRabbit
+  shell 7089101822 stands in its true
+  final form at this read at 11,084
+  chars, last edited
+  2026-11-23T03:26:42Z, read whole at
+  this hand, discharging the charge
+  BP-252 laid and the forward charge
+  the body itself repeated: the body's
+  moment-bounded figure stood at
+  11,080 chars at the build lane's
+  last read, the shell then last
+  edited 2026-11-23T01:25:13Z, and the
+  shell re-rendered to 11,084 chars by
+  03:26:42Z, ahead of the queue
+  comment and the merge, with no edit
+  after that edit standing at this
+  read, so 11,084 chars stands as the
+  shell's true final form. The shell
+  is the closure head's render: its
+  walkthrough stands accurate in its
+  summary and its three rows (the
+  Round 32 review disposition; the
+  Round 33 verification results; and
+  the Round 33 closure and status),
+  its change assessment effort 2
+  (Simple) at about 10 minutes with
+  Change Other, its assessment commit
+  the closure head
+  f89db218f529bec9b8aff75ac19fd0d4fdaf
+  3d17, Merge Risk Minimal up to
+  `f89db`, with coverage source and
+  covered commit both the closure
+  head, kind reviewed, its Merge Risk
+  paragraph stating that the change
+  updates documentation records and
+  the closed-round count only and does
+  not alter runtime behavior, its four
+  pre-merge checks Passed with the
+  Title check Passed on its own terms,
+  its full explanation naming the
+  title's match to the changeset's
+  main intent, dense and bearing
+  project-specific jargon while
+  standing specific, and noting the
+  raw summary at CONTRACT.md (+579)
+  with a one-line README.md change, no
+  actionable comments generated in its
+  recent review, no operational
+  warning standing, the finishing
+  touches and Autofix boxes unticked,
+  Run ID
+  e0f50438-a9c6-4124-b1de-bcd61e57fc3a
+  standing in the shell's own run
+  configuration, its reviewed range
+  0d05d012b703da56d3d7670a8d54b0aaafe2
+  e4ac to
+  f89db218f529bec9b8aff75ac19fd0d4fdaf
+  3d17 over CONTRACT.md and README.md,
+  and the included allowance used with
+  none remaining after that review.
+  Hosted CI on the closure head stands
+  verified at this hand through the
+  API: the push run 45082935786 and
+  the pull_request run 45094264144
+  both completed with success, the
+  gate check standing green on the
+  head in both. The gate stands graded
+  in the open at this item, on the
+  owner's gate record appended to the
+  body: spec REPAIR on one Minor (F-1)
+  and standards REPAIR on one Minor
+  (S-1), convergent and body only, the
+  appendix offset pair, the body's
+  sentence standing at 12,620 against
+  12,621 measured from the appendix's
+  opening marker; the owner's body
+  patch corrected that pair on the
+  body itself and appended the gate
+  record after the appendix, and no
+  delta review stood owed on a
+  body-only repair. The red team
+  returned APPROVE with no findings;
+  its six execution limbs stood
+  untested at its hand, the inherited
+  Round 32 limbs again, defeated by
+  the build-slot queue and runtime
+  restarts, its queued runner killed
+  after about 65 minutes in the queue
+  with no stage banked, its report
+  amended to state that Round 34's red
+  team starts the charged limbs from
+  zero on the verified trees and
+  harness the report stands on; the
+  limbs stand charged to Round 34's
+  red team by name on the landing
+  comment, and they are no build
+  item's debt. Nothing else stands
+  owed from Round 33's gate at this
+  item, and the landing stands
+  verified, merge
+  3d1b716d6a51e3285d8e6c8ba59943cfdc68
+  74e6 standing as main with its tree
+  equal to the reviewed closure tree.
