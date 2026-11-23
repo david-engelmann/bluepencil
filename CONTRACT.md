@@ -13722,3 +13722,113 @@ in the round dossier, never a silent approximation.
   stands over the base tree at 0
   U+2014 and 0 U+2013 across its 29
   files.
+- BP-266. Closure. This commit closes
+  Round 35 and moves the README rounds
+  line from 34 of 100 to 35 of 100;
+  that line moves in this commit only.
+  The contract stands at BP-1 to
+  BP-266, with the repair records
+  BP-138, BP-146, BP-154, BP-155,
+  BP-163, BP-171, BP-179, BP-229, and
+  BP-245 outside the range, at 493,212
+  bytes at this closure. The round ran
+  in one seating, this build lane, and
+  no seating spawned a subagent or a
+  review lane and no seating merged
+  anything; the merge is the owner's
+  act alone. The round's chain over
+  the base
+  f7f042b8d2b7573a3596891200a5467bbdeb
+  d5cb stands at four commits, each
+  carrying the Signed-off-by trailer
+  in its message: BP-260
+  (ba9a4b97b80d704954fb396f1b33551e048
+  ebe4b, the contract growing 475,529
+  to 482,707 bytes), BP-261
+  (927fd6a5ee185ed694e279a33dba6997705
+  a3ca8, to 485,477 bytes), BP-262 to
+  BP-265 in one commit
+  (667c78bd07a5612adde758770b1a6886342
+  2a37b, to 489,303 bytes), and this
+  closure commit. The round's
+  substance stands in the items
+  themselves: PR 51 read back whole,
+  its CodeRabbit shell contracted in
+  its true final form, its formal
+  review and its one comment read to
+  their ends with the not-taken
+  disposition graded sound, and its
+  gate graded in the open on all three
+  axes as fully clean (BP-260), the
+  post-landing material dispositioned,
+  Round 34's three review reports
+  closed, and BP-48 carried (BP-261),
+  and the standing family re-measured
+  fresh on the new base as BP-259 and
+  the landing comment charged (BP-262
+  to BP-265: cargo 64 in the paired
+  split with the binary digest
+  reproduced and the oracle verified
+  blob for blob, battery 44 cells at 0
+  failures, the split probe splitting
+  at 41, the differential at 16 cases
+  and 220 steps under BP-138's
+  qualification as BP-245 restated it,
+  the pin suite at 241, the golden
+  tape's digest matching, the
+  codepoint scan clean against its
+  planted control). The closure gate
+  on this commit's tree executes after
+  this item lands and reports on the
+  pull request record. The round's
+  whole attempt history, each event
+  counted nowhere. At entry on
+  2026-11-23 the write fault stood
+  quiet at this hand: verified-write
+  probes to /tmp and to the workspace
+  both landed at the entering check,
+  and the lane's text banking ran
+  through the file tools and shell
+  writes as they landed. The fleet
+  REST pool read at 3,146 of 5,000 at
+  entry and never reached the wall
+  this round. BP-260 and BP-261 pushed
+  in order while the base gate queued,
+  each with every tree assertion
+  passing. The base gate runner took
+  one launch: launched under the build
+  slot flock at 09:50Z, it queued
+  behind the onrecord Round 27
+  realistic hold, which held the slot
+  from 09:31Z, and the sibling gate
+  holds queued ahead of it; the
+  realistic completed at 3,100 cells
+  and 0 splits, the queue cleared in
+  order, the window opened at the
+  first pre-log probe at 10:34:43Z,
+  and every stage ran clean in a
+  single cycle, closing all stages
+  done at 10:39:47Z, its rate stage
+  reading the pool at 4,879 of 5,000.
+  BP-262 to BP-265 then pushed with
+  every tree assertion passing.
+  Charges to Round 36. First, the
+  read-back of this round's pull
+  request shell in its true final
+  form, on the pattern of BP-260, with
+  whatever stands armed or owed at
+  that gate measured and contracted
+  there. Second, the closure gate's
+  figures, reported on the pull
+  request record, stand as this
+  round's last word; Round 36's base
+  gate re-measures the standing
+  figures on the new base as its own
+  first family. Third, BP-48 carries
+  open by name: the absent description
+  key in Cargo.toml, the file standing
+  at exactly 170 bytes, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
