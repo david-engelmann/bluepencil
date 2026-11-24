@@ -15466,3 +15466,59 @@ in the round dossier, never a silent approximation.
   stage standing executed in the
   resumed execution under the attempt
   history at BP-284.
+- BP-288. Round 38 closes. Its record
+  stands at BP-1 to BP-288, the repair
+  records BP-138, BP-146, BP-154,
+  BP-155, BP-163, BP-171, BP-179,
+  BP-229, BP-245, and BP-267 standing
+  outside that range, and the README
+  rounds line moves to 38 of 100 in
+  this commit. The closure gate stands
+  deferred to this round's pull
+  request record, its figures to be
+  reported there on the standing
+  bluepencil shape, the gate to be
+  executed whole on this closure tree
+  itself. The oracle census stands at
+  eighteen full occurrences split
+  across the wrap with zero contiguous
+  at this head, computed mechanically
+  by the method of BP-222 over the
+  contract as it stands at this head,
+  no occurrence added this round, the
+  last added standing in BP-277, this
+  round's items citing the identifier
+  in no place. The entering
+  environment stands as follows:
+  verified-write probes to /tmp and
+  the workspace both landed at this
+  lane's entering check, the write
+  fault not refusing at entry; the
+  fleet REST pool read at 2,686 of
+  5,000 at the first entering check,
+  its reset standing at
+  2026-11-24T04:12:16Z, and at 4,510
+  of 5,000 at the base gate's rate
+  check; and the box restart that
+  interrupted the base gate's first
+  harness launch stands in the attempt
+  history at BP-284. Three charges
+  stand to Round 39. First, the
+  read-back of this round's pull
+  request shell in its true final
+  form, on the pattern of BP-260, with
+  whatever stands armed or owed at
+  that gate measured and contracted
+  there. Second, this closure gate's
+  figures stand as Round 38's last
+  word; Round 39's base gate
+  re-measures the standing figures on
+  the new base as its own first
+  family. Third, BP-48 carries open by
+  name: the absent description key in
+  Cargo.toml, the file standing at
+  exactly 170 bytes, untouched by this
+  round as by every round since it was
+  named; it is the owner's act, not a
+  build lane's, and no item of this
+  round reaches for it.
