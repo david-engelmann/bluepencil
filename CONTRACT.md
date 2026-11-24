@@ -17706,3 +17706,45 @@ in the round dossier, never a silent approximation.
   failing limb is the manifest key
   alone. Item 10's statement stands as
   not rendered.
+- BP-312. The post-landing material of
+  PR 65 disposed. The owner's landing
+  comment 7138557591 of 1,695 chars,
+  standing last on the PR, carries two
+  charges to this round: the bot shell
+  7137525963 read back in its true
+  final form, discharged at BP-311,
+  which settles the shell at 11,041
+  chars, last edited
+  2026-11-24T16:51:31Z; and BP-48
+  carried open untouched, discharged
+  here by the carry below. Its landing
+  verification stands confirmed at
+  this hand at BP-311: the merge tree
+  equal to the reviewed tree, main at
+  the merge commit, the contract on
+  main at 620,952 bytes with the
+  Status range at BP-1 to BP-310; its
+  gate summary agrees with the three
+  reports read whole at this hand,
+  spec PASS, standards APPROVE, red
+  team APPROVE, no findings at any
+  axis and every limb executed, the
+  census at nineteen full and zero
+  contiguous at the base, family, and
+  closure heads at every axis,
+  BP-310's census sentence verified
+  against the closure-head bytes
+  themselves; its settlement of PR
+  63's shell 7133089190 at 8,398
+  chars, last edited
+  2026-11-24T14:33:05Z, stands as
+  Round 41's read-back measured it. No
+  CodeRabbit comment stands on PR 65
+  in any form, so no disposition of
+  the BP-305 kind is owed this round
+  and none is carried. BP-48 carried
+  open by name, untouched by this
+  round as by every round since it was
+  named; it is the owner's act, not a
+  build lane's, and no item of this
+  round reaches for it.
