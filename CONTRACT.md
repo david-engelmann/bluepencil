@@ -16482,3 +16482,194 @@ in the round dossier, never a silent approximation.
   as the recommendation already routed
   to the main chat, its setting an
   owner's act, not a build lane's.
+- BP-298. The base gate, executed on
+  the Round 40 base tree. The base is
+  main
+  3f8a87c3cc1a29a2ee1976907f819217d371
+  18d7, its tree
+  e4e7c546a65e2eb656c9c496888a53418a6e
+  7ef2, the Round 39 tree standing as
+  main. The entering environment
+  stands as the lane found it: a
+  verified-write probe to the
+  workspace stood refused with EPERM
+  at the entering check (2026-11-24
+  about 05:32 EST, 10:32Z), the write
+  fault refusing process writes at
+  entry while file writes landed whole
+  in the same window, and the fleet
+  REST pool read 4,387 of 5,000 at the
+  first entering check, its reset
+  standing at 2026-11-24T11:34:22Z.
+  The gate's first launch
+  (2026-11-24T10:40Z) queued under the
+  build slot behind the muda Round 28
+  lanes' two verified-live holds, the
+  realistic and differential drivers
+  cycling under the same fault since
+  09:56Z; the slot stood acquired at
+  2026-11-24T11:18:47Z on the second
+  sibling wrapper's exhaustion, and
+  the runner probe-waited with
+  forty-two probes refused, and the
+  runtime restart at about
+  2026-11-24T11:49:47Z killed it in
+  its probe loop before any stage ran;
+  that launch is counted nowhere and
+  stands disclosed whole here and on
+  the pull request record. The restart
+  cleared the fault, a verified-write
+  probe standing open at
+  2026-11-24T11:50:47Z, and the
+  relaunch (2026-11-24T11:51Z) queued
+  behind one verified-live sibling
+  hold that re-formed after the
+  restart, acquired the slot with its
+  window open at the first probe
+  (2026-11-24T11:57:59Z), and ran
+  whole by 2026-11-24T12:04:29Z, the
+  fleet REST pool reading 2,665 of
+  5,000 at the gate's own rate check.
+  The base tree stands assembled
+  through the API into a plain
+  directory holding exactly the tree's
+  own files (28 blobs, 0 mismatches,
+  every blob's git blob id verified on
+  fetch and again on write). A git
+  checkout of the base stands at
+  ~/workspace/bluepencil-r40 on the
+  branch, added over the SSH route
+  this round; the round's method is
+  server-side and no checkout is
+  load-bearing. The oracle stands
+  verified whole before reliance at
+  this gate against the oracle tree
+  (19 blobs, 0 mismatches), commit
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, its standing extraction read
+  blob by blob. The harness stands
+  prepped from the Round 21 scratch
+  copies, each of the seven files
+  md5-verified before and after
+  copying, rt_position.py included
+  from the start under the prep law,
+  and the two fixtures cmp-verified in
+  the copy. The cargo suite pairs
+  mechanically at 64 tests (library 3,
+  binary unit 0, diff 18, inventory
+  18, proposals 25, doc 0), clippy
+  clean under -D warnings, fmt clean,
+  and the build binary's md5 stands
+  reproduced at the gate's own target
+  path as
+  d7cf80fe4770809418e809b9bfa0778b,
+  the build-path-scoped value the
+  record carries, reproduced at this
+  path for the eleventh consecutive
+  round.
+- BP-299. The behavioral battery,
+  executed at the base gate on the new
+  base, as BP-295's second charge
+  directs: the battery stands at 44
+  cells, 0 failures, its families
+  counted from the harness's own
+  PASS-line prefixes at W 4, E 4, P 7,
+  V 23, G 6, the body naming them
+  propose 4, diff 4, loader 7,
+  behavior 23, guard 6. The chain
+  split stands paired at 39 and 40
+  links and split at 41 and 42 on both
+  commands, the port's refusal
+  carrying exit 1 and stderr exactly
+  "error, bluepencil never writes to
+  its inputs", the oracle writing on
+  its side, measured by the split
+  probe at 0 failures. BP-81 stands
+  executed inside the battery at this
+  gate: under entropy interposition
+  the port refuses both commands (the
+  E-interpose cells standing PASS with
+  the port at exit 1, its error
+  matching, its tree unchanged) while
+  the oracle writes, the fresh draw's
+  per-candidate entropy standing as
+  the mechanism. The guard cells stand
+  executed with their per-side
+  before-and-after snapshots, scoped
+  to the four tested input-as-target
+  cells. Round 39's closure figures
+  stand re-measured on the new base
+  and stand reproduced in full, as
+  charged.
+- BP-300. The differential, executed
+  at the base gate on the new base: 16
+  cases, 220 steps, 0 failures, the
+  rebuilt Round 18 harness measuring a
+  fresh topical partition of the
+  behavior space, as it has measured
+  every round since. BP-138's
+  qualification stands as contracted:
+  it qualifies the differential's
+  figures and provenance only, not the
+  harness artifact, and not the
+  battery. The harness artifact stands
+  identified by its files' md5s,
+  verified before and after copying at
+  this gate.
+- BP-301. The pin and the golden,
+  executed at the base gate. The
+  pinned flighttape tree (commit
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e, tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e) stands assembled through the
+  API into a plain directory (50
+  blobs, 0 mismatches), its suite
+  standing at 241 tests over 19 result
+  lines, 0 failures, and the golden
+  stands whole: the pin binary's
+  convert of the fixture produces the
+  tape at 1,663 bytes, digest stands
+  at
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, and
+  verify exits 0 printing digest
+  matches. The oracle census stands
+  counted mechanically at this head by
+  BP-222's method: remove the wrap's
+  newline-plus-indent and count the
+  full occurrences of the oracle
+  commit identifier in the result, the
+  all-whitespace-removed de-wrap
+  agreeing as the method's
+  cross-check: eighteen full
+  occurrences, zero contiguous in the
+  wrapped text, the attribution
+  standing at one each in BP-161,
+  BP-166, BP-174, BP-182, BP-189,
+  BP-196, BP-203, BP-210, BP-217,
+  BP-224, BP-229, BP-233, BP-240,
+  BP-248, BP-255, BP-262, BP-270, and
+  BP-277, the thirteenth standing
+  inside BP-240 under its nested
+  doubled-marker header with BP-241 to
+  BP-244 running on inside the same
+  item and BP-242's header split
+  across the wrap, the naive
+  line-start segmentation
+  misattributing it to BP-239, so the
+  segmentation is stated here in full.
+  This round adds no occurrence:
+  BP-296 and BP-297 cite the
+  identifier in no place, and the
+  count stands as it stood at the
+  Round 37, Round 38, and Round 39
+  heads, the last occurrence added in
+  BP-277. The typography scan over the
+  assembled base tree stands clean: a
+  Python codepoint scan over the plain
+  directory holding exactly the tree's
+  own files (28 files), the planted
+  control counted first (U+2014 once,
+  U+2013 twice), the tree standing at
+  U+2014 0, U+2013 0.
