@@ -17405,3 +17405,65 @@ in the round dossier, never a silent approximation.
   control counted first (U+2014 once,
   U+2013 twice), the tree standing at
   U+2014 0, U+2013 0.
+- BP-310. Round 41 closes. Its record
+  stands at BP-1 to BP-310, the repair
+  records BP-138, BP-146, BP-154,
+  BP-155, BP-163, BP-171, BP-179,
+  BP-229, BP-245, BP-267, and BP-303
+  standing outside that range, and the
+  README rounds line moves to 41 of
+  100 in this commit. The closure gate
+  stands deferred to this round's pull
+  request record, its figures to be
+  reported there on the standing
+  bluepencil shape, the gate to be
+  executed whole on this closure tree
+  itself. The oracle census stands at
+  nineteen full occurrences split
+  across the wrap with zero contiguous
+  at this head, computed mechanically
+  by the method of BP-222 over the
+  contract as it stands at this head,
+  no occurrence added this round, the
+  last added standing in BP-298, this
+  round's items citing the identifier
+  in no place. The entering
+  environment stands as follows: a
+  verified-write probe to the
+  workspace stood refused with EPERM
+  at this lane's entering check, the
+  write fault refusing process writes
+  at entry while the lane's file-tool
+  writes landed whole in the same
+  window, the fault clearing at the
+  runtime restart of about
+  2026-11-24T15:49Z, which killed the
+  base gate's first launch in the
+  flock queue before any stage ran;
+  the fleet REST pool read at 4,040 of
+  5,000 at the first entering check,
+  its reset standing at
+  2026-11-24T16:16:38Z, and at 3,482
+  of 5,000 at the base gate's rate
+  check; and the restart-killed first
+  base-gate launch stands in the
+  attempt history at BP-306. Three
+  charges stand to Round 42. First,
+  the read-back of this round's pull
+  request shell in its true final
+  form, on the pattern of BP-260, with
+  whatever stands armed or owed at
+  that gate measured and contracted
+  there. Second, this closure gate's
+  figures stand as Round 41's last
+  word; Round 42's base gate
+  re-measures the standing figures on
+  the new base as its own first
+  family. Third, BP-48 carries open by
+  name: the absent description key in
+  Cargo.toml, the file standing at
+  exactly 170 bytes, untouched by this
+  round as by every round since it was
+  named; it is the owner's act, not a
+  build lane's, and no item of this
+  round reaches for it.
