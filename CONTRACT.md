@@ -15815,3 +15815,92 @@ in the round dossier, never a silent approximation.
   00a9d20a7fbf4cbaa930bf88e628f1ba364f
   4f66 standing as main with its tree
   equal to the reviewed tree.
+- BP-290. The post-landing material on
+  pull request 59 stands dispositioned
+  at this item, as the landing
+  comment's charges and BP-288's
+  closing charges direct. The Trunk
+  note 7123181246 stands in its merged
+  form at 113 chars, last edited
+  2026-11-24T06:08:02Z at the merge,
+  the landing it announced standing
+  verified at BP-289; nothing stands
+  owed on it. The landing comment
+  7124287771 stands last on the pull
+  request at this read, its first
+  charge, this round's pull request
+  shell read back in its true final
+  form, discharged at BP-289 with the
+  shell contracted at 10,930 chars,
+  and its second, the BP-48 carry, at
+  this item. BP-288's charges stand
+  likewise: its first, the read-back
+  of the round's pull request shell in
+  its true final form, on the pattern
+  of BP-260, with whatever stands
+  armed or owed at that gate measured
+  and contracted there, discharged at
+  BP-289; its second, the closure
+  gate's figures standing as Round
+  38's last word with Round 39's base
+  gate re-measuring the standing
+  figures on the new base as its own
+  first family, standing charged to
+  BP-291 to BP-294 of this round; and
+  its third, the BP-48 carry, at this
+  item. Nothing else stands posted on
+  the pull request after the merge:
+  the census at BP-289 stands at four
+  issue comments, no formal review,
+  and no review comment, and no
+  post-landing review, comment, or
+  reply stands anywhere on the record
+  beyond the landing comment itself,
+  so the charges' remainder stands
+  discharged as empty. The shell
+  stands read to its end at BP-289,
+  carrying no replies and no
+  acknowledgment standing owed on it,
+  so no disposition on this record is
+  discharged by a merge-time read.
+  Round 38's own gates stand closed on
+  the record: the three review reports
+  stand completed on the review
+  record, the spec report at 14,577
+  chars returning PASS with no
+  findings, the standards report at
+  7,732 chars returning APPROVE with
+  no findings, and the red team's
+  report at 11,845 chars returning
+  APPROVE with no findings, no limb
+  untested, its gate re-run whole on
+  its own extraction, every figure
+  reproduced, and nothing charged
+  forward; the three observations
+  standing across the axes (the spec
+  axis's on the killed launch's 42
+  PASS lines, the standards axis's
+  census attribution note and its
+  stale plan line observation, and the
+  red team's on the battery family
+  labels) stand graded in the open at
+  BP-289, none a finding and none
+  carrying a repair. The gate stood
+  fully clean, so no repair record
+  stands in Round 38 and no delta
+  review stands owed beyond the three
+  reports that stand complete. No
+  process referencing any Round 38
+  scratch stands in the process table
+  at this lane's entering check;
+  nothing stands armed and nothing
+  stands owed from Round 38's gates.
+  BP-48 stands carried open by name to
+  Round 40, untouched this round as
+  every round: Cargo.toml stands at
+  170 bytes with no description key at
+  this lane's entering check, the
+  canonical description line standing
+  as the recommendation already routed
+  to the main chat, its setting an
+  owner's act, not a build lane's.
