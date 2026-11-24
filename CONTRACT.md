@@ -17117,3 +17117,110 @@ in the round dossier, never a silent approximation.
   37390b574811dcf3f9dca5a06294334862d0
   82f6 standing as main with its tree
   equal to the reviewed repair tree.
+- BP-305. The post-landing material on
+  pull request 63 stands dispositioned
+  at this item, as the landing
+  comment's charges and BP-302's
+  closing charges direct. The Trunk
+  note 7133084486 stands in its merged
+  form at 113 chars, last edited
+  2026-11-24T14:40:01Z at the merge,
+  the landing it announced standing
+  verified at BP-304; nothing stands
+  owed on it. The landing comment
+  7136065677 stands last on the pull
+  request at this read, its first
+  charge, this round's pull request
+  shell read back in its true final
+  form, discharged at BP-304 with the
+  shell contracted at 8,398 chars, and
+  its second, the BP-48 carry, at this
+  item. BP-302's charges stand
+  likewise: its first, the read-back
+  of the round's pull request shell in
+  its true final form, on the pattern
+  of BP-260, with whatever stands
+  armed or owed at that gate measured
+  and contracted there, discharged at
+  BP-304; its second, the closure
+  gate's figures standing as Round
+  40's last word with Round 41's base
+  gate re-measuring the standing
+  figures on the new base as its own
+  first family, standing charged to
+  BP-306 to BP-309 of this round; and
+  its third, the BP-48 carry, at this
+  item. Nothing else stands posted on
+  the pull request after the merge:
+  the census at BP-304 stands at four
+  issue comments, one formal review,
+  and one review comment, and no
+  post-landing review, comment, or
+  reply stands anywhere on the record
+  beyond the landing comment itself,
+  so the charges' remainder stands
+  discharged as empty. The shell
+  stands read to its end at BP-304,
+  carrying no replies and no
+  acknowledgment standing owed on it,
+  and the one review comment stands
+  read to its end at BP-304 with no
+  addressed line appended, its
+  disposition standing in the open in
+  the body's Step 0 and in BP-303, so
+  no disposition on this record is
+  discharged by a merge-time read.
+  Round 40's own gates stand closed on
+  the record: the three review reports
+  stand completed on the review
+  record, the spec report at 16,793
+  chars returning REPAIR with one
+  Minor confined to the body, the
+  standards report at 9,408 chars
+  returning APPROVE with no findings,
+  and the red team's report at 18,540
+  chars returning APPROVE with no
+  findings, every limb executed, no
+  limb untested, its gate re-run whole
+  on its own extraction, the build
+  binary's md5 reproduced outright at
+  its own target path, the census
+  sustained in full, and its attempt
+  history disclosed whole including
+  the two dead slot holders removed by
+  its own hand and the gate's
+  execution outside the slot on the
+  standing precedent. The spec Minor
+  stands discharged by the owner's
+  body patch, which owes no delta
+  review, and the round's repair
+  commit stood inside the reviewed
+  head at all three axes, so no delta
+  review stands owed beyond the three
+  reports that stand complete. Two
+  observations stand recorded in the
+  reports, neither a finding: the
+  stock phrase at the moment of
+  opening standing next to the repair
+  head in the patched Verified block,
+  noted at BP-304 as the spec report
+  directed, its tension discharged in
+  the open by Step 0; and the shell's
+  later review marks, covered by the
+  forward charge BP-304 discharges;
+  nothing stands owed on either
+  observation. No process referencing
+  any Round 40 scratch stands in the
+  process table at this lane's
+  entering check; nothing stands armed
+  and nothing stands owed from Round
+  40's gates. BP-48 stands carried
+  open by name to Round 42, untouched
+  this round as every round:
+  Cargo.toml stands at 170 bytes with
+  no description key at this lane's
+  entering check, the canonical
+  description line standing as the
+  recommendation already routed to the
+  main chat, its setting an owner's
+  act, not a build lane's.
