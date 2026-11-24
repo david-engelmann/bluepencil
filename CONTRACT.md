@@ -14730,3 +14730,137 @@ in the round dossier, never a silent approximation.
   as the recommendation already routed
   to the main chat, its setting an
   owner's act, not a build lane's.
+- BP-277. The base gate stands
+  re-measured whole on the Round 37
+  base tree at this item, Round 37's
+  base gate being the re-measure
+  BP-274 charged and the landing
+  comment on PR 55 repeated. The base
+  tree
+  2dd9baee9ac135e4dd0b57e756cee8a001e7
+  d6e6 stands assembled through the
+  API into a plain directory holding
+  exactly the tree's own files and
+  verified blob by blob at this lane's
+  hand: 28 blobs, 0 mismatches. The
+  oracle
+  255d973dc51ba9e80d056afd1575688a3432
+  a370 (tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e) stands verified blob by blob
+  against the standing extraction
+  BEFORE any harness reliance: 19
+  blobs, 0 mismatches. Cargo on the
+  base tree at this hand: 64 tests
+  pass (3 library + 0 binary + 18 diff
+  + 18 inventory + 25 proposals + 0
+  doc), each target's count paired
+  mechanically with its own Running
+  header, clippy clean with warnings
+  denied, fmt clean. The binary md5
+  stands at
+  d7cf80fe4770809418e809b9bfa0778b at
+  the base harness path, contracted at
+  build-path scope only. The gate's
+  launch history stands whole: the
+  first build lane launched the runner
+  under the build slot flock at about
+  19:43Z, queued behind a sibling red
+  team's gate hold and an onrecord
+  realistic hold standing at the
+  launch check, and launched it a
+  second time at about 22:05Z; that
+  lane ended on a transport error with
+  no stage banked. This completion
+  lane relaunched the runner at
+  23:36Z, queued behind the onrecord
+  Round 28 red team's heavy runs, and
+  that launch was killed with the
+  whole queue by a runtime restart at
+  about 00:07Z with no stage banked;
+  relaunched at 00:08Z in the
+  post-restart window, it queued
+  behind a sibling closure gate hold
+  and the onrecord realistic's
+  relaunch, acquired the slot at
+  01:10:21Z, the git fetch landed and
+  the round's worktree stood up at the
+  base in that window, and every stage
+  ran clean in a single cycle, closing
+  all stages done at 01:16:59Z. The
+  fleet REST pool read 1,256 of 5,000
+  at the gate's own rate check in that
+  cycle.
+- BP-278. The battery and the split
+  probe stand re-executed on the base
+  build at this item. The harness is
+  the line's standing harness copy,
+  identified by its seven files' md5s
+  against BP-233's record of them, the
+  positioner standing in the copy from
+  the start under the prep law, its
+  fixture files cmp-verified against
+  the tree. The battery runs 44 cells,
+  0 failures (walk 4, entropy 4,
+  precedence 7, version 23, guard 6),
+  each family counted from the run's
+  own PASS lines. The guard proof
+  stands in the shape BP-163
+  contracted: the per-side
+  before-and-after snapshot
+  byte-identical around each of the
+  four tested input-as-target cells,
+  the claim scoped to exactly those
+  cells. The split probe stands
+  paired-identical at chain lengths 39
+  and 40 on both commands, split
+  outright at 41 and 42, the port's
+  refusal stderr byte for byte `error,
+  bluepencil never writes to its
+  inputs`, 0 probe failures.
+- BP-279. The differential stands
+  re-executed on the standing harness
+  copy at this item: 16 cases, 220
+  steps, 0 failures. The run stands
+  contracted as a fresh topical
+  partition of the tree it ran on, not
+  as a continuation of any earlier
+  run. The BP-138 qualification stands
+  carried by name as BP-245 restated
+  it: BP-138 qualifies the
+  differential's figures and their
+  provenance, not the harness as an
+  artifact; no continuity with the
+  historical harness is claimed.
+- BP-280. The pin suite, the golden,
+  and the base codepoint scan stand
+  re-executed at this item. The pin
+  74a83298aeb31c82e62b9fb0c613f5bc8600
+  799e (tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e, exactly 50 blobs) stands
+  assembled through the API and
+  verified blob by blob: 0 mismatches.
+  The pin suite runs 241 tests pass,
+  the count summed from the run's 19
+  test-result lines. The golden stands
+  executed on the base build: the
+  fixture converts at 1,663 bytes
+  against digest
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, verify
+  accepts. The codepoint scan (Python,
+  the planted control counted first at
+  exactly 1 U+2014 and 2 U+2013)
+  stands over the base tree
+  2dd9baee9ac135e4dd0b57e756cee8a001e7
+  d6e6 at 0 U+2014 and 0 U+2013 across
+  its own 28 files, counted in the
+  plain assembled directory holding
+  exactly the tree's files and nothing
+  else, so the count is the tree's
+  own; this closes by construction the
+  neighborhood the Round 35 slip came
+  from, where BP-265 stated 29 files
+  against the base tree's 28 before
+  BP-267 discharged it.
