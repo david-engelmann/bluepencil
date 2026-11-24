@@ -16780,3 +16780,340 @@ in the round dossier, never a silent approximation.
   every other blob at this head
   standing identical to the closure
   tree's.
+- BP-304. Round 41 opens on main
+  37390b574811dcf3f9dca5a06294334862d0
+  82f6, its tree
+  9834903f8ce6307bf9060e5c5032db22a784
+  6b69 the Round 40 repair tree as it
+  landed by the queue squash, verified
+  live through the API at this lane's
+  entering check: 28 blobs, the
+  contract at 596,731 bytes with
+  BP-303 its tail item, the contract
+  standing at BP-1 to BP-302 with the
+  repair records BP-138, BP-146,
+  BP-154, BP-155, BP-163, BP-171,
+  BP-179, BP-229, BP-245, BP-267, and
+  BP-303 outside the range, the README
+  rounds line at 40 of 100, Cargo.toml
+  at 170 bytes with no description
+  key. Pull request 63 stands read
+  back whole at this item, as BP-302's
+  closing charges and the Round 40
+  landing comment 7136065677 direct.
+  The pull request stands closed and
+  merged through the Trunk queue at
+  2026-11-24T14:39:58Z, its merge
+  commit
+  37390b574811dcf3f9dca5a06294334862d0
+  82f6 standing as main, its head
+  chain the repair head
+  b477d65bb640c9797927eb5a52fbe2178f5c
+  e19f (tree
+  9834903f8ce6307bf9060e5c5032db22a784
+  6b69) over the closure head
+  4d252affa4bb6827c5a9c4b7eab4070a50c4
+  9b21 (tree
+  0288475907b2d73364ed47bc4329358dc285
+  9a07) over
+  3548302202038000192a8483e6c97aa9e908
+  4ac9 over
+  05e64626f2098aed9c0503688f3b30b847eb
+  b2ff over
+  ed272f87da8badd62bd587a29900e6e8defb
+  6c47 over base
+  3f8a87c3cc1a29a2ee1976907f819217d371
+  18d7, every commit carrying the
+  Signed-off-by trailer, and the merge
+  tree stands equal to the reviewed
+  repair tree
+  9834903f8ce6307bf9060e5c5032db22a784
+  6b69, both read at this hand.
+  Trunk's own queue pull request 64,
+  on the trunk-merge branch for PR 63,
+  opened at 2026-11-24T14:39:32Z and
+  closed unmerged at
+  2026-11-24T14:39:52Z inside the
+  merge; it is the queue's artifact
+  and no part of this round's record
+  beyond this note. The title stands
+  at 121 chars and 19 words in the
+  standing shape, counted at this
+  hand, its range naming BP-296 to
+  BP-302. The body stands at 16,685
+  chars at this read in its final
+  form: the Round 40 lane's patched
+  final form standing as the body's
+  first span with the one census
+  sentence qualified by the owner's
+  patch, the bot's release-notes
+  appendix standing whole at offset
+  14,695 in the patched body, 389
+  chars from its opening marker,
+  preserved byte for byte through both
+  patches, and the owner's gate record
+  appended after the appendix carrying
+  the body to its whole length; its
+  two Documentation bullets are each
+  correct (the Round 40 record added,
+  including its verification results,
+  closure, and handoff; and the status
+  updated to show 40 of 100 perfection
+  rounds completed). The owner's patch
+  qualified the body's BP-302
+  paragraph census sentence as
+  BP-302's statement as written and
+  corrected at BP-303, the patched
+  sentence reading that the census as
+  BP-302 states it stands at eighteen
+  with the last added in BP-277 and
+  that the statement stands corrected
+  at BP-303, the census standing at
+  nineteen full occurrences at the
+  family, closure, and repair heads,
+  the nineteenth added in BP-298, both
+  de-wrap counts agreeing. The census
+  stands exact at this read: four
+  issue comments, one formal review,
+  and one review comment, and nothing
+  posted after the landing comment.
+  The Trunk note 7133084486 stands at
+  113 chars in its final merged form,
+  updated 2026-11-24T14:40:01Z at the
+  merge. The owner's queue comment
+  7134560133 stands at 12 chars
+  (2026-11-24T14:33:04Z), and the
+  landing comment 7136065677 stands
+  last at 2,036 chars
+  (2026-11-24T15:27:43Z), its charges
+  standing as this round's charges:
+  this round's pull request shell read
+  back in its true final form at this
+  read-back, and BP-48 carried open by
+  name. The CodeRabbit shell
+  7133089190 stands in its true final
+  form at this read at 8,398 chars,
+  last edited 2026-11-24T14:33:05Z,
+  read whole at this hand, discharging
+  the forward charge BP-302 laid and
+  the charge the landing comment laid:
+  the body's moment-bounded figure
+  stood at 13,080 chars at the build
+  lane's patch read; the shell
+  re-rendered after that patch to
+  8,396 chars at the reviewers' reads,
+  last edited 2026-11-24T13:46:54Z,
+  and once more, by two chars to 8,398
+  chars at 2026-11-24T14:33:05Z, the
+  owner's landing read measuring the
+  same 8,398, and no edit after that
+  edit stands at this read, so 8,398
+  chars stands as the shell's true
+  final form. The shell in its true
+  final form is the closure head's
+  render: its walkthrough stands
+  accurate in its summary and its
+  three rows (the pull-request
+  read-back and disposition; the
+  base-gate verification and test
+  results; and the round closure and
+  handoff); its change assessment
+  reads effort 2 (Simple) at about 12
+  minutes with Change Other, its
+  assessment commit the closure head
+  4d252affa4bb6827c5a9c4b7eab4070a50c4
+  9b21; Merge Risk Low up to `4d252`,
+  with coverage source and covered
+  commit both the closure head, kind
+  reviewed, its Merge Risk paragraph
+  stating that this pull request
+  changes only contract records and a
+  README round count, that one census
+  figure in the closure record is off
+  by one and should be corrected, and
+  that there is no runtime impact; its
+  four pre-merge checks stand Passed
+  in this final form (the Title check
+  Passed, its full explanation reading
+  the title as naming the PR's main
+  subject, a Round 40 record of the PR
+  61 read-back, disposition, and
+  re-measured checks on the new base,
+  matching the summary and objectives,
+  long at 121 characters and dense
+  with identifiers but specific and
+  not misleading, its scope a
+  round-closure record consistent with
+  the changes, so no suggestion stands
+  open against the title in the final
+  form; the Description check Passed
+  as skipped on the ground that the
+  high-level summary is enabled; and
+  Linked Issues and Out of Scope
+  Changes each Passed as skipped on
+  the ground that no linked issues
+  were found), so the body's Step 0,
+  which recorded the Title check
+  Inconclusive against the completed
+  review's earlier form with its
+  plain-title suggestion dismissed on
+  the standing-shape ground, stands
+  reconciled against the final form in
+  the open, the dismissal
+  dispositioning the form the
+  completed review presented and
+  standing false nowhere, no
+  disposition owed against a Passed
+  check, exactly the reconciliation
+  the red team's report records; the
+  finishing touches and Autofix boxes
+  stand unticked; and no Run ID stands
+  in the shell's own text in this
+  form, the review's Run ID standing
+  in the review itself. The one formal
+  review 6040200528 stands COMMENTED
+  at 3,793 chars, submitted
+  2026-11-24T13:39:45Z on the closure
+  head, its Run ID
+  be66e87c-2f45-4794-bd2a-5adc06d1d40d
+  standing in its info, the reviewed
+  range standing between the base
+  3f8a87c3cc1a29a2ee1976907f819217d371
+  18d7 and the closure head over
+  CONTRACT.md and README.md, the
+  included allowance used with none
+  remaining after that review, and one
+  actionable comment posted. The one
+  review comment 4680793841 (Minor,
+  Functional Correctness, on
+  CONTRACT.md) stands read to its end
+  at this hand at 2,403 chars: no
+  appended Addressed in commit line
+  stands on it, its updated time
+  standing one second after its
+  creation, its disposition standing
+  in the open in the body's Step 0 and
+  in BP-303, not discharged by a
+  merge-time read. Hosted CI on every
+  head stands verified at this hand
+  through the API: on the BP-296 head
+  the push run 45377566943, on the
+  BP-297 head the push run
+  45377622966, on the BP-298 to BP-301
+  head the push run 45390390587, on
+  the closure head the push run
+  45390555487 and the pull_request run
+  45405261613, and on the repair head
+  the push run 45406378590 and the
+  pull_request run 45406392486, all
+  completed with success. The gate
+  stands graded in the open at this
+  item, on the owner's landing comment
+  and the three review reports: spec
+  REPAIR with one Minor, body only
+  (report 16,793 chars), standards
+  APPROVE with no findings (9,408
+  chars), and red team APPROVE with no
+  findings, every limb executed, no
+  limb untested (18,540 chars), the
+  whole gate re-run whole on the red
+  team's own API extraction in one
+  clean launch and the build binary's
+  md5 d7cf80fe4770809418e809b9bfa0778b
+  reproduced outright at the red
+  team's own target path, not merely
+  as a path-scoped equivalent; the
+  oracle census sustained in full at
+  all three axes, eighteen full
+  occurrences at the base, BP-296, and
+  BP-297 heads and nineteen at the
+  family, closure, and repair heads,
+  the nineteenth standing in BP-298,
+  BP-303 citing the identifier in no
+  place, and the repair's appended
+  form graded right at the standards
+  axis against the bot comment's
+  proposed in-place edits to BP-301
+  and BP-302; the spec Minor, the
+  body's BP-302 paragraph restating
+  the closure item's superseded census
+  sentence in the body's own register,
+  false in each of its three figures
+  at the closure head, discharged by
+  the owner's body patch as recorded
+  above, a body patch owing no delta
+  review, so no delta review stands
+  owed from Round 40's gate, the
+  repair commit itself having stood
+  inside the reviewed head at all
+  three axes. The red team's attempt
+  history stands disclosed whole in
+  its report: its gate launch queued
+  about twenty-six minutes under the
+  build slot behind two holders it
+  proved dead and removed by its own
+  hand, the first an orphaned flock
+  wrapping an onrecord Round 29
+  closure-stage gate whose payload was
+  gone and the second a sibling lane's
+  gate-hold flock whose payload had
+  died at its start banner, no live
+  work interrupted by either removal,
+  and the gate then executed outside
+  the slot on the standing precedent
+  with its own target directories
+  throughout, disclosed in the open,
+  with one bookkeeping defect of its
+  own touching no figure, its scan leg
+  naming a script absent from its
+  scratch and the codepoint scan
+  executed directly on its extraction
+  afterward. Two observations stand
+  recorded in the reports, neither a
+  finding: the spec and standards
+  axes' note that the Verified block's
+  stock phrase at the moment of
+  opening stands next to the repair
+  head in the patched body, the
+  tension discharged in the open by
+  Step 0's plain statement that the
+  block stands updated by the patch to
+  the repair head and tree, the
+  formula recurring in PR 63's patched
+  body and standing noted here as the
+  spec report directed for this
+  read-back; and the standards axis's
+  note that the shell's later form
+  carried a further review's marks in
+  its info block, the charged
+  situation the forward charge covers
+  and this item discharges. Item 3
+  stands verified live at this hand:
+  the repository description and the
+  README lede stand byte-identical,
+  and Cargo.toml carries no
+  description key, the one named gap,
+  so item 3 stands NOT PASSING by name
+  on BP-48. BP-302's charges stand
+  likewise: its first, the read-back
+  of this round's pull request shell
+  in its true final form, on the
+  pattern of BP-260, with whatever
+  stands armed or owed at that gate
+  measured and contracted there,
+  discharged at this item with the
+  shell contracted at 8,398 chars; its
+  second, the closure gate's figures
+  standing as Round 40's last word
+  with Round 41's base gate
+  re-measuring the standing figures on
+  the new base as its own first
+  family, standing charged to BP-306
+  to BP-309 of this round; and its
+  third, the BP-48 carry, at BP-305.
+  Nothing else stands owed from Round
+  40's gate at this item, and the
+  landing stands verified, merge
+  37390b574811dcf3f9dca5a06294334862d0
+  82f6 standing as main with its tree
+  equal to the reviewed repair tree.
