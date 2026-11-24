@@ -15904,3 +15904,154 @@ in the round dossier, never a silent approximation.
   as the recommendation already routed
   to the main chat, its setting an
   owner's act, not a build lane's.
+- BP-291. The base gate stands
+  executed whole on the new base,
+  BP-288's second charge taken up as
+  this round's first family. The Round
+  39 base tree
+  fd126c1a692fe582572f9cf3585dc38482a4
+  cddf stands assembled through the
+  API into a plain directory holding
+  exactly the tree's own files, 28
+  blobs at 0 mismatches, every blob
+  verified on fetch and again on
+  write, and the standing oracle
+  extraction stands verified blob by
+  blob against its tree at 19 blobs
+  and 0 mismatches. The fleet REST
+  pool read at 4,079 of 5,000 at the
+  gate's rate check. A git fetch over
+  SSH brought the base object into the
+  local clone and a worktree stands at
+  ~/workspace/bluepencil-r39 on the
+  local branch refine/bp-round39 at
+  the base; the round's pushes are
+  server-side and no checkout is
+  load-bearing. Cargo test on the
+  assembled tree pairs at 64 tests at
+  0 failures, as library 3, binary
+  unit 0, diff 18, inventory 18,
+  proposals 25, and doc 0, clippy and
+  fmt clean, and the build's binary
+  md5 stands at
+  d7cf80fe4770809418e809b9bfa0778b at
+  this lane's target path, the value
+  build-path scoped and stated so,
+  reproduced on the new base. The
+  codepoint scan over the assembled
+  plain directory, so the file count
+  is the tree's own count, stands at
+  28 files with U+2014 at 0 and U+2013
+  at 0, the planted control counted
+  first at 1 and 2. The gate's attempt
+  history stands disclosed whole: its
+  runner first launched at
+  2026-11-24T07:03Z under the build
+  slot and queued behind the muda
+  Round 27 red team's gate, which had
+  held the slot since 06:41Z and stood
+  verified live in the process table
+  at this lane's checks, and behind
+  one further lane's queued flock from
+  06:44Z, the box write fault standing
+  hard through the whole queue with
+  verified-write probes truncated at
+  entry; a runtime restart at about
+  07:27Z then killed that launch
+  before it acquired the slot, no
+  stage of it having run, and it
+  counts nowhere; the runner
+  relaunched at 07:28Z, queued briefly
+  behind a sibling lane's live gate,
+  acquired the slot at 07:32:56Z with
+  its first probe standing open, and
+  ran whole in a single cycle, every
+  stage completing by 07:39:40Z. Every
+  figure in BP-291 to BP-294 stands
+  from that counted execution's whole
+  runs.
+- BP-292. The battery stands at 44
+  cells and 0 failures on the new
+  base, its families standing at
+  propose 4, diff 4, loader 7,
+  behavior 23, and guard 6 in the
+  body's naming, the harness's own
+  cell prefixes standing at W 4, E 4,
+  P 7, V 23, and G 6 counted from the
+  run's own PASS lines at this hand,
+  the counts agreeing exactly as a
+  multiset and in total under the red
+  team's Round 38 observation, the
+  figures standing from the counted
+  execution's whole run under the
+  attempt history at BP-291. The split
+  probe stands paired at 39 and 40
+  links on both commands and split at
+  41 and 42, the port refusing with
+  stderr exactly "error, bluepencil
+  never writes to its inputs" while
+  the oracle writes, at 0 failures.
+  BP-81 stands executed inside the
+  battery: under the interposed
+  entropy stream the port refuses both
+  commands while the oracle writes,
+  the two entropy cells passing as
+  contracted. The loader laws stand as
+  standing business inside the
+  battery: an unsupported
+  observations_version is refused by
+  name with its exact stderr, the
+  accepted values standing at "1.0" or
+  absence under BP-56, and the
+  precedence shape, then version, then
+  entries under BP-63. BP-4 and BP-12
+  stand as standing business likewise:
+  the output is a diff for a human and
+  never auto applied, and the port
+  never writes to the rules file it
+  judges, the four guard cells'
+  per-side before-and-after snapshots
+  standing scoped to the tested
+  input-as-target cells.
+- BP-293. The differential stands at
+  16 cases and 220 steps at 0 failures
+  on the new base, a fresh topical
+  partition of the standing corpus,
+  its figures and provenance qualified
+  under BP-138 as that item contracts,
+  the qualification reaching the
+  figures and their provenance only
+  and neither the harness artifact nor
+  the battery. The harness stands
+  prepared under the prep law: the
+  Round 21 harness copied with every
+  file it resolves at runtime,
+  rt_position.py included from the
+  start, the seven files' md5s
+  verified against the standing record
+  before and after the copying, and
+  the rules and observations fixtures
+  cmp-verified against the assembled
+  tree before the run.
+- BP-294. The pin suite stands at 241
+  tests at 0 failures over 19 result
+  lines on the new base, the pinned
+  flighttape tree assembled through
+  the API at 50 blobs and 0
+  mismatches, the pairing standing as
+  library 3, binary unit 0, cli 22,
+  compare 19, convert 34, digest_cli
+  5, identity 13, json 8, play 17,
+  redaction 12, robustness 15, rollup
+  22, scale 3, schema 5, screen 13,
+  slice 24, timestamps 1, validate 25,
+  and doc 0. The golden stands at
+  1,663 bytes with digest
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  pin binary's convert producing the
+  tape and its verify printing digest
+  matches against that digest, the pin
+  stage standing executed in the
+  counted execution under the attempt
+  history at BP-291.
