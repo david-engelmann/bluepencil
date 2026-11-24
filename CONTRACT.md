@@ -17974,3 +17974,53 @@ in the round dossier, never a silent approximation.
   named; it is the owner's act, not a
   build lane's, and no item of this
   round reaches for it.
+- BP-318. Repair record, standing
+  outside the record's range as the
+  repair records do. BP-312's sentence
+  on the CodeRabbit material of PR 65
+  stands corrected. As written it
+  reads that no CodeRabbit comment
+  stands on PR 65 in any form; that is
+  broader than the record it
+  summarizes, because BP-311 itself
+  records the bot shell 7137525963
+  standing on PR 65 at 11,041 chars in
+  its true final form, and the shell
+  is a CodeRabbit comment of the
+  summary kind. The claim as
+  contracted is the scoped one: no
+  formal review stands on PR 65, no
+  review comments stand on it, and no
+  actionable finding stood to
+  disposition, so Step 0 stood in its
+  negative form there and no
+  disposition of the BP-305 kind was
+  owed; BP-312's sentence stands read
+  in that scope from this record on,
+  its text unrewritten under the
+  append-only law. The correction
+  comes from CodeRabbit's review of
+  this round's pull request: comment
+  4687378768 (Minor, Functional
+  Correctness), posted in review
+  6048375527, sustained in this narrow
+  part only. Its pointer at BP-312's
+  sentence verifies exact against the
+  contract; its second pointer, at
+  BP-311's Step 0 sentence, does not
+  sustain, that sentence standing
+  expressly scoped to what stands to
+  disposition, and the shell, which
+  generated no actionable comment,
+  stands to no disposition. The bot's
+  suggested in-place edits are not
+  followed, the append-only law
+  forbidding the rewrite of a standing
+  item; the correction stands appended
+  here instead. This record cites the
+  oracle identifier in no place, so
+  the census stands at nineteen full
+  and zero contiguous as BP-317 states
+  it; the README is untouched by this
+  commit; BP-48 carries open by name
+  as BP-317 left it.
