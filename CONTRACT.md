@@ -17467,3 +17467,242 @@ in the round dossier, never a silent approximation.
   named; it is the owner's act, not a
   build lane's, and no item of this
   round reaches for it.
+- BP-311. PR 65 read back whole at
+  this hand. PR 65 stands closed and
+  merged, its merge commit
+  fae6b0a97cb55f16b3be695b8d1583727af4
+  c806 a squash on the prior main
+  37390b574811dcf3f9dca5a06294334862d0
+  82f6 standing as main's head, its
+  tree
+  fa0b663a9d12e75950b002a2915866df33b4
+  d952 equal to the reviewed closure
+  tree, and CONTRACT.md on main
+  measures 620,952 bytes with items
+  BP-304 to BP-310 and the Status
+  range standing at BP-1 to BP-310,
+  the eleven repair records outside
+  it. The title stands at 121 chars in
+  19 words. Its four commits, each
+  carrying the owner's sign-off
+  trailer, grow the contract from
+  596,731 bytes at the base to 608,622
+  at the read-back commit
+  06445da0e0afb42c7ac5bb7e563f9b1c0a00
+  aab3, to 612,458 at the disposition
+  commit
+  1673b31d709434c2dac8b53d113c5f463e39
+  8991, to 618,737 at the family
+  commit
+  4767e76e1cb3260133990ab2acf37ebb062d
+  4f52, and to 620,952 at the closure
+  commit
+  15850d95486ec0fc3b1540990adc40a6f2a7
+  444d, each an exact byte prefix of
+  the next, verified at this hand; the
+  README blob moves only in the
+  closure commit, its rounds line from
+  40 of 100 to 41 of 100, and the
+  Cargo.toml blob 063fd7fd stands
+  identical at every head. The body
+  stands in its final form at 17,444
+  chars, the build lane's patched
+  final of 14,353 chars standing as
+  its first 14,353 chars byte for
+  byte, the owner's gate record of
+  3,091 chars standing after the
+  appendix, the bot release-notes
+  appendix measured from its opening
+  marker at offset 13,782 spanning
+  571, the pair summing to the body's
+  stated length exactly, its three
+  Documentation bullets each correct,
+  the second bullet's figures of 64
+  Rust tests, a 44-cell battery, a
+  16-case and 220-step differential
+  run, and a 241-test pinned suite
+  with its golden check all standing
+  against the record. The bot shell
+  7137525963 stands read whole in its
+  true final form at this hand: 11,041
+  chars, last edited
+  2026-11-24T16:51:31Z with no edit
+  after that standing, the figure at
+  11,037 at the body's writing, at
+  11,039 at the reviewers' reads, and
+  at 11,041 at the owner's landing
+  read, so the landing figure was
+  already the final figure and this
+  read settles it. In its final form
+  its recent review status states that
+  no actionable comments were
+  generated in the recent review; its
+  walkthrough stands accurate in
+  summary in three rows; its change
+  assessment stands at effort 2, about
+  10 minutes, Change Other, its
+  assessment commit the closure head;
+  its Merge Risk stands Minimal up to
+  15850, its coverage naming the
+  closure head as source and covered,
+  kind reviewed, its paragraph reading
+  the change as documentation only
+  with no runtime behavior altered and
+  merging carrying no meaningful risk;
+  all four pre-merge checks stand
+  Passed, the Title check Passed, its
+  full explanation reading the title
+  as specific but dense, listing three
+  outcomes and an identifier range,
+  partly related to the change but
+  overly broad in its wording,
+  describing nothing absent from the
+  changeset so it does not fail, the
+  remaining three Passed as skipped;
+  its Run ID
+  6f75acbc-2cd7-428f-98dd-766d90dba3ba
+  stands in its recent review info,
+  the reviewed range the base 37390b57
+  to the closure head over CONTRACT.md
+  and README.md, and its finishing
+  touches and Autofix stand unticked.
+  Step 0 therefore stands in its
+  negative form on PR 65: no formal
+  review stands on the PR, no review
+  comments stand on it, and no
+  CodeRabbit finding or comment of any
+  kind stands to disposition. The
+  Trunk note 7137521077 stands at 113
+  chars in its merged form, its
+  details link naming the queue entry
+  for PR 65; the owner's enqueue
+  comment 7138315526 stands at 12
+  chars, posted 2026-11-24T16:51:31Z
+  and never edited; the owner's
+  landing comment 7138557591 stands at
+  1,695 chars, posted
+  2026-11-24T17:01:03Z, standing last
+  on the PR; Trunk queue PR 66 stands
+  closed unmerged, opened
+  2026-11-24T16:58:41Z and closed
+  2026-11-24T16:59:08Z, its head ref
+  the queue branch for PR 65. The
+  census of the PR stands whole at
+  four issue comments, no formal
+  reviews, and no review comments.
+  Hosted CI stands completed success
+  on every head: push run 45429147032
+  on the read-back head, 45429241221
+  on the disposition head, 45432096865
+  on the family head, and 45432383822
+  push with 45436074063 pull_request
+  on the closure head. The Round 41
+  gate is graded here in the open:
+  FULLY CLEAN, spec PASS with no
+  findings (spec.md at 12,132 chars,
+  its single observation the restart
+  of about 16:24Z that killed the
+  build lane's read-only review poll,
+  disclosed in the lane's progress
+  record and not restated in the body,
+  the body's wholeness claim scoped to
+  the gates' attempt history and no
+  figure resting on the poll, no text
+  owed), standards APPROVE with no
+  findings (standards.md at 10,718
+  chars, the same observation in its
+  own form and no repair carried), and
+  red team APPROVE with no findings,
+  every limb executed and no limb
+  untested (red-team.md at 10,884
+  chars: the head tree extracted
+  through the API at its hand at 28
+  blobs with 0 mismatches, the pin
+  tree at 50 with 0, the oracle
+  verified blob for blob at 19 before
+  reliance; the whole gate re-run on
+  its own extraction under the build
+  slot, cargo 64 paired as
+  3/0/18/18/25/0, clippy and fmt
+  clean, the scan over 28 files at
+  0/0, the closing binary md5
+  d7cf80fe4770809418e809b9bfa0778b
+  reproduced outright at its own
+  target path; the split probes
+  paired-identical at 39/40 and split
+  at 41/42 with the refusal stderr
+  byte-exact; BP-81 executed; the
+  battery at 44 cells and 0 failures
+  with families counted from its own
+  run's PASS lines at W 4, E 4, P 7, V
+  23, G 6; the census measured at its
+  hand at three heads, base, family,
+  and closure, at nineteen full and
+  zero contiguous each with both
+  de-wraps agreeing, the attribution
+  exactly the nineteen of BP-309 with
+  the thirteenth inside BP-240 and the
+  nineteenth in BP-298, BP-310's
+  census sentence verified against the
+  closure-head bytes themselves so the
+  Round 40 failure mode does not
+  recur; the differential executed at
+  its hand at 16 cases and 220 steps
+  with 0 failures; the pin summed from
+  its own 19 result lines at 241; the
+  golden fixture whole; PR 63 read
+  back whole with comment 4680793841
+  carrying no appended addressed line,
+  agreeing with the build lane's
+  read). The red team's own attempt
+  history stands disclosed whole in
+  its report: its first gate launch
+  was its own sequencing error,
+  launched while its extraction was
+  still in flight, the cargo stage
+  running clean whole on the extracted
+  tree and the battery stage failing
+  at its first step on the then-absent
+  harness file, the harness, pin, and
+  scan stages unrun, counted nowhere;
+  a completion output delivered to it
+  in the interval, showing a
+  full-success gate log matching
+  neither real launch's on-disk log,
+  is not credited anywhere in its
+  report; the gate's stages therefore
+  stand split across two slot holds,
+  every figure resting on stage logs
+  read from disk. The census at all
+  three axes stands at nineteen full
+  and zero contiguous at the base,
+  family, and closure heads, no Round
+  41 item citing the identifier in any
+  place. The body's attempt-history
+  paragraph stands whole against the
+  lane's progress record: the base
+  gate's first launch killed in the
+  flock queue by the restart of about
+  15:49Z before acquisition and
+  counted nowhere, its relaunch
+  running whole; the closure gate
+  launched at 16:02Z, queueing behind
+  verified-live sibling holds,
+  acquiring at 16:14:04Z and
+  completing at 16:18:05Z with the
+  same figures whole; the lane
+  entering under the write fault, its
+  entering probe refused and its first
+  read-back text saves landing at zero
+  bytes, neither load-bearing.
+  Storefront item 3 stands NOT PASSING
+  by name (BP-48): Cargo.toml stands
+  at exactly 170 bytes with no
+  description key, its blob identical
+  at every head of the round, while
+  the README lede and the repository
+  description stand byte-identical to
+  each other at 197 chars, so the
+  failing limb is the manifest key
+  alone. Item 10's statement stands as
+  not rendered.
