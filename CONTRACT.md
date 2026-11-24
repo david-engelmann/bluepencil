@@ -16732,3 +16732,51 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-303. Repair record, standing
+  outside the Status range. The oracle
+  census contracted at BP-301 and
+  BP-302 stands corrected at this
+  record, on the disposition of this
+  round's pull request's one
+  actionable review comment, sustained
+  at this lane's own hand. BP-298
+  cites the oracle commit identifier
+  in full, its citation split across
+  the wrap at the thirty-six column
+  boundary, so by the method of BP-222
+  it de-wraps into a full occurrence:
+  the census at the family head and at
+  the closure head stands at nineteen
+  full occurrences with zero
+  contiguous, counted mechanically at
+  this lane's hand after the comment
+  stood, both de-wrap counts agreeing,
+  the nineteenth occurrence standing
+  in BP-298. The count of eighteen
+  stands correct at the base tree and
+  at the BP-297 head, where this lane
+  measured it before the family was
+  appended; BP-301's census statement,
+  made at the family head, and
+  BP-302's statement that no
+  occurrence was added this round,
+  with this round's items citing the
+  identifier in no place, stand
+  corrected by this record, the
+  originals unrewritten: this round
+  adds one occurrence, in BP-298, the
+  last added standing in BP-298 and
+  not BP-277, and the attribution
+  stands at one each in BP-161,
+  BP-166, BP-174, BP-182, BP-189,
+  BP-196, BP-203, BP-210, BP-217,
+  BP-224, BP-229, BP-233, BP-240,
+  BP-248, BP-255, BP-262, BP-270,
+  BP-277, and BP-298. The closure
+  gate's figures stand as executed
+  whole on the closure tree itself and
+  are unchanged by this record, which
+  appends text to the contract alone,
+  every other blob at this head
+  standing identical to the closure
+  tree's.
