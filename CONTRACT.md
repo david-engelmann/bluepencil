@@ -17929,3 +17929,48 @@ in the round dossier, never a silent approximation.
   control counted first (U+2014 once,
   U+2013 twice), the tree standing at
   U+2014 0, U+2013 0.
+- BP-317. Round 42 closes. Its record
+  stands at BP-1 to BP-317, the repair
+  records BP-138, BP-146, BP-154,
+  BP-155, BP-163, BP-171, BP-179,
+  BP-229, BP-245, BP-267, and BP-303
+  standing outside that range, and the
+  README rounds line moves to 42 of
+  100 in this closure commit alone.
+  The closure gate, executed whole on
+  this closure tree itself, stands
+  deferred to the pull request record
+  of this round in full, as the
+  standing form of BP-281, BP-288,
+  BP-295, BP-302, and BP-310 carries
+  it; no staging claim in this round
+  names a tree the gate did not run
+  on. The oracle census stands as
+  BP-316 states it at the base head,
+  nineteen full occurrences and zero
+  contiguous; this closure item cites
+  the identifier in no place, so the
+  count cannot move between the family
+  head and this closure head, and
+  BP-316's sentence stands as the
+  round's census. Three charges stand
+  to Round 43. First, the bot shell
+  standing on this round's pull
+  request at the owner's patch read is
+  read back in its true final form,
+  its figure at the body's writing
+  standing moment-bounded in the body
+  as the standing form carries it.
+  Second, this round's closure gate
+  figures stand re-measured at Round
+  43's base gate, the base gate
+  reproducing them in full as it
+  reproduced Round 41's here. Third,
+  BP-48 carries open by name: the
+  absent description key in
+  Cargo.toml, the file standing at
+  exactly 170 bytes, untouched by this
+  round as by every round since it was
+  named; it is the owner's act, not a
+  build lane's, and no item of this
+  round reaches for it.
