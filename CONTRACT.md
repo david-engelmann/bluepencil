@@ -18302,3 +18302,66 @@ in the round dossier, never a silent approximation.
   chars, so the failing limb is the
   manifest key alone. Item 10's
   statement stands as not rendered.
+- BP-320. The post-landing material of
+  PR 67 disposed. The owner's landing
+  comment 7155854528 of 1,657 chars,
+  standing last on the PR, carries two
+  charges to this round: the bot shell
+  7146179883 read back in its true
+  final form, discharged at BP-319,
+  which settles the shell at 8,803
+  chars, last edited
+  2026-11-24T23:53:07Z; and BP-48
+  carried open untouched, discharged
+  here by the carry below. Its landing
+  verification stands confirmed at
+  this hand at BP-319: the merge tree
+  equal to the reviewed repair tree,
+  main at the merge commit, the
+  contract on main at 640,436 bytes
+  with the Status range at BP-1 to
+  BP-317 and the repair record BP-318
+  outside it; its gate summary agrees
+  with the three reports read whole at
+  this hand, spec PASS, standards
+  APPROVE, red team APPROVE, no
+  findings at any axis and every limb
+  executed, the census at nineteen
+  full and zero contiguous at the
+  base, closure, and repair heads at
+  every axis, the closure gate's
+  figures standing from the asserting
+  resolver's counted re-execution
+  alone, and the gate FULLY CLEAN. The
+  shell's figure moved once after the
+  reviewers' reads, from 8,801 chars
+  with last edit 2026-11-24T22:31:57Z
+  to 8,803 chars with last edit
+  2026-11-24T23:53:07Z, and stands
+  unmoved since, so the landing read
+  and this read agree on the figure
+  and the settlement stands. The one
+  formal review standing on PR 67 and
+  its one review comment stand
+  dispositioned in full in the round's
+  own record, the comment sustained in
+  its narrow part only and answered by
+  the appended repair record BP-318,
+  the comment carrying its appended
+  addressed line, so no disposition of
+  the BP-305 kind is owed this round
+  and none is carried; nothing stands
+  posted on PR 67 after the landing
+  comment. BP-317's three charges to
+  this round stand disposed as
+  follows: the shell read-back
+  discharged at BP-319; Round 42's
+  closure gate figures standing
+  re-measured at this round's base
+  gate in full, charged to the family
+  at BP-321 to BP-324; and BP-48
+  carried open by name, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
