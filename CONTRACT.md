@@ -19429,3 +19429,177 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-335. The base gate ran whole at
+  the base head ea1e9ca3, closing the
+  measurement Round 44's closure
+  charged forward. The base tree
+  aed79fde was assembled fresh through
+  the API into a plain directory
+  holding exactly the tree's own
+  files, 28 blobs with every blob's
+  git identifier verified equal on
+  fetch and again on write, zero
+  mismatches. The pinned flighttape
+  tree afd4d7d1 was assembled the same
+  way at 50 blobs, zero mismatches,
+  and the standing oracle extraction
+  was verified blob by blob against
+  its tree before any reliance at 19
+  blobs, zero mismatches. The cargo
+  leg ran clean on the assembled base
+  tree. The pairing script read the
+  test log's own headers and paired
+  each with the next result line, and
+  the suite stood at 64 tests with
+  none failed and none ignored, three
+  at the library, none at the binary,
+  eighteen at diff, eighteen at
+  inventory, twenty five at proposals,
+  and none at doc tests. Clippy under
+  -D warnings and the format check
+  both stood clean. The binary built
+  from the base tree at this round's
+  target path measured md5
+  d7cf80fe4770809418e809b9bfa0778b,
+  the contracted value the recent
+  rounds reproduced at their own
+  target paths, so the pair stands
+  equal at the value itself at this
+  target path, its scope the build
+  path as ever. The harness copies for
+  the battery, split, and differential
+  legs were prepared under the
+  standing prep law, every one of the
+  seven harness files md5-verified
+  against the Round 21 bank before and
+  after the copy, rt_position.py among
+  them from the start, and the two
+  synthetic fixtures cmp-verified
+  identical in the copy.
+- BP-336. The battery, the split
+  probe, and the draw's refusal ran
+  whole at the base head on the same
+  assembled tree. The battery stood at
+  44 cells with zero failures, counted
+  from its own PASS lines rather than
+  its summary, four in the write
+  family, four in the entropy family,
+  seven in the proposal family, twenty
+  three in the validation family, and
+  six in the guard family. Under
+  entropy interposition the port
+  refused both commands while the
+  oracle wrote, the two interpose
+  cells passing with the refusal
+  matched and the tree unchanged, so
+  BP-81 stands executed in this
+  round's battery as in every round's.
+  The guard family's input-as-target
+  cells stand in the post-BP-154 and
+  BP-163 form, the per-side
+  before-and-after snapshot scoped to
+  the four tested cells, the inputs
+  byte-identical after judgment on
+  both sides. The split probe stood
+  paired-identical at 39 and at 40
+  links on both commands, and at 41
+  and at 42 links the arms split
+  outright, the oracle writing through
+  the chain while the port refused
+  with exit 1 and the refusal line
+  byte exact, error, bluepencil never
+  writes to its inputs, the head link
+  left standing as the chain's second
+  link. Zero split probe failures
+  stood at the end of the run.
+- BP-337. The differential harness ran
+  whole at the base head on the same
+  assembled tree and stood at 16 cases
+  and 220 steps with zero failures.
+  The harness artifact stands
+  identified as ever by the md5s of
+  its seven files, battery21.py
+  fbbe91ffaa756094ebea480fd5865906,
+  split_probe21.py
+  cb87cded93c3b5754a7c84c6f81b61f6,
+  differential21.py
+  9f346303a241cdef3c863713cdd68503,
+  rt_position.py
+  087b7373ecb3a7969e32e678052cc525,
+  bp10_clock.so
+  8edb43b98c3234ac47d041c02a25f492,
+  bp10_urandom.so
+  19875fdc80c29455282e7832cdcf5422,
+  and bp10_ustream.so
+  2719afc20af3aa2a765180311c74e4e4,
+  each md5-verified in this round's
+  harness copy before the run. The
+  qualification of BP-138 stands as
+  BP-245 states it, over the
+  differential's figures and their
+  provenance only, and nothing in this
+  item extends it to the harness
+  artifact or to the battery. The
+  differential re-measurement Round
+  44's closure charged forward stands
+  discharged by this execution.
+- BP-338. The pin suite, the golden
+  conversion, the census, and the
+  codepoint scan ran whole at the base
+  head. The pin suite stood at 241
+  tests summed from its own 19 result
+  lines, thirteen of them at the
+  screen target, with none failed. The
+  golden conversion of the pin tree's
+  Claude session fixture produced a
+  tape of 1,663 bytes whose digest
+  printed as the contracted digest,
+  and the verify command accepted that
+  digest against the tape and printed
+  digest matches. The census at the
+  base head, taken by BP-222's method
+  over the contract bytes fetched
+  fresh through the API, stood at 19
+  full occurrences of the oracle
+  commit identifier and zero
+  contiguous, the attribution exactly
+  the nineteen of BP-303, one each in
+  BP-161, BP-166, BP-174, BP-182,
+  BP-189, BP-196, BP-203, BP-210,
+  BP-217, BP-224, BP-229, BP-233,
+  BP-240, BP-248, BP-255, BP-262,
+  BP-270, BP-277, and BP-298, the
+  nineteenth of them inside BP-298 and
+  the thirteenth inside BP-240 under
+  its doubled marker header. No item
+  of this round cites the identifier
+  in any place, so the count cannot
+  move at the family or the closure
+  head. The codepoint scan over the
+  assembled base tree's 28 files stood
+  at zero em dashes and zero en
+  dashes, the planted control counted
+  first at one em dash and two en
+  dashes. The round's attempt history
+  stands disclosed whole. This lane's
+  base gate queued under the build
+  slot behind verified-live sibling
+  holds from its first launch at
+  2026-11-26T08:52Z; three runtime
+  restarts, at about 10:31Z, at about
+  12:58Z, and at about 15:02Z, each
+  killed the queued launch before it
+  ever acquired the slot, and each
+  such launch counts nowhere, no stage
+  of any of them having completed; the
+  fourth launch acquired the slot at
+  2026-11-26T15:05:32Z and the gate
+  ran whole on its first cycle by
+  2026-11-26T15:10:09Z, every stage
+  completing on its first attempt
+  inside the one hold, and every base
+  figure in BP-335 to BP-338 stands
+  from that counted execution alone.
+  The census above stands from the
+  in-memory execution over the API
+  bytes alone.
