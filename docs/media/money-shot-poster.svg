@@ -23,5 +23,6 @@
   <text x="34" y="425" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#38BDF8">## promote rule-3 (Repository rules / Architecture to Repository rules)</text>
   <text x="34" y="456" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" font-weight="600" fill="#34D399">- - Keep error messages actionable and free of stack traces  [followed x2 -&gt; top section]</text>
   <line x1="12" y1="492" x2="948" y2="492" stroke="#1E293B" stroke-width="1"/>
-  <text x="32" y="514" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600" fill="#38BDF8">EXIT 0  |  100 rules x 1,500 observations proposed in 27.54 ms (54,466 obs/s)</text>
+  <circle cx="32" cy="510" r="4.5" fill="#10B981"/>
+  <text x="44" y="514" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600" fill="#38BDF8">EXIT 0  |  564.5 KiB LTO binary  |  500 rules x 10k obs proposed in 147.08 ms (67,990 obs/s)</text>
 </svg>

@@ -6,8 +6,10 @@ multilingual = false
 src = "src"
 
 [output.html]
+site-url = "/bluepencil/"
 default-theme = "navy"
 preferred-dark-theme = "navy"
+additional-css = ["theme/custom.css"]
 git-repository-url = "https://github.com/david-engelmann/bluepencil"
 edit-url-template = "https://github.com/david-engelmann/bluepencil/edit/main/book/{path}"
 

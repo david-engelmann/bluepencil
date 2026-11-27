@@ -5,7 +5,7 @@
 | **Core mechanism** | Deterministic threshold rules over empirical session receipts | Stochastic LLM rewriting loops optimizing a benchmark metric | Syntax, spelling, and prose style linting | Multi-tape trace mining proposing rules, hooks, and roster hunks |
 | **Hallucination risk** | Zero (never invents rule text; rewrites require caller-supplied wording + verified quote) | High (black-box prompt mutations can drop critical safety invariants) | Zero (syntactic only) | Trace-anchored hunk proposals |
 | **Auto-mutation** | Never writes to input files; human reviews `diff` | Mutates prompt candidates automatically | `--fix` mutates formatting in place | Emits proposal file only |
-| **Dependencies** | Zero Rust crates (`std` only) | Python + LLM API keys | Node.js or Go | Retrospective Line Rust toolchain |
+| **Dependencies** | 1 Rust crate (`sha2` only, zero network/SDKs) | Python + LLM API keys | Node.js or Go | Retrospective Line Rust toolchain |
 
 ## Why `bluepencil` Never Invents Rewrites Automatically
 

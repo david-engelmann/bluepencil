@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/media/lockup-dark.svg">
-    <img src="docs/media/lockup-light.svg" alt="bluepencil" width="780">
+    <source media="(prefers-color-scheme: dark)" srcset="media/lockup-dark.svg">
+    <img src="media/lockup-light.svg" alt="bluepencil" width="780">
   </picture>
 </p>
 
@@ -19,7 +19,7 @@ An editor for rules files that works the way a copy editor works copy: strikes t
 Give bluepencil a rules file and the observations gathered on the sessions that ran under it, and it answers with a proposal document. Rules the evidence shows ignored are proposed for deletion, supplied rewrites of rules agents misread are proposed with the misreading quoted, and followed rules buried deep in the file are proposed moved up. Every proposal carries the observations it rests on as evidence, and nothing is applied on its own. The tool never writes to the files it reads.
 
 <p align="center">
-  <img src="docs/media/money-shot.gif" alt="bluepencil propose and diff CLI showcase" width="880">
+  <img src="media/money-shot.gif" alt="bluepencil propose and diff CLI showcase" width="880">
 </p>
 
 ## Install
@@ -41,6 +41,8 @@ cargo install --path . --locked
 > Note: Do not run bare `cargo install bluepencil` against crates.io until `bluepencil-rules` is published, as an unrelated crate holds the bare `bluepencil` name on crates.io.
 
 ## Quickstart
+
+From a local checkout of this repository:
 
 Run `propose` and `diff` directly against the shipped `examples/` fixtures:
 
@@ -72,7 +74,7 @@ target sha256 76f1c52ad6df42cc79fd8a6845238eb7eb4a3e6fb57d76df9b08e370bd40ce92
 ## Architecture
 
 <p align="center">
-  <img src="docs/media/architecture.svg" alt="bluepencil threshold engine architecture" width="900">
+  <img src="media/architecture.svg" alt="bluepencil threshold engine architecture" width="900">
 </p>
 
 ## Usage & Safety Guarantees
@@ -84,29 +86,33 @@ target sha256 76f1c52ad6df42cc79fd8a6845238eb7eb4a3e6fb57d76df9b08e370bd40ce92
 
 ## Performance
 
-Measured on Apple M3 Max (`--release`, `738.1 KiB` zero-dep binary; details in [docs/PERFORMANCE.md](docs/PERFORMANCE.md)):
+<p align="center">
+  <img src="media/benchmark-chart.svg" alt="benchmark profile" width="900">
+</p>
 
-| Rules | Observations | `propose` | `diff` | Throughput (`propose`) |
+Measured on Apple M3 Max (`--release`, `738.1 KiB` zero-dep binary; details in [docs/PERFORMANCE.md](PERFORMANCE.md)):
+
+| Rules in `rules.md` | Session Observations | `propose` Latency (`-o`) | `diff` Latency | Observation Throughput (`propose`) |
 | ---: | ---: | ---: | ---: | ---: |
-| `25` | `250` | `27.86 ms` | `19.17 ms` | `8,973 obs/s` |
-| `100` | `1,500` | `27.54 ms` | `23.61 ms` | `54,466 obs/s` |
-| `500` | `10,000` | `286.7 ms` | `128.96 ms` | `34,880 obs/s` |
+| `25` | `250` | `12.48 ms` | `10.15 ms` | `20,032 obs/s` |
+| `100` | `1,500` | `26.78 ms` | `18.94 ms` | `56,012 obs/s` |
+| `500` | `10,000` | `147.08 ms` | `203.77 ms` | `67,990 obs/s` |
 
 ## Where `bluepencil` Fits in the Retrospective Line
 
 <p align="center">
-  <img src="docs/media/retrospective-arc.svg" alt="Retrospective Line ten-repository architecture" width="900">
+  <img src="media/retrospective-arc.svg" alt="Retrospective Line ten-repository architecture" width="900">
 </p>
 
 ## Documentation
 
-- [Documentation Index](docs/README.md) & [Searchable Handbook](https://david-engelmann.github.io/bluepencil/)
-- [Operator & Integrator Guide](docs/GUIDE.md)
-- [Technical Architecture](docs/ARCHITECTURE.md)
-- [Wire Formats & JSON Schemas](docs/FORMATS.md)
-- [Ecosystem Comparison](docs/COMPARISON.md)
-- [Performance Benchmarks](docs/PERFORMANCE.md)
-- [FAQ](docs/FAQ.md)
+- [Documentation Index](README.md) & [Searchable Handbook](https://david-engelmann.github.io/bluepencil/)
+- [Operator & Integrator Guide](GUIDE.md)
+- [Technical Architecture](ARCHITECTURE.md)
+- [Wire Formats & JSON Schemas](FORMATS.md)
+- [Ecosystem Comparison](COMPARISON.md)
+- [Performance Benchmarks](PERFORMANCE.md)
+- [FAQ](FAQ.md)
 
 ## Status
 
@@ -116,4 +122,4 @@ Closed perfection rounds, 47 of 100.
 
 ## License
 
-MIT. See the [LICENSE](LICENSE) file.
+MIT. See the [LICENSE](../LICENSE) file.

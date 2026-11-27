@@ -1,63 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 480" width="1040" height="480" role="img" aria-label="bluepencil technical architecture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 490" width="1040" height="490" role="img" aria-label="bluepencil technical architecture">
   <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1E293B" opacity="0.65"/>
+    </pattern>
     <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 1 L 9 5 L 0 9 z" fill="#38BDF8"/>
     </marker>
-    <marker id="arrMuted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748B"/>
-    </marker>
   </defs>
-  <rect width="1040" height="480" rx="14" fill="#0B0F17" stroke="#1E293B" stroke-width="2"/>
+  <rect width="1040" height="490" rx="14" fill="#0B0F17" stroke="#1E293B" stroke-width="2"/>
+  <rect width="1040" height="490" rx="14" fill="url(#grid)"/>
   <text x="28" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700" fill="#F8FAFC">bluepencil  //  TECHNICAL ARCHITECTURE &amp; INVARIANT BOUNDARIES</text>
   <text x="28" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" fill="#94A3B8">Every proposed AGENTS.md or CLAUDE.md edit carries quoted session receipts; never mutates inputs.</text>
   <line x1="28" y1="72" x2="1012" y2="72" stroke="#1E293B" stroke-width="1.2"/>
-  <rect x="28" y="96" width="225" height="140" rx="10" fill="#111827" stroke="#334155" stroke-width="1.8"/>
-  <text x="42" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">1a. Target Rules File</text>
-  <text x="42" y="140" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">AGENTS.md / CLAUDE.md</text>
-  <text x="42" y="157" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">SHA-256 target lock</text>
-  <text x="42" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Heading hierarchy stack</text>
-  <text x="42" y="191" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Ordered bullet rule-1..N</text>
-  <text x="42" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Exact midpoint split:</text>
-  <text x="42" y="225" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">first half vs second half</text>
-  <rect x="28" y="256" width="225" height="188" rx="10" fill="#111827" stroke="#334155" stroke-width="1.8"/>
-  <text x="42" y="280" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">1b. Session Observations</text>
-  <text x="42" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">observations.json (v1.0)</text>
-  <text x="42" y="317" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Per-act evidence entries:</text>
-  <text x="42" y="334" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  - followed + quote</text>
-  <text x="42" y="351" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  - ignored + quote</text>
-  <text x="42" y="368" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  - misreading + quote</text>
-  <text x="42" y="385" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">rewrites[]: exact rule,</text>
-  <text x="42" y="402" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  misreading_quote, and</text>
-  <text x="42" y="419" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  replacement wording</text>
-  <rect x="300" y="148" width="390" height="220" rx="10" fill="#082438" stroke="#38BDF8" stroke-width="1.8"/>
-  <text x="314" y="172" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#38BDF8">2. Exact-Text Matcher &amp; Threshold Engine</text>
-  <text x="314" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Matches observations by exact rule text (edited rule = unmatched)</text>
-  <text x="314" y="209" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Duplicate rules attach to first occurrence + emit warning</text>
-  <text x="314" y="226" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8"></text>
-  <text x="314" y="243" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">DELETE rule   iff  ignored &gt;= 2  AND  followed == 0</text>
-  <text x="314" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">REWRITE rule  iff  rewrite entry quotes a recorded misreading</text>
-  <text x="314" y="277" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">PROMOTE rule  iff  followed &gt;= 2 AND rule in second half</text>
-  <text x="314" y="294" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">                   AND rule section != first rule section</text>
-  <text x="314" y="311" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8"></text>
-  <text x="314" y="328" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Every proposal embeds full quoted evidence receipts</text>
-  <rect x="736" y="96" width="276" height="155" rx="10" fill="#111827" stroke="#334155" stroke-width="1.8"/>
-  <text x="750" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">3a. Proposal JSON (v1.0)</text>
-  <text x="750" y="140" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">target.sha256 pin</text>
-  <text x="750" y="157" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">inventory[] rule counts</text>
-  <text x="750" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">unmatched_observations[]</text>
-  <text x="750" y="191" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">proposals[] with hunks</text>
-  <text x="750" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">schema/proposal.schema.json</text>
-  <rect x="736" y="278" width="276" height="166" rx="10" fill="#111827" stroke="#38BDF8" stroke-width="1.8"/>
-  <text x="750" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">3b. Editorial Diff &amp; Guard</text>
-  <text x="750" y="322" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">bluepencil diff rules prop</text>
-  <text x="750" y="339" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Verifies target.sha256!</text>
-  <text x="750" y="356" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Input write-refusal guard</text>
-  <text x="750" y="373" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">(inodes, symlinks, paths)</text>
-  <text x="750" y="390" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">16-byte OS CSPRNG sibling</text>
-  <text x="750" y="407" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">tempfile (/dev/urandom /</text>
-  <text x="750" y="424" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Win32 BCryptGenRandom)</text>
-  <line x1="253" y1="166" x2="298" y2="215" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
-  <line x1="253" y1="340" x2="298" y2="290" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
+  <rect x="28" y="94" width="225" height="148" rx="10" fill="#111827" stroke="#334155" stroke-width="1.8"/>
+  <text x="42" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">1a. Target Rules File</text>
+  <text x="42" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">AGENTS.md / CLAUDE.md</text>
+  <text x="42" y="155" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">sha2 SHA-256 target lock</text>
+  <text x="42" y="172" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Heading hierarchy stack</text>
+  <text x="42" y="189" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Ordered bullet rule-1..N</text>
+  <text x="42" y="206" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Indented continuation lines</text>
+  <text x="42" y="223" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Midpoint half-split index</text>
+  <rect x="28" y="260" width="225" height="198" rx="10" fill="#111827" stroke="#334155" stroke-width="1.8"/>
+  <text x="42" y="284" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">1b. Session Observations</text>
+  <text x="42" y="304" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">observations.json (v1.0)</text>
+  <text x="42" y="321" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Per-act evidence entries:</text>
+  <text x="42" y="338" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  - followed + quote</text>
+  <text x="42" y="355" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  - ignored + quote</text>
+  <text x="42" y="372" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  - misreading + quote</text>
+  <text x="42" y="389" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">rewrites[]: exact rule,</text>
+  <text x="42" y="406" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  misreading_quote, and</text>
+  <text x="42" y="423" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">  replacement wording</text>
+  <rect x="300" y="144" width="390" height="228" rx="10" fill="#082438" stroke="#38BDF8" stroke-width="1.8"/>
+  <text x="314" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#38BDF8">2. O(R + O) HashMap Matcher &amp; Thresholds</text>
+  <text x="314" y="188" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">HashMap&lt;&amp;[u16], usize&gt; joins observations by exact rule text</text>
+  <text x="314" y="205" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Duplicate rules attach to first occurrence + emit warning</text>
+  <text x="314" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8"></text>
+  <text x="314" y="239" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">DELETE rule   iff  ignored &gt;= 2  AND  followed == 0</text>
+  <text x="314" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">REWRITE rule  iff  rewrite entry quotes a recorded misreading</text>
+  <text x="314" y="273" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">PROMOTE rule  iff  followed &gt;= 2 AND rule in second half</text>
+  <text x="314" y="290" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">                   AND rule section != first rule section</text>
+  <text x="314" y="307" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8"></text>
+  <text x="314" y="324" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Every proposal embeds full quoted evidence receipts</text>
+  <rect x="736" y="94" width="276" height="160" rx="10" fill="#111827" stroke="#334155" stroke-width="1.8"/>
+  <text x="750" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">3a. Proposal JSON (v1.0)</text>
+  <text x="750" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">target.sha256 pin</text>
+  <text x="750" y="155" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">inventory[] rule counts</text>
+  <text x="750" y="172" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">unmatched_observations[]</text>
+  <text x="750" y="189" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">proposals[] with hunks</text>
+  <text x="750" y="206" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">schema/proposal.schema.json</text>
+  <rect x="736" y="276" width="276" height="182" rx="10" fill="#111827" stroke="#38BDF8" stroke-width="1.8"/>
+  <text x="750" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#F8FAFC">3b. Editorial Diff &amp; Guard</text>
+  <text x="750" y="320" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">bluepencil diff rules prop</text>
+  <text x="750" y="337" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Verifies target.sha256!</text>
+  <text x="750" y="354" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Input write-refusal guard</text>
+  <text x="750" y="371" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">(inodes, symlinks, paths)</text>
+  <text x="750" y="388" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">16-byte OS CSPRNG sibling</text>
+  <text x="750" y="405" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">tempfile + atomic rename</text>
+  <text x="750" y="422" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">Never mutates input files</text>
+  <line x1="253" y1="168" x2="298" y2="215" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
+  <line x1="253" y1="348" x2="298" y2="295" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
   <line x1="690" y1="220" x2="734" y2="175" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
-  <line x1="690" y1="295" x2="734" y2="350" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
+  <line x1="690" y1="295" x2="734" y2="355" stroke="#38BDF8" stroke-width="2.2" marker-end="url(#arr)"/>
 </svg>

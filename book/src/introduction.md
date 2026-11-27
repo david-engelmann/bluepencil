@@ -42,6 +42,8 @@ cargo install --path . --locked
 
 ## Quickstart
 
+From a local checkout of this repository:
+
 Run `propose` and `diff` directly against the shipped `examples/` fixtures:
 
 ```bash
@@ -84,13 +86,17 @@ target sha256 76f1c52ad6df42cc79fd8a6845238eb7eb4a3e6fb57d76df9b08e370bd40ce92
 
 ## Performance
 
-Measured on Apple M3 Max (`--release`, `738.1 KiB` zero-dep binary; details in [docs/PERFORMANCE.md](docs/PERFORMANCE.md)):
+<p align="center">
+  <img src="media/benchmark-chart.svg" alt="benchmark profile" width="900">
+</p>
 
-| Rules | Observations | `propose` | `diff` | Throughput (`propose`) |
+Measured on Apple M3 Max (`--release`, `738.1 KiB` zero-dep binary; details in [docs/PERFORMANCE.md](performance.md)):
+
+| Rules in `rules.md` | Session Observations | `propose` Latency (`-o`) | `diff` Latency | Observation Throughput (`propose`) |
 | ---: | ---: | ---: | ---: | ---: |
-| `25` | `250` | `27.86 ms` | `19.17 ms` | `8,973 obs/s` |
-| `100` | `1,500` | `27.54 ms` | `23.61 ms` | `54,466 obs/s` |
-| `500` | `10,000` | `286.7 ms` | `128.96 ms` | `34,880 obs/s` |
+| `25` | `250` | `12.48 ms` | `10.15 ms` | `20,032 obs/s` |
+| `100` | `1,500` | `26.78 ms` | `18.94 ms` | `56,012 obs/s` |
+| `500` | `10,000` | `147.08 ms` | `203.77 ms` | `67,990 obs/s` |
 
 ## Where `bluepencil` Fits in the Retrospective Line
 
@@ -100,13 +106,13 @@ Measured on Apple M3 Max (`--release`, `738.1 KiB` zero-dep binary; details in [
 
 ## Documentation
 
-- [Documentation Index](docs/README.md) & [Searchable Handbook](https://david-engelmann.github.io/bluepencil/)
-- [Operator & Integrator Guide](docs/GUIDE.md)
-- [Technical Architecture](docs/ARCHITECTURE.md)
-- [Wire Formats & JSON Schemas](docs/FORMATS.md)
-- [Ecosystem Comparison](docs/COMPARISON.md)
-- [Performance Benchmarks](docs/PERFORMANCE.md)
-- [FAQ](docs/FAQ.md)
+- [Documentation Index](introduction.md) & [Searchable Handbook](https://david-engelmann.github.io/bluepencil/)
+- [Operator & Integrator Guide](guide.md)
+- [Technical Architecture](architecture.md)
+- [Wire Formats & JSON Schemas](formats.md)
+- [Ecosystem Comparison](comparison.md)
+- [Performance Benchmarks](performance.md)
+- [FAQ](faq.md)
 
 ## Status
 
@@ -116,4 +122,4 @@ Closed perfection rounds, 47 of 100.
 
 ## License
 
-MIT. See the [LICENSE](LICENSE) file.
+MIT. See the [LICENSE](https://github.com/david-engelmann/bluepencil/blob/main/LICENSE) file.

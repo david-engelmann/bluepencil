@@ -8,7 +8,7 @@ Agent instruction files (`AGENTS.md`, `CLAUDE.md`) rot in predictable ways: team
 
 ## 1. Zero-Dependency Pipeline
 
-`bluepencil` has **zero runtime crate dependencies** (`Cargo.toml` carries an empty `[dependencies]` table; SHA-256, JSON parsing/serialization, Markdown heading/list scanning, and OS CSPRNG tempfile generation are implemented directly in standard Rust).
+`bluepencil` depends only on `sha2` (`0.10`) for FIPS 180-4 SHA-256 target hashing, implementing JSON parsing, canonical emission, Markdown rule extraction, `O(R + O)` `HashMap` observation joining, and atomic tempfile guards directly in pure Rust.
 
 1. **Markdown Inventory & Target Hash (`rules.md`)**:
    - Computes the exact SHA-256 hex digest of the raw `rules.md` bytes (`target.sha256`) so `bluepencil diff` refuses stale proposals if `rules.md` changed by even a single byte.
@@ -22,7 +22,7 @@ Agent instruction files (`AGENTS.md`, `CLAUDE.md`) rot in predictable ways: team
    - **`promote`**: `followed >= 2` AND the rule sits in the **second half** of the rule inventory (`index >= N / 2`) AND its section path differs from `rule-1`'s section path.
 4. **Input Write-Refusal Guard & CSPRNG Atomic Output**:
    - `-o` is checked against all input files by path and filesystem identity (`dev`/`ino` on Unix, Win32 file handles on Windows); attempting `-o rules.md` exits `1` with `error, bluepencil never writes to its inputs`.
-   - File writes draw 16 cryptographic random bytes from `/dev/urandom` (Unix) or `BCryptGenRandom` (Windows) for a sibling temporary filename and rename atomically into place.
+   - File writes draw 16 cryptographic random bytes from `/dev/urandom` on Unix (with native Windows `BCryptGenRandom` staged in companion portability PR `#80`; builds without OS entropy refuse `-o` writes cleanly) for a sibling temporary filename and rename atomically into place.
 
 ## 2. Position in the Retrospective Line
 
