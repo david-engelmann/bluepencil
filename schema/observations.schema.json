@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/david-engelmann/bluepencil/schema/observations.schema.json",
+  "title": "bluepencil observations, version 1.0",
+  "description": "Session evidence and candidate rule rewrites consumed by bluepencil propose.",
+  "type": "object",
+  "required": [
+    "observations"
+  ],
+  "properties": {
+    "observations_version": {
+      "const": "1.0",
+      "description": "Format version string. Optional for legacy documents; must be '1.0' when present."
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "rewrites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rewrite"
+      }
+    }
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "required": [
+        "rule",
+        "kind",
+        "quote"
+      ],
+      "properties": {
+        "rule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact extracted text of the rule as inventoried from the Markdown file."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "misreading",
+            "ignored",
+            "followed"
+          ]
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Session receipt or quote supporting the observation."
+        }
+      }
+    },
+    "rewrite": {
+      "type": "object",
+      "required": [
+        "rule",
+        "misreading_quote",
+        "replacement"
+      ],
+      "properties": {
+        "rule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact extracted text of an inventoried rule in the target rules file."
+        },
+        "misreading_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact quote of a recorded misreading observation on the same rule."
+        },
+        "replacement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Proposed replacement text for the rule (without leading list marker)."
+        }
+      }
+    }
+  }
+}

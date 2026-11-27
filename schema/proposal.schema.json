@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/david-engelmann/bluepencil/schema/proposal.schema.json",
+  "title": "bluepencil proposal, version 1.0",
+  "description": "Target-pinned rule inventory and evidence-backed edit proposals emitted by bluepencil propose.",
+  "type": "object",
+  "required": [
+    "proposal_version",
+    "target",
+    "counting_method",
+    "inventory",
+    "unmatched_observations",
+    "warnings",
+    "proposals"
+  ],
+  "properties": {
+    "proposal_version": {
+      "const": "1.0"
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "sha256"
+      ],
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Lowercase hex SHA-256 of the raw target rules file bytes."
+        }
+      }
+    },
+    "counting_method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inventory": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/inventoryEntry"
+      }
+    },
+    "unmatched_observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/$defs/deleteProposal"
+          },
+          {
+            "$ref": "#/$defs/rewriteProposal"
+          },
+          {
+            "$ref": "#/$defs/promoteProposal"
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "sectionPath": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "rule",
+        "kind",
+        "quote"
+      ],
+      "properties": {
+        "rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "misreading",
+            "ignored",
+            "followed"
+          ]
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "inventoryEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "section",
+        "text",
+        "line_span",
+        "counts"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "section": {
+          "$ref": "#/$defs/sectionPath"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "line_span": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "counts": {
+          "type": "object",
+          "required": [
+            "misreading",
+            "ignored",
+            "followed",
+            "exercised"
+          ],
+          "properties": {
+            "misreading": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "ignored": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "followed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "exercised": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "duplicate_of": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ruleId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[^\\r\\n]+$"
+    },
+    "deleteProposal": {
+      "type": "object",
+      "required": [
+        "kind",
+        "rule_id",
+        "rule_text",
+        "evidence",
+        "hunk"
+      ],
+      "properties": {
+        "kind": {
+          "const": "delete"
+        },
+        "rule_id": {
+          "$ref": "#/$defs/ruleId"
+        },
+        "rule_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/observation"
+          }
+        },
+        "hunk": {
+          "type": "object",
+          "required": [
+            "action",
+            "section",
+            "text"
+          ],
+          "properties": {
+            "action": {
+              "const": "delete"
+            },
+            "section": {
+              "$ref": "#/$defs/sectionPath"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "rewriteProposal": {
+      "type": "object",
+      "required": [
+        "kind",
+        "rule_id",
+        "rule_text",
+        "evidence",
+        "misreading_quote",
+        "replacement",
+        "hunk"
+      ],
+      "properties": {
+        "kind": {
+          "const": "rewrite"
+        },
+        "rule_id": {
+          "$ref": "#/$defs/ruleId"
+        },
+        "rule_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/observation"
+          }
+        },
+        "misreading_quote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "replacement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hunk": {
+          "type": "object",
+          "required": [
+            "action",
+            "section",
+            "old",
+            "new"
+          ],
+          "properties": {
+            "action": {
+              "const": "rewrite"
+            },
+            "section": {
+              "$ref": "#/$defs/sectionPath"
+            },
+            "old": {
+              "type": "string",
+              "minLength": 1
+            },
+            "new": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "promoteProposal": {
+      "type": "object",
+      "required": [
+        "kind",
+        "rule_id",
+        "rule_text",
+        "evidence",
+        "hunk"
+      ],
+      "properties": {
+        "kind": {
+          "const": "promote"
+        },
+        "rule_id": {
+          "$ref": "#/$defs/ruleId"
+        },
+        "rule_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/observation"
+          }
+        },
+        "hunk": {
+          "type": "object",
+          "required": [
+            "action",
+            "from_section",
+            "to_section",
+            "text"
+          ],
+          "properties": {
+            "action": {
+              "const": "move"
+            },
+            "from_section": {
+              "$ref": "#/$defs/sectionPath"
+            },
+            "to_section": {
+              "$ref": "#/$defs/sectionPath"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
