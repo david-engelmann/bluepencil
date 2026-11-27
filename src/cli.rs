@@ -20,7 +20,9 @@ use crate::helptext::*;
 use crate::inventory::parse_rules;
 use crate::observations::{decode_utf8_sig, load_observations};
 use crate::pyrepr::repr_text;
-use crate::util::{fsdecode_units, stderr_render, ELOOP};
+#[cfg(not(windows))]
+use crate::util::ELOOP;
+use crate::util::{fsdecode_units, stderr_render};
 use crate::value::Text;
 
 /// One argument token: its text, and its decoded
@@ -712,8 +714,11 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
 /// failing any other way is raised by exists(),
 /// and the output guard counts the raise as
 /// naming an input.
+#[cfg(not(windows))]
 const ENOENT: i32 = 2;
+#[cfg(not(windows))]
 const ENOTDIR: i32 = 20;
+#[cfg(not(windows))]
 const EBADF: i32 = 9;
 
 fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
@@ -897,7 +902,10 @@ fn path_loops(units: &[u16]) -> bool {
                 prefix.push(name);
                 match std::fs::canonicalize(&prefix) {
                     Ok(_) => {}
+                    #[cfg(not(windows))]
                     Err(error) if error.raw_os_error() == Some(ELOOP) => return true,
+                    #[cfg(windows)]
+                    Err(error) if error.raw_os_error() == Some(1921) => return true,
                     Err(_) => break,
                 }
             }
@@ -923,8 +931,14 @@ enum GuardStat {
 fn guard_stat(path: &std::path::Path) -> GuardStat {
     match std::fs::metadata(path) {
         Ok(_) => GuardStat::Exists,
+        #[cfg(not(windows))]
         Err(error) => match error.raw_os_error() {
             Some(ENOENT) | Some(ENOTDIR) | Some(EBADF) | Some(ELOOP) => GuardStat::Absent,
+            _ => GuardStat::Failed,
+        },
+        #[cfg(windows)]
+        Err(error) => match error.raw_os_error() {
+            Some(2 | 3 | 6 | 21 | 53 | 67 | 123 | 161 | 267 | 1921) => GuardStat::Absent,
             _ => GuardStat::Failed,
         },
     }
