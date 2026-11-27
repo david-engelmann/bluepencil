@@ -1,0 +1,16 @@
+#compdef bluepencil
+
+_bluepencil() {
+    local -a subcommands
+    subcommands=(
+        'propose:bluepencil propose subcommand'
+        'diff:bluepencil diff subcommand'
+    )
+    if (( CURRENT == 2 )); then
+        _describe -t commands 'bluepencil subcommand' subcommands
+        return
+    fi
+    _arguments -s '-o' '--output' '-h' '--help' '*:file:_files'
+}
+
+_bluepencil "$@"

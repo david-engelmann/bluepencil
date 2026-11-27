@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-label="bluepencil terminal showcase">
+  <rect width="960" height="540" fill="#070B12"/>
+  <rect x="12" y="12" width="936" height="516" rx="14" fill="#0D131F" stroke="#1E293B" stroke-width="2"/>
+  <path d="M 26 12 H 934 A 14 14 0 0 1 948 26 V 50 H 12 V 26 A 14 14 0 0 1 26 12 Z" fill="#131C2E"/>
+  <line x1="12" y1="50" x2="948" y2="50" stroke="#1E293B" stroke-width="1"/>
+  <circle cx="32" cy="31" r="6" fill="#EF4444"/>
+  <circle cx="52" cy="31" r="6" fill="#F59E0B"/>
+  <circle cx="72" cy="31" r="6" fill="#10B981"/>
+  <text x="106" y="36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#94A3B8">bluepencil  --  verified CLI capture  (47 / 100 rounds)</text>
+  <rect x="24" y="68" width="912" height="25" rx="5" fill="#152036"/>
+  <text x="34" y="84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" font-weight="600" fill="#F8FAFC">$ bluepencil propose examples/rules.md examples/observations.json -o proposal.json</text>
+  <rect x="24" y="99" width="912" height="25" rx="5" fill="#152036"/>
+  <text x="34" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" font-weight="600" fill="#F8FAFC">$ bluepencil diff examples/rules.md proposal.json</text>
+  <text x="34" y="146" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" font-weight="600" fill="#38BDF8">bluepencil diff, 3 proposals (delete 1, rewrite 1, promote 1)</text>
+  <text x="34" y="177" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#94A3B8">target sha256 76f1c52a...  |  input guard active: never mutates rules.md</text>
+  <text x="34" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#FBBF24">## rewrite rule-2 (Repository rules)</text>
+  <text x="34" y="239" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#F87171">- - Run the verification gate before opening a pull request</text>
+  <text x="34" y="270" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" font-weight="600" fill="#34D399">+ - Run the full verification gate and confirm it exits 0 before opening any draft or ready pull request</text>
+  <text x="34" y="301" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#CBD5E1">  evidence, misreading, &quot;agent opened the draft pull request first and ran checks afterward&quot;</text>
+  <text x="34" y="332" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#F87171">## delete rule-1 (Repository rules)</text>
+  <text x="34" y="363" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#F87171">- - Never commit directly to main</text>
+  <text x="34" y="394" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#CBD5E1">  evidence, ignored (x2), &quot;session 04 committed directly on local main during hotfix&quot;</text>
+  <text x="34" y="425" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" fill="#38BDF8">## promote rule-3 (Repository rules / Architecture to Repository rules)</text>
+  <text x="34" y="456" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.2" font-weight="600" fill="#34D399">- - Keep error messages actionable and free of stack traces  [followed x2 -&gt; top section]</text>
+  <line x1="12" y1="492" x2="948" y2="492" stroke="#1E293B" stroke-width="1"/>
+  <text x="32" y="514" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600" fill="#38BDF8">EXIT 0  |  100 rules x 1,500 observations proposed in 27.54 ms (54,466 obs/s)</text>
+</svg>

@@ -1,3 +1,18 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="media/lockup-dark.svg">
+    <img src="media/lockup-light.svg" alt="bluepencil" width="760">
+  </picture>
+</p>
+
+<p align="center">
+  <img src="media/money-shot.gif" alt="bluepencil propose and diff showcase" width="880">
+</p>
+
+<p align="center">
+  <img src="media/architecture.svg" alt="bluepencil threshold engine architecture" width="900">
+</p>
+
 # Bluepencil Operator Manual
 
 Bluepencil is an evidence-driven copy editor for AI agent instruction files (`CLAUDE.md`, `AGENTS.md`, `.cursorrules`, and team Markdown guides). Given a Markdown rules file and a JSON file of session observations (`followed`, `ignored`, `misreading`) plus candidate `rewrites`, `bluepencil` inventories every rule, computes evidence-backed `delete`, `rewrite`, and `promote` proposals (`bluepencil propose`), and renders a human-reviewable edit summary (`bluepencil diff`) without ever modifying its input files.
@@ -262,3 +277,17 @@ jobs:
           bluepencil diff CLAUDE.md /tmp/proposals.json | tee -a "$GITHUB_STEP_SUMMARY"
           jq -e '(.warnings | length == 0) and (.proposals | length == 0)' /tmp/proposals.json >/dev/null
 ```
+
+---
+
+## Shell Completions
+
+Static shell completions ship under `completions/` (and inside GitHub Release archives):
+
+```sh
+source completions/bluepencil.bash                 # Bash
+fpath=(./completions $fpath) && compinit           # Zsh
+cp completions/bluepencil.fish ~/.config/fish/completions/  # Fish
+. ./completions/bluepencil.ps1                     # PowerShell
+```
+
