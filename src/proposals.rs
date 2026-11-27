@@ -2,6 +2,8 @@
 //! proposals, assemble the proposal file (BP-7 to
 //! BP-11, BP-23).
 
+use std::collections::{HashMap, HashSet};
+
 use sha2::Digest;
 
 use crate::failure::Failure;
@@ -49,19 +51,17 @@ pub struct Joined {
 /// rule carrying its text, and a later rule with
 /// the same text is flagged a duplicate.
 pub fn join(rules: &[Rule], observations: &[Observation]) -> (Vec<Joined>, Vec<Observation>) {
-    let mut first_position: Vec<(&Text, usize)> = Vec::new();
+    let mut first_position: HashMap<&[u16], usize> = HashMap::with_capacity(rules.len());
     for (position, rule) in rules.iter().enumerate() {
-        if !first_position.iter().any(|(text, _)| *text == &rule.text) {
-            first_position.push((&rule.text, position));
-        }
+        first_position.entry(rule.text.units()).or_insert(position);
     }
-    let mut joined: Vec<Joined> = Vec::new();
-    let mut seen_texts: Vec<(&Text, &Text)> = Vec::new();
+    let mut joined: Vec<Joined> = Vec::with_capacity(rules.len());
+    let mut seen_texts: HashMap<&[u16], &Text> = HashMap::with_capacity(rules.len());
     for rule in rules {
-        let duplicate_of = match seen_texts.iter().find(|(text, _)| *text == &rule.text) {
-            Some((_, id)) => Some((*id).clone()),
+        let duplicate_of = match seen_texts.get(rule.text.units()) {
+            Some(id) => Some((*id).clone()),
             None => {
-                seen_texts.push((&rule.text, &rule.id));
+                seen_texts.insert(rule.text.units(), &rule.id);
                 None
             }
         };
@@ -77,12 +77,9 @@ pub fn join(rules: &[Rule], observations: &[Observation]) -> (Vec<Joined>, Vec<O
     }
     let mut unmatched = Vec::new();
     for observation in observations {
-        match first_position
-            .iter()
-            .find(|(text, _)| *text == &observation.rule)
-        {
-            Some((_, position)) => {
-                let entry = &mut joined[*position];
+        match first_position.get(observation.rule.units()) {
+            Some(&position) => {
+                let entry = &mut joined[position];
                 entry.counts[kind_index(&observation.kind)] += 1;
                 entry.counts[3] += 1;
                 entry.observations.push(observation.clone());
@@ -124,7 +121,15 @@ pub fn generate(joined: &[Joined], rewrites: &[Rewrite]) -> Result<Vec<Value>, F
     let mut proposals = Vec::new();
     let total = joined.len();
     let first_section: Option<&Vec<Text>> = joined.first().map(|entry| &entry.section);
-    let mut seen_rewrite_texts: Vec<&Text> = Vec::new();
+    let mut rewrites_by_rule: HashMap<&[u16], Vec<&Rewrite>> = HashMap::new();
+    for rewrite in rewrites {
+        rewrites_by_rule
+            .entry(rewrite.rule.units())
+            .or_default()
+            .push(rewrite);
+    }
+    let misreading_tag = Text::from_str("misreading");
+    let mut seen_rewrite_texts: HashSet<&[u16]> = HashSet::with_capacity(total);
     for (index, entry) in joined.iter().enumerate() {
         if entry.counts[1] >= 2 && entry.counts[2] == 0 {
             proposals.push(proposal(
@@ -154,56 +159,57 @@ pub fn generate(joined: &[Joined], rewrites: &[Rewrite]) -> Result<Vec<Value>, F
                 ],
             ));
         }
-        if !seen_rewrite_texts.contains(&&entry.text) {
-            for rewrite in rewrites.iter().filter(|rewrite| rewrite.rule == entry.text) {
-                let matching: Vec<Observation> = entry
-                    .observations
-                    .iter()
-                    .filter(|observation| {
-                        observation.kind == Text::from_str("misreading")
-                            && observation.quote == rewrite.misreading_quote
-                    })
-                    .cloned()
-                    .collect();
-                if matching.is_empty() {
-                    let mut message = Msg::str("rewrite for ");
-                    message.push_text(&entry.id);
-                    message.push_str(" quotes a misreading that is not among its observations");
-                    return Err(Failure::named_msg(message));
+        if seen_rewrite_texts.insert(entry.text.units()) {
+            if let Some(rule_rewrites) = rewrites_by_rule.get(entry.text.units()) {
+                for rewrite in rule_rewrites {
+                    let matching: Vec<Observation> = entry
+                        .observations
+                        .iter()
+                        .filter(|observation| {
+                            observation.kind == misreading_tag
+                                && observation.quote == rewrite.misreading_quote
+                        })
+                        .cloned()
+                        .collect();
+                    if matching.is_empty() {
+                        let mut message = Msg::str("rewrite for ");
+                        message.push_text(&entry.id);
+                        message.push_str(" quotes a misreading that is not among its observations");
+                        return Err(Failure::named_msg(message));
+                    }
+                    proposals.push(proposal(
+                        "rewrite",
+                        entry,
+                        vec![
+                            (Text::from_str("evidence"), evidence_values(&matching)),
+                            (
+                                Text::from_str("misreading_quote"),
+                                Value::Str(rewrite.misreading_quote.clone()),
+                            ),
+                            (
+                                Text::from_str("replacement"),
+                                Value::Str(rewrite.replacement.clone()),
+                            ),
+                            (
+                                Text::from_str("hunk"),
+                                Value::Object(vec![
+                                    (
+                                        Text::from_str("action"),
+                                        Value::Str(Text::from_str("rewrite")),
+                                    ),
+                                    (Text::from_str("section"), section_value(&entry.section)),
+                                    (Text::from_str("old"), Value::Str(entry.text.clone())),
+                                    (
+                                        Text::from_str("new"),
+                                        Value::Str(rewrite.replacement.clone()),
+                                    ),
+                                ]),
+                            ),
+                        ],
+                    ));
                 }
-                proposals.push(proposal(
-                    "rewrite",
-                    entry,
-                    vec![
-                        (Text::from_str("evidence"), evidence_values(&matching)),
-                        (
-                            Text::from_str("misreading_quote"),
-                            Value::Str(rewrite.misreading_quote.clone()),
-                        ),
-                        (
-                            Text::from_str("replacement"),
-                            Value::Str(rewrite.replacement.clone()),
-                        ),
-                        (
-                            Text::from_str("hunk"),
-                            Value::Object(vec![
-                                (
-                                    Text::from_str("action"),
-                                    Value::Str(Text::from_str("rewrite")),
-                                ),
-                                (Text::from_str("section"), section_value(&entry.section)),
-                                (Text::from_str("old"), Value::Str(entry.text.clone())),
-                                (
-                                    Text::from_str("new"),
-                                    Value::Str(rewrite.replacement.clone()),
-                                ),
-                            ]),
-                        ),
-                    ],
-                ));
             }
         }
-        seen_rewrite_texts.push(&entry.text);
         if 2 * index >= total && entry.counts[2] >= 2 && Some(&entry.section) != first_section {
             proposals.push(proposal(
                 "promote",
@@ -238,7 +244,7 @@ pub fn generate(joined: &[Joined], rewrites: &[Rewrite]) -> Result<Vec<Value>, F
         }
     }
     for rewrite in rewrites {
-        if !joined.iter().any(|entry| entry.text == rewrite.rule) {
+        if !seen_rewrite_texts.contains(rewrite.rule.units()) {
             let truncated = crate::util::truncate_text(&rewrite.rule, 60);
             let mut message = Msg::str("supplied rewrite names a rule that is not in the file: ");
             message.push_str(&crate::pyrepr::repr_text(&truncated));
