@@ -296,6 +296,54 @@ pub(crate) fn py_is_space(scalar: u32) -> bool {
 /// table this platform's CPython prints; errnos
 /// outside the table fall back to the Rust display
 /// (a named deviation in the round dossier).
+/// The kernel's filename-too-long errno on this
+/// platform family.
+#[cfg(any(
+    target_os = "macos",
+    target_os = "ios",
+    target_os = "freebsd",
+    target_os = "openbsd",
+    target_os = "netbsd",
+    target_os = "dragonfly"
+))]
+pub const ENAMETOOLONG: i32 = 63;
+
+/// The kernel's filename-too-long errno on this
+/// platform family.
+#[cfg(not(any(
+    target_os = "macos",
+    target_os = "ios",
+    target_os = "freebsd",
+    target_os = "openbsd",
+    target_os = "netbsd",
+    target_os = "dragonfly"
+)))]
+pub const ENAMETOOLONG: i32 = 36;
+
+/// The kernel's symlink-loop errno on this
+/// platform family.
+#[cfg(any(
+    target_os = "macos",
+    target_os = "ios",
+    target_os = "freebsd",
+    target_os = "openbsd",
+    target_os = "netbsd",
+    target_os = "dragonfly"
+))]
+pub const ELOOP: i32 = 62;
+
+/// The kernel's symlink-loop errno on this
+/// platform family.
+#[cfg(not(any(
+    target_os = "macos",
+    target_os = "ios",
+    target_os = "freebsd",
+    target_os = "openbsd",
+    target_os = "netbsd",
+    target_os = "dragonfly"
+)))]
+pub const ELOOP: i32 = 40;
+
 pub fn strerror_text(err: &std::io::Error) -> String {
     match err.raw_os_error() {
         Some(errno) => {
@@ -309,8 +357,8 @@ pub fn strerror_text(err: &std::io::Error) -> String {
                 28 => "No space left on device",
                 30 => "Read-only file system",
                 32 => "Broken pipe",
-                36 => "File name too long",
-                40 => "Too many levels of symbolic links",
+                ENAMETOOLONG => "File name too long",
+                ELOOP => "Too many levels of symbolic links",
                 _ => "",
             };
             if text.is_empty() {

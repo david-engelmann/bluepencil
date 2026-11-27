@@ -20,7 +20,7 @@ use crate::helptext::*;
 use crate::inventory::parse_rules;
 use crate::observations::{decode_utf8_sig, load_observations};
 use crate::pyrepr::repr_text;
-use crate::util::{fsdecode_units, stderr_render};
+use crate::util::{fsdecode_units, stderr_render, ELOOP};
 use crate::value::Text;
 
 /// One argument token: its text, and its decoded
@@ -706,10 +706,6 @@ fn normalize_path(units: &[u16]) -> Vec<u16> {
 /// dangling_target), and a chain still dangling
 /// at the kernel's link bound fails outright,
 /// like a loop (BP-27a).
-/// The kernel's symlink-loop errno on this
-/// platform family.
-const ELOOP: i32 = 40;
-
 /// The rest of pathlib's exists() ignore set
 /// (BP-27a): the errnos a stat may fail with that
 /// the interpreter reads as absence. A stat
@@ -766,28 +762,45 @@ fn resolve_units(units: &[u16]) -> Option<Vec<u16>> {
             }
         }
     };
-    let bytes = crate::util::os_bytes(resolved.as_os_str());
-    let units = fsdecode_units(&bytes);
-    let scalars = crate::util::scalars_of(&units);
-    let mut parts: Vec<&[u32]> = Vec::new();
-    for part in scalars.split(|scalar| *scalar == 0x2F) {
-        if part.is_empty() || part == [0x2E] {
-            continue;
+    #[cfg(not(windows))]
+    let finished = {
+        let bytes = crate::util::os_bytes(resolved.as_os_str());
+        let units = fsdecode_units(&bytes);
+        let scalars = crate::util::scalars_of(&units);
+        let mut parts: Vec<&[u32]> = Vec::new();
+        for part in scalars.split(|scalar| *scalar == 0x2F) {
+            if part.is_empty() || part == [0x2E] {
+                continue;
+            }
+            if part == [0x2E, 0x2E] {
+                parts.pop();
+                continue;
+            }
+            parts.push(part);
         }
-        if part == [0x2E, 0x2E] {
-            parts.pop();
-            continue;
+        let mut out: Vec<u32> = vec![0x2F];
+        for (index, part) in parts.iter().enumerate() {
+            if index > 0 {
+                out.push(0x2F);
+            }
+            out.extend_from_slice(part);
         }
-        parts.push(part);
-    }
-    let mut out: Vec<u32> = vec![0x2F];
-    for (index, part) in parts.iter().enumerate() {
-        if index > 0 {
-            out.push(0x2F);
+        crate::util::text_from_scalars(&out).units().to_vec()
+    };
+    #[cfg(windows)]
+    let finished = {
+        let mut normalized = std::path::PathBuf::new();
+        for component in resolved.components() {
+            match component {
+                std::path::Component::CurDir => {}
+                std::path::Component::ParentDir => {
+                    normalized.pop();
+                }
+                other => normalized.push(other.as_os_str()),
+            }
         }
-        out.extend_from_slice(part);
-    }
-    let finished = crate::util::text_from_scalars(&out).units().to_vec();
+        fsdecode_units(&crate::util::os_bytes(normalized.as_os_str()))
+    };
     if path_loops(&finished) {
         return None;
     }
@@ -875,15 +888,20 @@ fn dangling_target(spelled: &std::path::Path) -> Dangling {
 /// peel above having treated it the same way.
 fn path_loops(units: &[u16]) -> bool {
     let path = crate::util::os_path_from_units(units);
-    let mut prefix = std::path::PathBuf::from("/");
+    let mut prefix = std::path::PathBuf::new();
     for component in path.components() {
-        if let std::path::Component::Normal(name) = component {
-            prefix.push(name);
-            match std::fs::canonicalize(&prefix) {
-                Ok(_) => {}
-                Err(error) if error.raw_os_error() == Some(ELOOP) => return true,
-                Err(_) => break,
+        match component {
+            std::path::Component::Prefix(p) => prefix.push(p.as_os_str()),
+            std::path::Component::RootDir => prefix.push(component.as_os_str()),
+            std::path::Component::Normal(name) => {
+                prefix.push(name);
+                match std::fs::canonicalize(&prefix) {
+                    Ok(_) => {}
+                    Err(error) if error.raw_os_error() == Some(ELOOP) => return true,
+                    Err(_) => break,
+                }
             }
+            _ => {}
         }
     }
     false
@@ -975,6 +993,7 @@ static TEMP_COUNTER: std::sync::atomic::AtomicU32 = std::sync::atomic::AtomicU32
 /// the root drops, and a leading separator pair
 /// stands as the anchor where one or three or
 /// more collapse to one.
+#[cfg(not(windows))]
 fn normpath_units(units: &[u16]) -> Vec<u16> {
     let scalars = crate::util::scalars_of(units);
     let leading = scalars.iter().take_while(|scalar| **scalar == 0x2F).count();
@@ -1016,6 +1035,7 @@ fn normpath_units(units: &[u16]) -> Vec<u16> {
 /// there; the guard's own BP-33 refusal makes
 /// that arm unreachable for a named output, and
 /// it stands as the raise's mirror.
+#[cfg(not(windows))]
 fn lexical_abspath(parent: &[u16]) -> Option<Vec<u16>> {
     let absolute = if parent.first() == Some(&0x2F) {
         parent.to_vec()
@@ -1054,7 +1074,36 @@ fn os_entropy() -> Option<[u8; 16]> {
     Some(bytes)
 }
 
-#[cfg(not(unix))]
+#[cfg(windows)]
+fn os_entropy() -> Option<[u8; 16]> {
+    const BCRYPT_USE_SYSTEM_PREFERRED_RNG: u32 = 0x00000002;
+    #[link(name = "bcrypt")]
+    #[allow(non_snake_case)]
+    extern "system" {
+        fn BCryptGenRandom(
+            hAlgorithm: *mut core::ffi::c_void,
+            pbBuffer: *mut u8,
+            cbBuffer: u32,
+            dwFlags: u32,
+        ) -> i32;
+    }
+    let mut bytes = [0u8; 16];
+    let status = unsafe {
+        BCryptGenRandom(
+            core::ptr::null_mut(),
+            bytes.as_mut_ptr(),
+            bytes.len() as u32,
+            BCRYPT_USE_SYSTEM_PREFERRED_RNG,
+        )
+    };
+    if status == 0 {
+        Some(bytes)
+    } else {
+        None
+    }
+}
+
+#[cfg(not(any(unix, windows)))]
 fn os_entropy() -> Option<[u8; 16]> {
     None
 }
@@ -1139,14 +1188,39 @@ fn suffix_from_terms(
 /// entropy term the frozen-clock conviction
 /// is owed to (BP-54, BP-55).
 fn write_atomically(path: &std::path::Path, bytes: &[u8]) -> Result<(), ()> {
-    let dir = match path.parent() {
+    let raw_dir = match path.parent() {
         Some(parent) if !parent.as_os_str().is_empty() => parent.to_path_buf(),
         _ => std::path::PathBuf::from("."),
     };
-    let parent_units = fsdecode_units(&crate::util::os_bytes(dir.as_os_str()));
-    let dir = match lexical_abspath(&parent_units) {
-        Some(units) => crate::util::os_path_from_units(&units),
-        None => return Err(()),
+    #[cfg(not(windows))]
+    let dir = {
+        let parent_units = fsdecode_units(&crate::util::os_bytes(raw_dir.as_os_str()));
+        match lexical_abspath(&parent_units) {
+            Some(units) => crate::util::os_path_from_units(&units),
+            None => return Err(()),
+        }
+    };
+    #[cfg(windows)]
+    let dir = {
+        let abs_dir = if raw_dir.is_absolute() {
+            raw_dir
+        } else {
+            match std::env::current_dir() {
+                Ok(cwd) => cwd.join(raw_dir),
+                Err(_) => return Err(()),
+            }
+        };
+        let mut normalized = std::path::PathBuf::new();
+        for component in abs_dir.components() {
+            match component {
+                std::path::Component::CurDir => {}
+                std::path::Component::ParentDir => {
+                    normalized.pop();
+                }
+                other => normalized.push(other.as_os_str()),
+            }
+        }
+        normalized
     };
     let name_bytes = path
         .file_name()
