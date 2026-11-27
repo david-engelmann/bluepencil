@@ -512,6 +512,7 @@ fn an_unencodable_quote_is_a_named_write_error() {
     assert!(stderr_text(&run).contains("cannot write the proposal file"));
 }
 
+#[cfg(unix)]
 #[test]
 fn propose_refuses_a_hardlink_output() {
     let dir = tmpdir("hardlink");

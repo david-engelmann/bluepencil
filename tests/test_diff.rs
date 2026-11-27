@@ -630,6 +630,7 @@ fn spans_markers_and_checkboxes_render() {
     assert_eq!(rendered.as_str().expect("valid text"), expected);
 }
 
+#[cfg(unix)]
 #[test]
 fn a_hardlink_output_is_refused() {
     let dir = tmpdir("hardlink");
