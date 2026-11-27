@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use bluepencil in research or production systems, please cite this software."
+title: "bluepencil: Evidence-Backed Editor for Agent Rules Files"
+type: software
+authors:
+  - family-names: Engelmann
+    given-names: David
+version: "0.1.0"
+date-released: "2026-11-27"
+license: MIT
+repository-code: "https://github.com/david-engelmann/bluepencil"
+url: "https://david-engelmann.github.io/bluepencil/"
+abstract: "Deterministic Rust CLI and library that proposes deletions, rewrites, and promotions for agent rules files from observed session evidence."

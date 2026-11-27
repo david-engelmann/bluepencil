@@ -1,0 +1,47 @@
+{
+  "observations_version": "1.0",
+  "observations": [
+    {
+      "rule": "Never commit directly to main",
+      "kind": "ignored",
+      "quote": "session 04 committed directly on local main during hotfix"
+    },
+    {
+      "rule": "Never commit directly to main",
+      "kind": "ignored",
+      "quote": "session 09 landed formatting commit straight on main"
+    },
+    {
+      "rule": "Run the verification gate before opening a pull request",
+      "kind": "misreading",
+      "quote": "agent opened the draft pull request first and ran checks afterward"
+    },
+    {
+      "rule": "Run the verification gate before opening a pull request",
+      "kind": "followed",
+      "quote": "session 14 executed all gate commands prior to branch push"
+    },
+    {
+      "rule": "Keep error messages actionable and free of stack traces",
+      "kind": "followed",
+      "quote": "session 15 mapped parse failures to named stderr lines"
+    },
+    {
+      "rule": "Keep error messages actionable and free of stack traces",
+      "kind": "followed",
+      "quote": "session 18 returned exit code 1 with a descriptive refusal"
+    },
+    {
+      "rule": "Retired rule from a previous quarter",
+      "kind": "ignored",
+      "quote": "session 02 skipped the legacy changelog script"
+    }
+  ],
+  "rewrites": [
+    {
+      "rule": "Run the verification gate before opening a pull request",
+      "misreading_quote": "agent opened the draft pull request first and ran checks afterward",
+      "replacement": "Run the full verification gate and confirm it exits 0 before opening any draft or ready pull request"
+    }
+  ]
+}
