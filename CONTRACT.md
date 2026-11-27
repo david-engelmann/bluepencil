@@ -20434,3 +20434,81 @@ in the round dossier, never a silent approximation.
   failing limb is the manifest key
   alone. Item 10's statement stands as
   not rendered.
+- BP-348. The post-landing material of
+  PR 75 disposed. No landing comment
+  stands on PR 75: the owner's enqueue
+  comment 7207256576 stands last on
+  the PR, and the Trunk note
+  7205539142 stands in its merged form
+  at 113 chars as the terminal bot
+  artifact, the merge proven by the
+  merged flag, the main ref, and the
+  merge tree at BP-347. Its landing
+  verification stands confirmed at
+  this hand at BP-347: the merge tree
+  equal to the reviewed closure tree,
+  main at the merge commit
+  b1a1dd0cbf974350066a299c424a7f8447aa
+  b008, the contract on main at
+  716,294 bytes with the Status range
+  at BP-1 to BP-346 and the twelve
+  repair records outside it; its gate
+  summary agrees with the three
+  reports read whole at this hand,
+  spec PASS, standards APPROVE, red
+  team APPROVE, no findings at any
+  axis and every limb executed, the
+  census at nineteen full and zero
+  contiguous at the base, family, and
+  closure heads at every axis, the
+  closure gate's figures standing from
+  the asserting resolver's counted
+  execution alone, and the gate FULLY
+  CLEAN. The shell's figure moved once
+  after the body's patch read, from
+  10,938 chars with last edit
+  2026-11-26T23:27:59Z to 10,940 with
+  last edit 2026-11-26T23:35:05Z, and
+  stands unmoved since, through the
+  merge and after it, so the landing
+  read and this read agree on the
+  figure and the settlement at BP-347
+  stands. The enqueue stands on the
+  record with its provenance stated in
+  the open: it was posted by a
+  parallel seat of the owner chat, not
+  by the round's build lane, and that
+  seat's handoff states that its first
+  attempt met an HTTP 500 that left no
+  comment behind, verified before
+  reposting; the comment itself stands
+  at 12 chars, posted
+  2026-11-27T01:24:02Z and never
+  edited, standing last, and nothing
+  in it stands to sustain or dismiss.
+  Step 0 stood in its automatic form
+  on PR 75, the bot having reviewed at
+  the opening with no duplicate
+  trigger posted, and generated no
+  actionable comments; no formal
+  review and no review comments stand,
+  so nothing stands to sustain or
+  dismiss, no disposition of the
+  BP-305 kind is owed this round and
+  none is carried, and nothing stands
+  posted on PR 75 after the owner's
+  enqueue comment. BP-346's three
+  charges to this round stand disposed
+  as follows: the shell read-back
+  discharged at BP-347, which settles
+  the shell at 10,940 chars, last
+  edited 2026-11-26T23:35:05Z; Round
+  46's closure gate figures standing
+  re-measured at this round's base
+  gate in full, charged to the family
+  at BP-349 to BP-352; and BP-48
+  carried open by name, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
