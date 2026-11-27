@@ -21052,3 +21052,69 @@ in the round dossier, never a silent approximation.
   failing limb is the manifest key
   alone. Item 10's statement stands as
   not rendered.
+- BP-355. The post-landing material of
+  PR 77 disposed. No landing comment
+  stands on PR 77: the owner's enqueue
+  comment 7223005903 stands last on
+  the PR, and the Trunk note
+  7212284112 stands in its merged form
+  at 113 chars as the terminal bot
+  artifact, the merge proven by the
+  merged flag, the main ref, and the
+  merge tree at BP-354. Its landing
+  verification stands confirmed at
+  this hand at BP-354: the merge tree
+  equal to the reviewed closure tree,
+  main at the merge commit
+  24fd1f196a26e21b80c25f78e89948d83b89
+  4cdb, the contract on main at
+  737,006 bytes with the Status range
+  at BP-1 to BP-353 and the twelve
+  repair records outside it; its gate
+  summary agrees with the three
+  reports read whole at this hand,
+  spec PASS, standards APPROVE, red
+  team APPROVE, no findings at any
+  axis and every limb executed, the
+  census at nineteen full and zero
+  contiguous at the base, family, and
+  closure heads at every axis, the
+  closure gate's figures standing from
+  the asserting resolver's counted
+  execution alone, and the gate FULLY
+  CLEAN. The shell's figure stood at
+  10,955 chars at the body's patch
+  read, last edited
+  2026-11-27T07:16:41Z, moved once to
+  10,957 with last edit
+  2026-11-27T07:21:46Z, and stands
+  unmoved since, through the merge and
+  after it, so the landing read and
+  this read agree on the figure and
+  the settlement at BP-354 stands.
+  Step 0 stood in its automatic form
+  on PR 77, the bot having reviewed at
+  the opening with no duplicate
+  trigger posted, and generated no
+  actionable comments; no formal
+  review and no review comments stand,
+  so nothing stands to sustain or
+  dismiss, no disposition of the
+  BP-305 kind is owed this round and
+  none is carried, and nothing stands
+  posted on PR 77 after the owner's
+  enqueue comment. BP-353's three
+  charges to this round stand disposed
+  as follows: the shell read-back
+  discharged at BP-354, which settles
+  the shell at 10,957 chars, last
+  edited 2026-11-27T07:21:46Z; Round
+  47's closure gate figures standing
+  re-measured at this round's base
+  gate in full, charged to the family
+  at BP-356 to BP-359; and BP-48
+  carried open by name, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
