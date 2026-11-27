@@ -20172,3 +20172,265 @@ in the round dossier, never a silent approximation.
   are charged to Round 47's base gate
   for re-measurement. BP-48 stands
   carried open and untouched.
+- BP-347. PR 75 read back whole at
+  this hand. PR 75 stands closed and
+  merged, its merge commit
+  b1a1dd0cbf974350066a299c424a7f8447aa
+  b008 standing as main's head, a
+  squash on the prior main
+  9b1d099d5f45f4887a036aecbbe02ec8d161
+  2faa as its single parent, its tree
+  ba356e80a896a2de28802d231a0095be28e3
+  2bf0 equal to the reviewed closure
+  tree, and CONTRACT.md on main
+  measures 716,294 bytes with items
+  BP-340 to BP-346 and the twelve
+  repair records outside the Status
+  range, which stands at BP-1 to
+  BP-346 in BP-346's closure sentence.
+  The title stands at 121 chars in 19
+  words. Its four commits, each
+  carrying the owner's sign-off
+  trailer, grow the contract from
+  697,432 bytes at the base to 706,478
+  at the read-back commit
+  83f70e089005c2fcd97442185fec83041c2a
+  f6a9, to 708,820 at the disposition
+  commit
+  0ff1935465f3f64fb8a98a92a17b8ff64fe6
+  ab23, to 715,045 at the family
+  commit
+  709df80c85ccefaa5e16d1d11bb8af0f3618
+  4ab8, and to 716,294 at the closure
+  commit
+  84acb20b36c5dc355a0fd4b5ea0eeaffa225
+  18a5, each an exact byte prefix of
+  the next, verified at this hand over
+  the fetched contracts, and the
+  closure contract stands byte
+  identical to the contract on main;
+  the README blob moves only in the
+  closure commit, its rounds line from
+  45 of 100 to 46 of 100, and the
+  Cargo.toml blob 063fd7fd stands
+  identical at every head. The body
+  stands in its final form at 18,500
+  chars, the build lane's patched
+  final standing as the whole body
+  with no gate record or other text
+  after it, the bot release-notes
+  appendix measured from its opening
+  marker at offset 18,083 spanning 417
+  and closing exactly at the body's
+  end, its two Documentation bullets
+  each correct in substance, the first
+  recording that records covering the
+  latest completed round stand added,
+  including review and CI status,
+  verification results, and test
+  outcomes, and the second that the
+  README stands updated to show 46 of
+  100 rounds completed. The bot shell
+  7205541792 stands read whole in its
+  true final form at this hand: 10,940
+  chars, last edited
+  2026-11-26T23:35:05Z with no edit
+  after that standing, the figure at
+  10,938 at the body's patch read with
+  last edit 2026-11-26T23:27:59Z,
+  moved once to 10,940 at the edit of
+  23:35:05Z, and unmoved since,
+  through the merge at
+  2026-11-27T01:31:05Z and after it,
+  so this read settles the true final
+  form BP-346 charged to this
+  read-back. In its final form its
+  recent review status states that no
+  actionable comments were generated
+  in the recent review; its
+  walkthrough stands accurate in
+  summary in three rows, the rows
+  naming the PR 73 read-back and
+  disposition, the base-tree
+  verification results, and the Round
+  46 closure with the README count
+  update from 45 to 46; its change
+  assessment stands at effort 2
+  (Simple), about 10 minutes, Change
+  Other, its assessment commit the
+  closure head; its Merge Risk stands
+  Minimal up to 84acb, its coverage
+  naming the closure head as source
+  and covered, kind reviewed, its
+  paragraph reading the change as a
+  documentation-only change recording
+  Round 46 and updating the README
+  round counter, with no runtime
+  impact and no merge-blocking risk
+  found; all four pre-merge checks
+  stand Passed, the Title check
+  Passed, its full explanation reading
+  the title as naming the PR 73 record
+  contracted whole, the charges
+  discharged, and the standing laws
+  re-measured (BP-340 to BP-346), the
+  title long at 121 chars and 19 words
+  and using terms a teammate may not
+  read easily, so not fully concise,
+  but specific and matching the
+  changeset, the remaining three
+  Passed as skipped; its finishing
+  touches and Autofix stand unticked;
+  and its review info carries Run ID
+  62fe3e33-7e19-43bb-a42e-ee97f1186b32
+  , the reviewed range the base
+  9b1d099d to the closure head over
+  CONTRACT.md and README.md, the
+  included allowance used with none
+  remaining after this review. One
+  factual slip stands in the shell's
+  own prose in two places, graded here
+  as the body's Step 0 record names
+  it: its walkthrough summary sentence
+  calls the PR's addition seven Round
+  45 records, and its Title check full
+  explanation states that CONTRACT.md
+  adds Round 45 records BP-340 to
+  BP-346, each calling the seven
+  records Round 45 records where they
+  are the Round 46 records BP-340 to
+  BP-346, the records' own numbers
+  standing correct in the same text.
+  The Trunk note 7205539142 stands at
+  113 chars in its merged form, its
+  details link naming the queue entry
+  for PR 75, having stood at 403 chars
+  in its pre-merge form at the build
+  lane's read; the owner's enqueue
+  comment 7207256576 stands at 12
+  chars, posted 2026-11-27T01:24:02Z
+  and never edited, standing last on
+  the PR; no separate landing comment
+  stands on PR 75, the merged-form
+  note standing as the terminal bot
+  artifact, stated as the record
+  stands. Trunk queue PR 76 stands
+  closed unmerged, opened
+  2026-11-27T01:30:42Z and closed
+  2026-11-27T01:30:59Z, its head ref
+  the queue branch for PR 75. The
+  census of the PR stands whole at
+  three issue comments, no formal
+  review, and no review comments.
+  Hosted CI stands completed success
+  on every head: push run 45899017316
+  on the read-back head, 45899311048
+  on the disposition head, 45906225061
+  on the family head, and 45906497661
+  push with 45910928891 pull_request
+  on the closure head, the CodeQL
+  dynamic run 45910925911 completing
+  success on the closure head. The
+  Round 46 gate is graded here in the
+  open: FULLY CLEAN, spec PASS with no
+  findings at any grade (spec.md at
+  16,266 chars: every charge BP-339
+  laid standing discharged by name in
+  the item charged with it, the family
+  standing in the shape BP-333 to
+  BP-339 set with every total tracing
+  from its stated parts, the closure
+  standing in the standing form with
+  the census measured at the closure
+  head over the intended bytes, the
+  seven new items measured at a
+  maximum prose width of exactly 36
+  columns, and the shell figure
+  moment-bounded at 10,938 with its
+  move to 10,940 named as the movement
+  that form covers, no figure in the
+  body left false without its charge),
+  standards APPROVE with no findings
+  at any grade (standards.md at 14,957
+  chars: every total re-derived at its
+  hand from the stage logs' own lines
+  rather than their summaries, the
+  battery at 44 and the cargo at 64
+  and the pin at 241 each traced from
+  their stated parts, the binary md5's
+  build-path scope graded at both
+  gates, the copy clean on the dash
+  pair with the planted control
+  counted first, the attempt history
+  verified whole including the closure
+  gate's restart-killed first launch
+  counted nowhere, and one observation
+  below finding severity carried
+  unchanged from the Round 45 axis,
+  the body's checklist labels standing
+  as the round's standing paraphrase
+  of the fleet standard with item 3's
+  label the loosest of them, the
+  substance under the label the right
+  defect named and graded correctly
+  and no action owed on it), and red
+  team APPROVE with no findings at any
+  grade, every limb executed and no
+  limb untested (red-team.md at 12,708
+  chars: both gates re-executed at its
+  own hand on trees verified blob for
+  blob against the API listings, cargo
+  paired at 64 in the standing parts,
+  clippy and fmt clean, the binary md5
+  d7cf80fe4770809418e809b9bfa0778b
+  reproduced outright at its own
+  target paths, the battery at 44
+  cells and 0 failures counted from
+  its own PASS lines on both builds
+  with BP-81 executed on both, the
+  split probe paired-identical at 39
+  and 40 and split at 41 and 42 with
+  the refusal stderr byte-exact, the
+  differential at 16 cases and 220
+  steps with 0 failures on both builds
+  from its own md5-verified harness
+  copy, the pin summed from its own 19
+  result lines at 241 with the golden
+  whole, the census at nineteen full
+  and zero contiguous at the base,
+  family, and closure heads, and its
+  own attempt history disclosed whole,
+  its runner's first launch killed
+  queued by a runtime restart before
+  any stage executed and counted
+  nowhere, the relaunch acquiring the
+  slot in the post-restart window and
+  banking every stage on its first
+  attempt inside the one hold). The
+  round stands as its body tells it: a
+  single build lane under the owner's
+  scoped execution ruling, its inputs
+  assembled fresh through the API and
+  verified blob for blob before
+  reliance, the base gate whole on its
+  first cycle after its queue behind
+  verified-live sibling holds, the
+  closure gate whole on its second
+  launch under the asserting resolver
+  after its first launch was killed
+  queued by a runtime restart, and no
+  wrap variance of the Round 45 kind
+  standing this round, the intended
+  closure bytes standing
+  byte-identical to the landed bytes.
+  Storefront item 3 stands NOT PASSING
+  by name (BP-48): Cargo.toml stands
+  at exactly 170 bytes with no
+  description key, its blob identical
+  at every head of the round, while
+  the README lede and the repository
+  description stand byte-identical to
+  each other at 197 chars, so the
+  failing limb is the manifest key
+  alone. Item 10's statement stands as
+  not rendered.
