@@ -22766,3 +22766,43 @@ in the round dossier, never a silent approximation.
   launches are counted nowhere, and no
   figure in this family rests on any
   other attempt.
+- BP-375. Round 50 closes on the
+  family head 76b7c53c, over the base
+  head
+  6dd9066ec08737716f084fad568f4cac2c7a
+  0607. Its Status range reads BP-1 to
+  BP-375, with BP-138, BP-146, BP-154,
+  BP-155, BP-163, BP-171, BP-179,
+  BP-229, BP-245, BP-267, BP-303,
+  BP-318, and BP-368 standing outside
+  it as the repair records, thirteen
+  in all. At this closure head the
+  identifier census stands at 21 full
+  occurrences and zero contiguous,
+  measured over the exact intended
+  closure-head bytes before this push,
+  the attribution BP-303's nineteen
+  and BP-368's one joined by BP-374's
+  one, this item citing the identifier
+  in no place. The closure gate runs
+  whole on this closure tree after
+  this commit lands, and its figures
+  stand in the PR record rather than
+  in this item, in the standing form.
+  The README's closed-rounds line
+  moves from 49 to 50 in this commit
+  alone, and with it bluepencil stands
+  at the halfway mark, fifty of its
+  hundred rounds closed. Three charges
+  pass to Round 51. The CodeRabbit
+  shell comment on this round's pull
+  request stands at the figure the PR
+  body states at its patch,
+  moment-bounded as ever, and its true
+  final form is charged to Round 51's
+  read-back, which will settle it by
+  number from the record itself. The
+  closure gate's figures are charged
+  to Round 51's base gate for
+  re-measurement. BP-48 stands carried
+  open and untouched.
