@@ -22030,3 +22030,82 @@ in the round dossier, never a silent approximation.
   are charged to Round 50's base gate
   for re-measurement. BP-48 stands
   carried open and untouched.
+- BP-368. Repair record, standing
+  outside the Status range. BP-366's
+  census sentence stands corrected at
+  this record, the original
+  unrewritten. As written, BP-366
+  states that the wrap census over the
+  assembled base tree's contract
+  'stands at nineteen full occurrences
+  of the refusal string and zero
+  contiguous'. The counted string is
+  misnamed in that sentence: the
+  census by the method of BP-222
+  counts the oracle commit identifier,
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, and at the base tree and at
+  this round's closure head it stands
+  at nineteen full occurrences of that
+  identifier and zero contiguous, the
+  attribution exactly BP-303's
+  nineteen, one each in BP-161,
+  BP-166, BP-174, BP-182, BP-189,
+  BP-196, BP-203, BP-210, BP-217,
+  BP-224, BP-229, BP-233, BP-240,
+  BP-248, BP-255, BP-262, BP-270,
+  BP-277, and BP-298, the thirteenth
+  inside BP-240 under its doubled
+  marker header; the figure, the
+  method, and the attribution stand as
+  measured, and only the sentence's
+  name for the counted string is
+  false. The refusal string, the
+  port's refusal stderr 'error,
+  bluepencil never writes to its
+  inputs', is not the counted string:
+  by the same method's de-wrap it
+  stands at zero full occurrences in
+  the base contract, as this round's
+  spec axis measured at its own hand,
+  and BP-367 names this same
+  measurement the identifier census,
+  correctly, and needs no correction.
+  The correction is directed by the
+  convergence of the build lane's own
+  disclosure on this round's pull
+  request body, CodeRabbit's
+  actionable comment 4725680268 in its
+  review 6096047448, sustained as a
+  true positive, and the three axes of
+  this round's gate, spec at F-1,
+  standards at S-1, and the red team
+  at L7, each directing this
+  same-round appended record; the
+  bot's suggested in-place edit is not
+  followed, the append-only law
+  forbidding the rewrite of a standing
+  item, and no reply stands posted to
+  the bot. This record cites the
+  identifier in full once, in this
+  record itself, so the census at this
+  repair head stands at twenty full
+  occurrences and zero contiguous, the
+  attribution BP-303's nineteen with
+  the twentieth in this record,
+  measured at this lane's hand over
+  the repair-head bytes after this
+  append; the figures of BP-366's own
+  measurement belong to the base and
+  closure heads and stand as stated
+  above, unchanged. The closure-family
+  figures stand as executed whole on
+  the closure tree itself at the
+  closure head and are unchanged by
+  this record, which appends text to
+  the contract alone, every other blob
+  at this head standing identical to
+  the closure tree's; the README is
+  untouched by this commit, and BP-48
+  carries open by name as BP-367 left
+  it.
