@@ -22451,3 +22451,108 @@ in the round dossier, never a silent approximation.
   failing limb is the manifest key
   alone. Item 10's statement stands as
   not rendered.
+- BP-370. The post-landing material of
+  PR 83 disposed. No landing comment
+  stands on PR 83: the owner's enqueue
+  comment 7235467018 stands last on
+  the PR, and the Trunk note
+  7234708405 stands in its merged form
+  at 113 chars as the terminal bot
+  artifact, the merge proven by the
+  merged flag, the main ref, and the
+  merge tree at BP-369. Its landing
+  verification stands confirmed at
+  this hand at BP-369: the merge tree
+  equal to the reviewed repair tree,
+  main at the merge commit
+  6dd9066ec08737716f084fad568f4cac2c7a
+  0607, the contract on main at
+  784,695 bytes with the Status range
+  at BP-1 to BP-367 and the thirteen
+  repair records outside it; its gate
+  summary agrees with the five reports
+  read whole at this hand, spec REPAIR
+  on F-1, standards REPAIR on S-1, and
+  red team REPAIR at L7, the three
+  axes converging on the one Minor,
+  BP-366's census sentence naming the
+  counted string as the refusal string
+  where the census counts the oracle
+  commit identifier, the repair
+  appended as BP-368 in BP-303's form
+  with BP-366 unrewritten, spec delta
+  PASS converting F-1, standards delta
+  APPROVE discharging S-1, and the
+  gate clean on the one repaired
+  Minor. The shell's figure stood at
+  8,574 chars at the body's patch
+  read, at 8,576 at the three axes'
+  reads, at 13,804 at the repair
+  lane's patch read after the bot's
+  review of the repair head, and at
+  12,078 at the two delta axes' reads
+  with last edit 2026-11-28T06:34:56Z,
+  and stands unmoved since, through
+  the merge and after it, so the
+  landing read and this read agree on
+  the figure and the settlement at
+  BP-369 stands. Step 0 stood in its
+  automatic form on PR 83 in two acts,
+  the bot having reviewed at the
+  opening with no duplicate trigger
+  posted: its review of the closure
+  head generated the one actionable
+  comment 4725680268, sustained as a
+  true positive at every axis and
+  answered by BP-368 through the
+  contract's route, the bot's
+  suggested in-place edit not taken,
+  the append-only law forbidding the
+  rewrite of a standing item, no reply
+  posted to the bot, and no 'Addressed
+  in commit' line standing on the
+  comment at this read; and its review
+  of the repair head generated no
+  actionable comment, its recent
+  review status stating so, the shell
+  re-rendered and the release-notes
+  appendix appended to the body in
+  that act, both absorbed by the
+  repair lane's patch and described in
+  the body's repair account. Nothing
+  stands dismissed on PR 83, and
+  nothing stands posted on PR 83 after
+  the owner's enqueue comment. BP-368
+  stands carried as a standing
+  correction, its text as written, not
+  re-litigated by any item of this
+  round; the census at this round's
+  base contract stands at twenty full
+  occurrences and zero contiguous as
+  BP-368 states, re-measured at this
+  hand over the API bytes, the
+  attribution BP-303's nineteen with
+  the twentieth in BP-368. BP-367's
+  three charges to this round stand
+  disposed as follows: the shell
+  read-back discharged at BP-369,
+  which settles the shell at 12,078
+  chars, last edited
+  2026-11-28T06:34:56Z; Round 49's
+  closure gate figures standing
+  re-measured at this round's base
+  gate in full, charged to the family
+  at BP-371 to BP-374, the closure
+  gate having run on the closure tree
+  a4783b62 and this round's base tree
+  4edff7be differing from it at
+  CONTRACT.md alone by BP-368's
+  append, prose only, which no gate
+  leg executes, so the re-measurement
+  stands on the base tree as it
+  stands; and BP-48 carried open by
+  name, untouched by this round as by
+  every round since it was named; it
+  is the owner's act, not a build
+  lane's, and no item of this round
+  reaches for it.
