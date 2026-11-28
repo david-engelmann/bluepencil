@@ -21463,3 +21463,649 @@ in the round dossier, never a silent approximation.
   are charged to Round 49's base gate
   for re-measurement. BP-48 stands
   carried open and untouched.
+- BP-361. PR 81 read back whole at
+  this hand. PR 81 stands closed and
+  merged, its merge commit
+  2535fefe2382527b289d007d670b0a496049
+  f6f8 standing as main's head, a
+  squash on the prior main
+  24fd1f196a26e21b80c25f78e89948d83b89
+  4cdb as its single parent, its tree
+  0b5d73b35e6c9c2f77125bbbf3fb03ccfc30
+  0c4a equal to the reviewed closure
+  tree, and CONTRACT.md on main
+  measures 761,938 bytes with items
+  BP-354 to BP-360 and the twelve
+  repair records outside the Status
+  range, which stands at BP-1 to
+  BP-360 in BP-360's closure sentence.
+  The title stands at 121 chars in 19
+  words. Its four commits, each
+  carrying the owner's sign-off
+  trailer, grow the contract from
+  737,006 bytes at the base to 747,436
+  at the read-back commit
+  9726cffae8247f0838f1256753ceed159bb4
+  dbf5, to 749,779 at the disposition
+  commit
+  3702d491dc441923a9aef492dd397f33a2f1
+  581c, to 760,654 at the family
+  commit
+  804ff56fadfc661ac9d97f32e254e2f124de
+  9b6d, and to 761,938 at the closure
+  commit
+  1e4df6f39f1c28e3bc86b01902d759e85ef1
+  8271, each an exact byte prefix of
+  the next, verified at this hand over
+  the fetched contracts, and the
+  closure contract stands byte
+  identical to the contract on main;
+  the README blob moves only in the
+  closure commit, its rounds line from
+  47 of 100 to 48 of 100, and the
+  Cargo.toml blob 063fd7fd stands
+  identical at every head. The body
+  stands in its final form at 18,432
+  chars, the second continuation
+  lane's patched final at 17,525 chars
+  standing as the body with the
+  owner's gate record appended at
+  landing after it, the record
+  discharging the two standards Minors
+  by patch in the body's own
+  paragraphs, as the gate grading
+  below states, and no release-notes
+  appendix stands at the end of the
+  body, the round's shell carrying
+  none, as the body's Step 0 record
+  states expressly. The bot shell
+  7231918599 stands read whole in its
+  true final form at this hand: 10,933
+  chars, last edited
+  2026-11-28T02:56:32Z with no edit
+  after that standing, the figure at
+  10,929 at the body's patch read with
+  last edit 2026-11-28T01:49:15Z,
+  moved to 10,931 at the two review
+  axes' reads with last edit
+  2026-11-28T01:55:47Z, and moved once
+  more to 10,933 with last edit
+  2026-11-28T02:56:32Z, standing at
+  that figure at the owner's landing
+  read and at this read, unmoved
+  through the merge at
+  2026-11-28T03:04:08Z and after it,
+  so this read settles the true final
+  form BP-360 charged to this
+  read-back. In its final form its
+  recent review status states that no
+  actionable comments were generated
+  in the recent review; its
+  walkthrough stands accurate in
+  summary in three rows, the rows
+  naming the Round 47 read-back and
+  disposition, the Round 48
+  verification results, and the Round
+  48 closure, its summary sentence
+  reading the change as adding records
+  for the Round 47 read-back and
+  disposition, the Round 48
+  verification results, and the Round
+  48 closure to CONTRACT.md and
+  updating the closed-round count from
+  47 to 48 of 100 in README.md; its
+  change assessment stands at effort 2
+  (Simple), about 10 minutes, Change
+  Other, its assessment commit the
+  closure head; its Merge Risk stands
+  Minimal up to 1e4df6, its coverage
+  naming the closure head as source
+  and covered, kind reviewed, its
+  paragraph reading the change as one
+  that adds round records to the
+  contract document and updates the
+  closed-round count in the README,
+  with no runtime effect and no
+  identified merge risk; all four
+  pre-merge checks stand Passed, the
+  Title check Passed, its full
+  explanation reading the title as
+  naming Round 48, the PR 77 record,
+  the discharged charges, and the
+  re-measured standing laws (BP-354 to
+  BP-360), the title long at 121
+  characters and 19 words and dense
+  with internal jargon but not
+  misleading or off-topic, the
+  remaining three Passed as skipped;
+  its finishing touches and Autofix
+  stand unticked; and its review info
+  carries Run ID
+  a5043a19-2241-43fa-a49a-98271f3c609d
+  , the reviewed range the base
+  24fd1f19 to the closure head over
+  CONTRACT.md and README.md, the
+  included allowance used with none
+  remaining after this review. No
+  factual slip stands in the shell's
+  own prose at this read. The Trunk
+  note 7231916523 stands at 113 chars
+  in its merged form, its details link
+  naming the queue entry for PR 81,
+  having stood at 403 chars in its
+  pre-merge form at the build lane's
+  read; the owner's enqueue comment
+  7232695504 stands at 12 chars,
+  posted 2026-11-28T02:56:50Z and
+  never edited, standing last on the
+  PR; no separate landing comment
+  stands on PR 81, the merged-form
+  note standing as the terminal bot
+  artifact, stated as the record
+  stands. Trunk queue PR 82 stands
+  closed unmerged, opened
+  2026-11-28T03:03:36Z and closed
+  2026-11-28T03:03:53Z, its head ref
+  the queue branch for PR 81. The
+  census of the PR stands whole at
+  three issue comments, no formal
+  review, and no review comments.
+  Hosted CI stands completed success
+  on every head: push run 46050458437
+  on the read-back head, 46050507573
+  on the disposition head, 46085813331
+  on the family head, and 46085953186
+  push with 46094859760 pull_request
+  on the closure head, the CodeQL
+  dynamic run 46094857767 completing
+  success on the closure head. The
+  Round 48 gate is graded here in the
+  open: spec PASS with no findings at
+  any grade (spec.md at 10,870 bytes:
+  BP-354 settling PR 77 whole against
+  the live record, BP-353's second
+  charge discharged by execution on
+  the shared tree, the family figures
+  tracing from their stated parts at
+  both gates with the census
+  re-measured at its own hand over
+  blob-verified bytes at the base and
+  closure heads alike, the closure
+  standing in the standing form under
+  the asserting resolver, the body's
+  readiness block verified on the live
+  body, and the shell's appendix
+  absence verified on the shell read
+  whole), standards REPAIR on two
+  Minors and no higher finding
+  (standards.md at 14,329 bytes: S-1,
+  the body's family paragraphs
+  misattributing two items' contents,
+  the differential narrated in the
+  BP-357 paragraph and the pin suite,
+  the golden, and the scan in the
+  BP-358 paragraph, where the contract
+  records the battery and the split
+  probe in BP-357, the differential as
+  BP-358's whole matter, and the pin
+  suite, the golden conversion, the
+  census, and the scan in BP-359,
+  every figure correct and the defect
+  attribution alone; and S-2, the body
+  misnaming the trees its gates
+  assembled, the BP-356 paragraph and
+  the Verified block naming the branch
+  tip tree of the disposition head for
+  the base gate where BP-356 records
+  the base tree 43ff34e5 assembled
+  fresh, and the BP-358 paragraph
+  calling the pinned flighttape tree
+  afd4d7d1 the oracle tree where
+  BP-356 distinguishes the pin tree at
+  50 blobs from the standing oracle
+  extraction at 19 blobs and BP-359
+  states the golden as the pin tree's
+  fixture conversion, the two trees
+  differing only in CONTRACT.md, which
+  no gate leg executes, so no figure
+  at either gate stood affected; both
+  Minors body-only, both discharged by
+  the owner's body patch at landing,
+  the patched paragraphs standing
+  corrected in the live body as read
+  at this hand, and one observation
+  below finding severity carried
+  unchanged from the Round 45, Round
+  46, and Round 47 axes, the body's
+  checklist labels standing as the
+  round's standing paraphrase of the
+  fleet standard with item 3's label
+  the loosest of them, the substance
+  under the label the right defect
+  named and graded correctly and no
+  action owed on it), and red team
+  APPROVE with no findings at any
+  grade, every limb executed and no
+  limb untested (red-team.md at 13,543
+  bytes, in one seating: the chain,
+  trees, and sizes verified over the
+  fetched blobs, both gates
+  re-executed whole at its own fresh
+  assemblies with the binary md5
+  reproduced outright at its own
+  target paths, the battery and the
+  differential whole at both harness
+  sets with the seven harness files
+  md5-verified and every file the
+  harness resolves at runtime present
+  from the start, the pin tree
+  assembled fresh at exactly 50 blobs
+  and its suite summed from its own 19
+  result lines with the golden whole
+  by its digest, both prior shells and
+  censuses read whole from the record
+  itself, the wrap census re-measured
+  with the thirteenth occurrence
+  inside BP-240, and the attempt
+  history audited against the scratch
+  logs at every point they reach). The
+  gate stands clean on the two
+  discharged Minors. The round stands
+  as its body tells it: three build
+  lanes, the original stopping and
+  reporting on a system execution-risk
+  notice after banking the read-back
+  and the dispositions, a continuation
+  lane verifying that state, drafting
+  the whole remaining round, and
+  stopping and reporting by the book
+  after its gate launches stood queued
+  about three hours behind
+  verified-live progressing holds, its
+  own runner killed so no stale runner
+  would fire unattended, and the
+  second continuation lane carrying
+  the round from that state, its base
+  gate whole on its sixth launch and
+  its closure gate whole on its second
+  launch under the asserting resolver,
+  the family and closure pushes each
+  landing on their first attempts.
+  Storefront item 3 stands NOT PASSING
+  by name (BP-48): Cargo.toml stands
+  at exactly 170 bytes with no
+  description key, its blob identical
+  at every head of the round, while
+  the README lede and the repository
+  description stand byte-identical to
+  each other at 197 chars, so the
+  failing limb is the manifest key
+  alone. Item 10's statement stands as
+  not rendered.
+- BP-362. The post-landing material of
+  PR 81 disposed. No landing comment
+  stands on PR 81: the owner's enqueue
+  comment 7232695504 stands last on
+  the PR, and the Trunk note
+  7231916523 stands in its merged form
+  at 113 chars as the terminal bot
+  artifact, the merge proven by the
+  merged flag, the main ref, and the
+  merge tree at BP-361. Its landing
+  verification stands confirmed at
+  this hand at BP-361: the merge tree
+  equal to the reviewed closure tree,
+  main at the merge commit
+  2535fefe2382527b289d007d670b0a496049
+  f6f8, the contract on main at
+  761,938 bytes with the Status range
+  at BP-1 to BP-360 and the twelve
+  repair records outside it; its gate
+  summary agrees with the three
+  reports read whole at this hand,
+  spec PASS with no findings,
+  standards REPAIR on the two
+  body-only Minors S-1 and S-2, both
+  discharged by the owner's body patch
+  at landing in the body's own
+  paragraphs, red team APPROVE with no
+  findings and every limb executed,
+  the census at nineteen full and zero
+  contiguous at the base, family, and
+  closure heads at every axis, the
+  closure gate's figures standing from
+  the asserting resolver's counted
+  execution alone, and the gate clean
+  on the two discharged Minors. The
+  shell's figure stood at 10,929 chars
+  at the body's patch read, last
+  edited 2026-11-28T01:49:15Z, moved
+  to 10,931 with last edit
+  2026-11-28T01:55:47Z, and moved once
+  more to 10,933 with last edit
+  2026-11-28T02:56:32Z, and stands
+  unmoved since, through the merge and
+  after it, so the landing read and
+  this read agree on the figure and
+  the settlement at BP-361 stands.
+  Step 0 stood in its automatic form
+  on PR 81, the bot having reviewed at
+  the opening with no duplicate
+  trigger posted, and generated no
+  actionable comments; no formal
+  review and no review comments stand,
+  so nothing stands to sustain or
+  dismiss, no disposition of the
+  BP-305 kind is owed this round and
+  none is carried, and nothing stands
+  posted on PR 81 after the owner's
+  enqueue comment. BP-360's three
+  charges to this round stand disposed
+  as follows: the shell read-back
+  discharged at BP-361, which settles
+  the shell at 10,933 chars, last
+  edited 2026-11-28T02:56:32Z; Round
+  48's closure gate figures standing
+  re-measured at this round's base
+  gate in full, charged to the family
+  at BP-363 to BP-366; and BP-48
+  carried open by name, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
+- BP-363. The base gate on the new
+  base, and with it the first part of
+  BP-360's charge. The base tree
+  0b5d73b35e6c9c2f77125bbbf3fb03ccfc30
+  0c4a stands assembled fresh through
+  the API at this lane's own tree
+  path, 28 blobs with every blob's git
+  id verified on fetch and on write,
+  zero mismatches; the pinned
+  flighttape tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e stands assembled fresh the same
+  way at exactly 50 blobs; and the
+  standing oracle extraction at this
+  lane's oracle path stands verified
+  blob for blob against the oracle
+  tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e at 19 blobs, zero mismatches. A
+  git worktree of main at
+  2535fefe2382527b289d007d670b0a496049
+  f6f8 supplies the cargo pairing at
+  this gate. Cargo test at the
+  assembled base tree pairs 64 tests
+  with zero failures, library 3,
+  binary 0, diff 18, inventory 18,
+  proposals 25, doc 0, with clippy and
+  rustfmt clean, and the built
+  binary's md5 stands at
+  d7cf80fe4770809418e809b9bfa0778b at
+  this lane's h-base49 target path,
+  the figure build-path scoped as
+  ever. The harness stands prepared
+  fresh from the Round 21 copies with
+  every file the harness resolves at
+  runtime present from the start,
+  rt_position.py included, its seven
+  files md5-verified before reliance
+  and its fixtures cmp-verified
+  against the oracle extraction.
+  BP-360 charged this round's base
+  gate with re-measuring Round 48's
+  closure gate figures, and the charge
+  stands discharged here in the
+  figures the family items record: the
+  closure gate ran on the closure tree
+  0b5d73b35e6c9c2f77125bbbf3fb03ccfc30
+  0c4a, which is this round's base
+  tree, both rounds sharing the one
+  tree, and at this base gate the
+  cargo pairing stands at 64 as 3, 0,
+  18, 18, 25, 0, the battery at 44
+  cells with zero failures, the split
+  probe paired through 40 and split at
+  41 and 42, the differential at 16
+  cases, 220 steps, and zero failures,
+  the pin suite at 241 summed from its
+  own 19 result lines with the screen
+  suite at 13, the golden whole by its
+  digest, the wrap census at nineteen
+  full and zero contiguous, the
+  codepoint scan at zero and zero over
+  the tree's 28 files, and the binary
+  md5 at
+  d7cf80fe4770809418e809b9bfa0778b at
+  this lane's own target path, each
+  figure identical in kind and value
+  to the closure gate's figure as
+  BP-360 deferred it to the PR record
+  and as the closure head's three axes
+  re-measured it at their own hands.
+- BP-364. The standing battery and the
+  split probe at the base gate. The
+  battery stands at 44 cells with zero
+  failures, counted from its PASS
+  lines: W4, E4, P7, V23, G6, the
+  binary under test the base gate's
+  own build at this lane's h-base49
+  target path, its md5 recorded at
+  BP-363. The draw split probe stands
+  paired-identical at link counts 39
+  and 40 in both modes, propose and
+  diff, and split at 41 and 42 in both
+  modes: the Rust side refuses with
+  return code 1, its stderr byte-exact
+  'error, bluepencil never writes to
+  its inputs', its output head the
+  pair ('link', 'c2'), while the
+  oracle side answers with head file,
+  and the probe records zero failures.
+- BP-365. The differential at the base
+  gate, and the harness provenance.
+  The differential stands at 16 cases,
+  220 steps, and zero failures against
+  the base gate's build. The
+  qualification BP-138 laid and BP-245
+  restated stands repeated here in its
+  exact scope: it covers this item's
+  differential figures and their
+  provenance only, and it has never
+  covered the harness artifact itself,
+  which stands md5-pinned below, nor
+  the battery at BP-364, whose
+  provenance stands on its own record.
+  The seven harness files stand
+  md5-verified before reliance at this
+  gate: battery21.py
+  fbbe91ffaa756094ebea480fd5865906,
+  split_probe21.py
+  cb87cded93c3b5754a7c84c6f81b61f6,
+  differential21.py
+  9f346303a241cdef3c863713cdd68503,
+  rt_position.py
+  087b7373ecb3a7969e32e678052cc525,
+  bp10_clock.so
+  8edb43b98c3234ac47d041c02a25f492,
+  bp10_urandom.so
+  19875fdc80c29455282e7832cdcf5422,
+  and bp10_ustream.so
+  2719afc20af3aa2a765180311c74e4e4,
+  every file the harness resolves at
+  runtime present from the start.
+- BP-366. The pin suite, the golden,
+  the wrap census, and the codepoint
+  scan at the base gate, and this
+  round's attempt history to this
+  point. The pin suite at the pinned
+  flighttape tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e stands at 241 tests with zero
+  failures, summed from its own 19
+  result lines at this gate, the
+  screen suite among them at 13. The
+  golden stands whole: the pin tree's
+  converter renders its synthetic
+  session fixture to a tape of 1,663
+  bytes whose digest stands at
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  digest command agreeing and the
+  verify standing clean against it.
+  The wrap census over the assembled
+  base tree's contract, measured by
+  the BP-222 method, de-wrapping on
+  newline and indent and cross-checked
+  by de-wrapping on all whitespace,
+  the two agreeing, stands at nineteen
+  full occurrences of the refusal
+  string and zero contiguous, the
+  attribution exactly BP-303's
+  nineteen: BP-161, BP-166, BP-174,
+  BP-182, BP-189, BP-196, BP-203,
+  BP-210, BP-217, BP-224, BP-229,
+  BP-233, BP-240, BP-248, BP-255,
+  BP-262, BP-270, BP-277, and BP-298,
+  the thirteenth inside BP-240 under
+  its doubled marker header. The
+  codepoint scan over the assembled
+  base tree stands at zero U+2014 and
+  zero U+2013 over its 28 files, its
+  planted control counted first at one
+  U+2014 and two U+2013. The attempt
+  history of this round stands whole
+  to this point: this lane is the
+  round's only build lane so far; the
+  read-back and disposition pushes
+  each landed on their first attempts
+  with every assertion passing; the
+  base gate's first launch, launched
+  2026-11-28T03:55:20Z under the build
+  slot, stood queued about 42 minutes
+  behind verified-live progressing
+  holds on the shared slot, acquired
+  the slot and ran whole on its first
+  cycle, and closed clean at
+  2026-11-28T04:50:41Z, counted once,
+  here; no stop, no error, and no
+  killed launch stands in this lane's
+  record, and no figure in this family
+  rests on any other attempt.
+- BP-367. Round 49 closes on the
+  family head 3c7f3b51, over the base
+  head
+  2535fefe2382527b289d007d670b0a496049
+  f6f8. Its Status range reads BP-1 to
+  BP-367, with BP-138, BP-146, BP-154,
+  BP-155, BP-163, BP-171, BP-179,
+  BP-229, BP-245, BP-267, BP-303, and
+  BP-318 standing outside it as the
+  repair records, twelve in all. At
+  this closure head the identifier
+  census stands at 19 full occurrences
+  and zero contiguous, measured over
+  the exact intended closure-head
+  bytes before this push, the
+  attribution unchanged, since no item
+  of this round cites the identifier
+  in any place. The closure gate runs
+  whole on this closure tree after
+  this commit lands, and its figures
+  stand in the PR record rather than
+  in this item, in the standing form.
+  The README's closed-rounds line
+  moves from 48 to 49 in this commit
+  alone. Three charges pass to Round
+  50. The CodeRabbit shell comment on
+  this round's pull request stands at
+  the figure the PR body states at its
+  patch, moment-bounded as ever, and
+  its true final form is charged to
+  Round 50's read-back, which will
+  settle it by number from the record
+  itself. The closure gate's figures
+  are charged to Round 50's base gate
+  for re-measurement. BP-48 stands
+  carried open and untouched.
+- BP-368. Repair record, standing
+  outside the Status range. BP-366's
+  census sentence stands corrected at
+  this record, the original
+  unrewritten. As written, BP-366
+  states that the wrap census over the
+  assembled base tree's contract
+  'stands at nineteen full occurrences
+  of the refusal string and zero
+  contiguous'. The counted string is
+  misnamed in that sentence: the
+  census by the method of BP-222
+  counts the oracle commit identifier,
+  255d973dc51ba9e80d056afd1575688a3432
+  a370, and at the base tree and at
+  this round's closure head it stands
+  at nineteen full occurrences of that
+  identifier and zero contiguous, the
+  attribution exactly BP-303's
+  nineteen, one each in BP-161,
+  BP-166, BP-174, BP-182, BP-189,
+  BP-196, BP-203, BP-210, BP-217,
+  BP-224, BP-229, BP-233, BP-240,
+  BP-248, BP-255, BP-262, BP-270,
+  BP-277, and BP-298, the thirteenth
+  inside BP-240 under its doubled
+  marker header; the figure, the
+  method, and the attribution stand as
+  measured, and only the sentence's
+  name for the counted string is
+  false. The refusal string, the
+  port's refusal stderr 'error,
+  bluepencil never writes to its
+  inputs', is not the counted string:
+  by the same method's de-wrap it
+  stands at zero full occurrences in
+  the base contract, as this round's
+  spec axis measured at its own hand,
+  and BP-367 names this same
+  measurement the identifier census,
+  correctly, and needs no correction.
+  The correction is directed by the
+  convergence of the build lane's own
+  disclosure on this round's pull
+  request body, CodeRabbit's
+  actionable comment 4725680268 in its
+  review 6096047448, sustained as a
+  true positive, and the three axes of
+  this round's gate, spec at F-1,
+  standards at S-1, and the red team
+  at L7, each directing this
+  same-round appended record; the
+  bot's suggested in-place edit is not
+  followed, the append-only law
+  forbidding the rewrite of a standing
+  item, and no reply stands posted to
+  the bot. This record cites the
+  identifier in full once, in this
+  record itself, so the census at this
+  repair head stands at twenty full
+  occurrences and zero contiguous, the
+  attribution BP-303's nineteen with
+  the twentieth in this record,
+  measured at this lane's hand over
+  the repair-head bytes after this
+  append; the figures of BP-366's own
+  measurement belong to the base and
+  closure heads and stand as stated
+  above, unchanged. The closure-family
+  figures stand as executed whole on
+  the closure tree itself at the
+  closure head and are unchanged by
+  this record, which appends text to
+  the contract alone, every other blob
+  at this head standing identical to
+  the closure tree's; the README is
+  untouched by this commit, and BP-48
+  carries open by name as BP-367 left
+  it.
