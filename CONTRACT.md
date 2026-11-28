@@ -21994,3 +21994,39 @@ in the round dossier, never a silent approximation.
   killed launch stands in this lane's
   record, and no figure in this family
   rests on any other attempt.
+- BP-367. Round 49 closes on the
+  family head 3c7f3b51, over the base
+  head
+  2535fefe2382527b289d007d670b0a496049
+  f6f8. Its Status range reads BP-1 to
+  BP-367, with BP-138, BP-146, BP-154,
+  BP-155, BP-163, BP-171, BP-179,
+  BP-229, BP-245, BP-267, BP-303, and
+  BP-318 standing outside it as the
+  repair records, twelve in all. At
+  this closure head the identifier
+  census stands at 19 full occurrences
+  and zero contiguous, measured over
+  the exact intended closure-head
+  bytes before this push, the
+  attribution unchanged, since no item
+  of this round cites the identifier
+  in any place. The closure gate runs
+  whole on this closure tree after
+  this commit lands, and its figures
+  stand in the PR record rather than
+  in this item, in the standing form.
+  The README's closed-rounds line
+  moves from 48 to 49 in this commit
+  alone. Three charges pass to Round
+  50. The CodeRabbit shell comment on
+  this round's pull request stands at
+  the figure the PR body states at its
+  patch, moment-bounded as ever, and
+  its true final form is charged to
+  Round 50's read-back, which will
+  settle it by number from the record
+  itself. The closure gate's figures
+  are charged to Round 50's base gate
+  for re-measurement. BP-48 stands
+  carried open and untouched.
