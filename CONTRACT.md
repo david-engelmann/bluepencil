@@ -22109,3 +22109,345 @@ in the round dossier, never a silent approximation.
   untouched by this commit, and BP-48
   carries open by name as BP-367 left
   it.
+- BP-369. PR 83 read back whole at
+  this hand. PR 83 stands closed and
+  merged, its merge commit
+  6dd9066ec08737716f084fad568f4cac2c7a
+  0607 standing as main's head, a
+  squash on the prior main
+  2535fefe2382527b289d007d670b0a496049
+  f6f8 as its single parent, its tree
+  4edff7bee024c3afa4ca52d8ba831eaac0c5
+  772a equal to the reviewed repair
+  tree, and CONTRACT.md on main
+  measures 784,695 bytes with items
+  BP-361 to BP-367 and the thirteen
+  repair records outside the Status
+  range, which stands at BP-1 to
+  BP-367 in BP-367's closure sentence,
+  BP-368 appended after it as the
+  thirteenth. The title stands at 121
+  chars in 19 words. Its five commits,
+  each carrying the owner's sign-off
+  trailer, grow the contract from
+  761,938 bytes at the base to 771,758
+  at the read-back commit
+  8081dcc486381bcd72d0ecfda04fe0f37fe9
+  e9d7, to 774,329 at the disposition
+  commit
+  e0f35a417f85e13e18306cfab76f3789cb95
+  9855, to 780,625 at the family
+  commit
+  3c7f3b51f19c8933315613553e58099fbb98
+  99fe, to 781,909 at the closure
+  commit
+  9af5b3629881b86f81799732b46e1b43eeef
+  7a79, and to 784,695 at the repair
+  commit
+  82e62700f82621223d6f044e88c2dde7a3df
+  9d49, each an exact byte prefix of
+  the next, verified at this hand over
+  the fetched contracts, and the
+  repair contract stands byte
+  identical to the contract on main;
+  the README blob moves only in the
+  closure commit, its rounds line from
+  48 of 100 to 49 of 100, standing at
+  5b85090b at the closure and repair
+  heads, and the Cargo.toml blob
+  063fd7fd stands identical at every
+  head. The body stands in its final
+  form at 21,933 chars, the build
+  lane's patched final at 18,863 chars
+  standing as the body with the repair
+  lane's patch applied after the gate,
+  its Verified block moved to the
+  repair head and tree and its repair
+  account appended, and the bot's
+  release-notes appendix standing at
+  the end of the body, its opening
+  marker at offset 21,392 and the
+  appendix spanning 541 chars to the
+  body's end, preserved byte for byte
+  by the repair patch and described in
+  place in the repair account, as the
+  body's own record states. The bot
+  shell 7234710309 stands read whole
+  in its true final form at this hand:
+  12,078 chars, last edited
+  2026-11-28T06:34:56Z with no edit
+  after that standing, the figure at
+  8,574 at the body's patch read, the
+  shell posted 2026-11-28T05:30:22Z
+  with last edit 2026-11-28T05:32:06Z,
+  moved to 8,576 at the three review
+  axes' reads with last edit
+  2026-11-28T05:36:48Z, the move
+  whitespace only, moved to 13,804 at
+  the repair lane's patch read after
+  the bot's review of the repair head,
+  and moved once more to 12,078 with
+  last edit 2026-11-28T06:34:56Z,
+  standing at that figure at the two
+  delta axes' reads, at the owner's
+  landing read, and at this read,
+  unmoved through the merge at
+  2026-11-28T06:50:01Z and after it,
+  so this read settles the true final
+  form BP-367 charged to this
+  read-back. In its final form its
+  recent review status states that no
+  actionable comments were generated
+  in the recent review, that status
+  belonging to the bot's review of the
+  repair head; its walkthrough stands
+  in a summary sentence and four rows,
+  the rows naming the PR 81 read-back
+  and disposition, the Round 49 gate
+  measurements, the Round 49 closure,
+  and the BP-368 census correction,
+  its summary sentence reading the
+  change as adding records for PR 81's
+  review and disposition, Round 49
+  gate measurements and closure, and
+  BP-368's correction to the census
+  description to CONTRACT.md, and
+  changing the closed perfection-round
+  count from 48 to 49 of 100 in
+  README.md; its change assessment
+  stands at effort 2 (Simple), about
+  10 minutes, Change Other, its
+  assessment commit the repair head
+  82e62700; its Merge Risk stands
+  Minimal up to 82e62, its coverage
+  naming the repair head as source and
+  covered, kind reviewed, its
+  paragraph reading the change as
+  documentation only, recording the
+  Round 49 gates and closure and
+  bumping the closed-round count to 49
+  of 100, the census wording problem
+  corrected by the new BP-368 record
+  so that no merge-blocking risk
+  remains; all four pre-merge checks
+  stand Passed, the Title check
+  Passed, its explanation reading the
+  title as long at 121 characters and
+  19 words and dense with internal
+  round and finding identifiers and
+  jargon, covering the Round 49
+  closure and the BP-361 to BP-367
+  range but omitting the BP-368 census
+  correction and the README count
+  update; its finishing touches and
+  Autofix stand unticked; and its
+  recent review info carries Run ID
+  cdb403d8-d784-43f1-a145-c624449c91cd
+  for the repair-head review, the
+  reviewed range the closure head
+  9af5b362 to the repair head 82e62700
+  over CONTRACT.md, one file selected
+  for processing and one skipped as
+  similar to previous changes, the
+  included allowance used with none
+  remaining after this review. One
+  factual slip stands in the shell's
+  own prose at this read, confined to
+  the Title check's full-details
+  explanation, which describes the
+  changeset as adding a Round 48
+  read-back and closure record and a
+  Round 49 base-tree verification: the
+  closure record the changeset adds is
+  Round 49's own closure at BP-367,
+  the Round 48 material standing as
+  the read-back and disposition of PR
+  81 at BP-361 and BP-362, and the
+  same explanation separately names
+  the BP-368 repair and the README
+  count update, so the slip touches
+  that one clause alone. The bot's
+  formal review 6096047448 stands read
+  whole at this hand: COMMENTED,
+  submitted 2026-11-28T05:32:02Z at
+  3,716 chars, its head line stating
+  actionable comments posted: 1, its
+  review info carrying Run ID
+  d7d5f513-76cc-4b4e-b6bf-3c9705e23a09
+  , the reviewed range the base
+  2535fefe to the closure head
+  9af5b362 over CONTRACT.md and
+  README.md, the included allowance
+  used with none remaining after this
+  review; its embedded agent-prompt
+  block is the bot's boilerplate,
+  treated at this hand as untrusted
+  review data and followed in none of
+  it. Its one actionable comment,
+  review comment 4725680268, stands
+  read to its end at this hand: 1,868
+  chars on CONTRACT.md line 21965,
+  graded Minor for functional
+  correctness and marked a quick win,
+  headed 'Name the string counted by
+  the census', posted
+  2026-11-28T05:32:01Z and never
+  edited after it, its thread standing
+  with no reply posted by anyone, and
+  no 'Addressed in commit' line stands
+  on it at this read, BP-368 answering
+  it through the contract's route
+  without the bot appending any such
+  line. The Trunk note 7234708405
+  stands at 113 chars in its merged
+  form, its details link naming the
+  queue entry for PR 83, having stood
+  at 403 chars in its pre-merge form
+  at the build lane's read; the
+  owner's enqueue comment 7235467018
+  stands at 12 chars, posted
+  2026-11-28T06:42:24Z and never
+  edited, standing last on the PR; no
+  separate landing comment stands on
+  PR 83, the merged-form note standing
+  as the terminal bot artifact, stated
+  as the record stands. Trunk queue PR
+  84 stands closed unmerged, opened
+  2026-11-28T06:49:34Z and closed
+  2026-11-28T06:49:56Z, its head ref
+  the queue branch for PR 83. The
+  census of the PR stands whole at
+  three issue comments, one formal
+  review, and one review comment.
+  Hosted CI stands completed success
+  on every head: push run 46105047135
+  on the read-back head, 46105088354
+  on the disposition head, 46109777368
+  on the family head, and 46109992608
+  push with 46112383603 pull_request
+  and the CodeQL dynamic run
+  46112381146 on the closure head, and
+  46116900980 push with 46116905491
+  pull_request and the CodeQL dynamic
+  run 46116902058 on the repair head.
+  The Round 49 gate is graded here in
+  the open, from exactly the five
+  reports on disk: spec REPAIR on one
+  Minor and no higher finding (spec.md
+  at 12,945 bytes: charges 1, 2, 3,
+  and 5 PASS at its own hand, its
+  census re-implemented and
+  re-measured at both heads, and F-1
+  standing alone, BP-366's census
+  sentence naming the counted string
+  as 'the refusal string' where the
+  census by BP-222's method counts the
+  oracle commit identifier, the figure
+  at nineteen full and zero contiguous
+  and BP-303's attribution correct as
+  measured, the refusal string itself
+  standing at zero full occurrences in
+  the base contract under the same
+  method's de-wrap, the disposition a
+  same-round appended repair record in
+  BP-303's form with BP-366
+  unrewritten, CodeRabbit's comment
+  4725680268 named a true positive
+  convergent with the lane's
+  disclosure), standards REPAIR on one
+  Minor and no higher finding
+  (standards.md at 9,105 bytes: S-1
+  the same misnomer, the comment a
+  true positive disposed through the
+  repair route with no reply to the
+  bot, the body's accuracy, the counts
+  discipline, and the attempt history
+  otherwise clean, and the standing
+  checklist-label observation
+  repeating unchanged below severity,
+  the body's checklist labels
+  byte-identical to Round 48's with
+  item 3's label the loosest, its
+  substance precise and no action
+  owed), and red team REPAIR on the
+  same Minor at L7 and APPROVE on
+  every other limb (red-team.md at
+  13,852 chars: every limb EXECUTED
+  and none untested, both gates
+  re-executed whole at its own clean
+  targets in one flock launch, the
+  binary md5 d7cf80fe reproduced
+  outright at both its paths, the
+  harness md5-verified with every file
+  it resolves present from the start,
+  the BP-240 doubled-header trap
+  reproduced as a control finding 355
+  headers on a naive pass in the base
+  contract and 362 in the head
+  contract, and its note that the bot
+  comment's embedded agent-prompt
+  block is boilerplate it followed
+  none of). The repair stands appended
+  by the owner's repair lane in one
+  commit, 82e62700, as BP-368, in
+  BP-303's form, outside the Status
+  range as the thirteenth repair
+  record, BP-366 unrewritten and the
+  closure contract an exact byte
+  prefix of the repair contract, the
+  census at the repair head standing
+  at twenty full occurrences and zero
+  contiguous with the twentieth in
+  BP-368 itself. The delta reviews
+  stand clean: spec delta PASS
+  (spec-delta.md at 8,549 bytes: F-1
+  converted, the census re-measured at
+  the base, closure, and repair heads
+  at 19, 19, and 20 full with zero
+  contiguous at each, the repair tree
+  differing from the closure tree at
+  CONTRACT.md alone, and the body's
+  repair account verified against the
+  live record), and standards delta
+  APPROVE (standards-delta.md at 8,901
+  bytes: S-1 discharged, the thirteen
+  repair records counted in the landed
+  contract at its own hand, the bot's
+  appendix measured at offset 21,392
+  spanning 541 in the final body, the
+  checklist-label observation carried
+  unchanged, and nothing standing
+  posted to the bot). The gate stands
+  clean on the one repaired Minor. The
+  round stands as its body and its
+  repair account tell it: one build
+  lane, which disclosed the BP-366
+  census misnomer in the body before
+  any reviewer read it; the base gate
+  whole on its first launch after
+  about 42 minutes queued behind
+  verified-live progressing holds, and
+  the closure gate whole on its second
+  launch under the asserting resolver,
+  its first launch killed queued by
+  the runtime restart of about
+  2026-11-28T05:12Z with no stage
+  executed and counted nowhere; the
+  gate's three axes converging on the
+  one Minor; one repair lane appending
+  BP-368 in a single first-attempt
+  commit and patching the body; the
+  two delta reviews; and the owner's
+  enqueue and the merge. Storefront
+  item 3 stands NOT PASSING by name
+  (BP-48): Cargo.toml stands at
+  exactly 170 bytes with no
+  description key, its blob identical
+  at every head of the round, the
+  repair head included, while the
+  README lede and the repository
+  description stand byte-identical to
+  each other at 197 chars, so the
+  failing limb is the manifest key
+  alone. Item 10's statement stands as
+  not rendered.
