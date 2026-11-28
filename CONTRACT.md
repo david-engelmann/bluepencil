@@ -21814,3 +21814,183 @@ in the round dossier, never a silent approximation.
   it was named; it is the owner's act,
   not a build lane's, and no item of
   this round reaches for it.
+- BP-363. The base gate on the new
+  base, and with it the first part of
+  BP-360's charge. The base tree
+  0b5d73b35e6c9c2f77125bbbf3fb03ccfc30
+  0c4a stands assembled fresh through
+  the API at this lane's own tree
+  path, 28 blobs with every blob's git
+  id verified on fetch and on write,
+  zero mismatches; the pinned
+  flighttape tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e stands assembled fresh the same
+  way at exactly 50 blobs; and the
+  standing oracle extraction at this
+  lane's oracle path stands verified
+  blob for blob against the oracle
+  tree
+  9ca149dbf934ba7e54e8409101d06c86990a
+  035e at 19 blobs, zero mismatches. A
+  git worktree of main at
+  2535fefe2382527b289d007d670b0a496049
+  f6f8 supplies the cargo pairing at
+  this gate. Cargo test at the
+  assembled base tree pairs 64 tests
+  with zero failures, library 3,
+  binary 0, diff 18, inventory 18,
+  proposals 25, doc 0, with clippy and
+  rustfmt clean, and the built
+  binary's md5 stands at
+  d7cf80fe4770809418e809b9bfa0778b at
+  this lane's h-base49 target path,
+  the figure build-path scoped as
+  ever. The harness stands prepared
+  fresh from the Round 21 copies with
+  every file the harness resolves at
+  runtime present from the start,
+  rt_position.py included, its seven
+  files md5-verified before reliance
+  and its fixtures cmp-verified
+  against the oracle extraction.
+  BP-360 charged this round's base
+  gate with re-measuring Round 48's
+  closure gate figures, and the charge
+  stands discharged here in the
+  figures the family items record: the
+  closure gate ran on the closure tree
+  0b5d73b35e6c9c2f77125bbbf3fb03ccfc30
+  0c4a, which is this round's base
+  tree, both rounds sharing the one
+  tree, and at this base gate the
+  cargo pairing stands at 64 as 3, 0,
+  18, 18, 25, 0, the battery at 44
+  cells with zero failures, the split
+  probe paired through 40 and split at
+  41 and 42, the differential at 16
+  cases, 220 steps, and zero failures,
+  the pin suite at 241 summed from its
+  own 19 result lines with the screen
+  suite at 13, the golden whole by its
+  digest, the wrap census at nineteen
+  full and zero contiguous, the
+  codepoint scan at zero and zero over
+  the tree's 28 files, and the binary
+  md5 at
+  d7cf80fe4770809418e809b9bfa0778b at
+  this lane's own target path, each
+  figure identical in kind and value
+  to the closure gate's figure as
+  BP-360 deferred it to the PR record
+  and as the closure head's three axes
+  re-measured it at their own hands.
+- BP-364. The standing battery and the
+  split probe at the base gate. The
+  battery stands at 44 cells with zero
+  failures, counted from its PASS
+  lines: W4, E4, P7, V23, G6, the
+  binary under test the base gate's
+  own build at this lane's h-base49
+  target path, its md5 recorded at
+  BP-363. The draw split probe stands
+  paired-identical at link counts 39
+  and 40 in both modes, propose and
+  diff, and split at 41 and 42 in both
+  modes: the Rust side refuses with
+  return code 1, its stderr byte-exact
+  'error, bluepencil never writes to
+  its inputs', its output head the
+  pair ('link', 'c2'), while the
+  oracle side answers with head file,
+  and the probe records zero failures.
+- BP-365. The differential at the base
+  gate, and the harness provenance.
+  The differential stands at 16 cases,
+  220 steps, and zero failures against
+  the base gate's build. The
+  qualification BP-138 laid and BP-245
+  restated stands repeated here in its
+  exact scope: it covers this item's
+  differential figures and their
+  provenance only, and it has never
+  covered the harness artifact itself,
+  which stands md5-pinned below, nor
+  the battery at BP-364, whose
+  provenance stands on its own record.
+  The seven harness files stand
+  md5-verified before reliance at this
+  gate: battery21.py
+  fbbe91ffaa756094ebea480fd5865906,
+  split_probe21.py
+  cb87cded93c3b5754a7c84c6f81b61f6,
+  differential21.py
+  9f346303a241cdef3c863713cdd68503,
+  rt_position.py
+  087b7373ecb3a7969e32e678052cc525,
+  bp10_clock.so
+  8edb43b98c3234ac47d041c02a25f492,
+  bp10_urandom.so
+  19875fdc80c29455282e7832cdcf5422,
+  and bp10_ustream.so
+  2719afc20af3aa2a765180311c74e4e4,
+  every file the harness resolves at
+  runtime present from the start.
+- BP-366. The pin suite, the golden,
+  the wrap census, and the codepoint
+  scan at the base gate, and this
+  round's attempt history to this
+  point. The pin suite at the pinned
+  flighttape tree
+  afd4d7d13520411e003762548fc79082a1b9
+  cf6e stands at 241 tests with zero
+  failures, summed from its own 19
+  result lines at this gate, the
+  screen suite among them at 13. The
+  golden stands whole: the pin tree's
+  converter renders its synthetic
+  session fixture to a tape of 1,663
+  bytes whose digest stands at
+  cc9c4e01fca418dcc33114caf75fae1f6bf0
+  d401f297b5d61f6776903fa955a3, the
+  digest command agreeing and the
+  verify standing clean against it.
+  The wrap census over the assembled
+  base tree's contract, measured by
+  the BP-222 method, de-wrapping on
+  newline and indent and cross-checked
+  by de-wrapping on all whitespace,
+  the two agreeing, stands at nineteen
+  full occurrences of the refusal
+  string and zero contiguous, the
+  attribution exactly BP-303's
+  nineteen: BP-161, BP-166, BP-174,
+  BP-182, BP-189, BP-196, BP-203,
+  BP-210, BP-217, BP-224, BP-229,
+  BP-233, BP-240, BP-248, BP-255,
+  BP-262, BP-270, BP-277, and BP-298,
+  the thirteenth inside BP-240 under
+  its doubled marker header. The
+  codepoint scan over the assembled
+  base tree stands at zero U+2014 and
+  zero U+2013 over its 28 files, its
+  planted control counted first at one
+  U+2014 and two U+2013. The attempt
+  history of this round stands whole
+  to this point: this lane is the
+  round's only build lane so far; the
+  read-back and disposition pushes
+  each landed on their first attempts
+  with every assertion passing; the
+  base gate's first launch, launched
+  2026-11-28T03:55:20Z under the build
+  slot, stood queued about 42 minutes
+  behind verified-live progressing
+  holds on the shared slot, acquired
+  the slot and ran whole on its first
+  cycle, and closed clean at
+  2026-11-28T04:50:41Z, counted once,
+  here; no stop, no error, and no
+  killed launch stands in this lane's
+  record, and no figure in this family
+  rests on any other attempt.
