@@ -21742,3 +21742,75 @@ in the round dossier, never a silent approximation.
   failing limb is the manifest key
   alone. Item 10's statement stands as
   not rendered.
+- BP-362. The post-landing material of
+  PR 81 disposed. No landing comment
+  stands on PR 81: the owner's enqueue
+  comment 7232695504 stands last on
+  the PR, and the Trunk note
+  7231916523 stands in its merged form
+  at 113 chars as the terminal bot
+  artifact, the merge proven by the
+  merged flag, the main ref, and the
+  merge tree at BP-361. Its landing
+  verification stands confirmed at
+  this hand at BP-361: the merge tree
+  equal to the reviewed closure tree,
+  main at the merge commit
+  2535fefe2382527b289d007d670b0a496049
+  f6f8, the contract on main at
+  761,938 bytes with the Status range
+  at BP-1 to BP-360 and the twelve
+  repair records outside it; its gate
+  summary agrees with the three
+  reports read whole at this hand,
+  spec PASS with no findings,
+  standards REPAIR on the two
+  body-only Minors S-1 and S-2, both
+  discharged by the owner's body patch
+  at landing in the body's own
+  paragraphs, red team APPROVE with no
+  findings and every limb executed,
+  the census at nineteen full and zero
+  contiguous at the base, family, and
+  closure heads at every axis, the
+  closure gate's figures standing from
+  the asserting resolver's counted
+  execution alone, and the gate clean
+  on the two discharged Minors. The
+  shell's figure stood at 10,929 chars
+  at the body's patch read, last
+  edited 2026-11-28T01:49:15Z, moved
+  to 10,931 with last edit
+  2026-11-28T01:55:47Z, and moved once
+  more to 10,933 with last edit
+  2026-11-28T02:56:32Z, and stands
+  unmoved since, through the merge and
+  after it, so the landing read and
+  this read agree on the figure and
+  the settlement at BP-361 stands.
+  Step 0 stood in its automatic form
+  on PR 81, the bot having reviewed at
+  the opening with no duplicate
+  trigger posted, and generated no
+  actionable comments; no formal
+  review and no review comments stand,
+  so nothing stands to sustain or
+  dismiss, no disposition of the
+  BP-305 kind is owed this round and
+  none is carried, and nothing stands
+  posted on PR 81 after the owner's
+  enqueue comment. BP-360's three
+  charges to this round stand disposed
+  as follows: the shell read-back
+  discharged at BP-361, which settles
+  the shell at 10,933 chars, last
+  edited 2026-11-28T02:56:32Z; Round
+  48's closure gate figures standing
+  re-measured at this round's base
+  gate in full, charged to the family
+  at BP-363 to BP-366; and BP-48
+  carried open by name, untouched by
+  this round as by every round since
+  it was named; it is the owner's act,
+  not a build lane's, and no item of
+  this round reaches for it.
